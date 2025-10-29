@@ -522,12 +522,20 @@ return ReadOnly("TextMapWildcard", {
     TextMapId = "UI_AbyssRoom_Count",
     WildcardClassification = "Story"
   },
-  UI_ActionPoint_RemainPurchaseTimes = {
-    TextMapId = "UI_ActionPoint_RemainPurchaseTimes",
+  UI_Accessory_Desc_50004 = {
+    TextMapId = "UI_Accessory_Desc_50004",
     WildcardClassification = "Story"
   },
-  UI_Armory_ClickEmpty = {
-    TextMapId = "UI_Armory_ClickEmpty",
+  UI_Accessory_Desc_60001 = {
+    TextMapId = "UI_Accessory_Desc_60001",
+    WildcardClassification = "Story"
+  },
+  UI_Accessory_Name_60001 = {
+    TextMapId = "UI_Accessory_Name_60001",
+    WildcardClassification = "Story"
+  },
+  UI_ActionPoint_RemainPurchaseTimes = {
+    TextMapId = "UI_ActionPoint_RemainPurchaseTimes",
     WildcardClassification = "Story"
   },
   UI_Banner_Remain_Buy = {
@@ -706,6 +714,10 @@ return ReadOnly("TextMapWildcard", {
     TextMapId = "UI_ModGuideBook_Task_Collecting",
     WildcardClassification = "Story"
   },
+  UI_Npc_Aside = {
+    TextMapId = "UI_Npc_Aside",
+    WildcardClassification = "Story"
+  },
   UI_Npc_AwaAndMe = {
     TextMapId = "UI_Npc_AwaAndMe",
     WildcardClassification = "Story"
@@ -724,6 +736,10 @@ return ReadOnly("TextMapWildcard", {
   },
   UI_Npc_Name_Nvzhu = {
     TextMapId = "UI_Npc_Name_Nvzhu",
+    WildcardClassification = "Story"
+  },
+  UI_Npc_Name_Pangbai = {
+    TextMapId = "UI_Npc_Name_Pangbai",
     WildcardClassification = "Story"
   },
   UI_Pet_Skill_CD = {
@@ -768,6 +784,10 @@ return ReadOnly("TextMapWildcard", {
   },
   UI_TEMPLE_LIMIT_TIME_Reverse = {
     TextMapId = "UI_TEMPLE_LIMIT_TIME_Reverse",
+    WildcardClassification = "Story"
+  },
+  UI_TEMPLE_MEASURE_COUNT = {
+    TextMapId = "UI_TEMPLE_MEASURE_COUNT",
     WildcardClassification = "Story"
   },
   UI_Time_Day = {

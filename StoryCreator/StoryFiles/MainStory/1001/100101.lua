@@ -696,18 +696,6 @@ return {
             endPort = "In"
           },
           {
-            startQuest = "1744618592602812469",
-            startPort = "Out",
-            endQuest = "quest_168448117791610",
-            endPort = "Success"
-          },
-          {
-            startQuest = "1719210343225140591",
-            startPort = "Out",
-            endQuest = "17429929424274890173",
-            endPort = "In"
-          },
-          {
             startQuest = "quest_1685931704781787",
             startPort = "Out",
             endQuest = "1704972007087288319",
@@ -916,6 +904,12 @@ return {
             startPort = "Out",
             endQuest = "1719210343225140591",
             endPort = "In"
+          },
+          {
+            startQuest = "1719210343225140591",
+            startPort = "Out",
+            endQuest = "quest_168448117791610",
+            endPort = "Success"
           }
         },
         nodeData = {
@@ -1563,7 +1557,7 @@ return {
       key = "story_1686817834711541",
       type = "StoryNode",
       name = "\230\157\128\230\128\170",
-      pos = {x = 1014.0250487032615, y = 145.9646684813402},
+      pos = {x = 1019.0250487032615, y = 149.29800181467354},
       propsData = {
         QuestId = 10010108,
         QuestDescriptionComment = "\229\135\187\233\128\128\230\157\165\232\162\173\231\154\132\230\128\170\231\137\169",
@@ -1712,15 +1706,27 @@ return {
             endPort = "Success"
           },
           {
-            startQuest = "171133579074493928",
-            startPort = "Out",
-            endQuest = "17580193849067282",
-            endPort = "In"
-          },
-          {
             startQuest = "17580193849067282",
             startPort = "Out",
             endQuest = "1706007306143137060",
+            endPort = "In"
+          },
+          {
+            startQuest = "17611209276734439",
+            startPort = "Out",
+            endQuest = "17611209276734440",
+            endPort = "In"
+          },
+          {
+            startQuest = "171133579074493928",
+            startPort = "Out",
+            endQuest = "17611209276734439",
+            endPort = "In"
+          },
+          {
+            startQuest = "17611209276734440",
+            startPort = "Out",
+            endQuest = "17580193849067282",
             endPort = "In"
           }
         },
@@ -1859,7 +1865,7 @@ return {
             key = "1706007306143137060",
             type = "ShowOrHideUINode",
             name = "\230\152\190\231\164\186\230\136\150\233\154\144\232\151\143UI-Blood",
-            pos = {x = -1256.8841952092555, y = 105.80172113968023},
+            pos = {x = -1255.7730840981446, y = 121.35727669523584},
             propsData = {
               Function = "HideUIInScreen",
               UIParam = "BloodBar",
@@ -2184,7 +2190,7 @@ return {
             key = "17580193849067282",
             type = "SetPlayerStatusNode",
             name = "\232\174\190\231\189\174\231\142\169\229\174\182\231\138\182\230\128\129",
-            pos = {x = -1417.9094568404034, y = -29.87307559590146},
+            pos = {x = -1261.2427901737367, y = -90.98418670701258},
             propsData = {
               HPPercent = -1,
               ESPercent = -1,
@@ -2198,9 +2204,38 @@ return {
               },
               RecoverPlayer = false
             }
+          },
+          ["17611209276734439"] = {
+            key = "17611209276734439",
+            type = "CreatePhantomNode",
+            name = "\229\143\172\229\148\164\229\165\179\228\184\187",
+            pos = {x = -1693.1772070071677, y = -217.89332263648419},
+            propsData = {
+              IsCreate = true,
+              IsClearOtherPhantom = false,
+              IsSync = true,
+              StaticCreatorIdList = {1590286}
+            }
+          },
+          ["17611209276734440"] = {
+            key = "17611209276734440",
+            type = "SetVarNode",
+            name = "\230\137\147\229\188\128\233\152\159\229\143\139\231\137\185\230\149\136",
+            pos = {x = -1403.097727116304, y = -215.19105422041287},
+            propsData = {
+              VarName = "TeammateEffects",
+              VarValue = 1
+            }
           }
         },
-        commentData = {}
+        commentData = {
+          ["17611209294754514"] = {
+            key = "17611209294754514",
+            name = "\232\142\183\229\190\151\229\137\145\229\191\133\233\161\187\229\156\168\231\172\172\228\184\128\228\184\170",
+            position = {x = -1682.5819115061804, y = 4.568922682662517},
+            size = {width = 302.2222222222221, height = 263.33333333333337}
+          }
+        }
       }
     },
     story_1686818101940601 = {

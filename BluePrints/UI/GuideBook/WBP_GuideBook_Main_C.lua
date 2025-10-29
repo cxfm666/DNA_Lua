@@ -285,6 +285,11 @@ function M:UpdateListView(GuideNotes)
   if Avatar then
     table.sort(TempTable, function(A, B)
       local Id_A, Id_B = A[1], B[1]
+      if Id_A == self.InitGuideNoteId then
+        return true
+      elseif Id_B == self.InitGuideNoteId then
+        return false
+      end
       if self.UnlockedGuideNotes[Id_A].Reward ~= self.UnlockedGuideNotes[Id_B].Reward then
         return self.UnlockedGuideNotes[Id_A].Reward > self.UnlockedGuideNotes[Id_B].Reward
       else

@@ -4426,7 +4426,7 @@ T.RT_510 = {
   [1] = "$#SkillNode[160112].CostSp$",
   [2] = "$#SkillEffects[160122].TaskEffects[1].Rate*100$%",
   [3] = "$#TargetFilter[#SkillEffects[160122].TargetFilter].LuaFilterParaments.Radius/100$$GText(\"SKILL_DESC_Meter\")$",
-  [4] = "$#SkillEffects[160121].TaskEffects[2].Rate*100$%$GText(\"Attr_ES_Name\")$",
+  [4] = "$#SkillEffects[160121].TaskEffects[2].Rate*100$%$GText(\"SKILL_DESC_MaxEs\")$",
   [5] = "$#SkillEffects[160121].TaskEffects[1].LastTime$$GText(\"SKILL_DESC_Second\")$",
   [6] = "$#Buff[160101].AddAttrs[1].Value*100$%"
 }

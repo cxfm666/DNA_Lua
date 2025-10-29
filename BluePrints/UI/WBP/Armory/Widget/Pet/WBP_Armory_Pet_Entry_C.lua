@@ -6,6 +6,7 @@ local M = Class({
 function M:Construct()
   self.Button_Area.OnClicked:Add(self, self.OnBtnClicked)
   self.Text_Empty:SetText(GText("UI_Pet_Affix_Without"))
+  self.Text_Lock:SetText(GText("UI_Aaccessory_Locked"))
 end
 
 function M:Init(Content)

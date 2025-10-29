@@ -85,6 +85,7 @@ function Guide_Image_Main:PreClose()
 end
 
 function Guide_Image_Main:Close()
+  self:RemoveDispatcher(EventID.CloseLoading)
   AudioManager(self):SetEventSoundParam(self, "Guide_Image_Main", {ToEnd = 1})
   self:RemoveTimer("GuideMainRefreshInput")
   self:ChangePlayerInputable(true)

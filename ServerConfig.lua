@@ -559,6 +559,55 @@ return {
     Name = "obt\229\155\189\230\156\141\231\153\187\229\189\14943",
     ServerID = 10043
   },
+  [10044] = {
+    Area = "China",
+    DevFlag = "Public",
+    GroupId = 10001,
+    Name = "obt\229\155\189\230\156\141\231\153\187\229\189\14944",
+    ServerID = 10044
+  },
+  [10045] = {
+    Area = "China",
+    DevFlag = "Public",
+    GroupId = 10001,
+    Name = "obt\229\155\189\230\156\141\231\153\187\229\189\14945",
+    ServerID = 10045
+  },
+  [10046] = {
+    Area = "China",
+    DevFlag = "Public",
+    GroupId = 10001,
+    Name = "obt\229\155\189\230\156\141\231\153\187\229\189\14946",
+    ServerID = 10046
+  },
+  [10047] = {
+    Area = "China",
+    DevFlag = "Public",
+    GroupId = 10001,
+    Name = "obt\229\155\189\230\156\141\231\153\187\229\189\14947",
+    ServerID = 10047
+  },
+  [10048] = {
+    Area = "China",
+    DevFlag = "Public",
+    GroupId = 10001,
+    Name = "obt\229\155\189\230\156\141\231\153\187\229\189\14948",
+    ServerID = 10048
+  },
+  [10049] = {
+    Area = "China",
+    DevFlag = "Public",
+    GroupId = 10001,
+    Name = "obt\229\155\189\230\156\141\231\153\187\229\189\14949",
+    ServerID = 10049
+  },
+  [10050] = {
+    Area = "China",
+    DevFlag = "Public",
+    GroupId = 10001,
+    Name = "obt\229\155\189\230\156\141\231\153\187\229\189\14950",
+    ServerID = 10050
+  },
   [20001] = {
     Area = "Asian",
     DevFlag = "Public",
@@ -628,6 +677,27 @@ return {
     GroupId = 20001,
     Name = "obt\228\186\154\230\156\141\231\153\187\229\189\14910",
     ServerID = 20010
+  },
+  [20011] = {
+    Area = "Asian",
+    DevFlag = "Public",
+    GroupId = 20001,
+    Name = "obt\228\186\154\230\156\141\231\153\187\229\189\14911",
+    ServerID = 20011
+  },
+  [20012] = {
+    Area = "Asian",
+    DevFlag = "Public",
+    GroupId = 20001,
+    Name = "obt\228\186\154\230\156\141\231\153\187\229\189\14912",
+    ServerID = 20012
+  },
+  [20013] = {
+    Area = "Asian",
+    DevFlag = "Public",
+    GroupId = 20001,
+    Name = "obt\228\186\154\230\156\141\231\153\187\229\189\14913",
+    ServerID = 20013
   },
   [30001] = {
     Area = "America",
@@ -699,6 +769,13 @@ return {
     Name = "obt\231\190\142\230\156\141\231\153\187\229\189\14910",
     ServerID = 30010
   },
+  [30011] = {
+    Area = "America",
+    DevFlag = "Public",
+    GroupId = 30001,
+    Name = "obt\231\190\142\230\156\141\231\153\187\229\189\14911",
+    ServerID = 30011
+  },
   [40001] = {
     Area = "Europe",
     DevFlag = "Public",
@@ -733,6 +810,13 @@ return {
     GroupId = 40001,
     Name = "obt\230\172\167\230\156\141\231\153\187\229\189\1495",
     ServerID = 40005
+  },
+  [40006] = {
+    Area = "Europe",
+    DevFlag = "Public",
+    GroupId = 40001,
+    Name = "obt\230\172\167\230\156\141\231\153\187\229\189\1496",
+    ServerID = 40006
   },
   [50001] = {
     Area = "HMT",
@@ -803,6 +887,20 @@ return {
     GroupId = 60001,
     Name = "obt\228\184\156\229\141\151\228\186\154\230\156\141\231\153\187\229\189\1495",
     ServerID = 60005
+  },
+  [60006] = {
+    Area = "SEA",
+    DevFlag = "Public",
+    GroupId = 60001,
+    Name = "obt\228\184\156\229\141\151\228\186\154\230\156\141\231\153\187\229\189\1496",
+    ServerID = 60006
+  },
+  [60007] = {
+    Area = "SEA",
+    DevFlag = "Public",
+    GroupId = 60001,
+    Name = "obt\228\184\156\229\141\151\228\186\154\230\156\141\231\153\187\229\189\1497",
+    ServerID = 60007
   },
   [70001] = {
     Area = "China",

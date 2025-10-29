@@ -48,9 +48,7 @@ function WBP_JoyStick_C:SetTouchVisibilityFromBattle(InVisibility)
   if InVisibility == UIConst.VisibilityOp.Collapsed or InVisibility == UIConst.VisibilityOp.Hidden then
     self.IsHide = true
     DebugPrint("HY@ UIManagerComponent InActivateVirtualJoystick== Try to InActivate Joystick")
-    if not UE4.UUCloudGameInstanceSubsystem.IsCloudGame() then
-      UIManager:InActivateVirtualJoystick()
-    end
+    UIManager:InActivateVirtualJoystick()
     UIManager:SetRealVirtualJoystickOpacity(0, self.InactiveOpacity)
     Controller:SetVirtualJoystickVisibility(false)
   else
@@ -68,17 +66,13 @@ function WBP_JoyStick_C:SetTouchVisibility(InVisibility)
   local Controller = UGameplayStatics.GetPlayerController(self, 0)
   if InVisibility == UIConst.VisibilityOp.Collapsed or InVisibility == UIConst.VisibilityOp.Hidden then
     self.IsHide = true
-    if not UE4.UUCloudGameInstanceSubsystem.IsCloudGame() then
-      UIManager:InActivateVirtualJoystick()
-    end
+    UIManager:InActivateVirtualJoystick()
     UIManager:SetRealVirtualJoystickOpacity(0, self.InactiveOpacity)
     Controller:SetVirtualJoystickVisibility(false)
     DebugPrint("HY@ UIManagerComponent InActivateVirtualJoystick== Try to InActivate Joystick")
   else
     self.IsHide = false
-    if not UE4.UUCloudGameInstanceSubsystem.IsCloudGame() then
-      UIManager:ActivateVirtualJoystick()
-    end
+    UIManager:ActivateVirtualJoystick()
     UIManager:SetRealVirtualJoystickZOrder(6)
     UIManager:SetRealVirtualJoystickOpacity(self.NowOpacity, self.InactiveOpacity)
     Controller:SetVirtualJoystickVisibility(true)

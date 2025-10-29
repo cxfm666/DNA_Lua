@@ -447,7 +447,9 @@ function M:InitRechargePage(SubTabData)
   end
   Widget:InitRechargeInfo(RechargeContent)
   if not CommonUtils:IfExistSystemGuideUI(self) or self:HasAnyFocus() or self:HasFocusedDescendants() then
-    Widget:SetFocus()
+    self:AddTimer(0.3, function()
+      Widget:SetFocus()
+    end)
   end
 end
 

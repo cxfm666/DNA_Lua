@@ -77,16 +77,16 @@ function S:DynamicCalSubOptionText()
       local result = string.sub(str, startIndex + 1)
       if "Resolution" == result then
         self.FirstValidResolution = nil
-        local OriginSubOptionText = CommonConst.ResolutionTable[self.NowOptionId - 2]
+        local OriginSubOptionText = CommonConst.ResolutionTable[self.NowOptionId - 1]
         local SubOptionText = {
           GText("UI_OPTION_Resolution_Cusrtom")
         }
         local SceneManager = GWorld.GameInstance:GetSceneManager()
         local GameUserSettings = UE4.UGameUserSettings:GetGameUserSettings()
         local MonitorResolution = GameUserSettings:GetDesktopResolution()
-        ScreenPrint("Yklua CurrentWindowSize  by GameUserSettings:GetDesktopResolution():  " .. MonitorResolution.X .. "x" .. MonitorResolution.Y)
+        DebugPrint("Yklua CurrentWindowSize  by GameUserSettings:GetDesktopResolution():  " .. MonitorResolution.X .. "x" .. MonitorResolution.Y)
         MonitorResolution = SceneManager:GetMonitorResolution()
-        ScreenPrint("Yklua CurrentWindowSize  by SceneManager:GetMonitorResolution(): " .. MonitorResolution.X .. "x" .. MonitorResolution.Y)
+        DebugPrint("Yklua CurrentWindowSize  by SceneManager:GetMonitorResolution(): " .. MonitorResolution.X .. "x" .. MonitorResolution.Y)
         if nil == OriginSubOptionText then
           OriginSubOptionText = {}
           OriginSubOptionText[1] = {
@@ -107,7 +107,7 @@ function S:DynamicCalSubOptionText()
               if self.FirstValidResolution == nil then
                 self.FirstValidResolution = value
               end
-              table.insert(SubOptionText, GText(self.ResolutionStrTable[self.NowOptionId - 2][index]))
+              table.insert(SubOptionText, GText(self.ResolutionStrTable[self.NowOptionId - 1][index]))
             end
           end
         end
@@ -627,12 +627,11 @@ end
 function S:SetInterfaceModeOldOptionId()
   local GameUserSettings = UE4.UGameUserSettings:GetGameUserSettings()
   self.InterfaceModeList = {
-    [1] = EWindowMode.Fullscreen,
-    [2] = EWindowMode.WindowedFullscreen,
+    [1] = EWindowMode.WindowedFullscreen,
+    [2] = EWindowMode.Windowed,
     [3] = EWindowMode.Windowed,
     [4] = EWindowMode.Windowed,
-    [5] = EWindowMode.Windowed,
-    [6] = EWindowMode.Windowed
+    [5] = EWindowMode.Windowed
   }
   self.ResolutionStrTable = {}
   for key, subTable in pairs(CommonConst.ResolutionTable) do
@@ -644,12 +643,12 @@ function S:SetInterfaceModeOldOptionId()
   end
   local NowInterfaceMode = GameUserSettings:GetFullscreenMode()
   self.OldOptionId = self:SetOldOptionId(self.InterfaceModeList, NowInterfaceMode)
-  if self.OldOptionId >= 3 then
+  if self.OldOptionId >= 2 then
     local ScreenScaleList = {
-      [12] = 3,
-      [16] = 4,
-      [21] = 5,
-      [23] = 6
+      [12] = 2,
+      [16] = 3,
+      [21] = 4,
+      [23] = 5
     }
     local Resolution = GameUserSettings:GetScreenResolution()
     local Index = Resolution.X * CommonConst.ScreenScale / Resolution.Y
@@ -691,6 +690,7 @@ function S:OnViewPortChanged()
   else
     self.NowMiniOptionId = 1
     self.WBP_Set_SuboptionUnfold.Text_Current:SetText(GText(self.MiniOptionTextList[self.NowMiniOptionId]))
+    DebugPrint("\229\136\134\232\190\168\231\142\135\232\162\171\230\137\139\229\138\168\228\191\174\230\148\185\239\188\140\232\174\190\231\189\174\228\184\186\232\135\170\229\174\154\228\185\137")
   end
 end
 
@@ -698,17 +698,6 @@ function S:SetInterfaceModeMiniOptionId()
   EventManager:AddEvent(EventID.GameViewportSizeChanged, self, self.OnViewPortChanged)
   local GameUserSettings = UE4.UGameUserSettings:GetGameUserSettings()
   local Resolution = GameUserSettings:GetScreenResolution()
-  self.ScreenScaleList = {
-    [12] = 4,
-    [16] = 3,
-    [21] = 2,
-    [23] = 1
-  }
-  local Index = Resolution.X * CommonConst.ScreenScale / Resolution.Y
-  Index = math.floor(Index + 0.5)
-  if self.ScreenScaleList[Index] == nil then
-    Index = CommonConst.DefaultScreenScale
-  end
   local ResolutionStr = Resolution.X .. "x" .. Resolution.Y
   local SelectId
   for ID, value in ipairs(self.MiniOptionTextList) do
@@ -731,10 +720,10 @@ function S:ForceCalMaxResolution()
   local GameUserSettings = UE4.UGameUserSettings:GetGameUserSettings()
   local Resolution = GameUserSettings:GetDesktopResolution()
   local Ratios = {
-    [3] = 12,
-    [4] = 16,
-    [5] = 21,
-    [6] = 23
+    [2] = 12,
+    [3] = 16,
+    [4] = 21,
+    [5] = 23
   }
   local maxWidth, maxHeight = self:AdjustResolutionToAspectRatio(Ratios[self.NowOptionId], 9, Resolution.X, Resolution.Y)
   return {X = maxWidth, Y = maxHeight}
@@ -758,7 +747,7 @@ function S:SaveInterfaceModeMiniOptionSetting()
   if self.bHavaChangeViewport ~= true then
     self.bHavaChangeViewport = true
   end
-  if self.NowOptionId <= 2 then
+  if self.NowOptionId <= 1 then
     return
   end
   local index = self.NowMiniOptionId

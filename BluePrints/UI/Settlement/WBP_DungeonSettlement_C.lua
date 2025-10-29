@@ -2597,10 +2597,7 @@ end
 
 function M:Handle_OnPCDown(InKeyName)
   DebugPrint("thy   Handle_OnPCDown", InKeyName)
-  if InKeyName == DataMgr.KeyboardText.Enter.Key then
-    self.WBP_Chat_CommonEnter:OnClick()
-    return true
-  elseif "Escape" == InKeyName then
+  if "Escape" == InKeyName then
     return true
   end
   return false
@@ -2709,6 +2706,21 @@ function M:Handle_OnGamePadDown(InKeyName)
     return true
   end
   return false
+end
+
+function M:OnPreviewKeyDown(MyGeometry, InKeyEvent)
+  local IsEventHandled = false
+  local InKey = UE4.UKismetInputLibrary.GetKey(InKeyEvent)
+  local InKeyName = UE4.UFormulaFunctionLibrary.Key_GetFName(InKey)
+  if "Enter" == InKeyName and self.WBP_Chat_CommonEnter and self.WBP_Chat_CommonEnter.OnClick then
+    self.WBP_Chat_CommonEnter:OnClick()
+    IsEventHandled = true
+  end
+  if IsEventHandled then
+    return UE4.UWidgetBlueprintLibrary.Handled()
+  else
+    return UE4.UWidgetBlueprintLibrary.UnHandled()
+  end
 end
 
 function M:OnKeyDown(MyGeometry, InKeyEvent)

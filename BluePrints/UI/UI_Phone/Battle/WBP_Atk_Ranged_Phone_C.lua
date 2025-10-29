@@ -208,9 +208,9 @@ function M:UpdateRangeWeaponButton()
   elseif 0 == MagazineBulletNum then
     EMUIAnimationSubsystem:EMPlayAnimation(self, self.Normal)
     self.CurButtonState = "ChangeMagazine"
-    self.ImageMat:SetTextureParameterValue("IconState", 1)
+    self.ImageMat:SetScalarParameterValue("IconState", 1)
   else
-    self.ImageMat:SetTextureParameterValue("IconState", 2)
+    self.ImageMat:SetScalarParameterValue("IconState", 2)
     self.CurButtonState = "Normal"
     self:StopAllAnimations()
     EMUIAnimationSubsystem:EMPlayAnimation(self, self.Normal)

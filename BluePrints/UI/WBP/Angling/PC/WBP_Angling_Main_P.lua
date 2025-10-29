@@ -336,8 +336,14 @@ function M:OnClickFishRod(RodId)
     ShowBKeyClose = false,
     TabConfigData = {
       Tabs = {
-        {Text = "\233\177\188\231\171\191", TabId = 1},
-        {Text = "\233\177\188\233\165\181", TabId = 2}
+        {
+          Text = GText("UI_Fishing_FishingRod"),
+          TabId = 1
+        },
+        {
+          Text = GText("UI_Fishing_FishingLure"),
+          TabId = 2
+        }
       },
       DefaultTabId = 1
     }

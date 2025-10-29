@@ -274,7 +274,7 @@ function WBP_Battle_Button_Phone:ChangeSkillButtonState(SkillName, StateName)
     elseif SkillName == ESkillName.Fire then
       self.AtkRanged.CurButtonState = "Empty"
       self.Bullet.CurButtonState = "Empty"
-      self.AtkRanged.ImageMat:SetTextureParameterValue("IconState", 0)
+      self.AtkRanged.ImageMat:SetScalarParameterValue("IconState", 0)
       self.Bullet:SetVisibility(ESlateVisibility.Collapsed)
     end
   elseif "UnEmpty" == StateName then

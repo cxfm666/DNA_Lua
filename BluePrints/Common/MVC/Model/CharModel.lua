@@ -1,7 +1,7 @@
 local ArmoryUtils = require("BluePrints.UI.WBP.Armory.ArmoryUtils")
 local M = Class()
-local _CardLevelResourceToUuid = {}
-local _CardLevelResourceToCharId = {}
+local _CardLevelResourceToUuids = {}
+local _CardLevelResourceToCharIds = {}
 local _UuidToCardLevelResourceId = {}
 local _SkinIdToCharId = {}
 local _CharAccessoryMap = {}
@@ -24,18 +24,20 @@ local function MappingChar(Char)
   local CardLevelUpData = DataMgr.CharCardLevelUp[Char.CharId]
   local Rid = CardLevelUpData and CardLevelUpData[0] and CardLevelUpData[0].ResourceId1
   if Rid then
-    _CardLevelResourceToUuid[Rid] = Char.Uuid
+    _CardLevelResourceToUuids[Rid] = _CardLevelResourceToUuids[Rid] or {}
+    _CardLevelResourceToUuids[Rid][Char.Uuid] = true
     _UuidToCardLevelResourceId[Char.Uuid] = Rid
     return true
   end
 end
 
-local function MappingCardLevelResource2CharId()
-  _CardLevelResourceToCharId = {}
+local function MappingCardLevelResource2CharIds()
+  _CardLevelResourceToCharIds = {}
   for CharId, value in pairs(DataMgr.CharCardLevelUp) do
     local Rid = value[0] and value[0].ResourceId1
     if Rid then
-      _CardLevelResourceToCharId[Rid] = CharId
+      _CardLevelResourceToCharIds[Rid] = _CardLevelResourceToCharIds[Rid] or {}
+      _CardLevelResourceToCharIds[Rid][CharId] = true
     end
   end
 end
@@ -68,16 +70,16 @@ function M:GetCharIdBySkinId(SkinId)
   return _SkinIdToCharId[SkinId]
 end
 
-function M:GetUuidByCardLevelResource(ResourceId)
-  return _CardLevelResourceToUuid[ResourceId]
+function M:GetUuidsByCardLevelResource(ResourceId)
+  return _CardLevelResourceToUuids[ResourceId]
 end
 
 function M:GetUuidByCharId(CharId)
   return _CharIdToUuid[CharId]
 end
 
-function M:GetCharIdByCardLevelResource(ResourceId)
-  return _CardLevelResourceToCharId[ResourceId]
+function M:GetCharIdsByCardLevelResource(ResourceId)
+  return _CardLevelResourceToCharIds[ResourceId]
 end
 
 function M:IsCharHasReward(CharId)
@@ -94,7 +96,7 @@ end
 
 function M:Init(Avatar)
   _UuidToCardLevelResourceId = {}
-  _CardLevelResourceToUuid = {}
+  _CardLevelResourceToUuids = {}
   _SkinIdToCharId = {}
   _CharAccessoryMap = {}
   _CharReward = {
@@ -111,7 +113,7 @@ function M:Init(Avatar)
       MappingSkin(Avatar.CommonChars[Char.CharId])
     end
   end
-  MappingCardLevelResource2CharId()
+  MappingCardLevelResource2CharIds()
   if Avatar.CharAccessory then
     for AccessoryId, value in pairs(Avatar.CharAccessory) do
       _CharAccessoryMap[AccessoryId] = true
@@ -159,18 +161,22 @@ function M:OnNewCharObtained(CharUuid)
 end
 
 function M:OnCharDeleted(CharUuid)
-  local CardLevelResourceId = _UuidToCardLevelResourceId[CharUuid]
-  if CardLevelResourceId then
-    local CharId = self:GetCharIdByCardLevelResource(CardLevelResourceId)
-    if CharId then
-      ArmoryUtils:_SetReddotReadCommon(CharId, DataMgr.ReddotNode.UnlockableChar.Name, true)
-    end
-  end
   local CharId = _UuidToCharId[CharUuid]
+  local CardLevelResourceId = _UuidToCardLevelResourceId[CharUuid]
+  if CharId then
+    ArmoryUtils:_SetReddotReadCommon(CharId, DataMgr.ReddotNode.UnlockableChar.Name, true)
+  end
   _UuidToCharId[CharUuid] = nil
   _CharIdToUuid[CharId] = nil
   _UuidToCardLevelResourceId[CharUuid] = nil
-  _CardLevelResourceToUuid[CardLevelResourceId] = nil
+  if _CardLevelResourceToUuids[CardLevelResourceId] then
+    for Uuid, _ in pairs(_CardLevelResourceToUuids[CardLevelResourceId]) do
+      if Uuid == CharUuid then
+        _CardLevelResourceToUuids[CardLevelResourceId][Uuid] = nil
+        break
+      end
+    end
+  end
   ArmoryUtils:SetItemReddotRead({
     ItemType = CommonConst.DataType.Char,
     Uuid = CharUuid
@@ -226,7 +232,7 @@ end
 
 function M:Destory()
   _UuidToCardLevelResourceId = {}
-  _CardLevelResourceToUuid = {}
+  _CardLevelResourceToUuids = {}
   _SkinIdToCharId = {}
   _CharAccessoryMap = {}
   EventManager:RemoveEvent(EventID.OnNewCharObtained, self)

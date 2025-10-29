@@ -1180,7 +1180,18 @@ function M:TriggerQuestTrackPanelTips(IsShow)
     end
     
     GenAndParseActionMapContent(self)
-  else
+  elseif 0 == self.VBox_SubTasks:GetChildrenCount() then
+    if self:IsPlayingAnimation(self.Tooltip_In) then
+      self:StopAnimation(self.Tooltip_In)
+    end
+    self:BindToAnimationFinished(self.Tooltip_Out, {
+      self,
+      function()
+        self:UnbindAllFromAnimationFinished(self.Tooltip_Out)
+        self.Panel_Tips:SetRenderOpacity(0)
+      end
+    })
+    self:PlayAnimation(self.Tooltip_Out)
   end
 end
 

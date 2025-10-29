@@ -559,6 +559,55 @@ return {
     name = "obt\229\155\189\230\156\141\231\153\187\229\189\14943",
     port = 8043
   },
+  [10044] = {
+    area = "China",
+    hostnum = 10044,
+    ip = "pan01-obtestchina.shyxhy.com",
+    name = "obt\229\155\189\230\156\141\231\153\187\229\189\14944",
+    port = 8044
+  },
+  [10045] = {
+    area = "China",
+    hostnum = 10045,
+    ip = "pan01-obtestchina.shyxhy.com",
+    name = "obt\229\155\189\230\156\141\231\153\187\229\189\14945",
+    port = 8045
+  },
+  [10046] = {
+    area = "China",
+    hostnum = 10046,
+    ip = "pan01-obtestchina.shyxhy.com",
+    name = "obt\229\155\189\230\156\141\231\153\187\229\189\14946",
+    port = 8046
+  },
+  [10047] = {
+    area = "China",
+    hostnum = 10047,
+    ip = "pan01-obtestchina.shyxhy.com",
+    name = "obt\229\155\189\230\156\141\231\153\187\229\189\14947",
+    port = 8047
+  },
+  [10048] = {
+    area = "China",
+    hostnum = 10048,
+    ip = "pan01-obtestchina.shyxhy.com",
+    name = "obt\229\155\189\230\156\141\231\153\187\229\189\14948",
+    port = 8048
+  },
+  [10049] = {
+    area = "China",
+    hostnum = 10049,
+    ip = "pan01-obtestchina.shyxhy.com",
+    name = "obt\229\155\189\230\156\141\231\153\187\229\189\14949",
+    port = 8049
+  },
+  [10050] = {
+    area = "China",
+    hostnum = 10050,
+    ip = "pan01-obtestchina.shyxhy.com",
+    name = "obt\229\155\189\230\156\141\231\153\187\229\189\14950",
+    port = 8050
+  },
   [20001] = {
     area = "Asian",
     hostnum = 20001,
@@ -628,6 +677,27 @@ return {
     ip = "pan01-obtestov.dna-panstudio.com",
     name = "obt\228\186\154\230\156\141\231\153\187\229\189\14910",
     port = 8210
+  },
+  [20011] = {
+    area = "Asian",
+    hostnum = 20011,
+    ip = "pan01-obtestov.dna-panstudio.com",
+    name = "obt\228\186\154\230\156\141\231\153\187\229\189\14911",
+    port = 8211
+  },
+  [20012] = {
+    area = "Asian",
+    hostnum = 20012,
+    ip = "pan01-obtestov.dna-panstudio.com",
+    name = "obt\228\186\154\230\156\141\231\153\187\229\189\14912",
+    port = 8212
+  },
+  [20013] = {
+    area = "Asian",
+    hostnum = 20013,
+    ip = "pan01-obtestov.dna-panstudio.com",
+    name = "obt\228\186\154\230\156\141\231\153\187\229\189\14913",
+    port = 8213
   },
   [30001] = {
     area = "America",
@@ -699,6 +769,13 @@ return {
     name = "obt\231\190\142\230\156\141\231\153\187\229\189\14910",
     port = 8310
   },
+  [30011] = {
+    area = "America",
+    hostnum = 30011,
+    ip = "pan01-obtestov.dna-panstudio.com",
+    name = "obt\231\190\142\230\156\141\231\153\187\229\189\14911",
+    port = 8311
+  },
   [40001] = {
     area = "Europe",
     hostnum = 40001,
@@ -733,6 +810,13 @@ return {
     ip = "pan01-obtestov.dna-panstudio.com",
     name = "obt\230\172\167\230\156\141\231\153\187\229\189\1495",
     port = 8405
+  },
+  [40006] = {
+    area = "Europe",
+    hostnum = 40006,
+    ip = "pan01-obtestov.dna-panstudio.com",
+    name = "obt\230\172\167\230\156\141\231\153\187\229\189\1496",
+    port = 8406
   },
   [50001] = {
     area = "HMT",
@@ -803,6 +887,20 @@ return {
     ip = "pan01-obtestov.dna-panstudio.com",
     name = "obt\228\184\156\229\141\151\228\186\154\230\156\141\231\153\187\229\189\1495",
     port = 8605
+  },
+  [60006] = {
+    area = "SEA",
+    hostnum = 60006,
+    ip = "pan01-obtestov.dna-panstudio.com",
+    name = "obt\228\184\156\229\141\151\228\186\154\230\156\141\231\153\187\229\189\1496",
+    port = 8606
+  },
+  [60007] = {
+    area = "SEA",
+    hostnum = 60007,
+    ip = "pan01-obtestov.dna-panstudio.com",
+    name = "obt\228\184\156\229\141\151\228\186\154\230\156\141\231\153\187\229\189\1497",
+    port = 8607
   },
   [70001] = {
     area = "China",

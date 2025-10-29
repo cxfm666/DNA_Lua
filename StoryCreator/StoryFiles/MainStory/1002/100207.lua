@@ -4328,8 +4328,8 @@ return {
         bDeadTriggerQuestFail = false,
         IsFairyLand = false,
         SubRegionId = 101101,
-        StoryGuideType = "Point",
-        StoryGuidePointName = "Mechanism_SaiqiBegin_1180476"
+        StoryGuideType = "Mechanism",
+        StoryGuidePointName = "Mechanism_QuestTrigger_1190005"
       },
       questNodeData = {
         lineData = {

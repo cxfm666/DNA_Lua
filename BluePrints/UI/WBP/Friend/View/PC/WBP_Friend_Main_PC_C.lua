@@ -267,7 +267,7 @@ function M:ShowBackBtn(bShow)
 end
 
 function M:OnKeyDown(MyGeometry, InKeyEvent)
-  local ParentHandled = M.Super.OnKeyDown(self, MyGeometry, InKeyEvent)
+  M.Super.OnKeyDown(self, MyGeometry, InKeyEvent)
   local InKey = UE4.UKismetInputLibrary.GetKey(InKeyEvent)
   local InKeyName = UE4.UFormulaFunctionLibrary.Key_GetFName(InKey)
   if not self.bChatBtnListOpen then
@@ -283,7 +283,7 @@ function M:OnKeyDown(MyGeometry, InKeyEvent)
   if self.InputSwitch[InKeyName] then
     self.InputSwitch[InKeyName]()
   end
-  return ParentHandled
+  return UIUtils.Handled
 end
 
 function M:OnTabSelected(TabWidget, TabItemInfo)

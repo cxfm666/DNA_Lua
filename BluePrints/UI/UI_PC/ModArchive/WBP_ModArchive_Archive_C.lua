@@ -654,8 +654,13 @@ function WBP_ModArchive_Archive_C:HandlePreTab()
     if CacheDetail.NewNum then
       DecreaseNum = CacheDetail.NewNum
       CacheDetail.NewNum = 0
-      CacheDetail.States = nil
     end
+    if CacheDetail.States then
+      for index, value in pairs(CacheDetail.States) do
+        CacheDetail.States[index] = false
+      end
+    end
+    CacheDetail.NewNum = 0
     ReddotManager.DecreaseLeafNodeCount(ReddotNode, DecreaseNum, CacheDetail)
   end
 end

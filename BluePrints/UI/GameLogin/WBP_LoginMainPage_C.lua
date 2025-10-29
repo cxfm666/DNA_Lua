@@ -1273,9 +1273,15 @@ function WBP_GameStartMainPage_C:ChangePlatformMode(Btn, Mode)
   self.CurrentPlatform = Mode
   GWorld.EnterPlatform = Mode
   Btn:SetActiveWidgetIndex(2)
-  if "PC" == Mode then
-    UInputSettings.GetInputSettings().bUseMouseForTouch = false
-    UE4.UUIFunctionLibrary.SetGameIsFakingTouchEvents(false)
+  if Mode == CommonConst.CLIENT_DEVICE_TYPE.PC then
+    if UUCloudGameInstanceSubsystem.IsCloudGame() then
+      UInputSettings.GetInputSettings().bUseMouseForTouch = true
+      UInputSettings.GetInputSettings().bAlwaysShowTouchInterface = true
+      UE4.UUIFunctionLibrary.SetGameIsFakingTouchEvents(true)
+    else
+      UInputSettings.GetInputSettings().bUseMouseForTouch = false
+      UE4.UUIFunctionLibrary.SetGameIsFakingTouchEvents(false)
+    end
     self.Switch_Phone:SetActiveWidgetIndex(0)
   else
     UInputSettings.GetInputSettings().bUseMouseForTouch = true

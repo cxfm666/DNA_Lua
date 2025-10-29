@@ -631,7 +631,7 @@ function M:AddRewardListItem(IsGot)
       MailRewardContent.IsShowDetails = false
       MailRewardContent.OnMouseButtonUpEvents = {
         Obj = self,
-        Callback = self.OpenShowCharDetail,
+        Callback = self.OpenShowWeaponDetail,
         Params = {
           Data.ItemId
         }

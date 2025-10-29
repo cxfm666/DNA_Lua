@@ -64,9 +64,10 @@ function Component:RequestDSLeaveBattle(Callback, AvatarEid)
 end
 
 function Component:HandleClientNetworkError(AvatarEid)
-  ServerPrint("HandleClientNetworkError", CommonUtils.ObjId2Str(AvatarEid))
-  local result = self:OnAvatarDestroy(AvatarEid)
-  self:CallServerMethod("OnHandleClientNetworkError", AvatarEid, result)
+  local AvatarEidStr = CommonUtils.ObjId2Str(AvatarEid)
+  ServerPrint("HandleClientNetworkError", AvatarEidStr)
+  self:HandleNotValidForReconnect(AvatarEidStr)
+  self:CallServerMethod("OnHandleClientNetworkError", AvatarEid)
 end
 
 function Component:OnAvatarDestroy(AvatarEid)

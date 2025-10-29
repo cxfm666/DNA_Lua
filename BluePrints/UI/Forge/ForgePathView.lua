@@ -91,6 +91,11 @@ end
 
 function ForgePathView:InitView(DraftId, MaxLen)
   self:PlayAnimation(self.In)
+  self.Btn_Close:TryOverrideSoundFunc(function()
+    AudioManager(self):PlayUISound(self, "event:/ui/common/click_btn_return", nil, nil)
+  end)
+  self.Btn_Close:UnBindEventOnClicked(self, self.OnBtnCloseClicked)
+  self.Btn_Close:BindEventOnClicked(self, self.OnBtnCloseClicked)
   self.ItemDetails.Forging:SetVisibility(UE4.ESlateVisibility.SelfHitTestInvisible)
   local Content = ForgeUtils:ConstructItemContentFromDraftId(DraftId)
   Content.OnMouseButtonDownEvent = {
@@ -163,10 +168,6 @@ function ForgePathView:TickRefreshView(DraftInfo)
 end
 
 function ForgePathView:BindUIEvents()
-  self.Btn_Close:BindEventOnClicked(self, self.OnBtnCloseClicked)
-  self.Btn_Close:TryOverrideSoundFunc(function()
-    AudioManager(self):PlayUISound(self, "event:/ui/common/click_btn_return", nil, nil)
-  end)
   for RowIndex, ItemRow in ipairs(self.ItemMap) do
     if 1 ~= RowIndex then
       for ColIndex, PathItem in ipairs(ItemRow) do

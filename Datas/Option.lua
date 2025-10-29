@@ -640,7 +640,6 @@ return ReadOnly("Option", {
     SortId = 27,
     SubOptionDefaultValue = {
       1,
-      1,
       2,
       2,
       2,
@@ -655,7 +654,6 @@ return ReadOnly("Option", {
     TagName = "UI_OPTION_DISPLAY",
     UCloudHide = true,
     UnFoldText = {
-      "UI_OPTION_InterfaceMode_Full",
       "UI_OPTION_InterfaceMode_NoFrame",
       "UI_OPTION_InterfaceMode_Window4:3",
       "UI_OPTION_InterfaceMode_Window16:9",

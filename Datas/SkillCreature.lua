@@ -102,13 +102,13 @@ T.RT_31 = {
 T.RT_32 = {Radius = 300, ShapeType = "Sphere"}
 T.RT_33 = {SpawnSocket = "Root", UseLocation = "Char"}
 T.RT_34 = {
-  true,
-  true,
-  false
+  false,
+  false,
+  true
 }
 T.RT_35 = {1030218}
 T.RT_36 = {
-  BoxHeight = 20,
+  BoxHeight = 200,
   BoxLength = 100,
   BoxWidth = 200,
   ShapeType = "Box"
@@ -656,14 +656,8 @@ T.RT_262 = {
   BoxWidth = 200,
   ShapeType = "Box"
 }
-T.RT_263 = {
-  BoxHeight = 200,
-  BoxLength = 100,
-  BoxWidth = 200,
-  ShapeType = "Box"
-}
-T.RT_264 = {PointId = 904, Speed = 1000}
-T.RT_265 = {
+T.RT_263 = {PointId = 904, Speed = 1000}
+T.RT_264 = {
   PointId = 904,
   SetRotation = true,
   Time = 1,
@@ -671,46 +665,46 @@ T.RT_265 = {
   X = 200,
   Y = 4000
 }
-T.RT_266 = {852004}
-T.RT_267 = {Speed = 7500}
-T.RT_268 = {
+T.RT_265 = {852004}
+T.RT_266 = {Speed = 7500}
+T.RT_267 = {
   BoxHeight = 250,
   BoxLength = 175,
   BoxWidth = 1000,
   ShapeType = "Box"
 }
-T.RT_269 = {
+T.RT_268 = {
   BoxHeight = 1000,
   BoxLength = 250,
   BoxWidth = 1250,
   ShapeType = "Box"
 }
-T.RT_270 = {Speed = 7500, WarningTime = 0.5}
-T.RT_271 = {852048}
-T.RT_272 = {
+T.RT_269 = {Speed = 7500, WarningTime = 0.5}
+T.RT_270 = {852048}
+T.RT_271 = {
   BoxHeight = 250,
   BoxLength = 250,
   BoxWidth = 1000,
   ShapeType = "Box"
 }
-T.RT_273 = {900081}
-T.RT_274 = {900403}
-T.RT_275 = {900404}
-T.RT_276 = {900407}
-T.RT_277 = {900503}
-T.RT_278 = {
+T.RT_272 = {900081}
+T.RT_273 = {900403}
+T.RT_274 = {900404}
+T.RT_275 = {900407}
+T.RT_276 = {900503}
+T.RT_277 = {
   BoxHeight = 70,
   BoxLength = 70,
   BoxWidth = 30,
   ShapeType = "Box"
 }
-T.RT_279 = {900708}
-T.RT_280 = {
+T.RT_278 = {900708}
+T.RT_279 = {
   SpawnSocket = "rootpendant_right01_a",
   UseLocation = "Char"
 }
-T.RT_281 = {MaxSpeedRate = 1.5}
-T.RT_282 = {950007}
+T.RT_280 = {MaxSpeedRate = 1.5}
+T.RT_281 = {950007}
 local ReadOnly = (DataMgr or {}).ReadOnly or function(n, x)
   return x
 end
@@ -6554,7 +6548,7 @@ return ReadOnly("SkillCreature", {
     FixedBornRotation = true,
     FixedMoveRotation = true,
     HitEnemy = T.RT_260,
-    ShapeInfo = T.RT_263,
+    ShapeInfo = T.RT_36,
     Speed = 1,
     TimeLife = 10,
     Vars = {PointId = 901, Speed = 1000}
@@ -6584,7 +6578,7 @@ return ReadOnly("SkillCreature", {
     FixedBornRotation = true,
     FixedMoveRotation = true,
     HitEnemy = T.RT_260,
-    ShapeInfo = T.RT_263,
+    ShapeInfo = T.RT_36,
     Speed = 1,
     TimeLife = 10,
     Vars = {PointId = 902, Speed = 1000}
@@ -6614,7 +6608,7 @@ return ReadOnly("SkillCreature", {
     FixedBornRotation = true,
     FixedMoveRotation = true,
     HitEnemy = T.RT_260,
-    ShapeInfo = T.RT_263,
+    ShapeInfo = T.RT_36,
     Speed = 1,
     TimeLife = 10,
     Vars = {PointId = 903, Speed = 1000}
@@ -6644,10 +6638,10 @@ return ReadOnly("SkillCreature", {
     FixedBornRotation = true,
     FixedMoveRotation = true,
     HitEnemy = T.RT_260,
-    ShapeInfo = T.RT_263,
+    ShapeInfo = T.RT_36,
     Speed = 1,
     TimeLife = 10,
-    Vars = T.RT_264
+    Vars = T.RT_263
   },
   [851928] = {
     BPPath = "/Game/BluePrints/Combat/SkillCreatures/Monster/BP_Common_PlaySkillPreFXRectangle.BP_Common_PlaySkillPreFXRectangle",
@@ -6656,7 +6650,7 @@ return ReadOnly("SkillCreature", {
     FixedBornRotation = true,
     Speed = 0,
     TimeLife = 10,
-    Vars = T.RT_265
+    Vars = T.RT_264
   },
   [851929] = {
     BPPath = "/Game/BluePrints/Combat/SkillCreatures/Monster/BP_Boss_Lieche_Skill01Gear.BP_Boss_Lieche_Skill01Gear",
@@ -6667,10 +6661,10 @@ return ReadOnly("SkillCreature", {
     FixedBornRotation = true,
     FixedMoveRotation = true,
     HitEnemy = T.RT_260,
-    ShapeInfo = T.RT_263,
+    ShapeInfo = T.RT_36,
     Speed = 1,
     TimeLife = 10,
-    Vars = T.RT_264
+    Vars = T.RT_263
   },
   [851930] = {
     BPPath = "/Game/BluePrints/Combat/SkillCreatures/Monster/BP_Common_PlaySkillPreFXRectangle.BP_Common_PlaySkillPreFXRectangle",
@@ -6679,7 +6673,7 @@ return ReadOnly("SkillCreature", {
     FixedBornRotation = true,
     Speed = 0,
     TimeLife = 10,
-    Vars = T.RT_265
+    Vars = T.RT_264
   },
   [852001] = {
     BPPath = "/Game/BluePrints/Combat/SkillCreatures/Monster/Boss_Aida/BP_Boss_Aida_Skill01Box01.BP_Boss_Aida_Skill01Box01",
@@ -6688,7 +6682,7 @@ return ReadOnly("SkillCreature", {
     CreatureId = 852001,
     DestroyWithCreator = 1,
     FixedMoveRotation = true,
-    HitEnemy = T.RT_266,
+    HitEnemy = T.RT_265,
     ShapeInfo = {
       BoxHeight = 1000,
       BoxLength = 700,
@@ -6697,7 +6691,7 @@ return ReadOnly("SkillCreature", {
     },
     Speed = 1,
     TimeLife = 10,
-    Vars = T.RT_267
+    Vars = T.RT_266
   },
   [852002] = {
     BPPath = "/Game/BluePrints/Combat/SkillCreatures/Monster/Boss_Aida/BP_Boss_Aida_Skill01Box02.BP_Boss_Aida_Skill01Box02",
@@ -6706,7 +6700,7 @@ return ReadOnly("SkillCreature", {
     CreatureId = 852002,
     DestroyWithCreator = 1,
     FixedMoveRotation = true,
-    HitEnemy = T.RT_266,
+    HitEnemy = T.RT_265,
     ShapeInfo = {
       BoxHeight = 500,
       BoxLength = 350,
@@ -6715,7 +6709,7 @@ return ReadOnly("SkillCreature", {
     },
     Speed = 1,
     TimeLife = 10,
-    Vars = T.RT_267
+    Vars = T.RT_266
   },
   [852003] = {
     BPPath = "/Game/BluePrints/Combat/SkillCreatures/Monster/Boss_Aida/BP_Boss_Aida_Skill01Box03.BP_Boss_Aida_Skill01Box03",
@@ -6724,7 +6718,7 @@ return ReadOnly("SkillCreature", {
     CreatureId = 852003,
     DestroyWithCreator = 1,
     FixedMoveRotation = true,
-    HitEnemy = T.RT_266,
+    HitEnemy = T.RT_265,
     ShapeInfo = {
       BoxHeight = 1000,
       BoxLength = 175,
@@ -6733,7 +6727,7 @@ return ReadOnly("SkillCreature", {
     },
     Speed = 1,
     TimeLife = 10,
-    Vars = T.RT_267
+    Vars = T.RT_266
   },
   [852004] = {
     BPPath = "/Game/BluePrints/Combat/SkillCreatures/Monster/Boss_Aida/BP_Boss_Aida_Skill01Box04.BP_Boss_Aida_Skill01Box04",
@@ -6742,7 +6736,7 @@ return ReadOnly("SkillCreature", {
     CreatureId = 852004,
     DestroyWithCreator = 1,
     FixedMoveRotation = true,
-    HitEnemy = T.RT_266,
+    HitEnemy = T.RT_265,
     ShapeInfo = {
       BoxHeight = 500,
       BoxLength = 500,
@@ -6751,7 +6745,7 @@ return ReadOnly("SkillCreature", {
     },
     Speed = 1,
     TimeLife = 10,
-    Vars = T.RT_267
+    Vars = T.RT_266
   },
   [852005] = {
     BPPath = "/Game/BluePrints/Combat/SkillCreatures/Monster/Boss_Aida/BP_Boss_Aida_Skill01Box05.BP_Boss_Aida_Skill01Box05",
@@ -6760,11 +6754,11 @@ return ReadOnly("SkillCreature", {
     CreatureId = 852005,
     DestroyWithCreator = 1,
     FixedMoveRotation = true,
-    HitEnemy = T.RT_266,
-    ShapeInfo = T.RT_268,
+    HitEnemy = T.RT_265,
+    ShapeInfo = T.RT_267,
     Speed = 1,
     TimeLife = 10,
-    Vars = T.RT_267
+    Vars = T.RT_266
   },
   [852006] = {
     BPPath = "/Game/BluePrints/Combat/SkillCreatures/Monster/Boss_Aida/BP_Boss_Aida_Skill01Box06.BP_Boss_Aida_Skill01Box06",
@@ -6773,11 +6767,11 @@ return ReadOnly("SkillCreature", {
     CreatureId = 852006,
     DestroyWithCreator = 1,
     FixedMoveRotation = true,
-    HitEnemy = T.RT_266,
-    ShapeInfo = T.RT_268,
+    HitEnemy = T.RT_265,
+    ShapeInfo = T.RT_267,
     Speed = 1,
     TimeLife = 10,
-    Vars = T.RT_267
+    Vars = T.RT_266
   },
   [852007] = {
     BPPath = "/Game/BluePrints/Combat/SkillCreatures/Monster/Boss_Aida/BP_Boss_Aida_Skill03AttachBurst.BP_Boss_Aida_Skill03AttachBurst",
@@ -6796,7 +6790,7 @@ return ReadOnly("SkillCreature", {
     DestroyWithCreator = 1,
     FixedMoveRotation = true,
     HitEnemy = {852011},
-    ShapeInfo = T.RT_269,
+    ShapeInfo = T.RT_268,
     Speed = 1,
     TimeLife = 10
   },
@@ -6857,7 +6851,7 @@ return ReadOnly("SkillCreature", {
     DestroyWithCreator = 1,
     FixedMoveRotation = true,
     HitEnemy = {852031},
-    ShapeInfo = T.RT_269,
+    ShapeInfo = T.RT_268,
     Speed = 1,
     TimeLife = 10
   },
@@ -6880,10 +6874,10 @@ return ReadOnly("SkillCreature", {
     FixedBornRotation = true,
     FixedMoveRotation = true,
     HitEnemy = {852034},
-    ShapeInfo = T.RT_268,
+    ShapeInfo = T.RT_267,
     Speed = 1,
     TimeLife = 10,
-    Vars = T.RT_270
+    Vars = T.RT_269
   },
   [852017] = {
     BPPath = "/Game/BluePrints/Combat/SkillCreatures/Monster/Boss_Aida/BP_Boss_Aida_Skill10SP1.BP_Boss_Aida_Skill10SP1",
@@ -6892,8 +6886,8 @@ return ReadOnly("SkillCreature", {
     CreatureId = 852017,
     DestroyWithCreator = 1,
     FixedMoveRotation = true,
-    HitEnemy = T.RT_271,
-    ShapeInfo = T.RT_272,
+    HitEnemy = T.RT_270,
+    ShapeInfo = T.RT_271,
     Speed = 1,
     TimeLife = 10,
     Vars = {Speed = 7500, WarningTime = 1.5}
@@ -6955,11 +6949,11 @@ return ReadOnly("SkillCreature", {
     CreatureId = 852023,
     DestroyWithCreator = 1,
     FixedMoveRotation = true,
-    HitEnemy = T.RT_271,
-    ShapeInfo = T.RT_272,
+    HitEnemy = T.RT_270,
+    ShapeInfo = T.RT_271,
     Speed = 1,
     TimeLife = 10,
-    Vars = T.RT_270
+    Vars = T.RT_269
   },
   [852024] = {
     BPPath = "/Game/BluePrints/Combat/SkillCreatures/Monster/Boss_Aida/BP_Boss_Aida_Skill10Field.BP_Boss_Aida_Skill10Field",
@@ -7139,8 +7133,8 @@ return ReadOnly("SkillCreature", {
     DelayPlayFX = 0.9,
     DestroyWithCreator = 1,
     DontDestroyExceptLife = true,
-    HitEnemy = T.RT_273,
-    HitScene = T.RT_273,
+    HitEnemy = T.RT_272,
+    HitScene = T.RT_272,
     ShapeInfo = {Radius = 200, ShapeType = "Sphere"},
     Speed = 0,
     Tags = T.RT_61,
@@ -7185,8 +7179,8 @@ return ReadOnly("SkillCreature", {
     CreatureId = 900401,
     DestroyWithCreator = 1,
     FixedBornRotation = true,
-    HitEnemy = T.RT_274,
-    HitScene = T.RT_275,
+    HitEnemy = T.RT_273,
+    HitScene = T.RT_274,
     ShapeInfo = T.RT_71,
     Speed = 1500,
     Tags = T.RT_3,
@@ -7204,8 +7198,8 @@ return ReadOnly("SkillCreature", {
     CreatureId = 900402,
     DestroyWithCreator = 1,
     FixedBornRotation = true,
-    HitEnemy = T.RT_274,
-    HitScene = T.RT_275,
+    HitEnemy = T.RT_273,
+    HitScene = T.RT_274,
     ShapeInfo = T.RT_71,
     Speed = 1500,
     Tags = T.RT_3,
@@ -7223,8 +7217,8 @@ return ReadOnly("SkillCreature", {
     CreatureId = 900403,
     DestroyWithCreator = 1,
     FixedBornRotation = true,
-    HitEnemy = T.RT_274,
-    HitScene = T.RT_275,
+    HitEnemy = T.RT_273,
+    HitScene = T.RT_274,
     ShapeInfo = T.RT_71,
     Speed = 1500,
     Tags = T.RT_3,
@@ -7242,8 +7236,8 @@ return ReadOnly("SkillCreature", {
     CreatureId = 900404,
     DestroyWithCreator = 1,
     FixedBornRotation = true,
-    HitEnemy = T.RT_274,
-    HitScene = T.RT_275,
+    HitEnemy = T.RT_273,
+    HitScene = T.RT_274,
     ShapeInfo = T.RT_71,
     Speed = 1500,
     Tags = T.RT_3,
@@ -7261,8 +7255,8 @@ return ReadOnly("SkillCreature", {
     GravityAdapt = true,
     GravityCoefficient = 1.5,
     GravityFactor = 1,
-    HitEnemy = T.RT_276,
-    HitScene = T.RT_276,
+    HitEnemy = T.RT_275,
+    HitScene = T.RT_275,
     ShapeInfo = T.RT_76,
     SpawnSocket = {SpawnSocket = "Petal06_a", UseLocation = "Char"},
     Speed = 1200,
@@ -7276,8 +7270,8 @@ return ReadOnly("SkillCreature", {
     GravityAdapt = true,
     GravityCoefficient = 1,
     GravityFactor = 1000,
-    HitEnemy = T.RT_277,
-    HitScene = T.RT_277,
+    HitEnemy = T.RT_276,
+    HitScene = T.RT_276,
     ShapeInfo = T.RT_46,
     SpawnSocket = T.RT_19,
     Speed = 900,
@@ -7289,7 +7283,7 @@ return ReadOnly("SkillCreature", {
     BoundCount = -1,
     CreatureId = 900601,
     HitEnemy = {900606},
-    ShapeInfo = T.RT_278,
+    ShapeInfo = T.RT_277,
     Speed = 0,
     TimeLife = 2
   },
@@ -7298,7 +7292,7 @@ return ReadOnly("SkillCreature", {
     BoundCount = -1,
     CreatureId = 900602,
     HitEnemy = {900613},
-    ShapeInfo = T.RT_278,
+    ShapeInfo = T.RT_277,
     Speed = 0,
     TimeLife = 2
   },
@@ -7320,9 +7314,9 @@ return ReadOnly("SkillCreature", {
     BoundCount = 1,
     BulletFXID = 900703,
     CreatureId = 900702,
-    DestroyEffects = T.RT_279,
-    HitEnemy = T.RT_279,
-    HitScene = T.RT_279,
+    DestroyEffects = T.RT_278,
+    HitEnemy = T.RT_278,
+    HitScene = T.RT_278,
     ShapeInfo = {Radius = 25, ShapeType = "Sphere"},
     SpawnSocket = T.RT_16,
     Speed = 700,
@@ -7340,11 +7334,11 @@ return ReadOnly("SkillCreature", {
     GravityCoefficient = 1.5,
     HitScene = {950002},
     ShapeInfo = T.RT_46,
-    SpawnSocket = T.RT_280,
+    SpawnSocket = T.RT_279,
     Speed = 800,
     Tags = T.RT_7,
     TimeLife = 10,
-    Vars = T.RT_281
+    Vars = T.RT_280
   },
   [950002] = {
     BPPath = "/Game/BluePrints/Combat/SkillCreatures/Monster/BP_NE_Dajie_Treasure.BP_NE_Dajie_Treasure",
@@ -7356,11 +7350,11 @@ return ReadOnly("SkillCreature", {
     GravityCoefficient = 1.5,
     HitScene = {950006},
     ShapeInfo = T.RT_46,
-    SpawnSocket = T.RT_280,
+    SpawnSocket = T.RT_279,
     Speed = 800,
     Tags = T.RT_7,
     TimeLife = 10,
-    Vars = T.RT_281
+    Vars = T.RT_280
   },
   [950003] = {
     BPPath = "/Game/BluePrints/Combat/SkillCreatures/Monster/BP_NE_Dajie_Treasure.BP_NE_Dajie_Treasure",
@@ -7370,13 +7364,13 @@ return ReadOnly("SkillCreature", {
     FixedBornRotation = true,
     FixedMoveRotation = true,
     GravityCoefficient = 1.5,
-    HitScene = T.RT_282,
+    HitScene = T.RT_281,
     ShapeInfo = T.RT_46,
-    SpawnSocket = T.RT_280,
+    SpawnSocket = T.RT_279,
     Speed = 800,
     Tags = T.RT_7,
     TimeLife = 10,
-    Vars = T.RT_281
+    Vars = T.RT_280
   },
   [950004] = {
     BPPath = "/Game/BluePrints/Combat/SkillCreatures/Monster/BP_NE_Dajie_Treasure.BP_NE_Dajie_Treasure",
@@ -7388,11 +7382,11 @@ return ReadOnly("SkillCreature", {
     GravityCoefficient = 1.5,
     HitScene = {950008},
     ShapeInfo = T.RT_46,
-    SpawnSocket = T.RT_280,
+    SpawnSocket = T.RT_279,
     Speed = 800,
     Tags = T.RT_7,
     TimeLife = 10,
-    Vars = T.RT_281
+    Vars = T.RT_280
   },
   [950005] = {
     BPPath = "/Game/BluePrints/Combat/SkillCreatures/Monster/BP_NE_Dajie_Treasure.BP_NE_Dajie_Treasure",
@@ -7404,11 +7398,11 @@ return ReadOnly("SkillCreature", {
     GravityCoefficient = 1.5,
     HitScene = {950009},
     ShapeInfo = T.RT_46,
-    SpawnSocket = T.RT_280,
+    SpawnSocket = T.RT_279,
     Speed = 800,
     Tags = T.RT_7,
     TimeLife = 10,
-    Vars = T.RT_281
+    Vars = T.RT_280
   },
   [950006] = {
     BPPath = "/Game/BluePrints/Combat/SkillCreatures/Monster/BP_NE_Dajie_Treasure02.BP_NE_Dajie_Treasure02",
@@ -7419,7 +7413,7 @@ return ReadOnly("SkillCreature", {
     GravityAdapt = true,
     GravityCoefficient = 2,
     GravityFactor = 9999,
-    HitScene = T.RT_282,
+    HitScene = T.RT_281,
     ScenceBound = 5,
     ShapeInfo = T.RT_46,
     SpawnSocket = T.RT_19,
@@ -7437,11 +7431,11 @@ return ReadOnly("SkillCreature", {
     GravityCoefficient = 1.5,
     HitScene = {950014},
     ShapeInfo = T.RT_46,
-    SpawnSocket = T.RT_280,
+    SpawnSocket = T.RT_279,
     Speed = 800,
     Tags = T.RT_7,
     TimeLife = 10,
-    Vars = T.RT_281
+    Vars = T.RT_280
   },
   [950008] = {
     BPPath = "/Game/BluePrints/Combat/SkillCreatures/Monster/BP_NE_Dajie_Treasure.BP_NE_Dajie_Treasure",
@@ -7453,11 +7447,11 @@ return ReadOnly("SkillCreature", {
     GravityCoefficient = 1.5,
     HitScene = {950015},
     ShapeInfo = T.RT_46,
-    SpawnSocket = T.RT_280,
+    SpawnSocket = T.RT_279,
     Speed = 800,
     Tags = T.RT_7,
     TimeLife = 10,
-    Vars = T.RT_281
+    Vars = T.RT_280
   },
   [950009] = {
     BPPath = "/Game/BluePrints/Combat/SkillCreatures/Monster/BP_NE_Dajie_Treasure.BP_NE_Dajie_Treasure",
@@ -7469,11 +7463,11 @@ return ReadOnly("SkillCreature", {
     GravityCoefficient = 1.5,
     HitScene = {950016},
     ShapeInfo = T.RT_46,
-    SpawnSocket = T.RT_280,
+    SpawnSocket = T.RT_279,
     Speed = 800,
     Tags = T.RT_7,
     TimeLife = 10,
-    Vars = T.RT_281
+    Vars = T.RT_280
   },
   [950010] = {
     BPPath = "/Game/BluePrints/Combat/SkillCreatures/Monster/BP_NE_Dajie_Treasure.BP_NE_Dajie_Treasure",
@@ -7485,11 +7479,11 @@ return ReadOnly("SkillCreature", {
     GravityCoefficient = 1.5,
     HitScene = {950017},
     ShapeInfo = T.RT_46,
-    SpawnSocket = T.RT_280,
+    SpawnSocket = T.RT_279,
     Speed = 800,
     Tags = T.RT_7,
     TimeLife = 10,
-    Vars = T.RT_281
+    Vars = T.RT_280
   },
   [950011] = {
     BPPath = "/Game/BluePrints/Combat/SkillCreatures/Monster/BP_NE_Dajie_TemBomb.BP_NE_Dajie_TemBomb",
@@ -7501,11 +7495,11 @@ return ReadOnly("SkillCreature", {
     GravityCoefficient = 1.5,
     HitScene = {950020},
     ShapeInfo = T.RT_46,
-    SpawnSocket = T.RT_280,
+    SpawnSocket = T.RT_279,
     Speed = 800,
     Tags = T.RT_7,
     TimeLife = 10,
-    Vars = T.RT_281
+    Vars = T.RT_280
   },
   [950101] = {
     BPPath = "/Game/BluePrints/Combat/SkillCreatures/Monster/BP_NE_Haer_Creature01.BP_NE_Haer_Creature01",

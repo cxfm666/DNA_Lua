@@ -112,7 +112,7 @@ return ReadOnly("SpawnNPC", {
       143
     },
     CameraPositionM = {
-      -5,
+      -13,
       360,
       144
     },
@@ -150,7 +150,7 @@ return ReadOnly("SpawnNPC", {
       65
     },
     CameraPositionM = {
-      -55,
+      -43,
       235,
       65
     },
@@ -211,7 +211,7 @@ return ReadOnly("SpawnNPC", {
       0.5
     },
     CameraPositionM = {
-      55,
+      75,
       163,
       102.5
     },
@@ -280,7 +280,7 @@ return ReadOnly("SpawnNPC", {
       145
     },
     CameraPositionM = {
-      37,
+      33,
       352,
       142
     },

@@ -59,6 +59,10 @@ function Component:GetDSLogPath()
   self:CallServer("GMGetDSLogPath", cb)
 end
 
+function Component:HandleNetworkError_ConnectTimeout()
+  self:CallServerMethod("HandleNetworkError_ConnectTimeout")
+end
+
 function Component:OnDisconnectDS()
   DebugPrint("OnDisconnectDS")
   if GWorld.GameInstance:IsInTempScene() then

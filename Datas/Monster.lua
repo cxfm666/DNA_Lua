@@ -1266,7 +1266,7 @@ T.RT_276 = {
   "Mon.Sq",
   "Mon.Melee",
   "Mon.Summon",
-  "Mon.Reward.C",
+  "Mon.Reward.E",
   "Mon.Elite"
 }
 T.RT_277 = {
@@ -1575,7 +1575,7 @@ return ReadOnly("Monster", {
       ChannelsSend = {0, 1}
     },
     AlertId = 103,
-    BT = "/Game/AssetDesign/AI/Z_Misc_Test/BT/BT_Test_Jailer.BT_Test_Jailer",
+    BT = "/Game/AssetDesign/AI/Monster/Jt_Zhihui/BT_7Jailer.BT_7Jailer",
     BattleRoleId = 115,
     BloodUIParmas = {
       UIStyleNodeName = "Rescue_Elite_Monster"
@@ -25511,7 +25511,7 @@ return ReadOnly("Monster", {
       "Mon.Sq",
       "Mon.Ranged",
       "Mon.Summon",
-      "Mon.Reward.C",
+      "Mon.Reward.E",
       "Mon.Elite"
     },
     GuideIconAni = "/Game/UI/WBP/GuidePoint/WBP_GuidePoint_Annihilate.WBP_GuidePoint_Annihilate",

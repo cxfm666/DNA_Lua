@@ -369,6 +369,7 @@ function M:OnKeyDown(MyGeometry, InKeyEvent)
         self:OnReturnKeyDown()
       else
         self.Achievement_Root.List_Achievement:SetFocus()
+        self:UpdateComTab(nil, false)
       end
       IsEventHandled = true
     elseif "Gamepad_FaceButton_Top" ~= InKeyName or self.OpenRewardDetail ~= nil and self.OpenRewardDetail == true then
@@ -495,7 +496,7 @@ function M:PCToGamepad()
   self.Achievement_Root.BP_Common_OneClickGet.Common_Button_Reward_PC.Img_GamePad:SetVisibility(ESlateVisibility.SelfHitTestInvisible)
 end
 
-function M:UpdateComTab(GetAllReward)
+function M:UpdateComTab(GetAllReward, CheckItem)
   if self.GetAllRewardTab == GetAllReward then
     return
   end
@@ -529,21 +530,35 @@ function M:UpdateComTab(GetAllReward)
           }
         },
         Desc = GText("UI_BACK")
-      },
-      {
-        GamePadInfoList = {
-          {
-            Type = "Img",
-            ImgShortPath = "LS",
-            Owner = self
-          }
-        },
-        Desc = GText("UI_Controller_CheckDetails")
       }
     }
     self.Com_Tab_P:UpdateBottomKeyInfo(BottomKeyInfo)
     self.GetAllRewardTab = true
-  else
+  elseif false == GetAllReward then
+    local BottomKeyInfo = {
+      {
+        KeyInfoList = {
+          {
+            Type = "Text",
+            Text = "Esc",
+            ClickCallback = self.OnReturnKeyDown,
+            Owner = self
+          }
+        },
+        GamePadInfoList = {
+          {
+            Type = "Img",
+            ImgShortPath = "B",
+            Owner = self
+          }
+        },
+        Desc = GText("UI_BACK")
+      }
+    }
+    self.Com_Tab_P:UpdateBottomKeyInfo(BottomKeyInfo)
+    self.GetAllRewardTab = false
+  end
+  if true == CheckItem then
     local BottomKeyInfo = {
       {
         KeyInfoList = {
@@ -575,7 +590,28 @@ function M:UpdateComTab(GetAllReward)
       }
     }
     self.Com_Tab_P:UpdateBottomKeyInfo(BottomKeyInfo)
-    self.GetAllRewardTab = false
+  elseif false == CheckItem then
+    local BottomKeyInfo = {
+      {
+        KeyInfoList = {
+          {
+            Type = "Text",
+            Text = "Esc",
+            ClickCallback = self.OnReturnKeyDown,
+            Owner = self
+          }
+        },
+        GamePadInfoList = {
+          {
+            Type = "Img",
+            ImgShortPath = "B",
+            Owner = self
+          }
+        },
+        Desc = GText("UI_BACK")
+      }
+    }
+    self.Com_Tab_P:UpdateBottomKeyInfo(BottomKeyInfo)
   end
 end
 

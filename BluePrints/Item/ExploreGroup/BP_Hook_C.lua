@@ -195,4 +195,11 @@ function M:NotDisplayInteractiveBtn(PlayerActor)
   self:CloseUI()
 end
 
+function M:ReceiveEndPlay(Reason)
+  if self.bDisplayBtn then
+    self:NotDisplayInteractiveBtn()
+  end
+  M.Super.ReceiveEndPlay(self, Reason)
+end
+
 return M

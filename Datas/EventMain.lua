@@ -73,7 +73,7 @@ return ReadOnly("EventMain", {
     EventNameBPPath = "/Game/UI/WBP/Activity/Widget/Abyss/WBP_Activity_Abyss_Title.WBP_Activity_Abyss_Title",
     EventRule = "Event_Rule_103002",
     EventSName = "Event_STitle_103002",
-    EventStartTime = 1761523200,
+    EventStartTime = 1761512400,
     EventTypeId = 103,
     EventUnlockCondition = 4220,
     MobileBluePrint = "/Game/UI/WBP/Activity/Mobile/ActivityJump/WBP_Activity_Jump_M.WBP_Activity_Jump_M",

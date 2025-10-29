@@ -954,26 +954,6 @@ T.RT_109 = {
   [18] = "DropTag_Prob"
 }
 T.RT_110 = {
-  [1] = "Resource",
-  [2] = "Resource",
-  [3] = "Resource",
-  [4] = "Resource",
-  [5] = "Resource",
-  [6] = "Resource",
-  [7] = "Resource",
-  [8] = "Resource",
-  [9] = "Resource",
-  [10] = "Resource",
-  [11] = "Resource",
-  [12] = "Resource",
-  [13] = "Resource",
-  [14] = "Resource",
-  [15] = "Resource",
-  [16] = "Resource",
-  [17] = "Resource",
-  [18] = "Resource"
-}
-T.RT_111 = {
   [1] = 11003,
   [2] = 11006,
   [3] = 11009,
@@ -992,6 +972,26 @@ T.RT_111 = {
   [16] = 11010,
   [17] = 11013,
   [18] = 11016
+}
+T.RT_111 = {
+  [1] = "Resource",
+  [2] = "Resource",
+  [3] = "Resource",
+  [4] = "Resource",
+  [5] = "Resource",
+  [6] = "Resource",
+  [7] = "Resource",
+  [8] = "Resource",
+  [9] = "Resource",
+  [10] = "Resource",
+  [11] = "Resource",
+  [12] = "Resource",
+  [13] = "Resource",
+  [14] = "Resource",
+  [15] = "Resource",
+  [16] = "Resource",
+  [17] = "Resource",
+  [18] = "Resource"
 }
 T.RT_112 = {
   [1] = 2011,
@@ -3115,40 +3115,21 @@ return ReadOnly("RewardView", {
   },
   [90505] = {
     DropType = T.RT_109,
-    Id = {
-      [1] = 11002,
-      [2] = 11005,
-      [3] = 11008,
-      [4] = 11011,
-      [5] = 11014,
-      [6] = 11017,
-      [7] = 11001,
-      [8] = 11004,
-      [9] = 11007,
-      [10] = 11010,
-      [11] = 11013,
-      [12] = 11016,
-      [13] = 11001,
-      [14] = 11004,
-      [15] = 11007,
-      [16] = 11010,
-      [17] = 11013,
-      [18] = 11016
-    },
+    Id = T.RT_110,
     RewardViewId = 90505,
-    Type = T.RT_110
+    Type = T.RT_111
   },
   [90506] = {
     DropType = T.RT_109,
-    Id = T.RT_111,
+    Id = T.RT_110,
     RewardViewId = 90506,
-    Type = T.RT_110
+    Type = T.RT_111
   },
   [90507] = {
     DropType = T.RT_109,
-    Id = T.RT_111,
+    Id = T.RT_110,
     RewardViewId = 90507,
-    Type = T.RT_110
+    Type = T.RT_111
   },
   [90601] = {
     DropType = T.RT_9,

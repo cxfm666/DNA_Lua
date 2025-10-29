@@ -290,9 +290,6 @@ function M:RecvTeamOnDelPlayer(Uid, LeaveReason)
     TeamModel:DelTeamMember(Member)
     ChatController:SendMemberChangeTipsToTeam(Member, TeamCommon.EventId.TeamOnDelPlayer)
     self:NotifyEvent(TeamCommon.EventId.TeamOnDelPlayer, Member, LeaveReason)
-    if 1 == #TeamModel:GetTeam().Members then
-      self:SendTeamLeave()
-    end
   end
 end
 
@@ -443,8 +440,6 @@ function M:_ApplyRecvTeamRefresh(TeamInfo)
     if TeamInfo then
       TeamModel:SetTeamBackup(TeamInfo)
     end
-  elseif 1 == #TeamInfo.Members then
-    self:SendTeamLeave()
   else
     self:RecvTeamOnInit(TeamInfo)
   end

@@ -1167,7 +1167,16 @@ function M:CreateConstInfos()
             IconPath = DataMgr.WeaponTab[1].IconPath,
             EnableMouseWheel = true,
             EnableDrag = true,
-            CheckIsUnlocked = self.AlwaysReturnTrue
+            CheckIsUnlocked = function()
+              return not self.Params.bHideWeaponAttribute
+            end,
+            CheckReddot = function(Params)
+              local Weapon = Params.Weapon or self[self.ComparedWeaponName]
+              if self.IsPreviewMode or not Weapon then
+                return false
+              end
+              return false, ArmoryUtils:TryAddWeaponRewardReddot(Weapon.WeaponId)
+            end
           },
           [ArmoryUtils.ArmorySubTabNames.Grade] = self.WeaponGradeSubTab,
           [ArmoryUtils.ArmorySubTabNames.Appearance] = self.WeaponAppearanceSubTab

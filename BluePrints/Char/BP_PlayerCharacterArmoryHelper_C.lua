@@ -199,7 +199,9 @@ function M:Move(CompleteFunc, Ease)
   
   if self.Duration <= 0 then
     CameraTransByLerpValue(1)
-    CompleteFunc()
+    if CompleteFunc then
+      CompleteFunc()
+    end
     return
   end
   self.LTweenHandle = UE4.ULTweenBPLibrary.FloatTo(self, {
@@ -212,8 +214,16 @@ function M:Move(CompleteFunc, Ease)
   if LTweenActor then
     LTweenActor:SetTickableWhenPaused(true)
   end
-  if CompleteFunc then
-    self.LTweenHandle:OnComplete({self, CompleteFunc})
+  self.LTweenHandle:OnComplete({
+    self,
+    function()
+      if CompleteFunc then
+        CompleteFunc()
+      end
+    end
+  })
+  if self.LTweenHandle_Scroll and IsValid(self.LTweenHandle_Scroll) then
+    ULTweenBPLibrary.KillIfIsTweening(self, self.LTweenHandle_Scroll, true)
   end
 end
 
@@ -286,7 +296,7 @@ function M:OnScrolling(DeltaScroll)
     return
   end
   if self.LTweenHandle_Scroll and IsValid(self.LTweenHandle_Scroll) then
-    ULTweenBPLibrary.KillIfIsTweening(self.LTweenHandle_Scroll, true)
+    ULTweenBPLibrary.KillIfIsTweening(self, self.LTweenHandle_Scroll, true)
   end
   local Speed = 20.0
   local EndValue

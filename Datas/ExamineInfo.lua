@@ -73,6 +73,13 @@ return ReadOnly("ExamineInfo", {
     JumpURL = "https://play.google.com/store/apps/details?id=com.panstudio.gplay.duetnightabyss.arpg.global"
   },
   ["18.0"] = {ChannelID = 240, ExamineKey = "18.0"},
+  ["19.0"] = {
+    ChannelID = 295,
+    ExamineKey = "19.0",
+    HostNum = 5003,
+    IP = "43.130.139.32",
+    Port = 8000
+  },
   ["2.0"] = {
     ChannelID = 18,
     ExamineKey = "2.0",

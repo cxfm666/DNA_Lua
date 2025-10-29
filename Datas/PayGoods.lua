@@ -37,7 +37,7 @@ return ReadOnly("PayGoods", {
     PriceEUR = 17.99,
     PriceGBP = 14.99,
     PriceHKD = 118,
-    PriceJPY = 2250,
+    PriceJPY = 2280,
     PriceKRW = 19000,
     PriceRUB = 1290,
     PriceTWD = 490,

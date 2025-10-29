@@ -47,6 +47,9 @@ function WBP_PreGameStartAnim_C:Construct()
       GameInputModeSubsystem:SetMouseCursorVisable(false)
       GameInputModeSubsystem:SetMouseCursorOpacity(0.0)
     end
+    UInputSettings.GetInputSettings().bUseMouseForTouch = true
+    UInputSettings.GetInputSettings().bAlwaysShowTouchInterface = true
+    UE4.UUIFunctionLibrary.SetGameIsFakingTouchEvents(true)
   end
 end
 

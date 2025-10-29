@@ -31,7 +31,6 @@ function Component:EnterRoom(RoomId)
   
   local function callback(ret, UpdateInfo)
     if not ErrorCode:Check(ret) then
-      self:ShowErrorByErrorCode("EnterRoom", ret)
       return
     end
     if not GWorld.RougeLikeManager then

@@ -194,6 +194,7 @@ return ReadOnly("ShopItem", {
     TypeNum = 1
   },
   [120203] = {
+    EndTime = 1672632000,
     IsSpPopup = 1,
     ItemId = 120203,
     ItemType = "CharAccessory",
@@ -2118,7 +2119,7 @@ return ReadOnly("ShopItem", {
     SubTabId = 1802,
     TypeId = 2016,
     TypeNum = 1,
-    UnlockLevel = 50
+    UnlockLevel = 51
   },
   [152017] = {
     ItemId = 152017,
@@ -2166,7 +2167,7 @@ return ReadOnly("ShopItem", {
     SubTabId = 1802,
     TypeId = 2020,
     TypeNum = 1,
-    UnlockLevel = 58
+    UnlockLevel = 59
   },
   [152021] = {
     ItemId = 152021,
@@ -2178,7 +2179,7 @@ return ReadOnly("ShopItem", {
     SubTabId = 1802,
     TypeId = 2021,
     TypeNum = 1,
-    UnlockLevel = 52
+    UnlockLevel = 53
   },
   [152022] = {
     ItemId = 152022,
@@ -3417,7 +3418,7 @@ return ReadOnly("ShopItem", {
     SubTabId = 1803,
     TypeId = 151321,
     TypeNum = 1,
-    UnlockLevel = 55
+    UnlockLevel = 60
   },
   [651322] = {
     ItemId = 651322,
@@ -3429,7 +3430,7 @@ return ReadOnly("ShopItem", {
     SubTabId = 1803,
     TypeId = 151322,
     TypeNum = 1,
-    UnlockLevel = 55
+    UnlockLevel = 60
   },
   [651323] = {
     ItemId = 651323,
@@ -3441,7 +3442,7 @@ return ReadOnly("ShopItem", {
     SubTabId = 1803,
     TypeId = 151323,
     TypeNum = 1,
-    UnlockLevel = 55
+    UnlockLevel = 60
   },
   [651324] = {
     ItemId = 651324,
@@ -3453,7 +3454,7 @@ return ReadOnly("ShopItem", {
     SubTabId = 1803,
     TypeId = 151324,
     TypeNum = 1,
-    UnlockLevel = 55
+    UnlockLevel = 60
   },
   [651325] = {
     ItemId = 651325,
@@ -3465,7 +3466,7 @@ return ReadOnly("ShopItem", {
     SubTabId = 1803,
     TypeId = 151325,
     TypeNum = 1,
-    UnlockLevel = 55
+    UnlockLevel = 60
   },
   [651326] = {
     ItemId = 651326,
@@ -3477,7 +3478,7 @@ return ReadOnly("ShopItem", {
     SubTabId = 1803,
     TypeId = 151326,
     TypeNum = 1,
-    UnlockLevel = 55
+    UnlockLevel = 60
   },
   [651331] = {
     ItemId = 651331,
@@ -3489,7 +3490,7 @@ return ReadOnly("ShopItem", {
     SubTabId = 1803,
     TypeId = 151331,
     TypeNum = 1,
-    UnlockLevel = 55
+    UnlockLevel = 58
   },
   [651332] = {
     ItemId = 651332,
@@ -3501,7 +3502,7 @@ return ReadOnly("ShopItem", {
     SubTabId = 1803,
     TypeId = 151332,
     TypeNum = 1,
-    UnlockLevel = 55
+    UnlockLevel = 58
   },
   [651333] = {
     ItemId = 651333,
@@ -3513,7 +3514,7 @@ return ReadOnly("ShopItem", {
     SubTabId = 1803,
     TypeId = 151333,
     TypeNum = 1,
-    UnlockLevel = 55
+    UnlockLevel = 58
   },
   [651334] = {
     ItemId = 651334,
@@ -3525,7 +3526,7 @@ return ReadOnly("ShopItem", {
     SubTabId = 1803,
     TypeId = 151334,
     TypeNum = 1,
-    UnlockLevel = 55
+    UnlockLevel = 58
   },
   [651335] = {
     ItemId = 651335,
@@ -3537,7 +3538,7 @@ return ReadOnly("ShopItem", {
     SubTabId = 1803,
     TypeId = 151335,
     TypeNum = 1,
-    UnlockLevel = 55
+    UnlockLevel = 58
   },
   [651336] = {
     ItemId = 651336,
@@ -3549,7 +3550,7 @@ return ReadOnly("ShopItem", {
     SubTabId = 1803,
     TypeId = 151336,
     TypeNum = 1,
-    UnlockLevel = 55
+    UnlockLevel = 58
   },
   [651711] = {
     ItemId = 651711,
@@ -3561,7 +3562,7 @@ return ReadOnly("ShopItem", {
     SubTabId = 1803,
     TypeId = 151711,
     TypeNum = 1,
-    UnlockLevel = 50
+    UnlockLevel = 56
   },
   [651712] = {
     ItemId = 651712,
@@ -3573,7 +3574,7 @@ return ReadOnly("ShopItem", {
     SubTabId = 1803,
     TypeId = 151712,
     TypeNum = 1,
-    UnlockLevel = 50
+    UnlockLevel = 54
   },
   [651713] = {
     ItemId = 651713,
@@ -3585,7 +3586,7 @@ return ReadOnly("ShopItem", {
     SubTabId = 1803,
     TypeId = 151713,
     TypeNum = 1,
-    UnlockLevel = 50
+    UnlockLevel = 52
   },
   [651714] = {
     ItemId = 651714,
@@ -3609,7 +3610,7 @@ return ReadOnly("ShopItem", {
     SubTabId = 1803,
     TypeId = 151721,
     TypeNum = 1,
-    UnlockLevel = 50
+    UnlockLevel = 56
   },
   [651722] = {
     ItemId = 651722,
@@ -3621,7 +3622,7 @@ return ReadOnly("ShopItem", {
     SubTabId = 1803,
     TypeId = 151722,
     TypeNum = 1,
-    UnlockLevel = 50
+    UnlockLevel = 54
   },
   [651723] = {
     ItemId = 651723,
@@ -3633,7 +3634,7 @@ return ReadOnly("ShopItem", {
     SubTabId = 1803,
     TypeId = 151723,
     TypeNum = 1,
-    UnlockLevel = 50
+    UnlockLevel = 52
   },
   [651724] = {
     ItemId = 651724,
@@ -3657,7 +3658,7 @@ return ReadOnly("ShopItem", {
     SubTabId = 1803,
     TypeId = 151731,
     TypeNum = 1,
-    UnlockLevel = 50
+    UnlockLevel = 56
   },
   [651732] = {
     ItemId = 651732,
@@ -3669,7 +3670,7 @@ return ReadOnly("ShopItem", {
     SubTabId = 1803,
     TypeId = 151732,
     TypeNum = 1,
-    UnlockLevel = 50
+    UnlockLevel = 54
   },
   [651733] = {
     ItemId = 651733,
@@ -3681,7 +3682,7 @@ return ReadOnly("ShopItem", {
     SubTabId = 1803,
     TypeId = 151733,
     TypeNum = 1,
-    UnlockLevel = 50
+    UnlockLevel = 52
   },
   [651734] = {
     ItemId = 651734,
@@ -3705,7 +3706,7 @@ return ReadOnly("ShopItem", {
     SubTabId = 1803,
     TypeId = 151741,
     TypeNum = 1,
-    UnlockLevel = 50
+    UnlockLevel = 56
   },
   [651742] = {
     ItemId = 651742,
@@ -3717,7 +3718,7 @@ return ReadOnly("ShopItem", {
     SubTabId = 1803,
     TypeId = 151742,
     TypeNum = 1,
-    UnlockLevel = 50
+    UnlockLevel = 54
   },
   [651743] = {
     ItemId = 651743,
@@ -3729,7 +3730,7 @@ return ReadOnly("ShopItem", {
     SubTabId = 1803,
     TypeId = 151743,
     TypeNum = 1,
-    UnlockLevel = 50
+    UnlockLevel = 52
   },
   [651744] = {
     ItemId = 651744,
@@ -3753,7 +3754,7 @@ return ReadOnly("ShopItem", {
     SubTabId = 1803,
     TypeId = 151751,
     TypeNum = 1,
-    UnlockLevel = 50
+    UnlockLevel = 56
   },
   [651752] = {
     ItemId = 651752,
@@ -3765,7 +3766,7 @@ return ReadOnly("ShopItem", {
     SubTabId = 1803,
     TypeId = 151752,
     TypeNum = 1,
-    UnlockLevel = 50
+    UnlockLevel = 54
   },
   [651753] = {
     ItemId = 651753,
@@ -3777,7 +3778,7 @@ return ReadOnly("ShopItem", {
     SubTabId = 1803,
     TypeId = 151753,
     TypeNum = 1,
-    UnlockLevel = 50
+    UnlockLevel = 52
   },
   [651754] = {
     ItemId = 651754,
@@ -3801,7 +3802,7 @@ return ReadOnly("ShopItem", {
     SubTabId = 1803,
     TypeId = 151761,
     TypeNum = 1,
-    UnlockLevel = 50
+    UnlockLevel = 56
   },
   [651762] = {
     ItemId = 651762,
@@ -3813,7 +3814,7 @@ return ReadOnly("ShopItem", {
     SubTabId = 1803,
     TypeId = 151762,
     TypeNum = 1,
-    UnlockLevel = 50
+    UnlockLevel = 54
   },
   [651763] = {
     ItemId = 651763,
@@ -3825,7 +3826,7 @@ return ReadOnly("ShopItem", {
     SubTabId = 1803,
     TypeId = 151763,
     TypeNum = 1,
-    UnlockLevel = 50
+    UnlockLevel = 52
   },
   [651764] = {
     ItemId = 651764,
@@ -5035,7 +5036,7 @@ return ReadOnly("ShopItem", {
     PurchaseLimit = 10,
     RefreshTime = T.RT_1,
     Sequence = 90,
-    StartTime = 1761523200,
+    StartTime = 1761512400,
     SubTabId = 100001,
     TypeId = 2013,
     TypeNum = 1
@@ -5048,7 +5049,7 @@ return ReadOnly("ShopItem", {
     PurchaseLimit = 10,
     RefreshTime = T.RT_1,
     Sequence = 80,
-    StartTime = 1761523200,
+    StartTime = 1761512400,
     SubTabId = 100001,
     TypeId = 2009,
     TypeNum = 1
@@ -5061,7 +5062,7 @@ return ReadOnly("ShopItem", {
     PurchaseLimit = 10,
     RefreshTime = T.RT_1,
     Sequence = 70,
-    StartTime = 1761523200,
+    StartTime = 1761512400,
     SubTabId = 100001,
     TypeId = 3006,
     TypeNum = 1
@@ -5074,7 +5075,7 @@ return ReadOnly("ShopItem", {
     PurchaseLimit = 10,
     RefreshTime = T.RT_1,
     Sequence = 50,
-    StartTime = 1761523200,
+    StartTime = 1761512400,
     SubTabId = 100001,
     TypeId = 101,
     TypeNum = 5000
@@ -5087,7 +5088,7 @@ return ReadOnly("ShopItem", {
     PurchaseLimit = 10,
     RefreshTime = T.RT_1,
     Sequence = 60,
-    StartTime = 1761523200,
+    StartTime = 1761512400,
     SubTabId = 100001,
     TypeId = 102,
     TypeNum = 100
@@ -5100,7 +5101,7 @@ return ReadOnly("ShopItem", {
     PurchaseLimit = 1,
     RefreshTime = T.RT_1,
     Sequence = 100,
-    StartTime = 1761523200,
+    StartTime = 1761512400,
     SubTabId = 100001,
     TypeId = 3007,
     TypeNum = 1
@@ -5112,7 +5113,7 @@ return ReadOnly("ShopItem", {
     PriceType = 214,
     Require = 10000104,
     Sequence = 40,
-    StartTime = 1761523200,
+    StartTime = 1761512400,
     SubTabId = 100001,
     TypeId = 101,
     TypeNum = 2000
@@ -5125,7 +5126,7 @@ return ReadOnly("ShopItem", {
     PriceType = 214,
     PurchaseLimit = 10,
     Sequence = 101,
-    StartTime = 1761523200,
+    StartTime = 1761512400,
     SubTabId = 100001,
     TypeId = 2029,
     TypeNum = 1
@@ -5139,7 +5140,7 @@ return ReadOnly("ShopItem", {
     PurchaseLimit = 20,
     Require = 10000108,
     Sequence = 102,
-    StartTime = 1761523200,
+    StartTime = 1761512400,
     SubTabId = 100001,
     TypeId = 2029,
     TypeNum = 1
@@ -5152,7 +5153,7 @@ return ReadOnly("ShopItem", {
     PurchaseLimit = 2,
     RefreshTime = T.RT_1,
     Sequence = 99,
-    StartTime = 1761523200,
+    StartTime = 1761512400,
     SubTabId = 100001,
     TypeId = 20027,
     TypeNum = 1
@@ -5165,7 +5166,7 @@ return ReadOnly("ShopItem", {
     PurchaseLimit = 2,
     RefreshTime = T.RT_1,
     Sequence = 98,
-    StartTime = 1761523200,
+    StartTime = 1761512400,
     SubTabId = 100001,
     TypeId = 20028,
     TypeNum = 1
@@ -5204,7 +5205,7 @@ return ReadOnly("ShopItem", {
     PriceType = 214,
     PurchaseLimit = 1,
     Sequence = 94,
-    StartTime = 1761523200,
+    StartTime = 1761512400,
     SubTabId = 100001,
     TypeId = 102001,
     TypeNum = 1,
@@ -5217,7 +5218,7 @@ return ReadOnly("ShopItem", {
     PriceType = 214,
     PurchaseLimit = 1,
     Sequence = 95,
-    StartTime = 1761523200,
+    StartTime = 1761512400,
     SubTabId = 100001,
     TypeId = 101002,
     TypeNum = 1,
@@ -5230,7 +5231,7 @@ return ReadOnly("ShopItem", {
     PriceType = 214,
     PurchaseLimit = 1,
     Sequence = 96,
-    StartTime = 1761523200,
+    StartTime = 1761512400,
     SubTabId = 100001,
     TypeId = 106001,
     TypeNum = 1,
@@ -5243,7 +5244,7 @@ return ReadOnly("ShopItem", {
     PriceType = 214,
     PurchaseLimit = 1,
     Sequence = 97,
-    StartTime = 1761523200,
+    StartTime = 1761512400,
     SubTabId = 100001,
     TypeId = 102004,
     TypeNum = 1,

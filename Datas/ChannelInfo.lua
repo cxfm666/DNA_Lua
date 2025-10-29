@@ -118,7 +118,7 @@ return ReadOnly("ChannelInfo", {
     DeviceType = "mobile",
     Name = "\229\174\137\229\141\147\228\186\145\230\184\184\230\136\143",
     OS = "android",
-    Provider = "hero",
+    Provider = "cloud",
     Region = "china",
     SDKChannelId = 0
   },
@@ -128,7 +128,7 @@ return ReadOnly("ChannelInfo", {
     DeviceType = "mobile",
     Name = "iOS\228\186\145\230\184\184\230\136\143",
     OS = "ios",
-    Provider = "hero",
+    Provider = "cloud",
     Region = "china",
     SDKChannelId = 0
   },
@@ -138,7 +138,7 @@ return ReadOnly("ChannelInfo", {
     DeviceType = "mobile",
     Name = "OPPO",
     OS = "android",
-    Provider = "hero",
+    Provider = "oppo",
     Region = "china",
     SDKChannelId = 0
   }

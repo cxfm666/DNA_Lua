@@ -591,18 +591,28 @@ function Event:CheckIsLeak(eventName, bLog)
   local RealCount = 0
   if 0 ~= self.LastCount and self.LastCount < self.NowCount and bLog then
     local Visited = {}
-    ScreenPrint(ErrorTag .. string.format("EventManager\228\186\139\228\187\182 %s \229\143\145\231\142\176\229\134\133\229\173\152\230\179\132\230\188\143\239\188\140\232\175\183\230\163\128\230\159\165\232\175\165\228\186\139\228\187\182\230\179\168\229\134\140\229\144\142\230\152\175\229\144\166\230\173\163\231\161\174\230\184\133\231\144\134\239\188\140LastCount:%s\239\188\140NowCount:%s", eventName, self.LastCount, self.NowCount))
+    local Logger = {}
     for obj, List in pairs(self.List) do
       if obj.Overridden and not Visited[obj.Overridden] then
-        DebugPrint(ErrorTag, string.format("\232\175\165\230\179\132\230\188\143\231\154\132\228\186\139\228\187\182\231\187\145\229\174\154\231\154\132\229\135\189\230\149\176\230\149\176\233\135\143:%s, \231\177\187\229\144\141:", #List), obj.Overridden)
-        Visited[obj.Overridden] = 1
-      elseif obj.__Name__ then
-        DebugPrint(ErrorTag, string.format("\232\175\165\230\179\132\230\188\143\231\154\132\228\186\139\228\187\182\231\187\145\229\174\154\231\154\132\229\135\189\230\149\176\230\149\176\233\135\143:%s, \231\177\187\229\144\141:%s", #List, obj.__Name__))
-      elseif not Visited[obj] then
-        DebugPrintTable(obj, 1, ErrorTag, string.format("\232\175\165\230\179\132\230\188\143\231\154\132\228\186\139\228\187\182\231\187\145\229\174\154\231\154\132\229\135\189\230\149\176\230\149\176\233\135\143:%s, \229\175\185\232\177\161:", #List))
-        Visited[obj] = 1
+        if string.startswith(tostring(obj.Overridden), "UWorldTravelSubsystem") then
+          self.NowCount = self.NowCount - #List
+        else
+          Visited[obj.Overridden] = 1
+          Logger[obj.Overridden] = #List
+          elseif obj.__Name__ then
+            Logger[obj.__Name__] = #List
+          elseif not Visited[obj] then
+            Visited[obj] = 1
+            Logger[obj] = #List
+          end
+          RealCount = RealCount + #List
+        end
+    end
+    if self.LastCount < self.NowCount then
+      ScreenPrint(ErrorTag .. string.format("EventManager\228\186\139\228\187\182 %s \229\143\145\231\142\176\229\134\133\229\173\152\230\179\132\230\188\143\239\188\140\232\175\183\230\163\128\230\159\165\232\175\165\228\186\139\228\187\182\230\179\168\229\134\140\229\144\142\230\152\175\229\144\166\230\173\163\231\161\174\230\184\133\231\144\134\239\188\140LastCount:%s\239\188\140NowCount:%s", eventName, self.LastCount, self.NowCount))
+      for Obj, Count in pairs(Logger) do
+        DebugPrint(ErrorTag, string.format("\232\175\165\230\179\132\230\188\143\231\154\132\228\186\139\228\187\182\231\187\145\229\174\154\231\154\132\229\135\189\230\149\176\230\149\176\233\135\143:%s, \231\177\187\229\144\141or\229\175\185\232\177\161:", Count), Obj)
       end
-      RealCount = RealCount + #List
     end
     self.NowCount = RealCount
   end

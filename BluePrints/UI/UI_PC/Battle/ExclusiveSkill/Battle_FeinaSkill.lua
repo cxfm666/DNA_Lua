@@ -228,7 +228,7 @@ function M:OnBuffsChanged(Buffs)
   local NewBuffState = {}
   local bHasAnyBuff = false
   for _, Buff in pairs(Buffs) do
-    if Buff.BuffId and nil ~= self.Buff2Anim[Buff.BuffId] then
+    if IsValid(Buff) and Buff.BuffId and nil ~= self.Buff2Anim[Buff.BuffId] then
       NewBuffState[Buff.BuffId] = true
       bHasAnyBuff = true
     end

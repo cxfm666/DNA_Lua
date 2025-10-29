@@ -180,6 +180,14 @@ function BP_EMGameInstance_C:HandleNetworkError(FailureType, bIsServer)
   print(_G.LogTag, "HandleNetworkError", FailureType, bIsServer)
   if not bIsServer and not self.bHandleNetError then
     self.bHandleNetError = true
+    if 4 == FailureType then
+      print(_G.LogTag, "HandleNetworkError ConnectTimeout")
+      local Avatar = GWorld:GetAvatar()
+      if Avatar then
+        Avatar:HandleNetworkError_ConnectTimeout()
+        return
+      end
+    end
     GWorld.NetworkMgr:DisconnectAndReturnLogin()
   elseif bIsServer then
     self:CloseDS()

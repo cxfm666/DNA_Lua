@@ -130,7 +130,7 @@ function ActivityUtils.CheckEventIsOpen(EventID, EventMainExcel, IsUseRewardTime
   if nil ~= UnlockRuleName and not Avatar:CheckSystemUICanOpen(UnlockRuleName) then
     return false
   end
-  if EventID == DataMgr.EventConstant.FollowCommunityEvent.ConstantValue and ActivityUtils.IsBilibiliServer() then
+  if EventID == DataMgr.EventConstant.FollowCommunityEvent.ConstantValue and (ActivityUtils.IsBilibiliServer() or UE.AHotUpdateGameMode.IsGlobalPak()) then
     return false
   end
   return true

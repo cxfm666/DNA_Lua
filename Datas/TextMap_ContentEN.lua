@@ -805,7 +805,7 @@ and unlocked the next node level<H>%s</>. Proceed to the next node level?]],
   },
   {
     MinKey = "Attr_TriggerProbModifierValue_Name",
-    MaxKey = "CVName2019",
+    MaxKey = "CVName2016",
     Loader = function()
       return {
         Attr_TriggerProbModifierValue_Name = {
@@ -1166,6 +1166,14 @@ and unlocked the next node level<H>%s</>. Proceed to the next node level?]],
           ContentEN = "In the event \"A Rainbow-coloured Dream\", complete the stage \"Across the Thorned Vale \226\128\147 Part \226\133\161\"",
           TextMapId = "BattlePass_Task_Des_100001209"
         },
+        BattlePass_Task_Des_100002201 = {
+          ContentEN = "Complete <H>6</> commissions in the \"Huaxu \226\128\148 Incense and Marvels\" event",
+          TextMapId = "BattlePass_Task_Des_100002201"
+        },
+        BattlePass_Task_Des_100002202 = {
+          ContentEN = "Earn <H>1,000</> Luno Points in the \"Friendly Games\" event",
+          TextMapId = "BattlePass_Task_Des_100002202"
+        },
         BattleWheel_Apply = {
           ContentEN = "Apply",
           TextMapId = "BattleWheel_Apply"
@@ -1463,6 +1471,7 @@ and unlocked the next node level<H>%s</>. Proceed to the next node level?]],
         CVName1020 = {ContentEN = "\230\157\142\229\152\137\231\165\165", TextMapId = "CVName1020"},
         CVName1021 = {ContentEN = "\233\146\159\229\143\175", TextMapId = "CVName1021"},
         CVName1022 = {ContentEN = "\233\190\159\229\168\152", TextMapId = "CVName1022"},
+        CVName1023 = {ContentEN = "Cai Shujin", TextMapId = "CVName1023"},
         CVName2001 = {
           ContentEN = "Alexandra Guelff",
           TextMapId = "CVName2001"
@@ -1523,7 +1532,15 @@ and unlocked the next node level<H>%s</>. Proceed to the next node level?]],
         CVName2016 = {
           ContentEN = "Jamie Hoskin",
           TextMapId = "CVName2016"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "CVName2017",
+    MaxKey = "Condition_Toast_PlayerLv_32",
+    Loader = function()
+      return {
         CVName2017 = {
           ContentEN = "Sophie Colquhoun",
           TextMapId = "CVName2017"
@@ -1532,15 +1549,7 @@ and unlocked the next node level<H>%s</>. Proceed to the next node level?]],
         CVName2019 = {
           ContentEN = "Allegra Marland",
           TextMapId = "CVName2019"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "CVName2020",
-    MaxKey = "Condition_Toast_PlayerLv_39",
-    Loader = function()
-      return {
+        },
         CVName2020 = {
           ContentEN = "Robin Liew Harper",
           TextMapId = "CVName2020"
@@ -1552,6 +1561,10 @@ and unlocked the next node level<H>%s</>. Proceed to the next node level?]],
         CVName2022 = {
           ContentEN = "Fern Deacon",
           TextMapId = "CVName2022"
+        },
+        CVName2023 = {
+          ContentEN = "Penelope Rawlins",
+          TextMapId = "CVName2023"
         },
         CVName3001 = {
           ContentEN = "\231\159\179\229\183\157\231\148\177\228\190\157",
@@ -1629,6 +1642,7 @@ and unlocked the next node level<H>%s</>. Proceed to the next node level?]],
           ContentEN = "\231\159\179\232\166\139\232\136\158\232\143\156\233\166\153",
           TextMapId = "CVName3022"
         },
+        CVName3023 = {ContentEN = "Asumi Kana", TextMapId = "CVName3023"},
         CVName4001 = {ContentEN = "\234\185\128\237\149\152\236\152\129", TextMapId = "CVName4001"},
         CVName4002 = {ContentEN = "\236\161\176\234\178\189\236\157\180", TextMapId = "CVName4002"},
         CVName4003 = {ContentEN = "\236\132\177\236\152\136\236\155\144", TextMapId = "CVName4003"},
@@ -1651,6 +1665,10 @@ and unlocked the next node level<H>%s</>. Proceed to the next node level?]],
         CVName4020 = {ContentEN = "\235\176\149\236\154\148\237\149\156", TextMapId = "CVName4020"},
         CVName4021 = {ContentEN = "\234\176\149\236\139\156\237\152\132", TextMapId = "CVName4021"},
         CVName4022 = {ContentEN = "\236\157\180\237\152\132\236\167\132", TextMapId = "CVName4022"},
+        CVName4023 = {
+          ContentEN = "Kim Suyoung",
+          TextMapId = "CVName4023"
+        },
         Caesura = {ContentEN = ",", TextMapId = "Caesura"},
         Camp_Name_Diguo = {
           ContentEN = "The Hyperborean Empire",
@@ -1828,6 +1846,10 @@ No herb may cure the world's deep-rooted ills,
         ChatCharacter24 = {
           ContentEN = "Yale and Oliver",
           TextMapId = "ChatCharacter24"
+        },
+        ChatCharacter25 = {
+          ContentEN = "Phantasio",
+          TextMapId = "ChatCharacter25"
         },
         ChatCharacter26 = {
           ContentEN = "Margie",
@@ -2229,7 +2251,15 @@ No herb may cure the world's deep-rooted ills,
         Condition_Toast_PlayerLv_32 = {
           ContentEN = "Unlocks at Trial Lv. 32",
           TextMapId = "Condition_Toast_PlayerLv_32"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "Condition_Toast_PlayerLv_33",
+    MaxKey = "Content_120111_7",
+    Loader = function()
+      return {
         Condition_Toast_PlayerLv_33 = {
           ContentEN = "Unlocks at Trial Lv. 33",
           TextMapId = "Condition_Toast_PlayerLv_33"
@@ -2257,15 +2287,7 @@ No herb may cure the world's deep-rooted ills,
         Condition_Toast_PlayerLv_39 = {
           ContentEN = "Unlocks at Trial Lv. 39",
           TextMapId = "Condition_Toast_PlayerLv_39"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "Condition_Toast_PlayerLv_4",
-    MaxKey = "Content_120112_3_1",
-    Loader = function()
-      return {
+        },
         Condition_Toast_PlayerLv_4 = {
           ContentEN = "Unlocks at Trial Lv. 4",
           TextMapId = "Condition_Toast_PlayerLv_4"
@@ -3110,7 +3132,15 @@ You arrive just in time to find Zhuyin barely contained.
         Content_120111_7 = {
           ContentEN = "The Great Magician seems to have found where a Roasted Potato is hiding \226\128\148 follow and see for yourself.",
           TextMapId = "Content_120111_7"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "Content_120111_8",
+    MaxKey = "Content_200228_2",
+    Loader = function()
+      return {
         Content_120111_8 = {
           ContentEN = "The Great Magician seems to have found where a Roasted Potato is hiding \226\128\148 follow and see for yourself.",
           TextMapId = "Content_120111_8"
@@ -3138,15 +3168,7 @@ You arrive just in time to find Zhuyin barely contained.
         Content_120112_3_1 = {
           ContentEN = "No clues this time \226\128\148 but a true Little Sidekick always reports back. Return to the Reticent Detective.",
           TextMapId = "Content_120112_3_1"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "Content_120112_3_2",
-    MaxKey = "Content_200230_3",
-    Loader = function()
-      return {
+        },
         Content_120112_3_2 = {
           ContentEN = "Buoyed by the Reticent Detective's words, you decide to search Big Bin No. 9 for clues!",
           TextMapId = "Content_120112_3_2"
@@ -4003,7 +4025,15 @@ Now's your chance to come up with a cool name for your new Phoxhunter team.]],
         Content_200228_2 = {
           ContentEN = "Preparation is key before any adventure \226\128\148 a rule every fledgling explorer should follow. Head back to the Sanctuary and get yourself ready before setting out.",
           TextMapId = "Content_200228_2"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "Content_200228_3",
+    MaxKey = "DUNGEON_HIJACK_112",
+    Loader = function()
+      return {
         Content_200228_3 = {
           ContentEN = "A good weapon is a traveller's trustiest companion. Let Lunosmith show you the ropes \226\128\148 see if you can forge one that sits well in your grip.",
           TextMapId = "Content_200228_3"
@@ -4031,15 +4061,7 @@ Now's your chance to come up with a cool name for your new Phoxhunter team.]],
         Content_200230_3 = {
           ContentEN = "A sentry is fiddling with his old phonograph. Lend a hand \226\128\148 he may share a clue in return.",
           TextMapId = "Content_200230_3"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "Content_200230_4",
-    MaxKey = "DUNGEON_HIJACK_119",
-    Loader = function()
-      return {
+        },
         Content_200230_4 = {
           ContentEN = "The phonograph is fixed. Time for the soldier to make good on his word.",
           TextMapId = "Content_200230_4"
@@ -4811,7 +4833,15 @@ Now's your chance to come up with a cool name for your new Phoxhunter team.]],
         DUNGEON_HIJACK_112 = {
           ContentEN = "Approach to activate the vehicle. Shield will be consumed to maintain activation until the destination is reached.",
           TextMapId = "DUNGEON_HIJACK_112"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "DUNGEON_HIJACK_113",
+    MaxKey = "DUNGEON_SYNTHESIS_129",
+    Loader = function()
+      return {
         DUNGEON_HIJACK_113 = {
           ContentEN = "Obstacles on the route will block the way. Destroy them to proceed.",
           TextMapId = "DUNGEON_HIJACK_113"
@@ -4839,15 +4869,7 @@ Now's your chance to come up with a cool name for your new Phoxhunter team.]],
         DUNGEON_HIJACK_119 = {
           ContentEN = "Defeat the Legion officer at the checkpoint",
           TextMapId = "DUNGEON_HIJACK_119"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "DUNGEON_HIJACK_120",
-    MaxKey = "DUNGEON_SYNTHESIS_5000302",
-    Loader = function()
-      return {
+        },
         DUNGEON_HIJACK_120 = {
           ContentEN = "Destroy the roadblocks",
           TextMapId = "DUNGEON_HIJACK_120"
@@ -5619,7 +5641,15 @@ Now's your chance to come up with a cool name for your new Phoxhunter team.]],
         DUNGEON_SYNTHESIS_129 = {
           ContentEN = "Team \"The Fork Shakens\" enters the arena",
           TextMapId = "DUNGEON_SYNTHESIS_129"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "DUNGEON_SYNTHESIS_130",
+    MaxKey = "Description_120003_8",
+    Loader = function()
+      return {
         DUNGEON_SYNTHESIS_130 = {
           ContentEN = "The captain of \"Chief's the Best\" leaves the arena",
           TextMapId = "DUNGEON_SYNTHESIS_130"
@@ -5647,15 +5677,7 @@ Now's your chance to come up with a cool name for your new Phoxhunter team.]],
         DUNGEON_SYNTHESIS_5000302 = {
           ContentEN = "Sanity Recovery Rate greatly increased",
           TextMapId = "DUNGEON_SYNTHESIS_5000302"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "DUNGEON_SYNTHESIS_5000303",
-    MaxKey = "Description_120101_2",
-    Loader = function()
-      return {
+        },
         DUNGEON_SYNTHESIS_5000303 = {
           ContentEN = "Support Unit",
           TextMapId = "DUNGEON_SYNTHESIS_5000303"
@@ -6421,7 +6443,15 @@ Now's your chance to come up with a cool name for your new Phoxhunter team.]],
         Description_120003_8 = {
           ContentEN = "Head to the city gate",
           TextMapId = "Description_120003_8"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "Description_120003_9",
+    MaxKey = "Description_20020606_1",
+    Loader = function()
+      return {
         Description_120003_9 = {
           ContentEN = "Talk your way past the guards",
           TextMapId = "Description_120003_9"
@@ -6449,15 +6479,7 @@ Now's your chance to come up with a cool name for your new Phoxhunter team.]],
         Description_120101_2 = {
           ContentEN = "Speak with the porter",
           TextMapId = "Description_120101_2"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "Description_120101_3",
-    MaxKey = "Description_200206_3",
-    Loader = function()
-      return {
+        },
         Description_120101_3 = {
           ContentEN = "Head to the market",
           TextMapId = "Description_120101_3"
@@ -7231,7 +7253,15 @@ Complete any Phoxhunter Commission
         Description_20020606_1 = {
           ContentEN = "Search for clues near Galea Theatre",
           TextMapId = "Description_20020606_1"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "Description_20020606_2",
+    MaxKey = "DynQuest_FortDecapitate_Des",
+    Loader = function()
+      return {
         Description_20020606_2 = {
           ContentEN = "Question the boy selling snacks",
           TextMapId = "Description_20020606_2"
@@ -7259,15 +7289,7 @@ Complete any Phoxhunter Commission
         Description_200206_3 = {
           ContentEN = "Talk to Buck",
           TextMapId = "Description_200206_3"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "Description_200206_4",
-    MaxKey = "DynQuest_FortInBox_Title",
-    Loader = function()
-      return {
+        },
         Description_200206_4 = {
           ContentEN = "Go to Mr Buck's house",
           TextMapId = "Description_200206_4"
@@ -8033,7 +8055,15 @@ Complete any Phoxhunter Commission
         DynQuest_FortDecapitate_Des = {
           ContentEN = "Defeat the Elite Sergeant and secure the area",
           TextMapId = "DynQuest_FortDecapitate_Des"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "DynQuest_FortDecapitate_Title",
+    MaxKey = "EpisodeName_100302",
+    Loader = function()
+      return {
         DynQuest_FortDecapitate_Title = {
           ContentEN = "Advance of the Legion",
           TextMapId = "DynQuest_FortDecapitate_Title"
@@ -8061,15 +8091,7 @@ Complete any Phoxhunter Commission
         DynQuest_FortInBox_Title = {
           ContentEN = "Surprise Cache",
           TextMapId = "DynQuest_FortInBox_Title"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "DynQuest_FortPet_Des",
-    MaxKey = "Episode_00_01",
-    Loader = function()
-      return {
+        },
         DynQuest_FortPet_Des = {
           ContentEN = "Defeat the enemies and rescue the Geniemon",
           TextMapId = "DynQuest_FortPet_Des"
@@ -8832,7 +8854,15 @@ Complete any Phoxhunter Commission
         EpisodeName_100302 = {
           ContentEN = "Where the Shadows Lurk",
           TextMapId = "EpisodeName_100302"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "EpisodeName_100303",
+    MaxKey = "FeinaEvent_SimpleDungeonDes_3_2",
+    Loader = function()
+      return {
         EpisodeName_100303 = {
           ContentEN = "Old Wounds",
           TextMapId = "EpisodeName_100303"
@@ -8860,15 +8890,7 @@ Complete any Phoxhunter Commission
         Episode_00_01 = {
           ContentEN = "Across the Sandrealm (\226\133\160)",
           TextMapId = "Episode_00_01"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "Episode_00_02",
-    MaxKey = "FishingSpot_Name_10410601",
-    Loader = function()
-      return {
+        },
         Episode_00_02 = {
           ContentEN = "Across the Sandrealm (\226\133\161)",
           TextMapId = "Episode_00_02"
@@ -9017,6 +9039,10 @@ Complete any Phoxhunter Commission
           ContentEN = "Game of the Overlookers (\226\133\169)",
           TextMapId = "Episode_11_10"
         },
+        Episode_1200 = {
+          ContentEN = "Mistwharf \226\128\147 Veiled in Fragrant Haze",
+          TextMapId = "Episode_1200"
+        },
         Episode_1201 = {
           ContentEN = "Mistwharf \226\128\147 Veiled in Fragrant Haze",
           TextMapId = "Episode_1201"
@@ -9049,7 +9075,7 @@ Complete any Phoxhunter Commission
           ContentEN = "A Rainbow-coloured Dream",
           TextMapId = "Episode_Feina"
         },
-        Equals = {ContentEN = "=", TextMapId = "Equals"},
+        Equals = {ContentEN = "0.0", TextMapId = "Equals"},
         Escape = {ContentEN = "Esc", TextMapId = "Escape"},
         EventDungeonPass_Title1 = {
           ContentEN = "Challenge Cleared",
@@ -9630,7 +9656,15 @@ Complete any Phoxhunter Commission
         FeinaEvent_SimpleDungeonDes_3_2 = {
           ContentEN = "Head to the destination with Miss Butterfly",
           TextMapId = "FeinaEvent_SimpleDungeonDes_3_2"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "FeinaEvent_SimpleDungeonDes_4_1",
+    MaxKey = "GRADEUP_5301_03",
+    Loader = function()
+      return {
         FeinaEvent_SimpleDungeonDes_4_1 = {
           ContentEN = "Find the Little Nightingale in the forest",
           TextMapId = "FeinaEvent_SimpleDungeonDes_4_1"
@@ -9662,15 +9696,7 @@ Complete any Phoxhunter Commission
         FishingSpot_Name_10410601 = {
           ContentEN = "Fishing Spot: Hall of Ephemerality",
           TextMapId = "FishingSpot_Name_10410601"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "FishingSpot_Name_10410701",
-    MaxKey = "GRADEUP_5401_05",
-    Loader = function()
-      return {
+        },
         FishingSpot_Name_10410701 = {
           ContentEN = "Fishing Spot: Tidesong Cavern",
           TextMapId = "FishingSpot_Name_10410701"
@@ -10441,7 +10467,15 @@ Each point of [Might of Thunder] increases the damage taken transfer ratio of [C
         GRADEUP_5301_03 = {
           ContentEN = "[Chrysalis Dreamweave] Level +2; [Amberlight] Level +1.",
           TextMapId = "GRADEUP_5301_03"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "GRADEUP_5301_04",
+    MaxKey = "HomePianoNAme_1004001",
+    Loader = function()
+      return {
         GRADEUP_5301_04 = {
           ContentEN = [[
 When in [Flamboyance] state, Psyche gains [Eclosion].
@@ -10475,15 +10509,7 @@ When in [Flamboyance] state, Psyche gains [Eclosion].
         GRADEUP_5401_05 = {
           ContentEN = "[Repulsion Synthesis] Level +2; [Azoth Projectile] Level +1.",
           TextMapId = "GRADEUP_5401_05"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "GRADEUP_5401_06",
-    MaxKey = "HomePianoNAme_1005001",
-    Loader = function()
-      return {
+        },
         GRADEUP_5401_06 = {
           ContentEN = "When a teammate applied with [Purification Formula] deals damage to an enemy inflicted with [Decay Formula], Daphne gains 1 stack that increases Damage Dealt by #4 for #5s, up to #6 stacks. This effect can only be triggered once per second.",
           TextMapId = "GRADEUP_5401_06"
@@ -11250,7 +11276,15 @@ Press to select an Act]],
         HomePianoNAme_1004001 = {
           ContentEN = "The Closed Door",
           TextMapId = "HomePianoNAme_1004001"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "HomePianoNAme_1004002",
+    MaxKey = "MAINUIGUIDE_TITLE_TRAININGGROUND_2",
+    Loader = function()
+      return {
         HomePianoNAme_1004002 = {
           ContentEN = "The Iron Cage",
           TextMapId = "HomePianoNAme_1004002"
@@ -11282,15 +11316,7 @@ Press to select an Act]],
         HomePianoNAme_1005001 = {
           ContentEN = "Glevum Pit",
           TextMapId = "HomePianoNAme_1005001"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "HomePianoNAme_1005002",
-    MaxKey = "MAIN_UI_ACHIEVEMENT",
-    Loader = function()
-      return {
+        },
         HomePianoNAme_1005002 = {
           ContentEN = "Over the Frozen Land",
           TextMapId = "HomePianoNAme_1005002"
@@ -12043,7 +12069,15 @@ Press to select an Act]],
         MAINUIGUIDE_TITLE_TRAININGGROUND_2 = {
           ContentEN = "Exit Sandrealm Meditation",
           TextMapId = "MAINUIGUIDE_TITLE_TRAININGGROUND_2"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "MAINUIGUIDE_TITLE_TRIALRANK",
+    MaxKey = "MESSAGE_TITLE_LOADING_37_PC",
+    Loader = function()
+      return {
         MAINUIGUIDE_TITLE_TRIALRANK = {
           ContentEN = "Trial Rank",
           TextMapId = "MAINUIGUIDE_TITLE_TRIALRANK"
@@ -12075,15 +12109,7 @@ Press to select an Act]],
         MAIN_UI_ACHIEVEMENT = {
           ContentEN = "Achievements",
           TextMapId = "MAIN_UI_ACHIEVEMENT"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "MAIN_UI_ARCHIVE",
-    MaxKey = "MOD_DESC_101002",
-    Loader = function()
-      return {
+        },
         MAIN_UI_ARCHIVE = {
           ContentEN = "Archive",
           TextMapId = "MAIN_UI_ARCHIVE"
@@ -12115,6 +12141,10 @@ Press to select an Act]],
         MAIN_UI_DAILYGOAL = {
           ContentEN = "Memo",
           TextMapId = "MAIN_UI_DAILYGOAL"
+        },
+        MAIN_UI_DISPATCH = {
+          ContentEN = "Expedition",
+          TextMapId = "MAIN_UI_DISPATCH"
         },
         MAIN_UI_ENTERTAINMENT = {
           ContentEN = "Ripples of Talk",
@@ -12418,7 +12448,7 @@ Press to select an Act]],
           TextMapId = "MESSAGE_DOUBLEJUMP_PHONE"
         },
         MESSAGE_HIGHLIGHT_TARGET_PAD = {
-          ContentEN = "Press &GamepadUseSkill& + &BulletJump& to show the indicator",
+          ContentEN = "Press &GamepadUseSkill&+&ActiveGuide& to show the indicator",
           TextMapId = "MESSAGE_HIGHLIGHT_TARGET_PAD"
         },
         MESSAGE_HIGHLIGHT_TARGET_PC = {
@@ -12450,7 +12480,7 @@ Press to select an Act]],
           TextMapId = "MESSAGE_LOADING_11_PC"
         },
         MESSAGE_LOADING_12_PC = {
-          ContentEN = "A race born with \"magic\", bearing the ominous title of \"Demon's Children\" within the Hyperborean Empire.",
+          ContentEN = "The race born with \"magic\" are called Charons, the name that carries vastly different weight from one nation to the next. Here within the Hyperborean Empire, they bear the ominous title of \"Demon's Children\".",
           TextMapId = "MESSAGE_LOADING_12_PC"
         },
         MESSAGE_LOADING_13_PC = {
@@ -12539,7 +12569,7 @@ Smash: Further weakens target's Stance.]],
           TextMapId = "MESSAGE_LOADING_32_PC"
         },
         MESSAGE_LOADING_33_PC = {
-          ContentEN = "Each Demon Wedge has an affinity that resonates with certain Charons, which is known as Track. When a Wedge's Track matches the bearer's (character/weapon), it requires less Tolerance, while mismatching requires more.",
+          ContentEN = "Each Demon Wedge has an affinity that resonates with certain bearers, which is known as Track. When a Wedge's Track matches the bearer's (character/weapon), it requires less Tolerance, while mismatching requires more.",
           TextMapId = "MESSAGE_LOADING_33_PC"
         },
         MESSAGE_LOADING_34_PC = {
@@ -12571,11 +12601,11 @@ Smash: Further weakens target's Stance.]],
           TextMapId = "MESSAGE_LOADING_4_PC"
         },
         MESSAGE_LOADING_5_PC = {
-          ContentEN = "If your character gets stuck, go to \"Reset Location\" in \"Settings\" to get free",
+          ContentEN = "If you get stuck while playing the game, go to \"Reset Location\" in \"Settings\" to get free.",
           TextMapId = "MESSAGE_LOADING_5_PC"
         },
         MESSAGE_LOADING_6_PC = {
-          ContentEN = "Attacking mechas can also deal damage to enemies",
+          ContentEN = "Attacking mechas can also deal damage to enemies.",
           TextMapId = "MESSAGE_LOADING_6_PC"
         },
         MESSAGE_LOADING_7_PC = {
@@ -12625,6 +12655,10 @@ Smash: Further weakens target's Stance.]],
         MESSAGE_QUESTFINISHTEST_PC = {
           ContentEN = "Testing quests completion toast",
           TextMapId = "MESSAGE_QUESTFINISHTEST_PC"
+        },
+        MESSAGE_REACHQUESTAREA_PC = {
+          ContentEN = "<H>Reach the quest area</>",
+          TextMapId = "MESSAGE_REACHQUESTAREA_PC"
         },
         MESSAGE_RECETCAMERA_2_PC = {
           ContentEN = "Press &LockMonster& again to cancel the lock-on",
@@ -12849,7 +12883,15 @@ Smash: Further weakens target's Stance.]],
         MESSAGE_TITLE_LOADING_37_PC = {
           ContentEN = "Commission for Phoxhunters: Mediation",
           TextMapId = "MESSAGE_TITLE_LOADING_37_PC"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "MESSAGE_TITLE_LOADING_3_PC",
+    MaxKey = "MOD_NAME_1723",
+    Loader = function()
+      return {
         MESSAGE_TITLE_LOADING_3_PC = {
           ContentEN = "Slide Attack",
           TextMapId = "MESSAGE_TITLE_LOADING_3_PC"
@@ -12865,6 +12907,10 @@ Smash: Further weakens target's Stance.]],
         MESSAGE_TRACKQUEST_30_PC = {
           ContentEN = "Follow the pipes to locate the mechanism. Navigation to be configured.",
           TextMapId = "MESSAGE_TRACKQUEST_30_PC"
+        },
+        MESSAGE_TRACKQUEST_910001_PC = {
+          ContentEN = "Click &OpenTask& to open the quest list for more details",
+          TextMapId = "MESSAGE_TRACKQUEST_910001_PC"
         },
         MESSAGE_WALLJUMP_PC = {
           ContentEN = "Consecutively press &Jump& to jump up the wall",
@@ -12889,15 +12935,7 @@ Smash: Further weakens target's Stance.]],
         MOD_DESC_101002 = {
           ContentEN = "Upgrades Sword Charged Attack to deal double the damage of the standard attack.",
           TextMapId = "MOD_DESC_101002"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "MOD_DESC_101003",
-    MaxKey = "MOD_NAME_1742",
-    Loader = function()
-      return {
+        },
         MOD_DESC_101003 = {
           ContentEN = "Upgrades Sword Charged Attack to hurl a thunderblade that explodes after a short delay, damaging enemies in a large AoE. Deals double the damage of the standard attack.",
           TextMapId = "MOD_DESC_101003"
@@ -13653,7 +13691,15 @@ Smash: Further weakens target's Stance.]],
         MOD_NAME_1723 = {
           ContentEN = "Blaze\194\183Inspo",
           TextMapId = "MOD_NAME_1723"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "MOD_NAME_1724",
+    MaxKey = "MOD_Type_Name_Suyi03",
+    Loader = function()
+      return {
         MOD_NAME_1724 = {
           ContentEN = "Wings\194\183Volition",
           TextMapId = "MOD_NAME_1724"
@@ -13675,11 +13721,11 @@ Smash: Further weakens target's Stance.]],
           TextMapId = "MOD_NAME_1732"
         },
         MOD_NAME_1733 = {
-          ContentEN = "Blaze \194\183 Inspo",
+          ContentEN = "Blaze\194\183Inspo",
           TextMapId = "MOD_NAME_1733"
         },
         MOD_NAME_1734 = {
-          ContentEN = "Nirvana \194\183 Spectrum",
+          ContentEN = "Nirvana\194\183Spectrum",
           TextMapId = "MOD_NAME_1734"
         },
         MOD_NAME_1735 = {
@@ -13697,15 +13743,7 @@ Smash: Further weakens target's Stance.]],
         MOD_NAME_1742 = {
           ContentEN = "Blaze\194\183Morale",
           TextMapId = "MOD_NAME_1742"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "MOD_NAME_1743",
-    MaxKey = "Mail_Content_10010",
-    Loader = function()
-      return {
+        },
         MOD_NAME_1743 = {
           ContentEN = "Blaze\194\183Volition",
           TextMapId = "MOD_NAME_1743"
@@ -14191,7 +14229,7 @@ Smash: Further weakens target's Stance.]],
           TextMapId = "MOD_NAME_6111"
         },
         MOD_NAME_6112 = {
-          ContentEN = "Wings \194\183 Inspo \194\183 Huntdown",
+          ContentEN = "Wings\194\183Inspo\194\183Huntdown",
           TextMapId = "MOD_NAME_6112"
         },
         MOD_NAME_6113 = {
@@ -14199,7 +14237,7 @@ Smash: Further weakens target's Stance.]],
           TextMapId = "MOD_NAME_6113"
         },
         MOD_NAME_6114 = {
-          ContentEN = "Wings \194\183 Inspo \194\183 Focus",
+          ContentEN = "Wings\194\183Inspo\194\183Focus",
           TextMapId = "MOD_NAME_6114"
         },
         MOD_NAME_6121 = {
@@ -14207,7 +14245,7 @@ Smash: Further weakens target's Stance.]],
           TextMapId = "MOD_NAME_6121"
         },
         MOD_NAME_6122 = {
-          ContentEN = "Wings \194\183 Inspo \194\183 Blaze",
+          ContentEN = "Wings\194\183InspoBlaze",
           TextMapId = "MOD_NAME_6122"
         },
         MOD_NAME_6123 = {
@@ -14215,7 +14253,7 @@ Smash: Further weakens target's Stance.]],
           TextMapId = "MOD_NAME_6123"
         },
         MOD_NAME_6124 = {
-          ContentEN = "Wings \194\183 Inspo \194\183 Volition",
+          ContentEN = "Wings\194\183Inspo\194\183Volition",
           TextMapId = "MOD_NAME_6124"
         },
         MOD_NAME_6131 = {
@@ -14223,7 +14261,7 @@ Smash: Further weakens target's Stance.]],
           TextMapId = "MOD_NAME_6131"
         },
         MOD_NAME_6132 = {
-          ContentEN = "Wings \194\183 Inspo \194\183 Blaze",
+          ContentEN = "Wings\194\183Inspo\194\183Blaze",
           TextMapId = "MOD_NAME_6132"
         },
         MOD_NAME_6133 = {
@@ -14231,7 +14269,7 @@ Smash: Further weakens target's Stance.]],
           TextMapId = "MOD_NAME_6133"
         },
         MOD_NAME_6134 = {
-          ContentEN = "Wings \194\183 Inspo \194\183 Volition",
+          ContentEN = "Wings\194\183Inspo\194\183Volition",
           TextMapId = "MOD_NAME_6134"
         },
         MOD_NAME_6141 = {
@@ -14239,7 +14277,7 @@ Smash: Further weakens target's Stance.]],
           TextMapId = "MOD_NAME_6141"
         },
         MOD_NAME_6142 = {
-          ContentEN = "Wings \194\183 Inspo \194\183 Volition",
+          ContentEN = "Wings\194\183Inspo\194\183Volition",
           TextMapId = "MOD_NAME_6142"
         },
         MOD_NAME_6143 = {
@@ -14247,7 +14285,7 @@ Smash: Further weakens target's Stance.]],
           TextMapId = "MOD_NAME_6143"
         },
         MOD_NAME_6144 = {
-          ContentEN = "Wings \194\183 Inspo \194\183 Resolve",
+          ContentEN = "Wings\194\183Inspo\194\183Resolve",
           TextMapId = "MOD_NAME_6144"
         },
         MOD_NAME_6151 = {
@@ -14255,7 +14293,7 @@ Smash: Further weakens target's Stance.]],
           TextMapId = "MOD_NAME_6151"
         },
         MOD_NAME_6152 = {
-          ContentEN = "Wings \194\183 Inspo \194\183 Volition",
+          ContentEN = "Wings\194\183Inspo\194\183Volition",
           TextMapId = "MOD_NAME_6152"
         },
         MOD_NAME_6153 = {
@@ -14263,7 +14301,7 @@ Smash: Further weakens target's Stance.]],
           TextMapId = "MOD_NAME_6153"
         },
         MOD_NAME_6154 = {
-          ContentEN = "Wings \194\183 Inspo \194\183 Resolve",
+          ContentEN = "Wings\194\183Inspo\194\183Resolve",
           TextMapId = "MOD_NAME_6154"
         },
         MOD_NAME_6161 = {
@@ -14271,7 +14309,7 @@ Smash: Further weakens target's Stance.]],
           TextMapId = "MOD_NAME_6161"
         },
         MOD_NAME_6162 = {
-          ContentEN = "Wings \194\183 Inspo \194\183 Huntdown",
+          ContentEN = "Wings\194\183Inspo\194\183Huntdown",
           TextMapId = "MOD_NAME_6162"
         },
         MOD_NAME_6163 = {
@@ -14279,7 +14317,7 @@ Smash: Further weakens target's Stance.]],
           TextMapId = "MOD_NAME_6163"
         },
         MOD_NAME_6164 = {
-          ContentEN = "Wings \194\183 Inspo \194\183 Focus",
+          ContentEN = "Wings\194\183Inspo\194\183Focus",
           TextMapId = "MOD_NAME_6164"
         },
         MOD_Tag_Type_Name_Anubis01 = {
@@ -14461,7 +14499,15 @@ Smash: Further weakens target's Stance.]],
         MOD_Type_Name_Suyi03 = {
           ContentEN = "Su Yi's Component",
           TextMapId = "MOD_Type_Name_Suyi03"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "MOD_Type_Name_Typhon01",
+    MaxKey = "Message_Guide_Forge_10",
+    Loader = function()
+      return {
         MOD_Type_Name_Typhon01 = {
           ContentEN = "Typhon's ",
           TextMapId = "MOD_Type_Name_Typhon01"
@@ -14518,15 +14564,7 @@ Dear Phoxhunter,
 You are attempting to bind an account. To ensure account security, please complete identity verification.
 Your verification code: {Code}]],
           TextMapId = "Mail_Content_10010"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "Mail_Content_10011",
-    MaxKey = "Message_Guide_Forge_9",
-    Loader = function()
-      return {
+        },
         Mail_Content_10011 = {
           ContentEN = "Dear Phoxhunter,\n The rewards you earned through Twitch Drops have been delivered to your game account.\n Please claim them from the attachment below.\n \n Thank you for your support!\n \n \226\128\147 Duet Night Abyss Live Ops",
           TextMapId = "Mail_Content_10011"
@@ -14582,6 +14620,13 @@ Dear Phoxhunter,
         Mail_Content_10058 = {
           ContentEN = "Dear Phoxhunters,\nThank you for every 'Like' you gave in the DNArt Fanwork Contest. Your support makes the efforts of our creators shine even brighter!\n\226\128\148 Duet Night Abyss Operation Team",
           TextMapId = "Mail_Content_10058"
+        },
+        Mail_Content_10059 = {
+          ContentEN = [[
+Dear Phoxhunter,
+  The rewards for this event have been delivered to your account. Please claim them from your mailbox.
+  Wishing you a pleasant journey through Atlasia!]],
+          TextMapId = "Mail_Content_10059"
         },
         Mail_Content_101001 = {
           ContentEN = [[
@@ -14643,6 +14688,10 @@ Dear Phoxhunter,
           ContentEN = "Expiry Notice: Prismatic Hourglasses (Limited-Time)",
           TextMapId = "Mail_Title_10009"
         },
+        Mail_Title_10010 = {
+          ContentEN = "Account Binding Verification Code",
+          TextMapId = "Mail_Title_10010"
+        },
         Mail_Title_10011 = {
           ContentEN = "Twitch Drops Rewards Delivered",
           TextMapId = "Mail_Title_10011"
@@ -14676,7 +14725,7 @@ Dear Phoxhunter,
           TextMapId = "Mail_Title_100401"
         },
         Mail_Title_100402 = {
-          ContentEN = "[Bard's Tome] Purchase failed",
+          ContentEN = "[Bard's Tome] Purchase Failed",
           TextMapId = "Mail_Title_100402"
         },
         Mail_Title_10055 = {
@@ -14690,6 +14739,10 @@ Dear Phoxhunter,
         Mail_Title_10058 = {
           ContentEN = "DNArt Fanwork Contest: Thank You for Your Likes!",
           TextMapId = "Mail_Title_10058"
+        },
+        Mail_Title_10059 = {
+          ContentEN = "\"Lunoracle's Fortune Telling\" Event Rewards",
+          TextMapId = "Mail_Title_10059"
         },
         Mail_Title_101001 = {
           ContentEN = "Unclaimed [%s] Rewards Issued",
@@ -15291,7 +15344,15 @@ Each weapon can be assigned to only 1 Combat Partner.]],
         Message_Guide_Forge_10 = {
           ContentEN = "That's about it. Time to find Lunosmith, have her make us a Supply Chest \226\128\148 and admire her craftsmanship~",
           TextMapId = "Message_Guide_Forge_10"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "Message_Guide_Forge_11",
+    MaxKey = "Message_Guide_Rouge_5",
+    Loader = function()
+      return {
         Message_Guide_Forge_11 = {
           ContentEN = "When holding a <H>Toy Hammer</> in your Inventory, click \"Speed Up Forging\" to shorten forging time.",
           TextMapId = "Message_Guide_Forge_11"
@@ -15347,15 +15408,7 @@ Each weapon can be assigned to only 1 Combat Partner.]],
         Message_Guide_Forge_9 = {
           ContentEN = "In Blueprints, you can view the blueprints you've obtained.",
           TextMapId = "Message_Guide_Forge_9"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "Message_Guide_Forge_9_Pad",
-    MaxKey = "Message_Guide_TrainingGround_4_Pad",
-    Loader = function()
-      return {
+        },
         Message_Guide_Forge_9_Pad = {
           ContentEN = "In Blueprints, you can view the blueprints you've obtained.",
           TextMapId = "Message_Guide_Forge_9_Pad"
@@ -15857,11 +15910,11 @@ Each weapon can be assigned to only 1 Combat Partner.]],
           TextMapId = "Message_Guide_Pet_10"
         },
         Message_Guide_Pet_11 = {
-          ContentEN = "Press <H>&Skill3&</> to activate Geniemon Support during combat.",
+          ContentEN = "Press &Skill3& to activate Geniemon Support during combat.",
           TextMapId = "Message_Guide_Pet_11"
         },
         Message_Guide_Pet_11_PAD = {
-          ContentEN = "Tap <H>&GamepadUseSkill& + &Skill3&</> during combat to activate Geniemon Support.",
+          ContentEN = "Tap &GamepadUseSkill& + &Skill3& during combat to activate Geniemon Support.",
           TextMapId = "Message_Guide_Pet_11_PAD"
         },
         Message_Guide_Pet_11_PHONE = {
@@ -16099,7 +16152,15 @@ Each weapon can be assigned to only 1 Combat Partner.]],
         Message_Guide_Rouge_5 = {
           ContentEN = "You can select the Difficulty here.",
           TextMapId = "Message_Guide_Rouge_5"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "Message_Guide_Rouge_6",
+    MaxKey = "ModArchive_Name_Char_1420",
+    Loader = function()
+      return {
         Message_Guide_Rouge_6 = {
           ContentEN = "You can view and claim your rewards in Mystic Maze here. The rewards refresh weekly.",
           TextMapId = "Message_Guide_Rouge_6"
@@ -16121,7 +16182,7 @@ Each weapon can be assigned to only 1 Combat Partner.]],
           TextMapId = "Message_Guide_Rouge_9"
         },
         Message_Guide_Tracking_1 = {
-          ContentEN = "Select here to enable navigation guidance. Follow the markers to reach your destination.",
+          ContentEN = "Select <H>&ActiveGuide&</> to enable navigation guidance. Follow the markers to reach your destination.",
           TextMapId = "Message_Guide_Tracking_1"
         },
         Message_Guide_Tracking_1_PAD = {
@@ -16155,15 +16216,7 @@ Each weapon can be assigned to only 1 Combat Partner.]],
         Message_Guide_TrainingGround_4_Pad = {
           ContentEN = "If <H>multiple enemies</> are selected, you can adjust their respective spawn numbers here.",
           TextMapId = "Message_Guide_TrainingGround_4_Pad"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "Message_Guide_TrainingGround_5",
-    MaxKey = "ModArchive_Name_Char_1560",
-    Loader = function()
-      return {
+        },
         Message_Guide_TrainingGround_5 = {
           ContentEN = "Select <H>+</> to raise the <H>level of the enemy</>",
           TextMapId = "Message_Guide_TrainingGround_5"
@@ -16907,7 +16960,15 @@ Each weapon can be assigned to only 1 Combat Partner.]],
         ModArchive_Name_Char_1420 = {
           ContentEN = "Griffin: Pyro",
           TextMapId = "ModArchive_Name_Char_1420"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "ModArchive_Name_Char_1430",
+    MaxKey = "Mon_Guide_9005001_01",
+    Loader = function()
+      return {
         ModArchive_Name_Char_1430 = {
           ContentEN = "Griffin: Hydro",
           TextMapId = "ModArchive_Name_Char_1430"
@@ -16963,15 +17024,7 @@ Each weapon can be assigned to only 1 Combat Partner.]],
         ModArchive_Name_Char_1560 = {
           ContentEN = "Typhon: Umbro",
           TextMapId = "ModArchive_Name_Char_1560"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "ModArchive_Name_Char_1570",
-    MaxKey = "Mon_Guide_Strong_Threefold_01",
-    Loader = function()
-      return {
+        },
         ModArchive_Name_Char_1570 = {
           ContentEN = "Jormungand",
           TextMapId = "ModArchive_Name_Char_1570"
@@ -17071,6 +17124,10 @@ Each weapon can be assigned to only 1 Combat Partner.]],
         ModArchive_Name_Melee_2160 = {
           ContentEN = "Fenrir: Katana",
           TextMapId = "ModArchive_Name_Melee_2160"
+        },
+        ModArchive_Name_Melee_2161 = {
+          ContentEN = "Fenrir: Sword",
+          TextMapId = "ModArchive_Name_Melee_2161"
         },
         ModArchive_Name_Melee_2170 = {
           ContentEN = "Cerberus \226\133\164",
@@ -17732,7 +17789,15 @@ In <Highlight>"Commission: Mediation"</>, once a Toymaker is defeated, <Highligh
 <Highlight>Bombaholics</> belong to the "Soldiers" of The Forsakens. They are highly adept at manipulating explosives. 
 In <Highlight>"Commission: Mediation"</>, once a Bombaholic is defeated, the Max HP of <Highlight>Finale Flare</> is reduced by 30%.]],
           TextMapId = "Mon_Guide_9005001_01"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "Mon_Guide_9006001_01",
+    MaxKey = "Mon_Name_6014013",
+    Loader = function()
+      return {
         Mon_Guide_9006001_01 = {
           ContentEN = [[
 <Highlight>Deceivers</> belong to the "Soldiers" of The Forsakens.
@@ -17795,15 +17860,7 @@ In <Highlight>"Commission: Mediation"</>, once a Deceiver is defeated, elite ene
         Mon_Guide_Strong_Threefold_01 = {
           ContentEN = "Primanders are powerful entities among the hostile forces that wield unique <Highlight>Primander abilities</>.\n<Highlight>Primander \226\128\147 Phantom</> summons #1 [Phantom(s)] at the start of battle.\n[Phantom]: Takes increased damage but mirrors its summoner's combat abilities.",
           TextMapId = "Mon_Guide_Strong_Threefold_01"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "Mon_Guide_Strong_ThunderLaser_01",
-    MaxKey = "Mon_Name_6016001",
-    Loader = function()
-      return {
+        },
         Mon_Guide_Strong_ThunderLaser_01 = {
           ContentEN = "Primanders are powerful entities among the hostile forces that wield unique <Highlight>Primander abilities</>.\n<Highlight>Primander \226\128\147 Thunderstorm</> periodically summons multiple [Thunder Hells] around itself.\n[Thunder Hell]: Spins across the field relentlessly, dealing damage to any hostile target on contact.",
           TextMapId = "Mon_Guide_Strong_ThunderLaser_01"
@@ -18543,7 +18600,15 @@ In <Highlight>"Commission: Mediation"</>, once a Deceiver is defeated, elite ene
         Mon_Name_6014013 = {
           ContentEN = "Savage Filthoid \226\133\161 - Corrosion",
           TextMapId = "Mon_Name_6014013"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "Mon_Name_6014014",
+    MaxKey = "Mon_Name_7014016",
+    Loader = function()
+      return {
         Mon_Name_6014014 = {
           ContentEN = "Savage Filthoid \226\133\161 - Thunderbolt",
           TextMapId = "Mon_Name_6014014"
@@ -18603,15 +18668,7 @@ In <Highlight>"Commission: Mediation"</>, once a Deceiver is defeated, elite ene
         Mon_Name_6016001 = {
           ContentEN = "Blightcalyx Filthoid",
           TextMapId = "Mon_Name_6016001"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "Mon_Name_6017001",
-    MaxKey = "Mon_Name_7015014",
-    Loader = function()
-      return {
+        },
         Mon_Name_6017001 = {
           ContentEN = "Stigma Filthoid",
           TextMapId = "Mon_Name_6017001"
@@ -19351,7 +19408,15 @@ In <Highlight>"Commission: Mediation"</>, once a Deceiver is defeated, elite ene
         Mon_Name_7014016 = {
           ContentEN = "Assault Private \226\133\161 - Wither",
           TextMapId = "Mon_Name_7014016"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "Mon_Name_7014017",
+    MaxKey = "Mon_Name_9003023",
+    Loader = function()
+      return {
         Mon_Name_7014017 = {
           ContentEN = "Assault Private \226\133\161 - Guard",
           TextMapId = "Mon_Name_7014017"
@@ -19411,15 +19476,7 @@ In <Highlight>"Commission: Mediation"</>, once a Deceiver is defeated, elite ene
         Mon_Name_7015014 = {
           ContentEN = "Patrol Drone - Thunderbolt",
           TextMapId = "Mon_Name_7015014"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "Mon_Name_7015015",
-    MaxKey = "Mon_Name_9005020",
-    Loader = function()
-      return {
+        },
         Mon_Name_7015015 = {
           ContentEN = "Patrol Drone - Decay",
           TextMapId = "Mon_Name_7015015"
@@ -20159,7 +20216,15 @@ In <Highlight>"Commission: Mediation"</>, once a Deceiver is defeated, elite ene
         Mon_Name_9003023 = {
           ContentEN = "\"Toymaker\" - Bloodbath",
           TextMapId = "Mon_Name_9003023"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "Mon_Name_9003024",
+    MaxKey = "Nine",
+    Loader = function()
+      return {
         Mon_Name_9003024 = {
           ContentEN = "\"Toymaker\" - Phantom",
           TextMapId = "Mon_Name_9003024"
@@ -20219,15 +20284,7 @@ In <Highlight>"Commission: Mediation"</>, once a Deceiver is defeated, elite ene
         Mon_Name_9005020 = {
           ContentEN = "\"Bombaholic\" - Glimmer",
           TextMapId = "Mon_Name_9005020"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "Mon_Name_9005021",
-    MaxKey = "NpcBiography_Information_Dien",
-    Loader = function()
-      return {
+        },
         Mon_Name_9005021 = {
           ContentEN = "\"Bombaholic\" - Sacrifice",
           TextMapId = "Mon_Name_9005021"
@@ -20967,7 +21024,15 @@ They say Wishen are born of unfinished business. You glance at the companion dri
           ContentEN = "To Be Continued",
           TextMapId = "Name_999999"
         },
-        Nine = {ContentEN = "9.0", TextMapId = "Nine"},
+        Nine = {ContentEN = "9.0", TextMapId = "Nine"}
+      }
+    end
+  },
+  {
+    MinKey = "No_Blueprints",
+    MaxKey = "Pack_Name_Dye_Yellow_Shop",
+    Loader = function()
+      return {
         No_Blueprints = {
           ContentEN = "No Blueprint",
           TextMapId = "No_Blueprints"
@@ -21031,15 +21096,14 @@ But no one sees the many nights he's jolted awake by nightmares, clutching his b
         NpcBiography_Information_Dien = {
           ContentEN = "Dean, a master in the art of the perfect amount of adulteration \226\128\148 how to lace fermented drinks without sending patrons to casualty was his family's craft. This trick of the trade had him in cahoots with every tavern owner in town, without exception \226\128\148 until he met Camilla.\n\nMoney wasn't the issue for Dean, yet The Asphodel was the missing piece in his empire of adulteration, a niggling gap he was hell-bent on closing. After all, not just the tavern owners, but all boozers in Icelake were hooked on his cut-price tipple. Just a bit of discomfort for half the cost \226\128\147 why not?\n\nThe vendors are happy, the customers are happy, and Dean's happy \226\128\148 a clear-cut case of a triple win. So why on earth wouldn't Camilla come on board?!\n\nThat's a riddle Dean might never fathom.",
           TextMapId = "NpcBiography_Information_Dien"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "NpcBiography_Information_Feiyi_1",
-    MaxKey = "Pack_Name_Midsummer_Gacha03",
-    Loader = function()
-      return {
+        },
+        NpcBiography_Information_Donat = {
+          ContentEN = [[
+In stark contrast to his ordinary life as a fisherman, Donat is known throughout Icelake as a man of exceptional kindness. Though not wealthy himself, he gives nearly all he owns to the poor, while living in self-imposed, ascetic poverty for years.
+When asked why he chooses this path, he simply smiles or replies, "For an unpardonable sin I committed."
+The nature of his sin, however, remains his secret alone.]],
+          TextMapId = "NpcBiography_Information_Donat"
+        },
         NpcBiography_Information_Feiyi_1 = {
           ContentEN = "A young girl who appears to be a student from the inner city. It's easy to notice her fine clothes juxtaposed against perpetually untidy hair. Despite her unmistakably Sola appearance, she fervently believes herself to be a Charon with horns.",
           TextMapId = "NpcBiography_Information_Feiyi_1"
@@ -21092,6 +21156,10 @@ Once a model worker in Glevum Pit, Larry's life unravelled when the Phoxene vein
 Struggling to survive, he tried his hand at various ventures like other unemployed miners in Icelake, from small businesses to aquaculture and farming, only to end up bankrupt. Driven to despair, he and his miner buddies picked up their pickaxes one last time, spending their final coins on a few loaves of coarse rye bread before vanishing into the depths of the now-abandoned pit.
 A few weeks ago, Larry reemerged alone in Icelake, lugging a heavy sack of Phoxene. His friends, however, remained forever lost in the dark recesses of the pit.]],
           TextMapId = "NpcBiography_Information_Lali"
+        },
+        NpcBiography_Information_Lars = {
+          ContentEN = "The young Charon whom Donat had aided saw his selfless poverty and feared for his health, praying that such virtue would not go unrewarded.",
+          TextMapId = "NpcBiography_Information_Lars"
         },
         NpcBiography_Information_Liao = {
           ContentEN = "Lio, a cleaner by the city gates, tasked with the grim cleanup after any skirmishes within the city. Initially, the sight of bloodshed tormented him, but over time he's grown numb to the violence. The toughest part, he finds, is scrubbing away the stubborn bloodstains. He quietly wishes for a swift, lethal blow to end the fights, as it would minimise the workload. After all, even a faint trace of uncleaned bloodstains would lead to him shedding some blood afterwards.",
@@ -21788,7 +21856,15 @@ The pack may contain:
         Pack_Name_Dye_Yellow_Shop = {
           ContentEN = "Standard Dye Set: Pea",
           TextMapId = "Pack_Name_Dye_Yellow_Shop"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "Pack_Name_Fish_Dispatch_1",
+    MaxKey = "PartyReward_Name_110301",
+    Loader = function()
+      return {
         Pack_Name_Fish_Dispatch_1 = {
           ContentEN = "Dispatch Fishing Reward Pack Lv. 1",
           TextMapId = "Pack_Name_Fish_Dispatch_1"
@@ -21863,15 +21939,7 @@ The pack may contain:
         Pack_Name_Midsummer_Gacha03 = {
           ContentEN = "Midsummer Myriad Chest \226\133\162",
           TextMapId = "Pack_Name_Midsummer_Gacha03"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "Pack_Name_Midsummer_Gacha04",
-    MaxKey = "PartyReward_Name_230102",
-    Loader = function()
-      return {
+        },
         Pack_Name_Midsummer_Gacha04 = {
           ContentEN = "Myriad Mirage Chest \226\133\160",
           TextMapId = "Pack_Name_Midsummer_Gacha04"
@@ -22603,7 +22671,15 @@ The pack may contain:
         PartyReward_Name_110301 = {
           ContentEN = "Handcrafted Headpiece",
           TextMapId = "PartyReward_Name_110301"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "PartyReward_Name_110302",
+    MaxKey = "PartyTopic_Name_510202",
+    Loader = function()
+      return {
         PartyReward_Name_110302 = {
           ContentEN = "Flamboyant Newspaper Article",
           TextMapId = "PartyReward_Name_110302"
@@ -22671,15 +22747,7 @@ The pack may contain:
         PartyReward_Name_230102 = {
           ContentEN = "Drink: Sea Salt Cotton Candy",
           TextMapId = "PartyReward_Name_230102"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "PartyReward_Name_230103",
-    MaxKey = "Pet_Affix_Activated",
-    Loader = function()
-      return {
+        },
         PartyReward_Name_230103 = {
           ContentEN = "Drink: Blueberry Yogurt",
           TextMapId = "PartyReward_Name_230103"
@@ -23411,7 +23479,15 @@ The pack may contain:
         PartyTopic_Name_510202 = {
           ContentEN = "The Troublemakers",
           TextMapId = "PartyTopic_Name_510202"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "PartyTopic_Name_510203",
+    MaxKey = "PhantomTalk_5401_Chest",
+    Loader = function()
+      return {
         PartyTopic_Name_510203 = {
           ContentEN = "Secrets to the Grave",
           TextMapId = "PartyTopic_Name_510203"
@@ -23470,15 +23546,7 @@ The pack may contain:
         Pet_Affix_Activated = {
           ContentEN = "Trait with identical name activated",
           TextMapId = "Pet_Affix_Activated"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "Pet_Affix_Archive",
-    MaxKey = "PlayerLevel_ExpSource",
-    Loader = function()
-      return {
+        },
         Pet_Affix_Archive = {
           ContentEN = "Geniemon Traits Archive",
           TextMapId = "Pet_Affix_Archive"
@@ -24213,7 +24281,15 @@ Magnetix Drone deals damage to nearby enemies through Resonance Support.]],
         PhantomTalk_5401_Chest = {
           ContentEN = "Found some supplies. Let's restock before we head out again.",
           TextMapId = "PhantomTalk_5401_Chest"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "Piano_NoMusic",
+    MaxKey = "QuestDesc_10030201",
+    Loader = function()
+      return {
         Piano_NoMusic = {
           ContentEN = "No pieces available. Collect scores to play.",
           TextMapId = "Piano_NoMusic"
@@ -24281,15 +24357,7 @@ Magnetix Drone deals damage to nearby enemies through Resonance Support.]],
         PlayerLevel_ExpSource = {
           ContentEN = "Earned Trial EXP",
           TextMapId = "PlayerLevel_ExpSource"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "PlayerLevel_FirstObtain_Char",
-    MaxKey = "QuestDesc_100302sp104",
-    Loader = function()
-      return {
+        },
         PlayerLevel_FirstObtain_Char = {
           ContentEN = "Character Unlocks{\231\169\186\230\160\188}",
           TextMapId = "PlayerLevel_FirstObtain_Char"
@@ -24305,6 +24373,16 @@ Magnetix Drone deals damage to nearby enemies through Resonance Support.]],
         PlayerLevel_FirstObtain_Weapon = {
           ContentEN = "Weapon Unlocks{\231\169\186\230\160\188}",
           TextMapId = "PlayerLevel_FirstObtain_Weapon"
+        },
+        PlayerLevel_Growth_Unlock = {
+          ContentEN = "Character progression cap increased",
+          TextMapId = "PlayerLevel_Growth_Unlock"
+        },
+        PlayerLevel_Growth_Unlock_Content = {
+          ContentEN = [[
+Character & weapon ascension cap increased
+Demon Wedge extraction cap increased]],
+          TextMapId = "PlayerLevel_Growth_Unlock_Content"
         },
         PlayerLevel_HardBoss_Unlock = {
           ContentEN = "Challenge Unlocked",
@@ -24365,6 +24443,16 @@ Magnetix Drone deals damage to nearby enemies through Resonance Support.]],
         PlayerLevel_WeaponSmelt = {
           ContentEN = "Weapon Smelting",
           TextMapId = "PlayerLevel_WeaponSmelt"
+        },
+        PlayerLevel_World_Unlock = {
+          ContentEN = "Area enemies enhanced",
+          TextMapId = "PlayerLevel_World_Unlock"
+        },
+        PlayerLevel_World_Unlock_Content = {
+          ContentEN = [[
+Area enemies combat difficulty increased
+Area enemies item drop rates increased]],
+          TextMapId = "PlayerLevel_World_Unlock_Content"
         },
         PlayerLv_Insufficient = {
           ContentEN = "Trial Rank requirement not met",
@@ -25164,7 +25252,15 @@ You can earn EXP by:
         QuestDesc_10030201 = {
           ContentEN = "You've arrived at the sewers near the factory. Which way next? Best consult Rhythm \226\128\148 she may have some ideas.",
           TextMapId = "QuestDesc_10030201"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "QuestDesc_10030202",
+    MaxKey = "QuestName_10020614",
+    Loader = function()
+      return {
         QuestDesc_10030202 = {
           ContentEN = "A few steps into the sewers, Outsider suddenly hears strange noises up ahead. Best move in with caution.",
           TextMapId = "QuestDesc_10030202"
@@ -25248,15 +25344,7 @@ You can earn EXP by:
         QuestDesc_100302sp104 = {
           ContentEN = "To reactivate the control panel, you'll need to clear the blocked pipes in this area. But the moment the drainage system activates, Filthoids swarm in. Hold them off and protect the civilian!",
           TextMapId = "QuestDesc_100302sp104"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "QuestDesc_100302sp201",
-    MaxKey = "QuestName_10029801",
-    Loader = function()
-      return {
+        },
         QuestDesc_100302sp201 = {
           ContentEN = "The second civilian is trapped behind sewer defences. Disable the security mechanisms from the control panel and get them out safely.",
           TextMapId = "QuestDesc_100302sp201"
@@ -25972,7 +26060,15 @@ You can earn EXP by:
         QuestName_10020614 = {
           ContentEN = "Talk to the soldier",
           TextMapId = "QuestName_10020614"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "QuestName_10020615",
+    MaxKey = "READ_DESC_2000039",
+    Loader = function()
+      return {
         QuestName_10020615 = {
           ContentEN = "Head back to Icelake for the scheduled meet-up",
           TextMapId = "QuestName_10020615"
@@ -26056,15 +26152,7 @@ You can earn EXP by:
         QuestName_10029801 = {
           ContentEN = "Raise Your Trial Rank to Continue the Main Story",
           TextMapId = "QuestName_10029801"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "QuestName_10029901",
-    MaxKey = "READ_FUNCTION_READ",
-    Loader = function()
-      return {
+        },
         QuestName_10029901 = {
           ContentEN = "Raise Your Trial Rank to Continue the Main Story",
           TextMapId = "QuestName_10029901"
@@ -26789,7 +26877,15 @@ The handwriting on the page listing remaining medical supplies grows increasingl
         READ_DESC_2000039 = {
           ContentEN = "A stack of torn-off medicine labels, each marked \"Sedative.\" On the back of one, a message has been furiously scrawled.",
           TextMapId = "READ_DESC_2000039"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "READ_DESC_2000040",
+    MaxKey = "READ_TEXT_JailInves01",
+    Loader = function()
+      return {
         READ_DESC_2000040 = {
           ContentEN = "A scrap of paper with a short poem scrawled across it.",
           TextMapId = "READ_DESC_2000040"
@@ -26875,15 +26971,7 @@ Among its stories are "The Driverless Bus One Must Never Board After Ten" and "T
         READ_FUNCTION_READ = {
           ContentEN = "Readables",
           TextMapId = "READ_FUNCTION_READ"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "READ_NAME_2000001",
-    MaxKey = "RESOURCE_DESC_10019",
-    Loader = function()
-      return {
+        },
         READ_NAME_2000001 = {
           ContentEN = "Statue Inscription",
           TextMapId = "READ_NAME_2000001"
@@ -27634,6 +27722,10 @@ All glory to our Emperor.]],
           ContentEN = "\226\133\160. Overture\n\nHast thou ever heard of such a revelry,\n\nWhere profane soldiers and demon's progeny joined hand in hand?\n\nWhere the southerling and the nordling raised a song as one,\n\nTo hymn the silver peace \226\128\152twixt Sola and Charon!\n\nTears of wax did drip from Sola's candlelight,\n\nUpon Charon's face, naught but carefree delight.\n\nThey twisted their waists, they swung limb and limb,\n\nWith steps of dance, their joy did brim.\n\nThrough joy they reached madness, a fevered state,\n\nThrough madness, forgot sorrow and fate.\n\nThrough sorrow, bestowed upon the past its weight,\n\nAnd at the end of past \226\128\148 a name to celebrate!\n\nSoranus Galea!\n\nHe who took an ancient name, yet defied the false god's claim,\n\nHe who inherited an armored surname, to aid the Emperor's frame.\n\nThe younger brother of His Majesty Dis Galea, departed from our world too soon,\n\nSoranus Galea!",
           TextMapId = "READ_TEXT_2000057"
         },
+        READ_TEXT_2000058 = {
+          ContentEN = "\226\133\161. In Praise of Soranus Galea\n\nNorthward! To lands afar from the false god's gaze,\n\nNorthward! To fields unbound by mortal chains,\n\nNorthward! To realms abundant with liberty!\n\nIn the third early winter since the Exodus,\n\nHouse Galea pressed on, never to repose.\n\nThey swore to flee the Elysian Church's hold,\n\nWith silver blades against the world's end cold.\n\nAt the forefront of that argent tide,\n\nHis form you'd see, striding with pride.\n\nHis helm shone bright, a guiding star afar,\n\nHis steps held firm, like flowers unmarred.\n\nHis eyes gleamed keen, rare diamonds untold,\n\nHis form sped light, as dust on winds old.\n\nSoranus Galea!\n\nTreasure of Dis the First, the household's young wolf,\n\nWhenever he drew his sword, comedy unfolded\226\128\148\n\nVictory assured, the battle's ending foretold.",
+          TextMapId = "READ_TEXT_2000058"
+        },
         READ_TEXT_2000059 = {
           ContentEN = "\226\133\162. The Gift of Fate\n \n From revelry did tragedy arise;\n \n From the eternal was born what must pass.\n \n South of Lamenting Lake, the snows lay deep.\n \n And those from gentler lands had never beheld such boundless white.\n \n Fallen feathers, ashen earth, lips pale as the ivory lake's milk-stone.\n \n What once was marvel at the snow became dread of death.\n \n Empty bellies growled, heralds of despair unborn.\n \n Even Soranus, fairest and steadfast,\n \n Scoured desperately for a single morsel.\n \n But not even Soranus could conjure wheat from icefields.\n \n He gnawed upon blocks of snow,\n \n Leant upon his longsword as a crutch,\n \n And ventured into the blizzard for one last charge,\n \n Hoping fate concealed a gift beyond the winter's end.\n \n When the storm at last relented,\n \n A village appeared above Lamenting Lake.\n \n With the last of his strength, Soranus knocked upon its gate,\n \n And gave thanks for fate's final, merciful gift.\n \n Yet perhaps, for he and his brother had spurned the gods,\n \n He knew not in that hour the first verse of his downfall was already writ.",
           TextMapId = "READ_TEXT_2000059"
@@ -27773,9 +27865,17 @@ Temporary Supply Pick-up Point:
         READ_TEXT_JailInves01 = {
           ContentEN = " \226\128\187 Oath of Allegiance\n\nSource: Testimony by Calem, soldier of the Narwhals \n According to Calem, his commanding officer, Falsi, retrieved this document from the central control room shortly before the explosion. \n It is a letter of defection, pledging allegiance to the Forsakens \226\128\148 signed by Avar Hrodland. \n  \n Hellfire's Note: \n Handwriting and fingerprints confirmed. \n Still \226\128\148 could it be forged? \n  \n  \n \226\128\187 Correspondence from Avar Hrodland \n This letter contains specific instructions addressed to {nickname2} and Theodore, detailing acts of disruption to be carried out during the assault.\n \n \n \226\128\187 Control Panel: Central Control Room \n Status: Data compromised due to blast damage. \n Recovered via classified recorder \226\128\148 access logs from the final three days: \n \226\128\162 18 Nov: No entries\n \226\128\162 19 Nov: No entries\n \226\128\162 20 Nov: Avar Hrodland, {nickname2}\n  \n Hellfire's Note: \n Worth noting.\n \n \n \226\128\187 Audio Recorder \n Recovered from the hallway by Catto (Narwhals unit), allegedly dropped during the Forsakens' retreat. \n At timestamp 33:17, a voice resembling Avar Hrodland is heard in conversation with an unidentified Forsakens operative. \n  \n Hellfire's Note: \n May prove useful in establishing a timeline. Credibility remains in question.\n \n  \n \226\128\187 Testimony from Calem (Narwhals unit) \n Statements as follows:\n \226\128\162 \"I saw Captain {nickname2} of the Griffins exit the central control room alone \226\128\148 there was blood all over {\230\128\167\229\136\1712:his|her} chest.\"\n \226\128\162 \"{\230\128\167\229\136\1712:He|She} told us to hold position while {\230\128\167\229\136\1712:he|she} went to check the sewers for any remaining Forsakens personnel.\"\n \226\128\162 \"Two minutes later, the alarm sounded. Captain Falsi and I rushed in \226\128\148 found Captain Avar of the Snow Wolves lying in a pool of blood. The self-destruct sequence had already been triggered.\"\n  \n Hellfire's Note: \n Internal conflict?\n \n \n \226\128\187 Outstanding Questions\n \226\128\162 Why was the control room destroyed?\n \226\134\146 A cover-up to eliminate further evidence?\n \n Conflicting Accounts:\n \226\134\146 Testimonies from {nickname2} and Theodore directly contradict the findings above.",
           TextMapId = "READ_TEXT_JailInves01"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "READ_TEXT_JailInves02",
+    MaxKey = "RESOURCE_DESC_12127",
+    Loader = function()
+      return {
         READ_TEXT_JailInves02 = {
-          ContentEN = " \226\128\187 Investigation into the Family Background of Daphne Theodore\n\nThe Theodore family currently resides in the royal capital, Dismania. Several members serve at the Royal Alchemy Academy. Notably, both Marcus Theodore (Daphne's maternal grandfather) and Claudia Theodore (her mother) have been awarded the First-Class Emerald Order by the Aeolipile.\n No criminal record has been found in connection with the Theodore family.\n \n Further inquiry reveals that Daphne's biological father is Avar Hrodland. Although Avar and Claudia officially divorced five years ago, Avar has continued to maintain contact with Daphne since.\n\n \226\128\187 Investigation into the Family Background of {nickname2}\n {nickname2} is a confirmed survivor of the Alexis airship crash, which occurred three years ago during a military operation against the Elysian Church. According to {nickname2}, {\230\128\167\229\136\171:he|she} suffers from memory loss, though exhibits no signs of cognitive dysfunction.\n Notably, eyewitness accounts from other survivors confirm that {nickname2} was not listed among the original passengers on the Alexis. In other words, <H>{nickname2} was a bona fide \"ghost passenger.\"</>\n At the time, the 13th Legion conducted a comprehensive investigation into {nickname2}'s background but was unable to verify {\230\128\167\229\136\171:his|her} identity. However, the possibility of {\230\128\167\229\136\171:him|her} being an Elysian Church spy was definitively ruled out. A leading theory suggests that {\230\128\167\229\136\171:he|she} may have been a local civilian who sought shelter in the wreckage during the bombing and suffered a head injury, resulting in partial amnesia.\n Placed under close observation by the 13th Legion, and with Prince Vergilius acting as guarantor, {nickname2} was granted admission to the Imperial Military College. {\230\128\167\229\136\171:He|She} graduated with distinction. During this time, Avar Hrodland served as one of {\230\128\167\229\136\171:his|her} instructors.",
+          ContentEN = " \226\128\187 Investigation into the Family Background of Daphne Theodore\n\nThe Theodore family currently resides in the royal capital, Dismania. Several members serve at the Royal Alchemy Academy. Notably, both Marcus Theodore (Daphne's maternal grandfather) and Claudia Theodore (her mother) have been awarded the First-Class Emerald Order by the Aeolipile.\nNo criminal record has been found in connection with the Theodore family.\n \n Further inquiry reveals that Daphne's biological father is Avar Hrodland. Although Avar and Claudia officially divorced five years ago, Avar has continued to maintain contact with Daphne since.\n\n \226\128\187 Investigation into the Family Background of {nickname2}\n {nickname2} is a confirmed survivor of the Alexis airship crash, which occurred three years ago during a military operation against the Elysian Church. According to {nickname2}, {\230\128\167\229\136\1712:he|she} suffers from memory loss, though exhibits no signs of cognitive dysfunction.\nNotably, eyewitness accounts from other survivors confirm that {nickname2} was not listed among the original passengers on the Alexis. In other words, <H>{nickname2} was a bona fide \"ghost passenger.\"</>\nAt the time, the 13th Legion conducted a comprehensive investigation into {nickname2}'s background but was unable to verify {\230\128\167\229\136\1712:his|her} identity. However, the possibility of {\230\128\167\229\136\1712:him|her} being an Elysian Church spy was definitively ruled out. A leading theory suggests that {\230\128\167\229\136\1712:he|she} may have been a local civilian who sought shelter in the wreckage during the bombing and suffered a head injury, resulting in partial amnesia.\nPlaced under close observation by the 13th Legion, and with Prince Vergilius acting as guarantor, {nickname2} was granted admission to the Imperial Military College. {\230\128\167\229\136\1712:He|She} graduated with distinction. During this time, Avar Hrodland served as one of {\230\128\167\229\136\1712:his|her} instructors.",
           TextMapId = "READ_TEXT_JailInves02"
         },
         RESOURCE_DESC_100 = {
@@ -27863,15 +27963,7 @@ Like precious metals, they function as common currency across Atlasia, accepted 
         RESOURCE_DESC_10019 = {
           ContentEN = "An Elysian Church classic, penned in verse for singing. It embodies divine teachings chronicled by patriarchs over the years, an aged print from bygone days.",
           TextMapId = "RESOURCE_DESC_10019"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "RESOURCE_DESC_1002",
-    MaxKey = "RESOURCE_DESC_20003",
-    Loader = function()
-      return {
+        },
         RESOURCE_DESC_1002 = {
           ContentEN = [[
 It's a bit of a mystery why a luno at the age of Snow's Granny has taken a fancy to toy hammers. Perhaps it's a smith's quirk?
@@ -28591,7 +28683,15 @@ There is no turning back once the trigger is pulled, much like the commitment th
         RESOURCE_DESC_12127 = {
           ContentEN = "Crafted with precision from the blueprint of Wailmaw. There is no turning back once the trigger is pulled, much like the commitment that seals a decisive moment.",
           TextMapId = "RESOURCE_DESC_12127"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "RESOURCE_DESC_12128",
+    MaxKey = "RESOURCE_DESC_5110400",
+    Loader = function()
+      return {
         RESOURCE_DESC_12128 = {
           ContentEN = "Crafted with precision from the blueprint of Wailmaw. Sturdy and robust, it doubles effectively as a blunt instrument or a throwable weapon when out of bullets.",
           TextMapId = "RESOURCE_DESC_12128"
@@ -28679,15 +28779,7 @@ There is no turning back once the trigger is pulled, much like the commitment th
         RESOURCE_DESC_20003 = {
           ContentEN = "Cleansing Water used by the Elysian Church devotees to cleanse their hands before ceremonies, usually kept in blessed containers inside temples.",
           TextMapId = "RESOURCE_DESC_20003"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "RESOURCE_DESC_20004",
-    MaxKey = "RESOURCE_FUNCTION_10022",
-    Loader = function()
-      return {
+        },
         RESOURCE_DESC_20004 = {
           ContentEN = "Carried by Hyperborean soldiers, engraved with their name, rank, legion, and enlistment date. If a soldier falls in battle, their legion uses the name plate to identify them, and it is sent back to their hometown as a mark of honour.",
           TextMapId = "RESOURCE_DESC_20004"
@@ -29289,6 +29381,10 @@ IT'S TOXIC! HIGHLY TOXIC! EXTREMELY TOXIC!]],
           ContentEN = "After a headlong sprint, savour a moment of stillness.",
           TextMapId = "RESOURCE_DESC_41018"
         },
+        RESOURCE_DESC_5000000 = {
+          ContentEN = "Used to enhance Demon Wedges with high rarity",
+          TextMapId = "RESOURCE_DESC_5000000"
+        },
         RESOURCE_DESC_5011010 = {
           ContentEN = "A key commercial species across Atlasia, this fish can be found in every sea. It forms vast schools in the open ocean and migrates to coastal shallows with the turning of the seasons, year after year.",
           TextMapId = "RESOURCE_DESC_5011010"
@@ -29440,7 +29536,15 @@ IT'S TOXIC! HIGHLY TOXIC! EXTREMELY TOXIC!]],
         RESOURCE_DESC_5110400 = {
           ContentEN = "A fishing rod crafted by Lunosmith, featuring a surface monitor styled after Cinder, her trusty little assistant. When a fish bites, Cinder lights up to signal it \226\128\148 though according to customer feedback, some folks got so mesmerised watching it glow, they ended up going home with an empty bucket.",
           TextMapId = "RESOURCE_DESC_5110400"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "RESOURCE_DESC_5110500",
+    MaxKey = "RESOURCE_NAME_110001",
+    Loader = function()
+      return {
         RESOURCE_DESC_5110500 = {
           ContentEN = "A fishing rod crafted by Lunosmith, featuring a surface monitor styled after Cinder, her trusty little assistant. When a fish bites, Cinder lights up to signal it \226\128\148 though according to customer feedback, some folks got so mesmerised watching it glow, they ended up going home with an empty bucket.",
           TextMapId = "RESOURCE_DESC_5110500"
@@ -29536,15 +29640,7 @@ Heartfelt prayers shall be answered, and the desired one shall appear by your si
         RESOURCE_FUNCTION_10022 = {
           ContentEN = "Null",
           TextMapId = "RESOURCE_FUNCTION_10022"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "RESOURCE_FUNCTION_10023",
-    MaxKey = "RESOURCE_NAME_12002",
-    Loader = function()
-      return {
+        },
         RESOURCE_FUNCTION_10023 = {
           ContentEN = "Null",
           TextMapId = "RESOURCE_FUNCTION_10023"
@@ -30252,7 +30348,15 @@ Heartfelt prayers shall be answered, and the desired one shall appear by your si
         RESOURCE_NAME_110001 = {
           ContentEN = "Beginner Weapon Selection (\226\133\160)",
           TextMapId = "RESOURCE_NAME_110001"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "RESOURCE_NAME_110006",
+    MaxKey = "RESOURCE_NAME_20030",
+    Loader = function()
+      return {
         RESOURCE_NAME_110006 = {
           ContentEN = "Beginner Character Skin Selection - Starlit",
           TextMapId = "RESOURCE_NAME_110006"
@@ -30344,15 +30448,7 @@ Heartfelt prayers shall be answered, and the desired one shall appear by your si
         RESOURCE_NAME_12002 = {
           ContentEN = "Ingenious Tactics: Blade",
           TextMapId = "RESOURCE_NAME_12002"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "RESOURCE_NAME_12003",
-    MaxKey = "RESOURCE_NAME_20514",
-    Loader = function()
-      return {
+        },
         RESOURCE_NAME_12003 = {
           ContentEN = "Momiji Itteki: Grip",
           TextMapId = "RESOURCE_NAME_12003"
@@ -31060,7 +31156,15 @@ Heartfelt prayers shall be answered, and the desired one shall appear by your si
         RESOURCE_NAME_20030 = {
           ContentEN = "Serum Syringe",
           TextMapId = "RESOURCE_NAME_20030"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "RESOURCE_NAME_20031",
+    MaxKey = "RESOURCE_NAME_5021011",
+    Loader = function()
+      return {
         RESOURCE_NAME_20031 = {
           ContentEN = "Filthoid Polymer",
           TextMapId = "RESOURCE_NAME_20031"
@@ -31152,15 +31256,7 @@ Heartfelt prayers shall be answered, and the desired one shall appear by your si
         RESOURCE_NAME_20514 = {
           ContentEN = "Ancient Shield",
           TextMapId = "RESOURCE_NAME_20514"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "RESOURCE_NAME_20515",
-    MaxKey = "RESOURCE_NAME_5023031",
-    Loader = function()
-      return {
+        },
         RESOURCE_NAME_20515 = {
           ContentEN = "Hostless Medal",
           TextMapId = "RESOURCE_NAME_20515"
@@ -31785,6 +31881,10 @@ Heartfelt prayers shall be answered, and the desired one shall appear by your si
           ContentEN = "Mechanical Nexus: Evilbane",
           TextMapId = "RESOURCE_NAME_42002"
         },
+        RESOURCE_NAME_5000000 = {
+          ContentEN = "Demon Wedge: Treasure ",
+          TextMapId = "RESOURCE_NAME_5000000"
+        },
         RESOURCE_NAME_5011010 = {
           ContentEN = "Tidewanderer",
           TextMapId = "RESOURCE_NAME_5011010"
@@ -31864,7 +31964,15 @@ Heartfelt prayers shall be answered, and the desired one shall appear by your si
         RESOURCE_NAME_5021011 = {
           ContentEN = "Guiding Star Variant",
           TextMapId = "RESOURCE_NAME_5021011"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "RESOURCE_NAME_5021020",
+    MaxKey = "RESOURCE_TEXT_20024",
+    Loader = function()
+      return {
         RESOURCE_NAME_5021020 = {
           ContentEN = "Tidechaser",
           TextMapId = "RESOURCE_NAME_5021020"
@@ -31960,15 +32068,7 @@ Heartfelt prayers shall be answered, and the desired one shall appear by your si
         RESOURCE_NAME_5023031 = {
           ContentEN = "Lamenting Lake Trout Variant",
           TextMapId = "RESOURCE_NAME_5023031"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "RESOURCE_NAME_5023040",
-    MaxKey = "RESOURCE_TEXT_29003",
-    Loader = function()
-      return {
+        },
         RESOURCE_NAME_5023040 = {
           ContentEN = "Washer's Club",
           TextMapId = "RESOURCE_NAME_5023040"
@@ -32361,6 +32461,10 @@ Heartfelt prayers shall be answered, and the desired one shall appear by your si
           ContentEN = "\"One, two, three... three hundred and sixty! Behold, the Demon King's piggy bank of dreams. I now grant this to you \226\128\148 make sure it's put to good use!\"\n\n\226\128\148 Snow the \"Demon King\"",
           TextMapId = "RESOURCE_TEXT_101"
         },
+        RESOURCE_TEXT_10100 = {
+          ContentEN = "\"Child, even though the path ahead is uncertain, always proceed with determination.\"\n\n\226\128\148 Lady Nifle, Ferrywoman of the Misty Sea",
+          TextMapId = "RESOURCE_TEXT_10100"
+        },
         RESOURCE_TEXT_10101 = {
           ContentEN = "\"One day, I realised I could no longer cry. Perhaps it was the battlefield smoke clouding my eyes \226\128\148 or perhaps I had, at last, parted ways with the weakness in me.\"\n\n\226\128\148 From the notes of a Hyperborean soldier",
           TextMapId = "RESOURCE_TEXT_10101"
@@ -32668,7 +32772,15 @@ Heartfelt prayers shall be answered, and the desired one shall appear by your si
         RESOURCE_TEXT_20024 = {
           ContentEN = "\"Don't cut it in front of me! I can't watch this... aaaaaaaargh!\"\n\n\226\128\148 Demon Tabethe the Red Hand",
           TextMapId = "RESOURCE_TEXT_20024"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "RESOURCE_TEXT_20025",
+    MaxKey = "RLBlessing_Desc_112",
+    Loader = function()
+      return {
         RESOURCE_TEXT_20025 = {
           ContentEN = "\"Some boxes are to be opened, others not \226\128\148 thought that was common sense. If it's a holiday gift from Mom, go ahead, rip it open; but if it's a box made of fine iron, glowing eerily from the inside, with a big warning sign saying DANGER on it, you'd better chuck it into a ditch right away. But no one listened to me, so now I'm the only one left sitting here. *sigh*\"\n\n\226\128\148 Testimony taken after an accident",
           TextMapId = "RESOURCE_TEXT_20025"
@@ -32768,15 +32880,7 @@ Heartfelt prayers shall be answered, and the desired one shall appear by your si
         RESOURCE_TEXT_29003 = {
           ContentEN = "A fortress untouched by rivers of iron or storms of steel. Now, only laments drift across its ramparts.\nYet no wall is truly unbreachable. The strongest bastions fall not to force, but to what stirs unseen in the heart.\nGo deeper \226\128\148 to witness, to listen \226\128\148 into the Fortress, where smoke still hangs and memory refuses to fade.",
           TextMapId = "RESOURCE_TEXT_29003"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "RESOURCE_TEXT_29004",
-    MaxKey = "RLBlessing_Desc_308",
-    Loader = function()
-      return {
+        },
         RESOURCE_TEXT_29004 = {
           ContentEN = "Where land and sea fall away \226\128\148 the first breath and final hush of every trade route.\nThe incense-laced air hums with legend; beneath the eaves, whispers still drift. When the smoke lifts and dust settles... what will tomorrow hold?\nGo forth \226\128\148 to see, to listen \226\128\148 and explore Huaxu, a realm ready to leave its yesterdays behind.",
           TextMapId = "RESOURCE_TEXT_29004"
@@ -32952,6 +33056,10 @@ Heartfelt prayers shall be answered, and the desired one shall appear by your si
         RESOURCE_TEXT_4020005 = {
           ContentEN = "\"Troubles to stones, 'plop, plop' as they go, where they're gone from sight, in Lamenting Lake they're beyond.\" \n\n\226\128\148 A folk ballad of Icelake",
           TextMapId = "RESOURCE_TEXT_4020005"
+        },
+        RESOURCE_TEXT_5000000 = {
+          ContentEN = "Rare material extracted from Demon Wedges",
+          TextMapId = "RESOURCE_TEXT_5000000"
         },
         RESOURCE_TEXT_5011010 = {
           ContentEN = "Tidewanderers follow the seasons like clockwork, setting off on their great migration the same month each year, no matter how rough the seas. In honour of their uncanny punctuality \226\128\148 and to better profit from it \226\128\148 coastal folk began forging clock hands in the shape of a Tidewanderer.\n\n\226\128\148 Dylan the Know-It-All, Unknown Corners",
@@ -33490,7 +33598,15 @@ Defeating an enemy increases Max HP by <Highlight>0.5%</> (max <Highlight>50%</>
         RLBlessing_Desc_112 = {
           ContentEN = "Increases Melee Weapon <Highlight>ATK Speed</> by <Highlight>#1</> and <Highlight>ATK Range</> by <Highlight>#2</>.",
           TextMapId = "RLBlessing_Desc_112"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "RLBlessing_Desc_113",
+    MaxKey = "RLBlessing_SimpleDesc_101",
+    Loader = function()
+      return {
         RLBlessing_Desc_113 = {
           ContentEN = "If damage reduces a target's HP below <Highlight>$3</>, deals bonus damage equal to <Highlight>$1</> of Character ATK. Can only trigger once every <Highlight>$2</>s on the same target.",
           TextMapId = "RLBlessing_Desc_113"
@@ -33598,15 +33714,7 @@ Standing still for over <Highlight>2</>s increases Damage Dealt by <Highlight>$2
         RLBlessing_Desc_308 = {
           ContentEN = "Decreases Damage Taken by <Highlight>$1</> when Sanity drops below <Highlight>$2</>.",
           TextMapId = "RLBlessing_Desc_308"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "RLBlessing_Desc_309",
-    MaxKey = "RLBlessing_SimpleDesc_215",
-    Loader = function()
-      return {
+        },
         RLBlessing_Desc_309 = {
           ContentEN = "Restores Sanity by <Highlight>$1</> per second every <Highlight>$4</>s when Sanity drops below <Highlight>$3</>. This effect can only be triggered once every <Highlight>$2</>s.",
           TextMapId = "RLBlessing_Desc_309"
@@ -33660,7 +33768,7 @@ Standing still for over <Highlight>2</>s increases Damage Dealt by <Highlight>$2
           TextMapId = "RLBlessing_Desc_406"
         },
         RLBlessing_Desc_407 = {
-          ContentEN = "Summons 1 [Lumiseed] every <Highlight>$1</>s.",
+          ContentEN = "Every <Highlight>$1</>s, summons 1 [Lumiseed] ",
           TextMapId = "RLBlessing_Desc_407"
         },
         RLBlessing_Desc_408 = {
@@ -33696,7 +33804,7 @@ Standing still for over <Highlight>2</>s increases Damage Dealt by <Highlight>$2
           TextMapId = "RLBlessing_Desc_415"
         },
         RLBlessing_Desc_501 = {
-          ContentEN = "Increases ATK by <Highlight>$1</> for <Highlight>$2</>s when performing Helix Leap.",
+          ContentEN = "Helix Leap grants +<Highlight>$1</> ATK for <Highlight>$2</>s and <Highlight>$3</> stack(s) of [Umbral Devourer].",
           TextMapId = "RLBlessing_Desc_501"
         },
         RLBlessing_Desc_502 = {
@@ -33799,9 +33907,21 @@ Standing still for over <Highlight>2</>s increases Damage Dealt by <Highlight>$2
           ContentEN = "+<Highlight>#1</> Revival(s). Reduces Damage Taken by <Highlight>$1</> when carrying at least 1 [Glimmerfly]. Effect is consumed on revival.",
           TextMapId = "RLBlessing_Desc_611"
         },
+        RLBlessing_Desc_612 = {
+          ContentEN = "Increases PEN stats by <Highlight>$1</> when [Glimmerfly] is not around, and by <Highlight>$2</> when [Glimmerfly] is around.",
+          TextMapId = "RLBlessing_Desc_612"
+        },
+        RLBlessing_Desc_613 = {
+          ContentEN = "Increases Morale by <Highlight>$1</> when [Glimmerfly] is not around, and by <Highlight>$2</> when [Glimmerfly] is around.",
+          TextMapId = "RLBlessing_Desc_613"
+        },
         RLBlessing_Desc_614 = {
           ContentEN = "[Glimmerflies] attack much more frequently for <Highlight>$2</>s when an enemy is nearby (max once per <Highlight>$1</>s).",
           TextMapId = "RLBlessing_Desc_614"
+        },
+        RLBlessing_Desc_615 = {
+          ContentEN = "Increases [Glimmerfly]'s Damage Dealt by <Highlight>$1</>.",
+          TextMapId = "RLBlessing_Desc_615"
         },
         RLBlessing_Desc_701 = {
           ContentEN = "Increases Skill Duration by <Highlight>#1</>.",
@@ -34290,7 +34410,15 @@ Standing still for over <Highlight>2</>s increases Damage Dealt by <Highlight>$2
         RLBlessing_SimpleDesc_101 = {
           ContentEN = "Increases Melee Weapon ATK.",
           TextMapId = "RLBlessing_SimpleDesc_101"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "RLBlessing_SimpleDesc_102",
+    MaxKey = "RLContract_Desc_109",
+    Loader = function()
+      return {
         RLBlessing_SimpleDesc_102 = {
           ContentEN = "Increases Melee Weapon <Highlight>Trigger Probability</>.",
           TextMapId = "RLBlessing_SimpleDesc_102"
@@ -34408,15 +34536,7 @@ Standing still for over <Highlight>2</>s increases Damage Dealt by <Highlight>$2
 Moving continuously for over <Highlight>2</>s decreases Damage Taken (until stopped). 
 Standing still for over <Highlight>2</>s increases Damage Dealt (until moving).]],
           TextMapId = "RLBlessing_SimpleDesc_215"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "RLBlessing_SimpleDesc_301",
-    MaxKey = "RLTalent_Desc_303",
-    Loader = function()
-      return {
+        },
         RLBlessing_SimpleDesc_301 = {
           ContentEN = "Increases Skill Range.",
           TextMapId = "RLBlessing_SimpleDesc_301"
@@ -34609,6 +34729,18 @@ Standing still for over <Highlight>2</>s increases Damage Dealt (until moving).]
           ContentEN = "Grants 1 [Glimmerfly] every <Highlight>10</>s.",
           TextMapId = "RLBlessing_SimpleDesc_603"
         },
+        RLBlessing_SimpleDesc_604 = {
+          ContentEN = "Increases Ranged Weapon CRIT Chance. The effect intensifies when [Glimmerfly] is around.",
+          TextMapId = "RLBlessing_SimpleDesc_604"
+        },
+        RLBlessing_SimpleDesc_605 = {
+          ContentEN = "Increases Ranged Weapon CRIT Damage. The effect intensifies when [Glimmerfly] is around.",
+          TextMapId = "RLBlessing_SimpleDesc_605"
+        },
+        RLBlessing_SimpleDesc_606 = {
+          ContentEN = "Increases Ranged Weapon Trigger Probability. The effect intensifies when [Glimmerfly] is around.",
+          TextMapId = "RLBlessing_SimpleDesc_606"
+        },
         RLBlessing_SimpleDesc_607 = {
           ContentEN = "Increases Damage Dealt by summoned items.",
           TextMapId = "RLBlessing_SimpleDesc_607"
@@ -34621,9 +34753,29 @@ Standing still for over <Highlight>2</>s increases Damage Dealt (until moving).]
           ContentEN = "Increases Skill Efficiency.",
           TextMapId = "RLBlessing_SimpleDesc_609"
         },
+        RLBlessing_SimpleDesc_610 = {
+          ContentEN = "Increases Ranged Weapon Multishot. The effect intensifies when [Glimmerfly] is around.",
+          TextMapId = "RLBlessing_SimpleDesc_610"
+        },
         RLBlessing_SimpleDesc_611 = {
           ContentEN = "Grants 1 extra Revival. Reduces Damage Taken while carrying [Glimmerflies]. Effect is consumed on revival.",
           TextMapId = "RLBlessing_SimpleDesc_611"
+        },
+        RLBlessing_SimpleDesc_612 = {
+          ContentEN = "Increases all PEN stats. The effect intensifies when [Glimmerfly] is around.",
+          TextMapId = "RLBlessing_SimpleDesc_612"
+        },
+        RLBlessing_SimpleDesc_613 = {
+          ContentEN = "Increases Morale. The effect intensifies when [Glimmerfly] is around.",
+          TextMapId = "RLBlessing_SimpleDesc_613"
+        },
+        RLBlessing_SimpleDesc_614 = {
+          ContentEN = "[Glimmerflies] attack much more frequently when enemies are within range.",
+          TextMapId = "RLBlessing_SimpleDesc_614"
+        },
+        RLBlessing_SimpleDesc_615 = {
+          ContentEN = "Increases [Glimmerfly]'s Damage Dealt.",
+          TextMapId = "RLBlessing_SimpleDesc_615"
         },
         RLBlessing_SimpleDesc_701 = {
           ContentEN = "Increases Skill Duration.",
@@ -35068,7 +35220,15 @@ Standing still for over <Highlight>2</>s increases Damage Dealt (until moving).]
         RLContract_Desc_109 = {
           ContentEN = "<Highlight>#1</> hostile mechanisms appear in battles.",
           TextMapId = "RLContract_Desc_109"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "RLContract_Desc_110",
+    MaxKey = "RLTreasure_IPDesc_10305",
+    Loader = function()
+      return {
         RLContract_Desc_110 = {
           ContentEN = "Increases prices at Mysterious Merchant by <Highlight>50%</> Embers.",
           TextMapId = "RLContract_Desc_110"
@@ -35216,15 +35376,7 @@ Standing still for over <Highlight>2</>s increases Damage Dealt (until moving).]
         RLTalent_Desc_303 = {
           ContentEN = "+<Highlight>#1</> Trigger Probability",
           TextMapId = "RLTalent_Desc_303"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "RLTalent_Desc_304",
-    MaxKey = "RLTreasure_Name_10111",
-    Loader = function()
-      return {
+        },
         RLTalent_Desc_304 = {
           ContentEN = "+<Highlight>#1</> CRIT Chance",
           TextMapId = "RLTalent_Desc_304"
@@ -35899,7 +36051,15 @@ Against all healing, he returned to the shadows. The Knight steps back into the 
         RLTreasure_IPDesc_10305 = {
           ContentEN = "He'd rather be known as \"the Illusionist\" than \"that freak\". In this bleak, monotonous void, conjuring joy is his only pursuit\226\128\148the cost of that joy matters little, for he has nothing left to lose.",
           TextMapId = "RLTreasure_IPDesc_10305"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "RLTreasure_IPDesc_10306",
+    MaxKey = "RL_Event305_Select_1",
+    Loader = function()
+      return {
         RLTreasure_IPDesc_10306 = {
           ContentEN = "Wealth is best in abundance\226\128\148yet mere accumulation is simply dull. Let riches take nobler forms, let the masses sing praises of my generosity! Accept this gift\226\128\166 and add another verse to my legend.",
           TextMapId = "RLTreasure_IPDesc_10306"
@@ -36064,15 +36224,7 @@ All her life, she's chosen the path of a quitter. She skipped the Sacred Tree Ac
         RLTreasure_Name_10111 = {
           ContentEN = "Bird-Masked Freak's Toy (\226\133\163)",
           TextMapId = "RLTreasure_Name_10111"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "RLTreasure_Name_10112",
-    MaxKey = "RL_Event321_Select_1",
-    Loader = function()
-      return {
+        },
         RLTreasure_Name_10112 = {
           ContentEN = "Bird-Masked Freak's Toy (\226\133\164)",
           TextMapId = "RLTreasure_Name_10112"
@@ -36726,7 +36878,15 @@ Restores Sanity after using a skill.
         RL_Event305_Select_1 = {
           ContentEN = "Gain <highlight>150</> Embers.",
           TextMapId = "RL_Event305_Select_1"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "RL_Event305_Select_2",
+    MaxKey = "SKILL_10504_DESC",
+    Loader = function()
+      return {
         RL_Event305_Select_2 = {
           ContentEN = "Grants a <Highlight>Blue</>-tier or <Highlight>Purple</>-tier [Lampwick] of your choice.",
           TextMapId = "RL_Event305_Select_2"
@@ -36874,15 +37034,7 @@ Restores Sanity after using a skill.
         RL_Event321_Select_1 = {
           ContentEN = "Win a battle to get <Highlight>450</> [Embers].",
           TextMapId = "RL_Event321_Select_1"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "RL_Event321_Select_2",
-    MaxKey = "SKILL_150202_NAME",
-    Loader = function()
-      return {
+        },
         RL_Event321_Select_2 = {
           ContentEN = "Obtain a random <Highlight>Blue</>-tier or <Highlight>Purple</>-tier [Lampwick].",
           TextMapId = "RL_Event321_Select_2"
@@ -37532,7 +37684,15 @@ Restores Sanity after using a skill.
         SKILL_10504_DESC = {
           ContentEN = "Trigger Probability +<H>#1</>. Charged Attacks with this weapon grant +<H>#2</> ATK Speed for <H>#3</>s. Effect is removed when switching weapons.",
           TextMapId = "SKILL_10504_DESC"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "SKILL_10601_DESC",
+    MaxKey = "SKILL_420102_DESC",
+    Loader = function()
+      return {
         SKILL_10601_DESC = {
           ContentEN = "CRIT Damage +<H>#1</>. When dealing damage with this weapon, increases Damage Dealt by <H>#2</>, with an additional <H>#2</> increase per Combo Level.",
           TextMapId = "SKILL_10601_DESC"
@@ -37706,15 +37866,7 @@ While under [Funeral Rite], gains Trigger Probability Increase for ranged weapon
         SKILL_150202_NAME = {
           ContentEN = "Misty Sea Requiem",
           TextMapId = "SKILL_150202_NAME"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "SKILL_150203_DESC",
-    MaxKey = "SKILL_510191_NAME",
-    Loader = function()
-      return {
+        },
         SKILL_150203_DESC = {
           ContentEN = "Based on the user's Trigger Probability for ranged weapons, casting [Lunar Hunt] has a chance to also spawn [Solar Eclipse] at the same location, which in turn may spawn another [Lunar Hunt]. [Solar Eclipse] and [Lunar Hunt] instances generated this way are not enhanced by [Misty Sea Requiem].",
           TextMapId = "SKILL_150203_DESC"
@@ -38443,7 +38595,15 @@ When the amount of [Reverse Scale] reaches its maxium, [Starlight Descent] is en
 Deals Electro AoE Damage to enemies in front and enters the [Xuanjiao Manifest] state.
  While active, the user and all Electro allies gain [Fish-Dragon Dance].]],
           TextMapId = "SKILL_420102_DESC"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "SKILL_420102_NAME",
+    MaxKey = "SKILL_DESC_3301Skill02Damage2Radius",
+    Loader = function()
+      return {
         SKILL_420102_NAME = {
           ContentEN = "Grimscales",
           TextMapId = "SKILL_420102_NAME"
@@ -38616,15 +38776,7 @@ Increases Resolve for self and allies if 2 or more characters on the team share 
         SKILL_510191_NAME = {
           ContentEN = "Peep & Peck",
           TextMapId = "SKILL_510191_NAME"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "SKILL_510201_DESC",
-    MaxKey = "SKILL_DESC_4102Skill02_Sustain03",
-    Loader = function()
-      return {
+        },
         SKILL_510201_DESC = {
           ContentEN = [[
 Enters [Stealth] state and exits [Relentless Hunt] state. 
@@ -39305,7 +39457,15 @@ per stack of [Poison of Love]]=],
         SKILL_DESC_3301Skill02Damage2Radius = {
           ContentEN = "Additional DMG Range",
           TextMapId = "SKILL_DESC_3301Skill02Damage2Radius"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "SKILL_DESC_3301Skill02DamageExDamage",
+    MaxKey = "SKILL_DESC_SlideAttackDemage",
+    Loader = function()
+      return {
         SKILL_DESC_3301Skill02DamageExDamage = {
           ContentEN = "Enhanced Explosion DMG",
           TextMapId = "SKILL_DESC_3301Skill02DamageExDamage"
@@ -39453,15 +39613,7 @@ per stack of [Poison of Love]]=],
         SKILL_DESC_4102Skill02_Sustain03 = {
           ContentEN = "[Fortune's Clarity] Duration",
           TextMapId = "SKILL_DESC_4102Skill02_Sustain03"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "SKILL_DESC_4201DamagedRate",
-    MaxKey = "SKILL_SECTIONDESC_1502_Skill01_02",
-    Loader = function()
-      return {
+        },
         SKILL_DESC_4201DamagedRate = {
           ContentEN = "Electro Resistance Decrease",
           TextMapId = "SKILL_DESC_4201DamagedRate"
@@ -40113,7 +40265,15 @@ per stack of [Poison of Love]]=],
         SKILL_DESC_SlideAttackDemage = {
           ContentEN = "Sliding Attack DMG",
           TextMapId = "SKILL_DESC_SlideAttackDemage"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "SKILL_DESC_SlowSustain",
+    MaxKey = "System_Des_Achievement",
+    Loader = function()
+      return {
         SKILL_DESC_SlowSustain = {
           ContentEN = "Movement SPD Decrease Duration",
           TextMapId = "SKILL_DESC_SlowSustain"
@@ -40261,15 +40421,7 @@ per stack of [Poison of Love]]=],
         SKILL_SECTIONDESC_1502_Skill01_02 = {
           ContentEN = "Solar Eclipse",
           TextMapId = "SKILL_SECTIONDESC_1502_Skill01_02"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "SKILL_SECTIONDESC_1503_Skill02_01",
-    MaxKey = "System_Des_Play",
-    Loader = function()
-      return {
+        },
         SKILL_SECTIONDESC_1503_Skill02_01 = {
           ContentEN = "Lightswords Slice Starry Streams",
           TextMapId = "SKILL_SECTIONDESC_1503_Skill02_01"
@@ -40900,7 +41052,15 @@ per stack of [Poison of Love]]=],
         System_Des_Achievement = {
           ContentEN = "<Highlight>Achievements</> is now unlocked. A testament to our endeavours.",
           TextMapId = "System_Des_Achievement"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "System_Des_Archive",
+    MaxKey = "TERMEXP_Rou_10105_WindWings",
+    Loader = function()
+      return {
         System_Des_Archive = {
           ContentEN = "<Highlight>Archive</> is now unlocked \226\128\148 a showcase of your adventures and the stories they tell.",
           TextMapId = "System_Des_Archive"
@@ -41048,15 +41208,7 @@ per stack of [Poison of Love]]=],
         System_Des_Play = {
           ContentEN = "<Highlight>Combat</> is now unlocked. Complete more commissions to become an excellent Phoxhunter.",
           TextMapId = "System_Des_Play"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "System_Des_Polarity",
-    MaxKey = "TERM_4201_BonusAttack",
-    Loader = function()
-      return {
+        },
         System_Des_Polarity = {
           ContentEN = "<Highlight>Track Adjustment</> is now unlocked. Time to maximise the potential of your Demon Wedges.",
           TextMapId = "System_Des_Polarity"
@@ -41758,7 +41910,15 @@ When a new [Phantasm] is created, the existing [Phantasm] immediately deals Anem
         TERMEXP_Rou_10105_WindWings = {
           ContentEN = "Small homing projectiles.",
           TextMapId = "TERMEXP_Rou_10105_WindWings"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "TERMEXP_Rou_10106_Glimmerfly",
+    MaxKey = "TextMap_AnswerName_200104",
+    Loader = function()
+      return {
         TERMEXP_Rou_10106_Glimmerfly = {
           ContentEN = "Lasts <Highlight>30</>s. Max <Highlight>3</> can be carried. After locking onto a target, homes in and deals damage equal to <Highlight>300%</> of Character ATK on hit.",
           TextMapId = "TERMEXP_Rou_10106_Glimmerfly"
@@ -41906,15 +42066,7 @@ When a new [Phantasm] is created, the existing [Phantasm] immediately deals Anem
         TERM_4201_BonusAttack = {
           ContentEN = "Wyrmcall Clouds",
           TextMapId = "TERM_4201_BonusAttack"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "TERM_4201_FallAttack",
-    MaxKey = "TextMap_ResultTips_20020101",
-    Loader = function()
-      return {
+        },
         TERM_4201_FallAttack = {
           ContentEN = "Starlight Descent",
           TextMapId = "TERM_4201_FallAttack"
@@ -42547,7 +42699,15 @@ While she fits the profile of a child, it's clear the popcorn beneath Buck's win
         TextMap_AnswerName_200104 = {
           ContentEN = "Popcorn was found near the footprints",
           TextMapId = "TextMap_AnswerName_200104"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "TextMap_AnswerName_200105",
+    MaxKey = "Toast_DonglishiJiaoxue",
+    Loader = function()
+      return {
         TextMap_AnswerName_200105 = {
           ContentEN = "A young boy was seen selling beer and popcorn near the ticket booth",
           TextMapId = "TextMap_AnswerName_200105"
@@ -42695,15 +42855,7 @@ While she fits the profile of a child, it's clear the popcorn beneath Buck's win
         TextMap_ResultTips_20020101 = {
           ContentEN = "Giselle Orchestrated the Recent Kidnapping",
           TextMapId = "TextMap_ResultTips_20020101"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "Text_Activity_Empty",
-    MaxKey = "UIGuide_Abyss_1",
-    Loader = function()
-      return {
+        },
         Text_Activity_Empty = {
           ContentEN = "No events currently available",
           TextMapId = "Text_Activity_Empty"
@@ -42786,6 +42938,10 @@ You can earn Trial EXP by:
         Tips_SpecialQuest_Start = {
           ContentEN = "You are about to start a special quest. Leaving the designated area will interrupt your progress, requiring you to restart from the last save point. For the best experience, we recommend completing the quest when you have enough time to enjoy the full storyline.",
           TextMapId = "Tips_SpecialQuest_Start"
+        },
+        TitleFrame_10001 = {
+          ContentEN = "Default",
+          TextMapId = "TitleFrame_10001"
         },
         TitleFrame_10002 = {
           ContentEN = "Duet Night Abyss \226\133\160",
@@ -43350,7 +43506,15 @@ You can earn Trial EXP by:
         Toast_DonglishiJiaoxue = {
           ContentEN = "Attack the active Phoxynamo Wheels to switch them off",
           TextMapId = "Toast_DonglishiJiaoxue"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "Toast_MiYao",
+    MaxKey = "UIGuide_SpecialSideStoryUI2",
+    Loader = function()
+      return {
         Toast_MiYao = {
           ContentEN = "Key successfully retrieved",
           TextMapId = "Toast_MiYao"
@@ -43507,15 +43671,7 @@ Tap the button to unleash Berenica's Ultimate Skill [Netherflames]. [Netherflame
         UIGuide_Abyss_1 = {
           ContentEN = "Operate the device to begin the Immersive Theatre challenge.",
           TextMapId = "UIGuide_Abyss_1"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "UIGuide_Abyss_2",
-    MaxKey = "UIGuide_Title_FireMechanism",
-    Loader = function()
-      return {
+        },
         UIGuide_Abyss_2 = {
           ContentEN = "As the curtain rises, performers disguised as enemies take the stage. Defeat the required number of enemies within the time limit to proceed.",
           TextMapId = "UIGuide_Abyss_2"
@@ -44187,7 +44343,15 @@ Some objects can only be destroyed by <H>specific Bonus Effects</> or <H>Combat 
         UIGuide_SpecialSideStoryUI2 = {
           ContentEN = "Special Side Quests might also appear during exploration. Completing them may unlock new features or functions.",
           TextMapId = "UIGuide_SpecialSideStoryUI2"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "UIGuide_SwitchMaster_PC",
+    MaxKey = "UI_Accessory_Desc_40002",
+    Loader = function()
+      return {
         UIGuide_SwitchMaster_PC = {
           ContentEN = "In safe areas, <H>hold</> &Skill3& to switch to the protagonist for exploration and interaction.",
           TextMapId = "UIGuide_SwitchMaster_PC"
@@ -44219,6 +44383,10 @@ Some objects can only be destroyed by <H>specific Bonus Effects</> or <H>Combat 
         UIGuide_Temple_2 = {
           ContentEN = "You will receive star-rated rewards after your first successful completion of the Trials. You can replay these Trials to achieve higher ratings and earn better rewards.",
           TextMapId = "UIGuide_Temple_2"
+        },
+        UIGuide_Temple_3 = {
+          ContentEN = "You can challenge [Avian Spirit Trials] by clicking the recorded locations on the map.",
+          TextMapId = "UIGuide_Temple_3"
         },
         UIGuide_Title_203001 = {
           ContentEN = "Geniemon Feeding",
@@ -44339,15 +44507,7 @@ Some objects can only be destroyed by <H>specific Bonus Effects</> or <H>Combat 
         UIGuide_Title_FireMechanism = {
           ContentEN = "Flame Trap",
           TextMapId = "UIGuide_Title_FireMechanism"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "UIGuide_Title_Fort",
-    MaxKey = "UI_Accessory_Name_10008",
-    Loader = function()
-      return {
+        },
         UIGuide_Title_Fort = {
           ContentEN = "Turret 4",
           TextMapId = "UIGuide_Title_Fort"
@@ -44652,7 +44812,7 @@ Some objects can only be destroyed by <H>specific Bonus Effects</> or <H>Combat 
           TextMapId = "UIGuide_WallJump_Phone"
         },
         UIGuide_content_203001 = {
-          ContentEN = "While exploring the world, you may come across <H>Geniemons</>. Use <H>Treats</> to capture them. Geniemons can empower your team in battle through Geniemon Support.",
+          ContentEN = "While exploring the world, you may come across <H>Geniemons</>. Use <H>Treats</> to become friends with them. Geniemons can empower your team in battle through Geniemon Support.",
           TextMapId = "UIGuide_content_203001"
         },
         UIGuide_content_203501 = {
@@ -44974,6 +45134,10 @@ Some objects can only be destroyed by <H>specific Bonus Effects</> or <H>Combat 
           ContentEN = "Toss it. Trust it. Try again when it ruins your life.",
           TextMapId = "UI_Accessory_Desc_30009"
         },
+        UI_Accessory_Desc_30010 = {
+          ContentEN = "Obtained through special events.",
+          TextMapId = "UI_Accessory_Desc_30010"
+        },
         UI_Accessory_Desc_30016 = {
           ContentEN = "Forged beneath a full moon, this famed sabre holds its glow. Tilt the blade gently \226\128\148 moonlight ripples across the steel.",
           TextMapId = "UI_Accessory_Desc_30016"
@@ -44989,7 +45153,15 @@ Some objects can only be destroyed by <H>specific Bonus Effects</> or <H>Combat 
         UI_Accessory_Desc_40002 = {
           ContentEN = "The blade is protective but also hurtful, who carries the dignity and faith of the successive masters of itself. Over the years, it has passed on exhortations from ancient times to the present world.",
           TextMapId = "UI_Accessory_Desc_40002"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "UI_Accessory_Desc_40003",
+    MaxKey = "UI_Achievement_Des_10104",
+    Loader = function()
+      return {
         UI_Accessory_Desc_40003 = {
           ContentEN = "Give me a lever, and I'll spin the world. Or at least this tyre.",
           TextMapId = "UI_Accessory_Desc_40003"
@@ -45021,6 +45193,14 @@ Some objects can only be destroyed by <H>specific Bonus Effects</> or <H>Combat 
         UI_Accessory_Desc_40010 = {
           ContentEN = "An old cape, once steeped in fantasies of \"heroes.\" Perhaps it will see the light again one day, or perhaps never at all.",
           TextMapId = "UI_Accessory_Desc_40010"
+        },
+        UI_Accessory_Desc_50004 = {
+          ContentEN = "{\231\169\186\230\160\188}",
+          TextMapId = "UI_Accessory_Desc_50004"
+        },
+        UI_Accessory_Desc_60001 = {
+          ContentEN = "{\231\169\186\230\160\188}",
+          TextMapId = "UI_Accessory_Desc_60001"
         },
         UI_Accessory_Desc_70001 = {
           ContentEN = "A butterfly flutters, stirring midsummer from its slumber.",
@@ -45096,6 +45276,13 @@ Hilda's Headpiece
 "Filthoids and pests are of the same ilk. They're both filthy creatures that must be purged. And as for so-called battles, they are nothing more than a delightful spring cleaning."]],
           TextMapId = "UI_Accessory_Desc_91003"
         },
+        UI_Accessory_Desc_91004 = {
+          ContentEN = [[
+Fushu's Headpiece
+"'As we carefully grind our herbs, a delightful fragrance of apricot flowers fills the air.'
+I wonder how the old apricot trees in the yard are faring, and if the children will again risk scraping their knees for a taste of their fruit."]],
+          TextMapId = "UI_Accessory_Desc_91004"
+        },
         UI_Accessory_Desc_91005 = {
           ContentEN = [[
 Yuming's Headpiece
@@ -45165,15 +45352,7 @@ Lynn's Headpiece
         UI_Accessory_Name_10008 = {
           ContentEN = "Verdant Sprout: Rose Red",
           TextMapId = "UI_Accessory_Name_10008"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "UI_Accessory_Name_10009",
-    MaxKey = "UI_Achievement_Des_1400302",
-    Loader = function()
-      return {
+        },
         UI_Accessory_Name_10009 = {
           ContentEN = "Cinder",
           TextMapId = "UI_Accessory_Name_10009"
@@ -45590,6 +45769,10 @@ Lynn's Headpiece
           ContentEN = "Argent Flare",
           TextMapId = "UI_Accessory_Name_50004"
         },
+        UI_Accessory_Name_60001 = {
+          ContentEN = "{\231\169\186\230\160\188}",
+          TextMapId = "UI_Accessory_Name_60001"
+        },
         UI_Accessory_Name_70001 = {
           ContentEN = "Flow of Grace",
           TextMapId = "UI_Accessory_Name_70001"
@@ -45797,7 +45980,15 @@ Lynn's Headpiece
         UI_Achievement_Des_10104 = {
           ContentEN = "Collect all <highlight>Scattered Diaries</> in Purgatorio Island - Ruins",
           TextMapId = "UI_Achievement_Des_10104"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "UI_Achievement_Des_10105",
+    MaxKey = "UI_Achievement_Des_5052",
+    Loader = function()
+      return {
         UI_Achievement_Des_10105 = {
           ContentEN = "Collect all Theo's <highlight>Field Notes</>",
           TextMapId = "UI_Achievement_Des_10105"
@@ -45930,6 +46121,10 @@ Lynn's Headpiece
           ContentEN = "Trial Rank reaches Lv. 50",
           TextMapId = "UI_Achievement_Des_105"
         },
+        UI_Achievement_Des_106 = {
+          ContentEN = "Trial Rank reaches Lv. 60",
+          TextMapId = "UI_Achievement_Des_106"
+        },
         UI_Achievement_Des_107030501 = {
           ContentEN = "Complete all side quests in Hyperborean Empire - Icelake",
           TextMapId = "UI_Achievement_Des_107030501"
@@ -45973,15 +46168,7 @@ Lynn's Headpiece
         UI_Achievement_Des_1400302 = {
           ContentEN = "Possess <highlight>5</> Geniemons that have been ascended to Phase <highlight>3</>",
           TextMapId = "UI_Achievement_Des_1400302"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "UI_Achievement_Des_1400303",
-    MaxKey = "UI_Achievement_Des_51701",
-    Loader = function()
-      return {
+        },
         UI_Achievement_Des_1400303 = {
           ContentEN = "Possess <highlight>10</> Geniemons that have been ascended to Phase <highlight>3</>",
           TextMapId = "UI_Achievement_Des_1400303"
@@ -46410,6 +46597,10 @@ Lynn's Headpiece
           ContentEN = "Secured victory within <highlight>#1</>s in solo-mode \"Nocturnal Echoes \194\183 The Warden of the Inferno\" on the highest difficulty",
           TextMapId = "UI_Achievement_Des_5004"
         },
+        UI_Achievement_Des_5005 = {
+          ContentEN = "Secured victory within <highlight>#1</>s in solo-mode \"Nocturnal Echoes: Beast From the Snowfield\" on the highest difficulty",
+          TextMapId = "UI_Achievement_Des_5005"
+        },
         UI_Achievement_Des_501001 = {
           ContentEN = "Take a seat in \"The Chair Full Of Power\"",
           TextMapId = "UI_Achievement_Des_501001"
@@ -46473,6 +46664,10 @@ Lynn's Headpiece
         UI_Achievement_Des_5014 = {
           ContentEN = "Secured victory in \"Nocturnal Echoes \194\183 The Warden of the Inferno\" on the highest difficulty <highlight>without summoning any Combat Partners</>",
           TextMapId = "UI_Achievement_Des_5014"
+        },
+        UI_Achievement_Des_5015 = {
+          ContentEN = "Secured victory in \"Nocturnal Echoes: Beast From the Snowfield\" on the highest difficulty <highlight>without summoning any Combat Partners</>",
+          TextMapId = "UI_Achievement_Des_5015"
         },
         UI_Achievement_Des_5021 = {
           ContentEN = "Secure victory in solo-mode [Commission: Capture] on the highest difficulty <H>without summoning any Combat Partners</>",
@@ -46593,7 +46788,15 @@ Lynn's Headpiece
         UI_Achievement_Des_5052 = {
           ContentEN = "Secure victory in [Nocturnal Echoes: Crystalophile] on the highest difficulty <H>without losing HP or summoning any Combat Partners</>",
           TextMapId = "UI_Achievement_Des_5052"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "UI_Achievement_Des_5053",
+    MaxKey = "UI_Achievement_Name_101102",
+    Loader = function()
+      return {
         UI_Achievement_Des_5053 = {
           ContentEN = "Secure victory in [Nocturnal Echoes: The Eclosioner] on the highest difficulty <H>without losing HP or summoning any Combat Partners</>",
           TextMapId = "UI_Achievement_Des_5053"
@@ -46601,6 +46804,10 @@ Lynn's Headpiece
         UI_Achievement_Des_5054 = {
           ContentEN = "Secured victory in \"Nocturnal Echoes \194\183 The Warden of the Inferno\" on the highest difficulty <highlight>without losing HP or summoning any Combat Partners</>",
           TextMapId = "UI_Achievement_Des_5054"
+        },
+        UI_Achievement_Des_5055 = {
+          ContentEN = "Secured victory in \"Nocturnal Echoes: Beast From the Snowfield\" on the highest difficulty <highlight>without losing HP or summoning any Combat Partners</>",
+          TextMapId = "UI_Achievement_Des_5055"
         },
         UI_Achievement_Des_5061001 = {
           ContentEN = "In Solo mode, secure victory within <highlight>300</>s in [Commission: Capture] on the highest difficulty",
@@ -46781,15 +46988,7 @@ Lynn's Headpiece
         UI_Achievement_Des_51701 = {
           ContentEN = "In [Commission: Escort], successfully rescue the target with less than 5s remaining on the execution countdown",
           TextMapId = "UI_Achievement_Des_51701"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "UI_Achievement_Des_51801",
-    MaxKey = "UI_Achievement_Name_1035203",
-    Loader = function()
-      return {
+        },
         UI_Achievement_Des_51801 = {
           ContentEN = "Defeat all Patrollers in a single [Commission: Escort]",
           TextMapId = "UI_Achievement_Des_51801"
@@ -47338,6 +47537,10 @@ Lynn's Headpiece
           ContentEN = "Joyful Chime \226\133\161",
           TextMapId = "UI_Achievement_Name_1010102"
         },
+        UI_Achievement_Name_1010103 = {
+          ContentEN = "Joyful Chime \226\133\162",
+          TextMapId = "UI_Achievement_Name_1010103"
+        },
         UI_Achievement_Name_1010201 = {
           ContentEN = "Your Name Is Red \226\133\160",
           TextMapId = "UI_Achievement_Name_1010201"
@@ -47345,6 +47548,10 @@ Lynn's Headpiece
         UI_Achievement_Name_1010202 = {
           ContentEN = "Your Name Is Red \226\133\161",
           TextMapId = "UI_Achievement_Name_1010202"
+        },
+        UI_Achievement_Name_1010203 = {
+          ContentEN = "Your Name Is Red \226\133\162",
+          TextMapId = "UI_Achievement_Name_1010203"
         },
         UI_Achievement_Name_1010301 = {
           ContentEN = "Sparks on Paper \226\133\160",
@@ -47389,7 +47596,15 @@ Lynn's Headpiece
         UI_Achievement_Name_101102 = {
           ContentEN = "When Darkness Falls \226\133\161",
           TextMapId = "UI_Achievement_Name_101102"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "UI_Achievement_Name_101103",
+    MaxKey = "UI_Achievement_Name_301202",
+    Loader = function()
+      return {
         UI_Achievement_Name_101103 = {
           ContentEN = "When Darkness Falls \226\133\162",
           TextMapId = "UI_Achievement_Name_101103"
@@ -47589,15 +47804,7 @@ Lynn's Headpiece
         UI_Achievement_Name_1035203 = {
           ContentEN = "City of Love \226\133\162",
           TextMapId = "UI_Achievement_Name_1035203"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "UI_Achievement_Name_107030501",
-    MaxKey = "UI_Achievement_Name_4010103",
-    Loader = function()
-      return {
+        },
         UI_Achievement_Name_107030501 = {
           ContentEN = "Roaming the Earth - Icelake",
           TextMapId = "UI_Achievement_Name_107030501"
@@ -47885,6 +48092,14 @@ Lynn's Headpiece
         UI_Achievement_Name_20103 = {
           ContentEN = "Fate's Spiral \226\133\162",
           TextMapId = "UI_Achievement_Name_20103"
+        },
+        UI_Achievement_Name_20104 = {
+          ContentEN = "Fate's Spiral \226\133\163",
+          TextMapId = "UI_Achievement_Name_20104"
+        },
+        UI_Achievement_Name_20105 = {
+          ContentEN = "Fate's Spiral \226\133\164",
+          TextMapId = "UI_Achievement_Name_20105"
         },
         UI_Achievement_Name_201101 = {
           ContentEN = "It Said, Do It \226\133\160",
@@ -48189,7 +48404,15 @@ Lynn's Headpiece
         UI_Achievement_Name_301202 = {
           ContentEN = "Infinite Compassion \226\133\161",
           TextMapId = "UI_Achievement_Name_301202"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "UI_Achievement_Name_301203",
+    MaxKey = "UI_Achievement_Name_5230101",
+    Loader = function()
+      return {
         UI_Achievement_Name_301203 = {
           ContentEN = "Infinite Compassion \226\133\162",
           TextMapId = "UI_Achievement_Name_301203"
@@ -48397,15 +48620,7 @@ Lynn's Headpiece
         UI_Achievement_Name_4010103 = {
           ContentEN = "Firepower Advantage \226\133\162",
           TextMapId = "UI_Achievement_Name_4010103"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "UI_Achievement_Name_4020101",
-    MaxKey = "UI_Achievement_Name_7013701",
-    Loader = function()
-      return {
+        },
         UI_Achievement_Name_4020101 = {
           ContentEN = "Warrior's Blade \226\133\160",
           TextMapId = "UI_Achievement_Name_4020101"
@@ -48506,6 +48721,18 @@ Lynn's Headpiece
           ContentEN = "Nocturnal Finale: The Warden of the Inferno \226\133\162",
           TextMapId = "UI_Achievement_Name_500403"
         },
+        UI_Achievement_Name_500501 = {
+          ContentEN = "Nocturnal Finale: Beast From the Snowfield \226\133\160",
+          TextMapId = "UI_Achievement_Name_500501"
+        },
+        UI_Achievement_Name_500502 = {
+          ContentEN = "Nocturnal Finale: Beast From the Snowfield \226\133\161",
+          TextMapId = "UI_Achievement_Name_500502"
+        },
+        UI_Achievement_Name_500503 = {
+          ContentEN = "Nocturnal Finale: Beast From the Snowfield \226\133\162",
+          TextMapId = "UI_Achievement_Name_500503"
+        },
         UI_Achievement_Name_50100101 = {
           ContentEN = "A Brewing Storm",
           TextMapId = "UI_Achievement_Name_50100101"
@@ -48605,6 +48832,10 @@ Lynn's Headpiece
         UI_Achievement_Name_501401 = {
           ContentEN = "Nocturnal Finale \194\183 Solo: The Warden of the Inferno",
           TextMapId = "UI_Achievement_Name_501401"
+        },
+        UI_Achievement_Name_501501 = {
+          ContentEN = "Nocturnal Finale - Solo: Beast From the Snowfield",
+          TextMapId = "UI_Achievement_Name_501501"
         },
         UI_Achievement_Name_502101 = {
           ContentEN = "You Can Run But You Can't Hide - Solo",
@@ -48721,6 +48952,10 @@ Lynn's Headpiece
         UI_Achievement_Name_505401 = {
           ContentEN = "Nocturnal Finale \194\183 Peerless: The Warden of the Inferno",
           TextMapId = "UI_Achievement_Name_505401"
+        },
+        UI_Achievement_Name_505501 = {
+          ContentEN = "Nocturnal Finale - Peerless: Beast From the Snowfield",
+          TextMapId = "UI_Achievement_Name_505501"
         },
         UI_Achievement_Name_506101 = {
           ContentEN = "No Way Out - Speedrun \226\133\160",
@@ -48977,7 +49212,15 @@ Lynn's Headpiece
         UI_Achievement_Name_5230101 = {
           ContentEN = "Lucky E",
           TextMapId = "UI_Achievement_Name_5230101"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "UI_Achievement_Name_5240101",
+    MaxKey = "UI_Archive_Tab_OtherEnemy",
+    Loader = function()
+      return {
         UI_Achievement_Name_5240101 = {
           ContentEN = "Faster Than Sound",
           TextMapId = "UI_Achievement_Name_5240101"
@@ -49205,15 +49448,7 @@ Lynn's Headpiece
         UI_Achievement_Name_7013701 = {
           ContentEN = "Never Skunked",
           TextMapId = "UI_Achievement_Name_7013701"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "UI_Achievement_Name_7013801",
-    MaxKey = "UI_Armory_Share_Community",
-    Loader = function()
-      return {
+        },
         UI_Achievement_Name_7013801 = {
           ContentEN = "Phantom in the Gutter",
           TextMapId = "UI_Achievement_Name_7013801"
@@ -49489,6 +49724,10 @@ Lynn's Headpiece
         UI_Achievement_Name_9910501 = {
           ContentEN = "Heroic Path \226\133\164",
           TextMapId = "UI_Achievement_Name_9910501"
+        },
+        UI_Achievement_Name_9910601 = {
+          ContentEN = "Heroic Path \226\133\165",
+          TextMapId = "UI_Achievement_Name_9910601"
         },
         UI_Achievement_SubTitle = {
           ContentEN = "Achievements",
@@ -49778,7 +50017,15 @@ Lynn's Headpiece
         UI_Archive_Tab_OtherEnemy = {
           ContentEN = "Others",
           TextMapId = "UI_Archive_Tab_OtherEnemy"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "UI_Archive_Tab_TaskResource",
+    MaxKey = "UI_BattlePass_QuestToBeFinish",
+    Loader = function()
+      return {
         UI_Archive_Tab_TaskResource = {
           ContentEN = "Special Items",
           TextMapId = "UI_Archive_Tab_TaskResource"
@@ -50010,15 +50257,7 @@ Lynn's Headpiece
         UI_Armory_Share_Community = {
           ContentEN = "Copy community code",
           TextMapId = "UI_Armory_Share_Community"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "UI_Armory_ShowAttribute",
-    MaxKey = "UI_CHAR_BIRTH_5301",
-    Loader = function()
-      return {
+        },
         UI_Armory_ShowAttribute = {
           ContentEN = "Attribute Info",
           TextMapId = "UI_Armory_ShowAttribute"
@@ -50102,6 +50341,10 @@ Lynn's Headpiece
         UI_ArmourySquad_AutoSummon = {
           ContentEN = "Auto-Summon",
           TextMapId = "UI_ArmourySquad_AutoSummon"
+        },
+        UI_ArmourySquad_AutoSummonTips = {
+          ContentEN = "When \"Auto-Summon\" is on, entering a battle with Preset Loadout will automatically summon fitting Combat Partners.",
+          TextMapId = "UI_ArmourySquad_AutoSummonTips"
         },
         UI_ArmourySquad_Edit_Toast = {
           ContentEN = "Go to Armoury to adjust the loadout",
@@ -50285,7 +50528,7 @@ Lynn's Headpiece
           TextMapId = "UI_Bag_Equipped"
         },
         UI_Bag_Fish_Weight = {
-          ContentEN = "Size: ",
+          ContentEN = "Weight: ",
           TextMapId = "UI_Bag_Fish_Weight"
         },
         UI_Bag_IgnoreEquipped = {
@@ -50377,7 +50620,7 @@ Lynn's Headpiece
           TextMapId = "UI_Bag_Sellconfirm_Polarity"
         },
         UI_Bag_Sellconfirm_Tips = {
-          ContentEN = "The following item(s) will be sold. This action cannot be undone. Confirm to proceed?",
+          ContentEN = "This action cannot be undone. Confirm to proceed?",
           TextMapId = "UI_Bag_Sellconfirm_Tips"
         },
         UI_Bag_Sellconfirm_Title = {
@@ -50579,7 +50822,15 @@ Lynn's Headpiece
         UI_BattlePass_QuestToBeFinish = {
           ContentEN = "In Progress",
           TextMapId = "UI_BattlePass_QuestToBeFinish"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "UI_BattlePass_RefreshReminder",
+    MaxKey = "UI_CHAR_DATA_TEXT_23010401",
+    Loader = function()
+      return {
         UI_BattlePass_RefreshReminder = {
           ContentEN = "Unclaimed Story Rewards have been collected automatically",
           TextMapId = "UI_BattlePass_RefreshReminder"
@@ -50812,18 +51063,26 @@ Lynn's Headpiece
         UI_CHAR_BIRTH_5301 = {
           ContentEN = "Hyperborean Empire",
           TextMapId = "UI_CHAR_BIRTH_5301"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "UI_CHAR_BIRTH_5401",
-    MaxKey = "UI_CHAR_DATA_TEXT_32010101",
-    Loader = function()
-      return {
+        },
         UI_CHAR_BIRTH_5401 = {
           ContentEN = "Hyperborean Empire",
           TextMapId = "UI_CHAR_BIRTH_5401"
+        },
+        UI_CHAR_DATA_DES_10010101 = {
+          ContentEN = "Prerequisites of Witness: \226\133\160",
+          TextMapId = "UI_CHAR_DATA_DES_10010101"
+        },
+        UI_CHAR_DATA_DES_10010201 = {
+          ContentEN = "Prerequisites of Anecdote: \226\133\160",
+          TextMapId = "UI_CHAR_DATA_DES_10010201"
+        },
+        UI_CHAR_DATA_DES_10010301 = {
+          ContentEN = "Prerequisites of Secret: \226\133\160",
+          TextMapId = "UI_CHAR_DATA_DES_10010301"
+        },
+        UI_CHAR_DATA_DES_10010401 = {
+          ContentEN = "Prerequisites of Reminiscence: \226\133\160",
+          TextMapId = "UI_CHAR_DATA_DES_10010401"
         },
         UI_CHAR_DATA_TEXT_11010101 = {
           ContentEN = "For as long as you can remember, Berenica has always been by your side. \nYou may have spent more time with her than with anyone else in the world, yet there are still parts of her that remain a mystery to you \226\128\148 just as there are aspects of yourself that you don't fully understand.\nWho are you? Who is she? Where did you come from, and how did you meet? Whenever you pose these questions, Berenica hesitates, her words faltering, eventually retreating into prolonged silence. Over time, you stopped asking.\nThere's much you don't know, but of one thing you're certain\226\128\148\nYou can always trust her, no matter what.",
@@ -50989,11 +51248,11 @@ This leaves Berenica frustrated, with no choice but to wrap an arm around your h
           TextMapId = "UI_CHAR_DATA_TEXT_11030404"
         },
         UI_CHAR_DATA_TEXT_11030405 = {
-          ContentEN = "So the story has reached its final act: our meeting. If I had a choice, I would have rather met you another way, wearing a face less grotesque.\nI thought my disguise flawless, yet you saw through it, and your deduction left no room for denial.\nI could mimic his mannerisms perfectly \226\128\148 the tilt of his head, the cadence of his voice \226\128\148 but I could never be him. His warmth, his love of life, his faith in tomorrow, the way he cared for others \226\128\148 those are things I could never recreate, no matter how hard I tried. I never imagined anyone would rewrite Children From the Snowfield \226\128\148 stripping away its polished elegance, disrupting its dramatic arc, compromising its internal logic \226\128\148 simply to grant the frost fairy a happy ending.\nI always thought the worst thing for a performer was to be seen slipping by the audience. And yet, when you unmasked me... I felt more at peace than I ever had. Perhaps I spent so long pretending to be someone else, that I forgot how deeply I longed to be seen for who I truly am.\n\nYou said you wanted to hear my story. I don't know if these scattered memories are enough. But they're all I have to offer.\nMy life was never a grand voyage. Every chapter ended half-written, like drafts abandoned by a mediocre playwright \226\128\148 ever reaching for the next scene, never quite arriving.\nAfter my first curtain call, I lost my stage. After the second, I lost my human face. After the third, even my name.\nI am glad you witnessed this final curtain call \226\128\148 for this time, I walked a path of my own choosing, and I carry no regrets.\nO, weep not for me \226\128\148 for my curtain has fallen at its perfect cue.",
+          ContentEN = "So the story has reached its final act: our meeting. If I had a choice, I would have rather met you another way, wearing a face less grotesque.\n\nI thought my disguise flawless. Yet you saw through it \226\128\148 and your deduction left no room for denial.\n\nI could mimic his mannerisms perfectly \226\128\148 the tilt of his head, the cadence of his voice \226\128\148 but I could never be him. His warmth, his love for life, his faith in tomorrow, the way he cared for others \226\128\148 these were things I could never recreate, no matter how hard I tried. I never imagined anyone would rewrite Children From the Snowfield \226\128\148 stripping away its polished elegance, disrupting its arc, compromising its internal logic \226\128\148 simply to give the frost fairy a happy ending.\n\nI once believed the worst thing for a performer was to be caught slipping before the audience. And yet, when you unmasked me... I felt a peace I had never known.\nPerhaps I spent so long pretending to be someone else, I forgot how much I longed to be seen as myself.\n\nYou said you wished to hear my story. I don't know if these scattered memories will suffice \226\128\148 but they're all I have.\n\nMy life was never a grand voyage. Every chapter ended half-written, like drafts abandoned by a mediocre playwright \226\128\148 always reaching for the next scene, never quite arriving.\n\nAfter my first curtain call, I lost my stage.\nAfter the second, I lost my human face.\nAfter the third, even my name.\n\nI am glad you witnessed this final curtain call \226\128\148 for this time, I walked a path of my own choosing, and I carry no regrets.\n\nO, weep not for me \226\128\148 for the curtain has fallen, and it fell at its perfect cue.",
           TextMapId = "UI_CHAR_DATA_TEXT_11030405"
         },
         UI_CHAR_DATA_TEXT_15010101 = {
-          ContentEN = "While idly leafing through an old newspaper in a tavern, you come upon a headline from far-off Elysium in the south. Across the front page sprawls a vast photograph of a girl named Lisbell.\n\nThe Empire's press, of course, heaps scorn upon that ancient land: Look! How far Elysium has fallen, that it should entrust the supreme name of the Seven Virtues to a mere slip of a little girl! So low has the realm of the divine decayed!\n\nYet such derision cannot dim the radiance of the girl in the picture. A slight figure lifts high a sacred sword taller than herself, its brilliance overflowing to illuminate her face. Her gaze burns with unfeigned candour, and her stance resounds with unshakable conviction. In that instant captured, the noonday sun hung above her \226\128\148 as though crowning her with a brilliance none could endure to behold.\n\nThis Lisbell seemed almost a stranger, and for the first time you understood: the Seven Virtues is no mere title for a girl to mention in passing, but the living embodiment of Elysium's faith \226\128\148 the Gods' Favoured.",
+          ContentEN = "While idly leafing through an old newspaper in a tavern, you come upon a headline from far-off Elysium in the south. Across the front page sprawls a vast photograph of a girl named Lisbell.\n \nThe Empire's press, of course, heaps scorn upon that ancient land: Look! How far Elysium has fallen, that it should entrust the supreme name of the Seven Virtues to a mere slip of a little girl! So low has the realm of the divine decayed!\n \nYet such derision cannot dim the radiance of the girl in the picture. A slight figure lifts high a sacred sword taller than herself, its brilliance overflowing to illuminate her face. Her gaze burns with unfeigned candour, and her stance resounds with unshakable conviction. In that instant captured, the noonday sun hung above her \226\128\148 as though crowning her with a brilliance none could endure to behold.\n \nThis Lisbell seemed almost a stranger, and for the first time you understood: the Seven Virtues is no mere title for a girl to mention in passing, but the living embodiment of Elysium's faith \226\128\148 the Gods' Favoured.",
           TextMapId = "UI_CHAR_DATA_TEXT_15010101"
         },
         UI_CHAR_DATA_TEXT_15010102 = {
@@ -51013,7 +51272,7 @@ This leaves Berenica frustrated, with no choice but to wrap an arm around your h
           TextMapId = "UI_CHAR_DATA_TEXT_15010105"
         },
         UI_CHAR_DATA_TEXT_15010201 = {
-          ContentEN = "Across the streets and alleys of the Continent of Atlasia, when talk turns to the Elysian Church, it is not the Great Nine \226\128\148 lofty as the sun and moon \226\128\148 nor the star-scattered ranks of priests that linger on people's lips. The heavens of the gods lie far beyond the reach of common folk, and the priests' prayers, disputes, and fiscal minutiae prove all too dull.\n\nWhat they speak of, always, is the group known as the Seven Virtues \226\128\148 a body born with humanity's first nation, Elysium, and shrouded in legend. Church records tell that two millennia past, the gods descended from the high tower, bringing an end to the Age of Darkness \226\128\148 a time steeped in bloodshed and strife. Into sacred relics they poured their divine power, bestowing them upon the Patriarch and seven chosen ones \226\128\148 those who first bore the name Seven Virtues.\n\nBathed in holy radiance, they became agents of the divine will, safeguarding the harmony and prosperity of Elysium. Clad in gleaming arms, they repelled the tides of Filthoids and the fallen heretics, that the people might dwell in safety. And when a Virtue's mortal vessel fades, the relic falls silent \226\128\148 awaiting the hand of its next bearer. Thus has the mercy and might of the gods flowed through the dawns and dusks of Elysium, unbroken across the ages.",
+          ContentEN = "Across the streets and alleys of the Continent of Atlasia, when talk turns to the Elysian Church, it is not the Great Nine \226\128\148 lofty as the sun and moon \226\128\148 nor the star-scattered ranks of priests that linger on people's lips. The heavens of the gods lie far beyond the reach of common folk, and the priests' prayers, disputes, and fiscal minutiae prove all too dull.\n  \nWhat they speak of, always, is the group known as the Seven Virtues \226\128\148 a body born with humanity's first nation, Elysium, and shrouded in legend. Church records tell that two millennia past, the gods descended from the high tower, bringing an end to the Age of Darkness \226\128\148 a time steeped in bloodshed and strife. Into sacred relics they poured their divine power, bestowing them upon the Patriarch and seven chosen ones \226\128\148 those who first bore the name Seven Virtues.\n \nBathed in holy radiance, they became agents of the divine will, safeguarding the harmony and prosperity of Elysium. Clad in gleaming arms, they repelled the tides of Filthoids and the fallen heretics, that the people might dwell in safety. And when a Virtue's mortal vessel fades, the relic falls silent \226\128\148 awaiting the hand of its next bearer. Thus has the mercy and might of the gods flowed through the dawns and dusks of Elysium, unbroken across the ages.",
           TextMapId = "UI_CHAR_DATA_TEXT_15010201"
         },
         UI_CHAR_DATA_TEXT_15010202 = {
@@ -51033,7 +51292,7 @@ This leaves Berenica frustrated, with no choice but to wrap an arm around your h
           TextMapId = "UI_CHAR_DATA_TEXT_15010205"
         },
         UI_CHAR_DATA_TEXT_15010301 = {
-          ContentEN = "The young Lisbell, having drawn the sacred sword Samael, was duly named candidate for Patience among the Seven Virtues of the Elysian Church.\n\nShe did not at once assume the vacant seat of Patience \226\128\148 not merely because her years were too tender for so great a burden, but more so because Samael, from that moment on, never again deigned to answer her.\n\nThus, to rouse the slumbering spirit within the sacred blade, Lisbell set forth upon her path of cultivation.",
+          ContentEN = "The young Lisbell, having drawn the sacred sword Samael, was duly named candidate for Patience among the Seven Virtues of the Elysian Church.\n \nShe did not at once assume the vacant seat of Patience \226\128\148 not merely because her years were too tender for so great a burden, but more so because Samael, from that moment on, never again deigned to answer her.\n \nThus, to rouse the slumbering spirit within the sacred blade, Lisbell set forth upon her path of cultivation.",
           TextMapId = "UI_CHAR_DATA_TEXT_15010301"
         },
         UI_CHAR_DATA_TEXT_15010302 = {
@@ -51053,7 +51312,7 @@ This leaves Berenica frustrated, with no choice but to wrap an arm around your h
           TextMapId = "UI_CHAR_DATA_TEXT_15010305"
         },
         UI_CHAR_DATA_TEXT_15010401 = {
-          ContentEN = "Lisbell once set all of Elysium astir \226\128\148 for at the tender age of twelve, she drew the long-unclaimed sacred sword, Samael. In that instant, the young noblewoman shone like a diamond newly unearthed, no longer merely a child of lineage, but one deemed worthy to stand among the Seven Virtues \226\128\148 to wield authority and ascend to the very pinnacle of that ancient divine nation.\n\nTo the adults about her, however, there was little astonishment. The mantle of Patience had ever been borne by the ancient and honourable house of Evangelinos. Sooner or later, it was fated to rest upon Lisbell, their sole heir. Yet, still but a child, she understood nothing of it. The morning after she drew the sacred sword, Lisbell sat at the dining table as always, drowsily tapping the rim of her bowl with a spoon. Like any child, she had her fussy dislikes \226\128\148 quinoa, meat pies, sturgeon, pike. Yet for the sake of her health, the old steward unfailingly set those very dishes before her.\n\nUnable to vent her anger at him, she showed her displeasure in the only way she could \226\128\148 a small breach of etiquette, the clink of a spoon against porcelain. The day was already shaping into an irksome one... She forced her way through breakfast, then, as her parents required, turned to the customary post-meal reading. Stretching on tiptoe, she tugged a stack of newspapers from a shelf four times her height \226\128\148 The Morning Bell of the Sacred Tower, a novelty of the northern lands, and at least less soporific than the usual tomes. Rubbing her eyes, Lisbell unfolded the paper. Petite as she was, her feet swung above the floor, and the paper, once unfolded, spanned nearly the breadth of her arms.\n\nShe wrestled with its yellowed, crinkling pages, which rustled faintly, when suddenly she came face to face with her own likeness.\n\n\"Huh!!?\" A loud, bewildered cry rang out \226\128\148 wholly unfitting for a young lady of her station. It took her a heartbeat to grasp what she saw. Then her voice went echoing through the manor halls: \"Mr Steward! Mr Steward! How did I end up in the newspaper!?\" Still astonished, she dragged the unwieldy sheet along behind her as she ran, not fully understanding what had happened \226\128\148 but certain that the ever-reliable steward with the long white beard would have the answer.\n\nThe steward, however, had scarcely slept all night.\n\nAs a son of Elysium and loyal servant of the house of Evangelinos, he knew full well: the girl in the paper, favoured by the gods, must be the long-vacant Patience. Yet he prayed to the Great Nine that time might be turned back \226\128\148 that he might somehow have stayed the hand of fate, held back his headstrong young mistress. If only it could have been a few years later! If the gods, or the family head, willed that she must join the Seven Virtues, why could they not show greater generosity, greater patience? At least until she had lived out the fullness of her childhood... until she came to understand the world's ways... until she learned to temper bewilderment with restraint, discontent with discipline... until she outgrew her wayward sympathy and compassion, and learned to accept and endure the fate bestowed upon all by the Great Nine.\n\nLisbell's shouts and hurried footsteps rang closer and closer. The old steward knew too well \226\128\148 in a moment, his young mistress would come bursting through the drawing-room door.\n\nHe had only just seen off the Patriarch's envoy. In his hands he now held the golden laurel crown bestowed by the Church, together with the summons calling Lisbell to an audience. They weighed almost nothing, yet in his grasp they felt heavy as lead. He could scarcely bring himself to imagine laying such burdens upon those slight, unready shoulders.\n\nAh, her footsteps \226\128\148 still brisk \226\128\148 the privilege of one unburdened by duty. He listened as they drew near, until Lisbell burst into the room, a crumpled newspaper clutched in her hands, her eyes wide with innocent wonder. \"Mr Steward \226\128\148 what's that you're holding?\"\n\nAnd in that moment, he knew: the carefree days of his young mistress had come to their end.",
+          ContentEN = "Lisbell once set all of Elysium astir \226\128\148 for at the tender age of twelve, she drew the long-unclaimed sacred sword, Samael. In that instant, the young noblewoman shone like a diamond newly unearthed, no longer merely a child of lineage, but one deemed worthy to stand among the Seven Virtues \226\128\148 to wield authority and ascend to the very pinnacle of that ancient divine nation.\n \nTo the adults about her, however, there was little astonishment. The mantle of Patience had ever been borne by the ancient and honourable house of Evangelinos. Sooner or later, it was fated to rest upon Lisbell, their sole heir. Yet, still but a child, she understood nothing of it. The morning after she drew the sacred sword, Lisbell sat at the dining table as always, drowsily tapping the rim of her bowl with a spoon. Like any child, she had her fussy dislikes \226\128\148 quinoa, meat pies, sturgeon, pike. Yet for the sake of her health, the old steward unfailingly set those very dishes before her.\n \nUnable to vent her anger at him, she showed her displeasure in the only way she could \226\128\148 a small breach of etiquette, the clink of a spoon against porcelain. The day was already shaping into an irksome one... She forced her way through breakfast, then, as her parents required, turned to the customary post-meal reading. Stretching on tiptoe, she tugged a stack of newspapers from a shelf four times her height \226\128\148 The Morning Bell of the Sacred Tower, a novelty of the northern lands, and at least less soporific than the usual tomes. Rubbing her eyes, Lisbell unfolded the paper. Petite as she was, her feet swung above the floor, and the paper, once unfolded, spanned nearly the breadth of her arms.\n \nShe wrestled with its yellowed, crinkling pages, which rustled faintly, when suddenly she came face to face with her own likeness.\n \n\"Huh!!?\" A loud, bewildered cry rang out \226\128\148 wholly unfitting for a young lady of her station. It took her a heartbeat to grasp what she saw. Then her voice went echoing through the manor halls: \"Mr Steward! Mr Steward! How did I end up in the newspaper!?\" Still astonished, she dragged the unwieldy sheet along behind her as she ran, not fully understanding what had happened \226\128\148 but certain that the ever-reliable steward with the long white beard would have the answer.The steward, however, had scarcely slept all night.\n \nAs a son of Elysium and loyal servant of the house of Evangelinos, he knew full well: the girl in the paper, favoured by the gods, must be the long-vacant Patience. Yet he prayed to the Great Nine that time might be turned back \226\128\148 that he might somehow have stayed the hand of fate, held back his headstrong young mistress. If only it could have been a few years later! If the gods, or the family head, willed that she must join the Seven Virtues, why could they not show greater generosity, greater patience? At least until she had lived out the fullness of her childhood... until she came to understand the world's ways... until she learned to temper bewilderment with restraint, discontent with discipline... until she outgrew her wayward sympathy and compassion, and learned to accept and endure the fate bestowed upon all by the Great Nine.\n \nLisbell's shouts and hurried footsteps rang closer and closer. The old steward knew too well \226\128\148 in a moment, his young mistress would come bursting through the drawing-room door.\n \nHe had only just seen off the Patriarch's envoy. In his hands he now held the golden laurel crown bestowed by the Church, together with the summons calling Lisbell to an audience. They weighed almost nothing, yet in his grasp they felt heavy as lead. He could scarcely bring himself to imagine laying such burdens upon those slight, unready shoulders.\n \nAh, her footsteps \226\128\148 still brisk \226\128\148 the privilege of one unburdened by duty. He listened as they drew near, until Lisbell burst into the room, a crumpled newspaper clutched in her hands, her eyes wide with innocent wonder. \"Mr Steward \226\128\148 what's that you're holding?\"\n \nAnd in that moment, he knew: the carefree days of his young mistress had come to their end.",
           TextMapId = "UI_CHAR_DATA_TEXT_15010401"
         },
         UI_CHAR_DATA_TEXT_15010402 = {
@@ -51103,7 +51362,7 @@ And when your thoughts are troubled, she simply offers a quiet smile, watching y
           TextMapId = "UI_CHAR_DATA_TEXT_15020202"
         },
         UI_CHAR_DATA_TEXT_15020203 = {
-          ContentEN = "Sacred Tower Era, Year 998 \226\128\148 known also as Year One of the New Era \226\128\148 stands as a boundary no historian dares overlook. Some scholars divide the continent's past into two distinct eras: Before 998, and After 998. For it was in that year that the disillusioned cast aside the gods. They tore down the icons they once revered, raised blades in defiance, and abandoned the lands they had long called home. Marching northward into hardship and uncertainty, they began what would come to be known as the Great Migration \226\128\148 an event forever bound to the name Erika.\nDaughter of Lord Generous, Erika could have lived a life of comfort and privilege. Instead, she chose to fight \226\128\148 for freedom, for equality \226\128\148 even if it meant standing against her own blood. Records describe her as valiant and passionate \226\128\148 a warrior who led from the front, spear in hand; her unshakable back a banner for others to follow.\nAs for Erika's closest companion, the chronicles mention only one name: Alexis \226\128\148 the sage who would one day found the Free State of Aethyrie. Yet in stories passed down by those who walked the Great Migration themselves, there is always mention of another \226\128\148 a young woman, rarely seen apart from Erika. The two were like sisters, inseparable in both step and spirit. Yet their temperaments could not have been more different: Erika shone with the brilliance of the noonday sun, while the other girl was quiet, reserved \226\128\148 a gentle soul, more akin to the aurora that softly graces the polar night.",
+          ContentEN = "Sacred Tower Era, Year 998 \226\128\148 known also as Year One of the New Era \226\128\148 stands as a boundary no historian dares overlook. Some scholars divide the continent's past into two distinct eras: Before 998, and After 998. For it was in that year that the disillusioned cast aside the gods. They tore down the icons they once revered, raised blades in defiance, and abandoned the lands they had long called home. Marching northward into hardship and uncertainty, they began what would come to be known as the Great Migration \226\128\148 an event forever bound to the name Erika.\n \nDaughter of Lord Generous, Erika could have lived a life of comfort and privilege. Instead, she chose to fight \226\128\148 for freedom, for equality \226\128\148 even if it meant standing against her own blood. Records describe her as valiant and passionate \226\128\148 a warrior who led from the front, spear in hand; her unshakable back a banner for others to follow.\n \nAs for Erika's closest companion, the chronicles mention only one name: Alexis \226\128\148 the sage who would one day found the Free State of Aethyrie. Yet in stories passed down by those who walked the Great Migration themselves, there is always mention of another \226\128\148 a young woman, rarely seen apart from Erika. The two were like sisters, inseparable in both step and spirit. Yet their temperaments could not have been more different: Erika shone with the brilliance of the noonday sun, while the other girl was quiet, reserved \226\128\148 a gentle soul, more akin to the aurora that softly graces the polar night.",
           TextMapId = "UI_CHAR_DATA_TEXT_15020203"
         },
         UI_CHAR_DATA_TEXT_15020204 = {
@@ -51139,7 +51398,7 @@ And when your thoughts are troubled, she simply offers a quiet smile, watching y
           TextMapId = "UI_CHAR_DATA_TEXT_15020401"
         },
         UI_CHAR_DATA_TEXT_15020402 = {
-          ContentEN = "\"Who is that Ferrywoman?\"\n\"She's Lady Aletheia's mother.\"\n\"What...? But she looks so young.\"\n\"That's because she bears the magic of longevity. She never ages.\"\n\"Wait \226\128\148 that's real? That's... incredible. Must be nice.\"\n\"But... to outlive your own child \226\128\148 to say goodbye with your own hands... that must hurt more than anything.\"\nThough the whispers were hushed, they still reached Nifle's ears, carried on the evening breeze. Yet the words stirred nothing in her. She had long grown used to the awe, the envy, the wonder \226\128\148 and the quiet sighs that followed wherever she walked.\n\"It's time,\" said the young attendant beside her. \"The rite is ready.\"\nNifle gave a slight nod. She lifted her lantern and stepped towards the river, where the water glowed faintly beneath the night sky. Moored at the bank was a slender boat \226\128\148 and resting upon it, a delicately carved coffin.\nThe woman within lay surrounded by blossoms, her eyes peacefully closed \226\128\148 as if merely dozing in a sunlit chair. The years had carved themselves into her: fine lines by her eyes and lips, skin dulled and weathered, strands of grey falling soft beside her temples. To any other, she was a woman well into her twilight years. But to Nifle, she was still a child. Through that aged face, she could still see all her past selves \226\128\148 the bright-eyed little girl with laughter full of wonder, the quiet student lost in the lamp-lit hush of the library, the slender figure crossing battle lines for her nation's survival, the silver-haired scholar who stood at the lectern, her eyes softened by time, yet shining still.\nNifle had expected deep grief \226\128\148 the kind she had once felt when guiding old friends to the other shore. But in this moment, what rose within her was something quieter: a strange sense of calm and release.\nOne by one, she lit the candles arranged around the coffin. Then, from the folds of her robe, she drew a small stone \226\128\148 its surface ridged and grooved with cracks \226\128\148 and placed it gently upon the woman's chest.\nIt was a fragment of a meteor \226\128\148 and the fulfilment of a promise long kept. That day, Nifle had planned a rare visit to the market \226\128\148 and asked if her child wanted anything. The girl \226\128\148 truly just a little one then \226\128\148 had lit up, eyes sparkling as she clutched at Nifle's sleeve. \"A talking star,\" she'd said.\nOf course, no market could offer up a star \226\128\148 let alone one that spoke. The child had always been full of whimsical, impossible ideas. But Nifle had promised she would find one, someday.\nChildren forget the promises made to them when they are very young. But Nifle never forgot the one she made to her daughter.\n\"I've brought you your talking star, Aletha,\" she whispered.\nNifle had once read Aletheia's journals. As a child, Aletheia held fast to her own odd beliefs. She didn't believe the priests of Elysium, who said the stars were gemstones set into a vast glass dome \226\128\148 arching over the world, and known to all as \"the sky.\" Nor did she accept the tales of the Charon, who claimed the stars were golden leaves hanging from the limbs of a great world tree. She believed that each distant star was its own world \226\128\148 like Atlasia itself. And perhaps, to those stars, Atlasia was also just a \"star\" \226\128\148 a single speck of light, twinkling back across the void.\nIf that were true, then this meteor shard \226\128\148 lined with ancient veins \226\128\148 might still whisper of a distant world, across time and space.\nNifle looked down, one last time, at the elderly woman who had once been her child. Then, gently, she closed the coffin. With steady hands, she pushed the boat into the river, letting the current carry it away. She rose \226\128\148 and with the same grace etched into every motion, began the Dance of Departure.\nBehind her, soft sobbing stirred the air. In the edge of her gaze, the crowd stood still upon the riverbank \226\128\148  their eyes fixed on the drifting boat in silent reverence. Candlelight shimmered in their eyes, a scattering of stars upon the earth.\nAnd in that moment, Nifle understood: The child had stopped asking for stars \226\128\148 not because she had forgotten, but because she had become one. A quiet light above Aethyrie's sky, eternal and unwavering, illuminating the path ahead.",
+          ContentEN = "\"Who is that Ferrywoman?\"\n\"She's Lady Aletheia's mother.\"\n\"What...? But she looks so young.\"\n\"That's because she bears the magic of longevity. She never ages.\"\n\"Wait \226\128\148 that's real? That's... incredible. Must be nice.\"\n\"But... to outlive your own child \226\128\148 to say goodbye with your own hands... that must hurt more than anything.\"\nThough the whispers were hushed, they still reached Nifle's ears, carried on the evening breeze. Yet the words stirred nothing in her. She had long grown used to the awe, the envy, the wonder \226\128\148 and the quiet sighs that followed wherever she walked.\n\"It's time,\" said the young attendant beside her. \"The rite is ready.\"\nNifle gave a slight nod. She lifted her lantern and stepped towards the river, where the water glowed faintly beneath the night sky. Moored at the bank was a slender boat \226\128\148 and resting upon it, a delicately carved coffin.\nThe woman within lay surrounded by blossoms, her eyes peacefully closed \226\128\148 as if merely dozing in a sunlit chair. The years had carved themselves into her: fine lines by her eyes and lips, skin dulled and weathered, strands of grey falling soft beside her temples. To any other, she was a woman well into her twilight years. But to Nifle, she was still a child. Through that aged face, she could still see all her past selves \226\128\148 the bright-eyed little girl with laughter full of wonder, the quiet student lost in the lamp-lit hush of the library, the slender figure crossing battle lines for her nation's survival, the silver-haired scholar who stood at the lectern, her eyes softened by time, yet shining still.\nNifle had expected deep grief \226\128\148 the kind she had once felt when guiding old friends to the other shore. But in this moment, what rose within her was something quieter: a strange sense of calm and release.\nOne by one, she lit the candles arranged around the coffin. Then, from the folds of her robe, she drew a small stone \226\128\148 its surface ridged and grooved with cracks \226\128\148 and placed it gently upon the woman's chest.\nIt was a fragment of a meteor \226\128\148 and the fulfilment of a promise long kept. That day, Nifle had planned a rare visit to the market \226\128\148 and asked if her child wanted anything. The girl \226\128\148 truly just a little one then \226\128\148 had lit up, eyes sparkling as she clutched at Nifle's sleeve. \"A talking star,\" she'd said.\nOf course, no market could offer up a star \226\128\148 let alone one that spoke. The child had always been full of whimsical, impossible ideas. But Nifle had promised she would find one, someday.\nChildren forget the promises made to them when they are very young. But Nifle never forgot the one she made to her daughter.\n\"I've brought you your talking star, Aletha,\" she whispered.\nNifle had once read Aletheia's journals. As a child, Aletheia held fast to her own odd beliefs. She didn't believe the priests of Elysium, who said the stars were gemstones set into a vast glass dome \226\128\148 arching over the world, and known to all as \"the sky.\" Nor did she accept the tales of the Charon, who claimed the stars were golden leaves hanging from the limbs of a great world tree. She believed that each distant star was its own world \226\128\148 like Atlasia itself. And perhaps, to those stars, Atlasia was also just a \"star\" \226\128\148 a single speck of light, twinkling back across the void.\nIf that were true, then this meteor shard \226\128\148 lined with ancient veins \226\128\148 might still whisper of a distant world, across time and space.\nNifle looked down, one last time, at the elderly woman who had once been her child. Then, gently, she closed the coffin. With steady hands, she pushed the boat into the river, letting the current carry it away. She rose \226\128\148 and with the same grace etched into every motion, began the Dance of Departure.\nBehind her, soft sobbing stirred the air. In the edge of her gaze, the crowd stood still upon the riverbank \226\128\148 their eyes fixed on the drifting boat in silent reverence. Candlelight shimmered in their eyes, a scattering of stars upon the earth.\nAnd in that moment, Nifle understood: The child had stopped asking for stars \226\128\148 not because she had forgotten, but because she had become one. A quiet light above Aethyrie's sky, eternal and unwavering, illuminating the path ahead.",
           TextMapId = "UI_CHAR_DATA_TEXT_15020402"
         },
         UI_CHAR_DATA_TEXT_15020403 = {
@@ -51316,7 +51575,7 @@ Second, to find her destined one.]],
           TextMapId = "UI_CHAR_DATA_TEXT_21010302"
         },
         UI_CHAR_DATA_TEXT_21010303 = {
-          ContentEN = "Rebecca favours little creatures that look strange and do not fit in with others. ",
+          ContentEN = "Rebecca favours little creatures that look strange and do not fit in with others.",
           TextMapId = "UI_CHAR_DATA_TEXT_21010303"
         },
         UI_CHAR_DATA_TEXT_21010304 = {
@@ -51439,9 +51698,17 @@ Tabethe admitted that the girl's question made her realise that kind adults shou
           TextMapId = "UI_CHAR_DATA_TEXT_23010305"
         },
         UI_CHAR_DATA_TEXT_23010401 = {
-          ContentEN = "The darkness of night enveloped the little orphanage as Tabethe walked cautiously through its corridors. The narrow corridors felt like they were digesting her like a great monster's intestines. What's worse, Tabethe hadn't had a proper meal in a long time.\nGo to the kitchen, go to the kitchen, there is food in the kitchen.\nThe courage that hunger brings is difficult to fathom. She hesitated whether to change her route, knowing that this path might lead her to the orphanage's \"bad adults\". The staff of the orphanage were all \"bad adults\". Not only did they never let her eat enough, but they also frequently raised their fists at her and said hurtful things.\nBut Tabethe decided to give it a go. Her empty stomach helped rid her of fear. She clung to the walls and hid in the darkness. For a moment, she felt like she was swimming on a sea of concrete as she approached her hunting ground.\nHowever, when she arrived, she was met not with delicious prey but with a patrolling \"bad adult\". Blow after blow from an iron pan rained down on her, and inside it there still lingered the scent of stewed fish\226\128\148a taste she had never been allowed to experience before, no matter how much she begged or behaved during the daytime.\nShe etched each heavy blow and every cruel word into her heart, chewing on them repeatedly to fill her starved stomach. Someday, she believed, she would escape this place and break free from this suffocating, deep-sea-like night sky.",
+          ContentEN = "The darkness of night enveloped the little orphanage as Tabethe walked cautiously through its corridors. The narrow corridors felt like they were digesting her like a great monster's intestines. What's worse, Tabethe hadn't had a proper meal in a long time.\nGo to the kitchen, go to the kitchen, there is food in the kitchen.\nThe courage that hunger brings is difficult to fathom. She hesitated whether to change her route, knowing that this path might lead her to the orphanage's \"bad adults\". The staff of the orphanage were all \"bad adults\". Not only did they never let her eat enough, but they also frequently raised their fists at her and said hurtful things.\nBut Tabethe decided to give it a go. Her empty stomach helped rid her of fear. She clung to the walls and hid in the darkness. For a moment, she felt like she was swimming on a sea of concrete as she approached her hunting ground.\nHowever, when she arrived, she was met not with delicious prey but with a patrolling \"bad adult\". Blow after blow from an iron pan rained down on her, and inside it there still lingered the scent of stewed fish\226\128\148a taste she had never been allowed to experience before, no matter how much she begged or behaved during the daytime.\nShe etched each heavy blow and every cruel word into her heart, chewing on them repeatedly to fill her starved stomach. Someday, she believed, she would escape this place and break free from this suffocating, deep-sea-like night sky.\n",
           TextMapId = "UI_CHAR_DATA_TEXT_23010401"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "UI_CHAR_DATA_TEXT_23010402",
+    MaxKey = "UI_CHAR_DATA_TEXT_53010201",
+    Loader = function()
+      return {
         UI_CHAR_DATA_TEXT_23010402 = {
           ContentEN = "When Tabethe first heard that her nickname was now \"demon\", memories of the orphanage flooded her mind. Just as she had thought, the merchants were the same, and all adults were nasty.\nA small desire for revenge grew inside her. Tabethe, who had always stolen food, was determined to do something truly demonic.\nUnder the moonlight, she stealthily sneaked into a fish stall she often visited. A small amount of fish was neatly arranged there, and behind it was a small building made of inexpensive bricks. Inside, there was barely any decent furniture except for a cooking pot and an aged wooden bed. The only remaining item was a locked drawer \226\128\148 Tabethe's target.\nA dim light swayed in the fishy breeze. Tabethe hesitated briefly, before gripping the handle of the drawer. She then thought to herself, \"If I open this drawer, I will be a real 'demon'.\"\n\"Get away from there!\"\nTabethe yanked her hand away from the drawer and turned around. As she did so, a deep-blue dress came into her sight. The dress was the colour of seawater and waved in the breeze like the ripples on the sea.\nThe owner of the dress was a girl with a childish face. She turned around and grabbed two fish, then told Tabethe about her mother's illness, the change in the drawer, and how she occasionally saw Tabethe salivating over the fish. Tabethe stared with wide eyes, still taken aback, as the girl stuffed the fish into her hands. The two fish were weighty, and the tighter Tabethe clenched, the more they slipped away from her.\n\"You're giving me these two fish? But do you have anything to eat yourself?\"\n\"I'll be fine. And I think... you need the fish more than I do.\"\nThe girl's voice was soft with kindness, making soft waves in Tabethe's heart.",
           TextMapId = "UI_CHAR_DATA_TEXT_23010402"
@@ -51531,7 +51798,7 @@ But when faced with the power of a bullet, everyone is equal. When she lifted a 
           TextMapId = "UI_CHAR_DATA_TEXT_31010204"
         },
         UI_CHAR_DATA_TEXT_31010301 = {
-          ContentEN = "Though Lynn is one of the most trusted subordinates of Sibylle, she is somewhat strapped for money.",
+          ContentEN = "Though counted among Sibylle's most trusted subordinates, Lynn lives with modest means.",
           TextMapId = "UI_CHAR_DATA_TEXT_31010301"
         },
         UI_CHAR_DATA_TEXT_31010302 = {
@@ -51793,15 +52060,7 @@ Risk Management: Should the alter personality fail to control the primary person
         UI_CHAR_DATA_TEXT_32010101 = {
           ContentEN = "Hellfire loves to interrogate criminals with heavy kicks and her Flames of Retribution. The criminals she interrogates say her heavy kicks can send people's souls straight to hell. The agony is unbearable, and under this terrifying power, no one can maintain their composure or hide their crimes.",
           TextMapId = "UI_CHAR_DATA_TEXT_32010101"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "UI_CHAR_DATA_TEXT_32010102",
-    MaxKey = "UI_CHAR_NAME_1104",
-    Loader = function()
-      return {
+        },
         UI_CHAR_DATA_TEXT_32010102 = {
           ContentEN = "Hellfire often reiterated her conviction of what true justice entails: not an ideal of universal equality, but a bulwark of steadfast order.\nShe has met numerous heinous criminals, most moulded by the inequities of fate, their crimes coated thickly with the patina of personal suffering. Many have confronted her defiantly, challenging, \"Do you think you could have done any better in my shoes? You think you're serving 'justice', but in fact, you're just a spoiled child!\"\nHellfire is keenly aware that within the prison walls, it is not chains that are most common, but lives deprived of choice. Inequalities serve as the mortar binding the citadel together, pervasive in every corner where life struggles to exist.\nYet she knows all too well that if the storm of hatred were to dismantle this citadel known as \"prison\", the very sanctuary many depend on would collapse with it. Hellfire will never let the foundations of this structure be shaken \226\128\148 her justice has always been about the fortification of this citadel.\nThus, when faced with such poignant accusations, Hellfire's response remains unflinchingly composed: \"Yes, I am serving justice in my own way.\"",
           TextMapId = "UI_CHAR_DATA_TEXT_32010102"
@@ -51979,7 +52238,7 @@ The feud eventually came to a close when Old Martin, in a display of theatrical 
           TextMapId = "UI_CHAR_DATA_TEXT_33010401"
         },
         UI_CHAR_DATA_TEXT_33010402 = {
-          ContentEN = "Margie's day begins with her helmet securely fastened on her head.\nShe then whips out her trusty map and notebook, cross-referencing her knowledge of each rubbish bin with the whispers and observations she gathered the previous day to plan her route. Slinging a shovel over her shoulder and lugging a hessian sack, she sets off with a spring in her step, eager to discover what treasures the day holds.\nAs she hums along, passing by street corners, Aunt Sarah, who is usually busy with her laundry, waves with her red, frostbitten hand. Uncle Rett, the local carpenter, playfully scatters sawdust in the air like confetti as Margie passes, which always makes the florist's daughter across the street giggle at the sight...\nThis is Margie's daily routine, a rhythm of life she dearly loves. She always greets everyone she meets with a radiant smile.\nHowever, there's one exception \226\128\148 when the carpenter's daughter, Kennice, mockingly curtsies and exclaims with a raised pitch, \"Good day, your highness! May the god of dustbins forever bless you, our beloved princess!\" Before Kennice can finish, she dashes off, spurred by the laughter of nearby adults, as Margie, once beaming, now sports a scowl and brandishes her sack as if ready to scoop up Kennice along with the day's refuse.\nRather than revel in the \"Princess\" moniker she inherited from her father, known as the \"King of the Bins,\" Margie prefers her self-appointed title \226\128\148 \"Lady Margie the reticent detective, a lone shadow-walker of the city.\"\nPerhaps Kennice's \"prayer\" truly worked, for today Margie's finds are especially abundant: velvet curtains discarded by a noble, a nearly two-metre-tall bookshelf, and even a few silver coins forgotten in an old backpack's secret pocket. Furthermore, today's extraordinary finds include letters faintly scented with disinfectant and pages filled with complex equations, discovered in a rubbish bin outside a big house.\nThe detective in Margie perked up immediately. Her instincts told her that the owner of these items was no ordinary person. Though the complex formulas were beyond her understanding, the unsigned, unaddressed letters might just reveal untold secrets.\nWith a racing heart, Margie read through each letter:\n\n\"My dear daughter, if you're still alive, the sound of your laughter would truly fill this house instead of being just an echo in my ears...\"\n\"It's not the notions of right or wrong that haunt me, but the irreversible nature of loss...\"\n\"I turned away that girl's parents. I can't bear the thought of reliving that nightmare. I've decided to cease my research. Hayley, would you support my decision if you were here?\"\n\"I hope I never live to regret this...\"\nThe letters bore no signature, but Margie could already piece together the image of a reclusive doctor and the shadows of his past.\nRubbish bins hold more than just discarded items \226\128\148 they're a trove of stories and secrets, telling tales of sorrow and joy that reflect the myriad struggles and resilience of numerous lives. And yet, in this vast, confining city, people still strive to find a way to live on.\n\nAs night fell, Margie concluded her day's work, enriched with new finds, and began her journey home.\nKennice, the carpenter's daughter, was already waiting at the corner, clutching a small flower. Awkwardly, she apologised, \"I'm sorry for calling you that name. I know you don't like it...\"\nMargie glanced up to see the florist's daughter through the window, watering plants, giving her a conspiratorial wink.\nWith a knowing smile, Margie patted Kennice on the shoulder, \"Don't worry about it! After all, I was the one who didn't keep my promise to bring you a gift. But hey, let's blame the Rubbish Bin God for not smiling on me yesterday.\"\nShe then magically produced a cleaned-up old backpack from her sack, \"Thanks to your prayer, I had great luck today! Here, this is the gift I promised you.\" She took the small orange flower from Kennice, \"And I accept your apology! Now, we're good, huh?\"\n\"Absolutely!\" Kennice beamed, curtsying to Margie again, \"Thank you, Miss Reticent Detective!\"",
+          ContentEN = "Margie's day begins with her helmet securely fastened on her head.\nShe then whips out her trusty map and notebook, cross-referencing her knowledge of each rubbish bin with the whispers and observations she gathered the previous day to plan her route. Slinging a shovel over her shoulder and lugging a hessian sack, she sets off with a spring in her step, eager to discover what treasures the day holds.\nAs she hums along, passing by street corners, Aunt Sarah, who is usually busy with her laundry, waves with her red, frostbitten hand. Uncle Rett, the local carpenter, playfully scatters sawdust in the air like confetti as Margie passes, which always makes the florist's daughter across the street giggle at the sight...\nThis is Margie's daily routine, a rhythm of life she dearly loves. She always greets everyone she meets with a radiant smile.\nHowever, there's one exception \226\128\148 when the carpenter's daughter, Kennice, mockingly curtsies and exclaims with a raised pitch, \"Good day, your highness! May the god of dustbins forever bless you, our beloved princess!\" Before Kennice can finish, she dashes off, spurred by the laughter of nearby adults, as Margie, once beaming, now sports a scowl and brandishes her sack as if ready to scoop up Kennice along with the day's refuse.\nRather than revel in the \"Princess\" moniker she inherited from her father, known as the \"King of the Bins,\" Margie prefers her self-appointed title \226\128\148 \"Lady Margie the reticent detective, a lone shadow-walker of the city.\"\nPerhaps Kennice's \"prayer\" truly worked, for today Margie's finds are especially abundant: velvet curtains discarded by a noble, a nearly two-metre-tall bookshelf, and even a few silver coins forgotten in an old backpack's secret pocket. Furthermore, today's extraordinary finds include letters faintly scented with disinfectant and pages filled with complex equations, discovered in a rubbish bin outside a big house.\nThe detective in Margie perked up immediately. Her instincts told her that the owner of these items was no ordinary person. Though the complex formulas were beyond her understanding, the unsigned, unaddressed letters might just reveal untold secrets.\nWith a racing heart, Margie read through each letter:\n\n\"My dear daughter, if you're still alive, the sound of your laughter would truly fill this house instead of being just an echo in my ears...\"\n\"It's not the notions of right or wrong that haunt me, but the irreversible nature of loss...\"\n\"I turned away that girl's parents. I can't bear the thought of reliving that nightmare. I've decided to cease my research. Hayley, would you support my decision if you were here?\"\n\"I hope I never live to regret this...\"\nThe letters bore no signature, but Margie could already piece together the image of a reclusive doctor and the shadows of his past.\nRubbish bins hold more than just discarded items \226\128\148 they're a trove of stories and secrets, telling tales of sorrow and joy that reflect the myriad struggles and resilience of numerous lives. And yet, in this vast, confining city, people still strive to find a way to live on.\n\nAs night fell, Margie concluded her day's work, enriched with new finds, and began her journey home.\nKennice, the carpenter's daughter, was already waiting at the corner, clutching a small flower. Awkwardly, she apologised, \"I'm sorry for calling you that name. I know you don't like it...\"\nMargie glanced up to see the florist's daughter through the window, watering plants, giving her a conspiratorial wink.\nWith a knowing smile, Margie patted Kennice on the shoulder, \"Don't worry about it! After all, I was the one who didn't keep my promise to bring you a gift. But hey, let's blame the Rubbish Bin God for not smiling on me yesterday.\"\nShe then magically produced a cleaned-up old backpack from her sack, \"Thanks to your prayer, I had great luck today! Here, this is the gift I promised you.\" She took the small orange flower from Kennice, \"And I accept your apology! Now, we're good, huh?\"\n\"Absolutely!\" Kennice beamed, curtsying to Margie again, \"Thank you, Miss Reticent Detective!\"\n",
           TextMapId = "UI_CHAR_DATA_TEXT_33010402"
         },
         UI_CHAR_DATA_TEXT_33010403 = {
@@ -52027,7 +52286,7 @@ The feud eventually came to a close when Old Martin, in a display of theatrical 
           TextMapId = "UI_CHAR_DATA_TEXT_41010204"
         },
         UI_CHAR_DATA_TEXT_41010301 = {
-          ContentEN = "Rhythm has an unshakable preference for symmetry. She arranges her belongings with a meticulous eye \226\128\148 everything neatly lined up, evenly spaced, immaculately ordered. Her outfits follow suit, always structured and balanced. Which is precisely why one thing has always troubled her: her horns aren't symmetrical. Every time she looks in the mirror, she can't help but imagine a second horn sprouting to match the first.\nAs a child, she once found a twig shaped remarkably like her horn. She wore it proudly for days \226\128\148 until it was dragged into a factory press during a shift, ground to dust, and lost forever, part of the foundation beneath Icelake's streets.\nIf the Empire ever pioneers cosmetic horn enhancements or transplants, Rhythm would almost certainly be first in line.",
+          ContentEN = "Rhythm has an unshakable preference for symmetry.\nShe arranges her belongings with a meticulous eye: everything neatly aligned, evenly spaced, perfectly ordered. Her outfits follow suit \226\128\148 structured, balanced, never a thread out of place. Which is precisely why one thing has always bothered her: her horns are asymmetrical. Every time she looks in the mirror, she imagines a second one sprouting to match the first.\n\nAs a child, she once found a twig curved just like her horn. She wore it proudly for days, delighting in the fleeting illusion of symmetry \226\128\148 until it was caught in a factory press during a shift, ground into dust, and paved into the foundations beneath Icelake's streets.\n\nIf the Empire ever develops cosmetic horn enhancements or transplants, Rhythm would almost certainly be first in line.",
           TextMapId = "UI_CHAR_DATA_TEXT_41010301"
         },
         UI_CHAR_DATA_TEXT_41010302 = {
@@ -52187,7 +52446,7 @@ Yet, it remains uncertain whether these actions are purely calculated or driven 
           TextMapId = "UI_CHAR_DATA_TEXT_43010105"
         },
         UI_CHAR_DATA_TEXT_43010201 = {
-          ContentEN = "If you were to ask around the Hyperborean Empire about Sibylle Mason, you'd hear a thousand different stories.\nHistorians in their ivory towers will tell you that she's the first Charon-born ever to rise to the rank of Legion Chief \226\128\148 a milestone of great significance in the Empire's long history. \nAspiring Charons, eager to claim their place among the Laurelled, see Sibylle as an icon of inspiration \226\128\148 a figure who rose from meagre beginnings to wield a sceptre traditionally reserved for the Solarian.\nBut among the bitter and resentful Charons, those who harbour a deep hatred for the Empire, she is scorned as a traitor who abandoned her own kind for a scrap of power. They label her a lapdog of the regime, reviled and cursed by many.\nHer peers in the Legion are similarly divided: some admire her decisive methods and unwavering loyalty, while others whisper behind closed doors, viewing her as a dormant threat \226\128\148 a coiled viper, waiting for the right moment to strike.\nYet, despite these varied narratives, one shared piece of advice remains true: crossing Sibylle Mason is a perilous game.",
+          ContentEN = "Ask around the Hyperborean Empire about Sibylle Mason, and you'll hear a thousand different stories.\nHistorians in their ivory towers will tell you she's the first Charon-born ever to rise to the rank of Legion Chief \226\128\148 a milestone of great significance in the Empire's long history.\nAspiring Charons, eager to claim their place among the Laurelled, see Sibylle as an icon of inspiration \226\128\148 a figure who rose from meagre beginnings to wield a sceptre traditionally reserved for the Solarian.\nBut among the bitter and resentful Charons \226\128\148 those who harbour a deep hatred for the Empire \226\128\148 she is scorned as a traitor who abandoned her own kind for a scrap of power. They brand her a lapdog of the regime, reviled and cursed by many.\nHer peers in the Legion are similarly divided: some admire her decisive methods and unwavering loyalty, while others whisper behind closed doors, viewing her as a dormant threat \226\128\148 a coiled viper, waiting for the right moment to strike.\nYet despite these varied narratives, one piece of advice holds true: crossing Sibylle Mason is a perilous game.",
           TextMapId = "UI_CHAR_DATA_TEXT_43010201"
         },
         UI_CHAR_DATA_TEXT_43010202 = {
@@ -52235,7 +52494,7 @@ Yet, it remains uncertain whether these actions are purely calculated or driven 
           TextMapId = "UI_CHAR_DATA_TEXT_43010403"
         },
         UI_CHAR_DATA_TEXT_43010404 = {
-          ContentEN = "Sibylle believes she's a survivor of what can only be likened to hell.\nWhat does hell look like? It's an expanse of flames that surge towards you no matter how desperately you try to escape, engulfing everything. The scalding air seeps into your nostrils, viscous and oppressive, while it crackles and roars around your ears. \nAbove this fiery sea, any birds brave enough to soar are reduced to blind ravens, plummeting into the scorched earth, stirring ripples of flame.\n\nThis operation was meant to be highly classified. The commander had run through countless scenarios before departure, yet no one truly understood the defensive might at the heart of the enemy's stronghold \226\128\148 the Elysian Church.\nAfter three days and nights of contemplation, the commander decided to roll the dice. A small but elite team would be deployed via the Empire's newest airships, aiming for a swift, decisive strike at the core of the enemy to \"decapitate\" their force.\nIt seemed a desperate gamble, but also their best shot at victory. Thirteen Daimons, disguised as regular soldiers, were dispatched quietly as provisions to the front, embarking on what might well be a one-way mission.\nThough they were mentally prepared for the worst, it wasn't until they stood under the gaze of the divine that they truly understood the terror of facing the gods.\n\nBeams of searing light tore through the night, burning as they streaked across the sky like an eternal fire, devouring everything in their path.\nAt that moment, Sibylle stood on the brink of this inferno. The most she could make out beyond the blaze were charred branches, or remnants of what might have been wildlife \226\128\148 though she no longer had the strength to tell them apart.\nLucky for Sibylle, she wasn't part of the commando unit but was reserved as the last resort. If all went to plan, once the team reached the heart of the tower and completed their mission, she would extract them from the shadows before the enemy even realized what had happened. If the mission failed, she would rescue as many wounded as possible to minimize losses.\nBut what unfolded was far beyond their darkest expectations.\nOut of the thirteen Daimons deployed, twelve reached the target area. Two were critically injured by the horrifying beams of light upon arrival. The commander quickly assessed the situation and made the grim decision to leave them behind, leading the remaining nine deeper into the stronghold.\nSibylle understood the harsh necessity \226\128\148 abandoning the wounded was the only viable strategy in the face of overwhelming enemy strength. Had she been in command, she would have made the same call.\nBut unlike the commander, who didn't look back after giving the order, Sibylle, stationed as a last resort outside the battlefield, had to watch her comrades confront their fate.\n\nThe two injured Daimons, thanks to their resilient nature, managed to prop themselves up with their swords.\nAs the flames around them subsided, their laboured breathing eased slightly, and they no longer spat hot blood with every breath.\nBut as the fire faded, a battalion of heavily armed knights appeared. Their footsteps alone, echoing through the battlefield, spoke of their elite status \226\128\148 soldiers sent not to take prisoners, but to eradicate every intruder.\nOrdinarily, Daimons could scatter foes like rabbits before a hound, but incapacitated, they were helpless prey.\nGunfire tore through the air, shredding the already feeble defences of sword arcs and tearing through the bodies of the two soldiers.\nInitially hesitant, the knights advanced, growing bolder with each step. Within moments, they were close enough to drive their blades into the spines of the fallen.\n\nWatching this brutal scene unfold, Sibylle felt a surreal detachment. These were her comrades, soldiers who had trained alongside her mere days before. Now, they stood at death's door, as she watched from afar.\nWith their last strength, they leaned on each other for support. Whether by chance or intent, their eyes met Sibylle's, where she lay hidden in the shadows.\nSibylle's rational mind, honed by years of discipline, told her to obey orders, to let her comrades die. But deep within, a faint voice desperately protested.\nThey had never treated her poorly. Like her, they were fiercely loyal to the Empire, determined to earn glory, each burdened by their own troubled pasts. Many nights had passed in the dim barracks, filled with exchanges of stories about the past and dreams for the future. For someone who claimed to have no friends, these soldiers had come the closest.\nAnd now, these almost-friends stood before her, gazing at her as they faced death. \nBut what did their gaze mean? Was it a plea for help? Doubt? Resentment? Or something else entirely?\n\nSibylle knew she should ignore these thoughts. She had to follow orders without question, to snuff out the last remnants of emotion within her, emotions that shouldn't have existed in the first place.\nBut... could she? Could she stand by and let her comrades, her almost-friends, die?\nIn a futile attempt to escape the weight of her decision, she closed her eyes, hoping the nightmare would disappear.\nBut in that very moment, her comrades made the decision for her \226\128\148 they drew their daggers, and with grim determination, plunged them into each other's throats. No hesitation, no second thoughts, as if they had made this choice long before. Smiling, they fell.\n\nAs the enemy troops pulled back to pursue the deeper intrusion within the tower, Sibylle exhaled a breath she hadn't even realized she was holding.\nBlinking, she felt something unexpected on her face \226\128\148 a single tear, something no one had ever seen from her. She didn't know what the tear meant, just as she hadn't understood the meaning behind her comrades' final gaze.\nPerhaps it was a tear of relief that she no longer had to make such a cruel, agonizing choice. Or perhaps it was something else entirely.\n\n...\nThe mission was ultimately a success \226\128\148 though all but Sibylle and the commander perished.\nShortly after, Sibylle was promoted to legion chief, and she would forever refer to this operation as her \"survival from hell.\"",
+          ContentEN = "Sibylle believes herself a survivor of what can only be likened to hell.\nWhat does hell look like? It's an expanse of flame that surges toward you no matter how desperately you try to escape, engulfing everything. Scalding air seeps into your nostrils \226\128\148 viscous, oppressive \226\128\148 while it crackles and roars around your ears.\n Above this fiery sea, any bird brave enough to soar becomes a blind raven, plummeting into scorched earth, stirring ripples of flame.\n \nThe operation was meant to be highly classified. The commander had run through countless scenarios before departure \226\128\148 yet no one truly grasped the defensive might at the heart of the enemy stronghold.\nAfter three days and nights of contemplation, the commander decided to roll the dice. A small but elite team would be deployed via the Empire's newest airships, aiming for a swift, decisive strike at the enemy's core \226\128\148 to \"decapitate\" their force.\nIt seemed a desperate gamble \226\128\148 but also their best shot at victory. Thirteen Daimons, clad in the same uniforms as ordinary soldiers, were quietly dispatched without farewell or ceremony \226\128\148 sent off as plainly as one might deliver rations to the front, on what might well have been a one-way mission.\nThough mentally prepared for the worst, it wasn't until they stood beneath the gaze of the divine that they truly understood the terror of facing the gods.\n \nBeams of searing light tore through the night, burning as they streaked across the sky like eternal fire, devouring everything in their path.\nAt that moment, Sibylle stood at the edge of the inferno. The most she could make out beyond the blaze were charred branches, or the remains of what might once have been wildlife \226\128\148 though she no longer had the strength to tell them apart.\nSibylle was fortunate not to be part of the strike team \226\128\148 she had been held back as their last resort. If all went according to plan, once the others reached the tower's heart and completed their task, she would spirit them away under cover of shadows, before the enemy ever took notice. And if the mission failed, she would carry off as many of the wounded as she could, to lessen the toll.\nShe didn't know what her comrades had faced deep within the tower \226\128\148 but the hellish scene before her could only be the worst of all their countless reckonings.\nOf the twelve who had entered, only three emerged. Behind them, a dreadful light pursued relentlessly: wherever it fell, flames erupted \226\128\148 even stone was pierced through. Yet that radiance was no knight's weapon; it was as though the gods themselves had cast down divine punishment.\nTwo comrades thrust the unconscious, grievously wounded commander into Sibylle's care, then dragged their battered bodies toward the distance \226\128\148 choosing to stay behind and cover the rear.\n \nThanks to the Daimons' resilient constitution, the two could still \226\128\148 barely \226\128\148 draw their swords to support themselves.\nAs the flames around them subsided, their laboured breathing eased slightly, and they no longer spat hot blood with every breath.\nBut as the fire faded, a battalion of heavily armed knights appeared. Their footsteps alone, echoing across the battlefield, spoke of their elite status \226\128\148 soldiers sent not to take prisoners, but to eradicate every intruder.\nOrdinarily, Daimons could scatter foes like rabbits before a hound \226\128\148 but incapacitated, they were helpless prey.\nGunfire tore through the air, ripping apart the already feeble arcs of their blades and tearing through their bodies.\nInitially hesitant, the Elysian knights advanced, growing bolder with each step. Within moments, they were close enough to drive their blades into the spines of the wounded Daimons.\n \nWatching the brutal scene unfold, Sibylle felt a surreal detachment. These were her comrades \226\128\148 soldiers who had trained alongside her mere days before. Now they stood at death's door, as she watched from afar.\nWith the last of their strength, they leaned on each other for support, their bodies swaying, their gaze turning \226\128\148 perhaps by chance, perhaps by will \226\128\148 toward Sibylle's airship.\nSibylle's rational mind, honed by years of discipline, told her to obey orders \226\128\148 to let her comrades die. But deep within, a faint voice desperately protested.\nThey had never treated her poorly. Like her, they were fiercely loyal to the Empire, determined to earn glory, each burdened by their own troubled pasts. Many nights had passed in the dim barracks, filled with stories of the past and dreams of the future. For someone who claimed to have no friends, they had come the closest.\nAnd now, these almost-friends stood before her, gazing at her as they faced death.\nBut what did their gaze mean? A plea for help? Doubt? Resentment? Or something else entirely?\n \nSibylle knew she should ignore these thoughts. She had to follow orders without question \226\128\148 to snuff out the last remnants of emotion within her, emotions that shouldn't have existed in the first place.\nBut... could she? Could she stand by and let her comrades \226\128\148 her almost-friends \226\128\148 die?\nIn a futile attempt to escape the weight of her decision, she closed her eyes, hoping the nightmare would disappear.\nBut in that very moment, her comrades made the decision for her. They drew their daggers and, with grim determination, plunged them into each other's throats. No hesitation. No second thoughts. As if they had made this choice long ago. Smiling, they fell. At that same moment, Sibylle set the airship's engines to life.\n \nAmidst the roar of the machinery, she let out the breath she had held for so long. Blinking, she found a tear upon her cheek \226\128\148 a tear no one had ever seen from her. She did not know what it meant, just as she did not know what their final gaze had meant.\nPerhaps it was relief \226\128\148 that she hadn't needed to wrestle with breaking her orders. Or perhaps... it was something else entirely.\n \n...\nFor setting foot upon the tower of the gods, the Empire declared the mission a victory. In the official obituary, it was written: of the thirteen who had gone, only Sibylle returned.\nShe was soon elevated to Legion Chief, and ever after she would call the operation her \"Survival from Hell.\"",
           TextMapId = "UI_CHAR_DATA_TEXT_43010404"
         },
         UI_CHAR_DATA_TEXT_43010405 = {
@@ -52426,7 +52685,15 @@ Standing before the simple cairn, you closed your eyes. In your daze, a green li
         UI_CHAR_DATA_TEXT_53010201 = {
           ContentEN = "Psyche is a lodger at the Hypnos' House and also works as a waitress there. However, since the door of this inn is hardly ever open to the public, few travellers in Icelake have had the chance to experience her hospitality. Yet, every morning, if you look up from the entrance of the inn, you can catch a glimpse of a slender figure shrouded behind branches and vines. That's Psyche busying herself: drawing back the thick drapes to let the flowers bathe in modest sunlight, gently misting the leaves, and meticulously pruning the wilted stems. Within the cold abode of the Hypnos' House, built from sombre grey stone bricks and pallid remnants of snow, it's only Psyche's flowers that bring a hint of warmth.",
           TextMapId = "UI_CHAR_DATA_TEXT_53010201"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "UI_CHAR_DATA_TEXT_53010202",
+    MaxKey = "UI_CMNpc_Name_JuYuan1",
+    Loader = function()
+      return {
         UI_CHAR_DATA_TEXT_53010202 = {
           ContentEN = [[
 The plants Psyche nurtures at the Hypnos' House weren't from her family's flower shop. Though she held dear the flowers she grew at home, she knew her parents needed them more than she did.
@@ -52490,11 +52757,11 @@ Instead, she rejoiced in having met you and in having lived a life that was trul
           TextMapId = "UI_CHAR_DATA_TEXT_53010405"
         },
         UI_CHAR_DATA_TEXT_54010101 = {
-          ContentEN = "\"Alchemy\" \226\128\148 in the Hyperborean Empire, the word is synonymous with \"miracle.\"\n\nThe Empire's first alchemists were eccentric scholars, steeped in cryptic philosophies and convinced they could transmute common metals into gold. Gold they never found \226\128\148 but through ceaseless study, they drew from Phoxene a substance known as Phoxichor. This faintly luminous blue fluid fuelled the rise of cities wrought from gears, furnaces, and steel. As looms devoured cotton to spin endless cloth, as railways spread like veins of iron across the land, as steel-clad ships soared like migrating birds into the sky, as cannons roared in human hands like the thunder of fallen gods \226\128\148 who could deny that Solarian alchemy had wrought miracles greater than any Charon sorcery?\n\nIt was only natural that alchemists became the Empire's most coveted profession. As the saying goes: \"Between a pauper and a noble lies but a single Emerald Medal.\" Countless youths \226\128\148 hungry for knowledge, glory, or the chance to rise above their station \226\128\148 poured years into study and experiment, spent fortunes, and bartered honeyed words \226\128\148 all for a place at one of the Empire's alchemical institutes. Yet above them all towered the Royal Alchemy Academy in the capital, Dismania: a citadel of learning, admired from afar yet all but unattainable.",
+          ContentEN = "\"Alchemy\" \226\128\148 in the Hyperborean Empire, the word is synonymous with \"miracle.\"\n \nThe Empire's first alchemists were eccentric scholars, steeped in cryptic philosophies and convinced they could transmute common metals into gold. Gold they never found \226\128\148 but through ceaseless study, they drew from Phoxene a substance known as Phoxichor. This faintly luminous blue fluid fuelled the rise of cities wrought from gears, furnaces, and steel. As looms devoured cotton to spin endless cloth, as railways spread like veins of iron across the land, as steel-clad ships soared like migrating birds into the sky, as cannons roared in human hands like the thunder of fallen gods \226\128\148 who could deny that Solarian alchemy had wrought miracles greater than any Charon sorcery?\n \nIt was only natural that alchemists became the Empire's most coveted profession. As the saying goes: \"Between a pauper and a noble lies but a single Emerald Medal.\" Countless youths \226\128\148 hungry for knowledge, glory, or the chance to rise above their station \226\128\148 poured years into study and experiment, spent fortunes, and bartered honeyed words \226\128\148 all for a place at one of the Empire's alchemical institutes. Yet above them all towered the Royal Alchemy Academy in the capital, Dismania: a citadel of learning, admired from afar yet all but unattainable.\n \nThus, when Daphne Theodore renounced her place at the Academy and chose instead the life of an ordinary field medic, all agreed: she had lost her mind.",
           TextMapId = "UI_CHAR_DATA_TEXT_54010101"
         },
         UI_CHAR_DATA_TEXT_54010102 = {
-          ContentEN = "Daphne was known as one of the finest students ever to attend the Spathatoi. Every course she took, every project she completed, earned an A \226\128\148 for no higher grade existed.\n\nBut after enlisting with the Legion, she received the first truly dismal mark of her life: a mere C in physical training \226\128\148 only just enough to pass, even for a medic.\n\nPerhaps that's why she's so often found stealing moments to exercise whenever she can.",
+          ContentEN = "Daphne was known as one of the finest students ever to attend the Spathatoi. Every course she took, every project she completed, earned an A \226\128\148 for no higher grade existed.\n \nBut after enlisting with the Legion, she received the first truly dismal mark of her life: a mere C in physical training \226\128\148 only just enough to pass, even for a medic.\n \nPerhaps that's why she's so often found stealing moments to exercise whenever she can.",
           TextMapId = "UI_CHAR_DATA_TEXT_54010102"
         },
         UI_CHAR_DATA_TEXT_54010103 = {
@@ -52506,31 +52773,31 @@ Instead, she rejoiced in having met you and in having lived a life that was trul
           TextMapId = "UI_CHAR_DATA_TEXT_54010104"
         },
         UI_CHAR_DATA_TEXT_54010105 = {
-          ContentEN = "On the day you departed for Flagson, Daphne came to see you off. No words were exchanged \226\128\148 only a silence laden with meaning, and the bittersweet curve of a smile.\n\n\"Stay safe.\" She held you in a soft embrace. \"I will always be praying for you.\"\n\nYou're not one to make promises where certainty is scarce. Yet you took her hand, and with steady resolve, said: \"I will find the truth... and bring it back to you.\"",
+          ContentEN = "On the day you departed for Flagson, Daphne came to see you off. No words were exchanged \226\128\148 only a silence laden with meaning, and the bittersweet curve of a smile.\n \n\"Stay safe.\" She held you in a soft embrace. \"I will always be praying for you.\"\n \nYou're not one to make promises where certainty is scarce. Yet you took her hand, and with steady resolve, said: \"I will find the truth... and bring it back to you.\"",
           TextMapId = "UI_CHAR_DATA_TEXT_54010105"
         },
         UI_CHAR_DATA_TEXT_54010201 = {
-          ContentEN = "To reach the wards from the treatment wing at Riverside Hospital, one had to walk a long, narrow corridor.\nUnlike the other hospitals in Dismania, Riverside housed mostly patients with lingering chronic illnesses \226\128\148 the sort that brought no swift end, only slow suffering. These were not ailments that made corpses of people overnight, but over long years turned them into what the doctors came to call \"madmen.\"\nSince the age of seven, I'd been running back and forth along that corridor. My hands were quick, my feet quicker \226\128\148 faster even than most grown Solarian orderlies. And because all I ever asked for was a meal and a place to sleep, they graciously allowed me \226\128\148 a lowborn little Charon girl with horns on her head \226\128\148 to work in their domain. My tasks were almost always the lowest sort: hauling off soiled bedding, sweeping up shards of glass dropped by patients, dragging them to the washroom or the refuse yard. Now and then, a passing nurse would shove a crate of medicine or a bundle of vials into my arms to deliver. Most of the time, you'd find me staggering down that corridor with boxes taller than I was. They blocked my view, so I often bumped into people rushing past \226\128\148 and every time, I'd catch a torrent of curses for it.\nI once heard a bard in the square say Hyperboreans were the most short-tempered folk in all of Atlasia. If that's true, then by my reckoning, the ones at Riverside Hospital were the angriest of the lot \226\128\148 patients, doctors, nurses, even the kin who came to visit. Later I came to understand it was those long, drawn-out illnesses that drove them to the edge. But still, whenever someone barked at me, I'd raise a defiant middle finger at their retreating back.\nOnly once did someone bump into me and not curse, but apologise. Her name, I would learn much later, was Daphne Theodore.\nI remember it clearly. One afternoon, I was carrying a stack of underpads to the washroom when I collided at the far corner of the corridor with a young blonde woman. My underpads and her flowers both went flying, then scattered across the floor. Without missing a beat, I squatted down and wailed at the top of my lungs \226\128\148 louder than the most tormented patient. I wasn't hurt, not even upset about the mess. It was just a trick: if I howled like that, the adults who might scold or strike me would flinch and back off, like they'd brushed up against something filthy.\nBut the blonde woman didn't curse and scurry off like I expected. Instead, she knelt beside me, stroked my back with a gentle hand, and asked in a worried voice if I was hurt. She sounded more unsettled than I was. When I didn't reply, she tried again \226\128\148 even softer this time \226\128\148 though the tremble in her fingers gave her away.\nI don't remember what I said in reply \226\128\148 perhaps only, \"It doesn't hurt.\" Whatever it was, it eased the crease in her brow. She helped me to my feet, and together we picked up the scattered underpads and crushed flowers.\n\"I'm sorry,\" she said, giving my head a light pat. \"Little one, what flavour of sweets do you like? I'll bring you some next time, shall I?\"\n\"Strawberry,\" I told her. I shouldn't have accepted her apology \226\128\148 after all, it was me who hadn't been looking. But her question stirred something in me. I remembered the last thing my bedridden mother had murmured before she died: that there were strawberry boiled sweets in the cupboard drawer. When I looked, there was nothing. Only later did I find out my greedy brother had taken them all.\n\"Strawberry. I'll remember.\" The blonde woman gathered up her flowers and walked on toward the far end of the corridor. She was of middling height, slim and slight. The afternoon sun caught her matte hairpin, and for a moment it shimmered with a faint golden glow.\nI never knew her name, so in my heart I gave her one: Miss Strawberry Sweets.\nOther than my mother, no one had ever asked me so gently if I was in pain.\n\n\226\128\148 From the diary of Tiori Stone",
+          ContentEN = "To reach the wards from the treatment wing at Riverside Hospital, one had to walk a long, narrow corridor.\nUnlike the other hospitals in Dismania, Riverside housed mostly patients with lingering chronic illnesses \226\128\148 the sort that brought no swift end, only slow suffering. These were not ailments that made corpses of people overnight, but over long years turned them into what the doctors came to call \"madmen.\"\nSince the age of seven, I'd been running back and forth along that corridor. My hands were quick, my feet quicker \226\128\148 faster even than most grown Solarian orderlies. And because all I ever asked for was a meal and a place to sleep, they graciously allowed me \226\128\148 a lowborn little Charon girl with horns on her head \226\128\148 to work in their domain. My tasks were almost always the lowest sort: hauling off soiled bedding, sweeping up shards of glass dropped by patients, dragging them to the washroom or the refuse yard. Now and then, a passing nurse would shove a crate of medicine or a bundle of vials into my arms to deliver. Most of the time, you'd find me staggering down that corridor with boxes taller than I was. They blocked my view, so I often bumped into people rushing past \226\128\148 and every time, I'd catch a torrent of curses for it.\nI once heard a bard in the square say Hyperboreans were the most short-tempered folk in all of Atlasia. If that's true, then by my reckoning, the ones at Riverside Hospital were the angriest of the lot \226\128\148 patients, doctors, nurses, even the kin who came to visit. Later I came to understand it was those long, drawn-out illnesses that drove them to the edge. But still, whenever someone barked at me, I'd raise a defiant middle finger at their retreating back.\nOnly once did someone bump into me and not curse, but apologise. Her name, I would learn much later, was Daphne Theodore.\nI remember it clearly. One afternoon, I was carrying a stack of underpads to the washroom when I collided at the far corner of the corridor with a young blonde woman. My underpads and her flowers both went flying, then scattered across the floor. Without missing a beat, I squatted down and wailed at the top of my lungs \226\128\148 louder than the most tormented patient. I wasn't hurt, not even upset about the mess. It was just a trick: if I howled like that, the adults who might scold or strike me would flinch and back off, like they'd brushed up against something filthy.\nBut the blonde woman didn't curse and scurry off like I expected. Instead, she knelt beside me, stroked my back with a gentle hand, and asked in a worried voice if I was hurt. She sounded more unsettled than I was. When I didn't reply, she tried again \226\128\148 even softer this time \226\128\148 though the tremble in her fingers gave her away.\nI don't remember what I said in reply \226\128\148 perhaps only, \"It doesn't hurt.\" Whatever it was, it eased the crease in her brow. She helped me to my feet, and together we picked up the scattered underpads and crushed flowers.\n\"I'm sorry,\" she said, giving my head a light pat. \"Little one, what flavour of sweets do you like? I'll bring you some next time, shall I?\"\n\"Strawberry,\" I told her. I shouldn't have accepted her apology \226\128\148 after all, it was me who hadn't been looking. But her question stirred something in me. I remembered the last thing my bedridden mother had murmured before she died: that there were strawberry boiled sweets in the cupboard drawer. When I looked, there was nothing. Only later did I find out my greedy brother had taken them all.\n\"Strawberry. I'll remember.\" The blonde woman gathered up her flowers and walked on toward the far end of the corridor. She was of middling height, slim and slight. The afternoon sun caught her matte hairpin, and for a moment it shimmered with a faint golden glow.\nI never knew her name, so in my heart I gave her one: Miss Strawberry Sweets.\nOther than my mother, no one had ever asked me so gently if I was in pain.\n \n\226\128\148 From the diary of Tiori Stone",
           TextMapId = "UI_CHAR_DATA_TEXT_54010201"
         },
         UI_CHAR_DATA_TEXT_54010202 = {
-          ContentEN = "The second time I met Daphne Theodore, I was being scolded by a young nurse named Madeleine. She grabbed me by the collar like I was some stray kitten, lifting me clean off the floor. I'd had no idea she was that strong. She shouted in my face, demanding to know why I'd brought her the wrong medicine.\nI couldn't read, but I remembered every label by the shape of its letters \226\128\148 and beyond that, I recognised each medicine by its colour. Lots of medicines were blue, but only this one had that bright, glassy blue \226\128\148 the same shade as Phoxichor.\nI denied the accusation, but Nurse Madeleine raised her hand to strike me. I shut my eyes, wondering whether silence or sobbing might spare me another slap. But the first one never came. When I opened my eyes, the hand clutching my collar had been pried loose \226\128\148 her wrist caught fast in a slender, elegant hand.\nIt was Miss Strawberry Sweets.\n\"Pardon me. I couldn't help but overhear your quarrel. Madam \226\128\148 before reproaching this Charon child, might I first see the medicine in question?\"\nNurse Madeleine tried to jerk her arm free, but Miss Strawberry Sweets's slender fingers held fast with surprising strength. With a muttered curse, the nurse shoved the vial into her hand.\nShe held it up, gave it a slow swirl, then pulled the stopper and took a careful sniff.\n\"There's no mistake. The girl gave you the correct medicine. This is AP-1718, as the label clearly states. You shouldn't lie in front of a child who cannot read.\"\n\"That's not the right colour for AP-1718! This little twerp switched the labels!\" Madeleine shrieked. \"She's been sulking ever since her last punishment \226\128\148 trying to trip me up!\"\n\"The Alchemy Academy recently revised the formula. The latest batch differs from what you remember.\" She lifted her gaze, meeting the nurse's furious stare. \"Rather than accusing an innocent child, Madam... perhaps you should spend more time familiarising yourself with your own medicines.\"\n\"What new formula? You're just here visiting someone \226\128\148 how would you know? Who's to say you're not just covering for this little twerp?\"\n\"Oh, I know very well,\" she replied calmly. \"My name is Daphne Theodore. AP-1718 was developed under my supervision. Here \226\128\148 this is my insignia from the Alchemy Academy. I trust you recognise it.\"\n\n\226\128\148 From the diary of Tiori Stone",
+          ContentEN = "The second time I met Daphne Theodore, I was being scolded by a young nurse named Madeleine. She grabbed me by the collar like I was some stray kitten, lifting me clean off the floor. I'd had no idea she was that strong. She shouted in my face, demanding to know why I'd brought her the wrong medicine.\nI couldn't read, but I remembered every label by the shape of its letters \226\128\148 and beyond that, I recognised each medicine by its colour. Lots of medicines were blue, but only this one had that bright, glassy blue \226\128\148 the same shade as Phoxichor.\nI denied the accusation, but Nurse Madeleine raised her hand to strike me. I shut my eyes, wondering whether silence or sobbing might spare me another slap. But the first one never came. When I opened my eyes, the hand clutching my collar had been pried loose \226\128\148 her wrist caught fast in a slender, elegant hand.\nIt was Miss Strawberry Sweets.\n\"Pardon me. I couldn't help but overhear your quarrel. Madam \226\128\148 before reproaching this Charon child, might I first see the medicine in question?\"\nNurse Madeleine tried to jerk her arm free, but Miss Strawberry Sweets's slender fingers held fast with surprising strength. With a muttered curse, the nurse shoved the vial into her hand.\nShe held it up, gave it a slow swirl, then pulled the stopper and took a careful sniff.\n\"There's no mistake. The girl gave you the correct medicine. This is AP-1718, as the label clearly states. You shouldn't lie in front of a child who cannot read.\"\n\"That's not the right colour for AP-1718! This little twerp switched the labels!\" Madeleine shrieked. \"She's been sulking ever since her last punishment \226\128\148 trying to trip me up!\"\n\"The Alchemy Academy recently revised the formula. The latest batch differs from what you remember.\" She lifted her gaze, meeting the nurse's furious stare. \"Rather than accusing an innocent child, Madam... perhaps you should spend more time familiarising yourself with your own medicines.\"\n\"What new formula? You're just here visiting someone \226\128\148 how would you know? Who's to say you're not just covering for this little twerp?\"\n\"Oh, I know very well,\" she replied calmly. \"My name is Daphne Theodore. AP-1718 was developed under my supervision. Here \226\128\148 this is my insignia from the Alchemy Academy. I trust you recognise it.\"\n \n\226\128\148 From the diary of Tiori Stone",
           TextMapId = "UI_CHAR_DATA_TEXT_54010202"
         },
         UI_CHAR_DATA_TEXT_54010203 = {
-          ContentEN = "The day Daphne Theodore saved me from the nasty nurse, I was so happy I thought I might burst. She gave me some boiled sweets \226\128\148 I tore off the wrappers, stuffed a few into my mouth, and pulled faces at Madeleine's back as she slunk away.\n\n\"What's your name?\" Daphne asked, as we sat together on the bench outside the ward.\n\"Tiori.\"\n\"Do you know how it's spelled?\"\nI shook my head. She picked up a twig and traced a few letters in the sand.\n\"This is your name. It means 'Dewiolet.'\"\nFor most of my life, my name had only ever come paired with words like \"twerp\" or \"lowborn wretch.\" I never imagined it could mean something so beautiful.\n\"Miss Dewiolet, may I teach you to write?\" she asked gently.\n\"Why should I learn to write?\" I said, confused. Most of us Charons could only ever do hard labour, and I had no special gift that might make me a Laurelled Charon someday. I knew that much.\n\"If you could read, what happened today might never have happened,\" Daphne replied, smiling softly. \"Knowledge is a kind of strength \226\128\148 a weapon to protect ourselves.\"\nI shook my head, still confused... then nodded, hard. I didn't understand what she meant, not really. But it was her advice \226\128\148 and that meant I couldn't say no.\nThat afternoon, Daphne Theodore taught me the whole alphabet. I copied it down into the little notepad she gave me \226\128\148 my letters crooked and uneven, but all my own. Before she left, I hesitated... then called out after her.\n\"Miss Theodore \226\128\148 I remember you said you were an alchemist.\"\n\"I am.\"\n\"What is alchemy?\"\n\"It's a study meant to make people's lives better.\"\nAs she spoke, her eyes lit up. It was as if some flame had kindled behind them, making them shine.\n\"So then... the Alchemy Academy is where people study alchemy?\"\n\"...Yes.\"\n\"If I learn to write well,\" I asked, \"could I go to the Academy too? Could I study alchemy with you, Miss Theodore?\"\nI'd always known my place. And I could read the way people looked at things. Even without asking, I could tell from the nurse's reaction that the Academy must be some grand, untouchable place. But just for a heartbeat \226\128\148 with the fire in Daphne's eyes \226\128\148 I let myself believe that maybe, just maybe, I had the right to walk towards it too.\nBut it wasn't what I imagined. That fire in her eyes vanished at once. Her expression grew distant... conflicted. She turned away, no longer meeting my gaze.\n\"No, Tiori,\" she said quietly. \"Don't go there.\"\n\"Hyperborea's Alchemy Academy has lost its way,\" she whispered. \"It's no longer the great tower I once dreamed of.\"\n\n\226\128\148 From the diary of Tiori Stone",
+          ContentEN = "The day Daphne Theodore saved me from the nasty nurse, I was so happy I thought I might burst. She gave me some boiled sweets \226\128\148 I tore off the wrappers, stuffed a few into my mouth, and pulled faces at Madeleine's back as she slunk away.\n \n\"What's your name?\" Daphne asked, as we sat together on the bench outside the ward.\n\"Tiori.\"\n\"Do you know how it's spelled?\"\nI shook my head. She picked up a twig and traced a few letters in the sand.\n\"This is your name. It means 'Dewiolet.'\"\nFor most of my life, my name had only ever come paired with words like \"twerp\" or \"lowborn wretch.\" I never imagined it could mean something so beautiful.\n\"Miss Dewiolet, may I teach you to write?\" she asked gently.\n\"Why should I learn to write?\" I said, confused. Most of us Charons could only ever do hard labour, and I had no special gift that might make me a Laurelled Charon someday. I knew that much.\n\"If you could read, what happened today might never have happened,\" Daphne replied, smiling softly. \"Knowledge is a kind of strength \226\128\148 a weapon to protect ourselves.\"\nI shook my head, still confused... then nodded, hard. I didn't understand what she meant, not really. But it was her advice \226\128\148 and that meant I couldn't say no.\nThat afternoon, Daphne Theodore taught me the whole alphabet. I copied it down into the little notepad she gave me \226\128\148 my letters crooked and uneven, but all my own. Before she left, I hesitated... then called out after her.\n\"Miss Theodore \226\128\148 I remember you said you were an alchemist.\"\n\"I am.\"\n\"What is alchemy?\"\n\"It's a study meant to make people's lives better.\"\nAs she spoke, her eyes lit up. It was as if some flame had kindled behind them, making them shine.\n\"So then... the Alchemy Academy is where people study alchemy?\"\n\"...Yes.\"\n\"If I learn to write well,\" I asked, \"could I go to the Academy too? Could I study alchemy with you, Miss Theodore?\"\nI'd always known my place. And I could read the way people looked at things. Even without asking, I could tell from the nurse's reaction that the Academy must be some grand, untouchable place. But just for a heartbeat \226\128\148 with the fire in Daphne's eyes \226\128\148 I let myself believe that maybe, just maybe, I had the right to walk towards it too.\nBut it wasn't what I imagined. That fire in her eyes vanished at once. Her expression grew distant... conflicted. She turned away, no longer meeting my gaze.\n\"No, Tiori,\" she said quietly. \"Don't go there.\"\n\"Hyperborea's Alchemy Academy has lost its way,\" she whispered. \"It's no longer the great tower I once dreamed of.\"\n \n\226\128\148 From the diary of Tiori Stone",
           TextMapId = "UI_CHAR_DATA_TEXT_54010203"
         },
         UI_CHAR_DATA_TEXT_54010204 = {
-          ContentEN = "After I filled up the notepad Daphne had given me, I finally saw her again at Riverside Hospital.\nI'd known she'd come back.\nThe last time we met, I'd begged her to help me find someone \226\128\148 a man named Gary Stone. I told her, tears in my eyes, that Gary was my brother \226\128\148 my only family in the world. I said I hadn't heard from him in ages, and that the last I knew, he'd gone to the Alchemy Academy.\nJust as I'd hoped, Daphne agreed without hesitation.\nMost of what I told her was true. But in one thing, I lied:\nI didn't miss Gary Stone at all. He was my brother, yes \226\128\148 but not all siblings are born to love each other. When I was still no taller than his thigh, Gary would grab me by the neck and squeeze until I couldn't breathe \226\128\148 all because I'd dared to steal a scrap of \"his\" food.\nI couldn't care less where Gary had gone. What I wanted was simply to see Daphne again. I thought she must've grown up in a loving family \226\128\148 because the moment she heard Gary was my brother, she assumed he must be someone dear to me.\n\nDaphne came back, bringing news about Gary Stone.\nBut this time, she looked exhausted. The dark circles under her eyes were plain to see, and it looked like she'd been crying \226\128\148 faint streaks still marked her cheeks.\nI saw her pacing at the far end of the corridor for ages before she finally walked over. I figured she must've brought bad news. Was she hesitating? Unsure whether to tell me? Or just trying to find the right way to say it?\n\"Tiori,\" she said, kneeling and gripping my shoulders, \"I found out what happened to your brother. Please... promise me you'll stay strong, no matter what. Will you?\"\nAh \226\128\148 so she was going to tell me everything after all. Maybe she wasn't any good at lying. Or maybe she just believed that even a child had the right to know the truth.\n\"Gary Stone won't be coming back,\" Daphne said, her voice hoarse. \"He was caught in an alchemical accident.\"\nI didn't feel a thing. But I still had questions. I didn't care about Gary \226\128\148 what I wanted to know was: What kinds of endings waited for people like us \226\128\148 the ones they treated like rubbish?\n\"...An accident? Did someone die?\"\n\"Yes.\"\n\"Did the alchemist kill them?\"\n\"No.\"\n\"Did Gary kill them?\"\n\"...No.\"\n\"Then who was the killer?\"\n\"It was a ghost no one could see,\" she said. \"Or perhaps... it was all of us.\"\nI shook my head. I didn't understand.\n\"Then... Miss Theodore,\" I asked, \"will I die like Gary someday too?\"\n\"If I learn enough words \226\128\148 enough to understand all the books you gave me, enough to master alchemy \226\128\148 will that keep me from ending up like my brother?\"\n\"I wish I could tell you yes. I used to believe it. I knew people like you \226\128\148 who rose from nothing, and climbed to the top through what they'd learned.\" Daphne said softly, brushing her hand over the horn on my head. \"But now... I've seen far more fall before they ever reached the peak \226\128\148 shattered to pieces on the way up. There are more of them than the ones who made it.\"\n\"There's one thing you must remember, Tiori,\" she said, enunciating every word. \"Stay away from the Academy. Even if you come to love alchemy \226\128\148 never go near that place.\"\nI nodded, slowly and with all the seriousness I could muster.\nDaphne rose and took out the notepad she always carried. She tore out a blank page.\nI thought she was going to write something \226\128\148 but instead, she folded the paper into a tiny boat.\n\"I've heard that among the Charon people, every soul is bound to the water. Tell this boat what you want to say, then set it adrift on the Whisper River. It will carry your thoughts to your brother.\"\nI held the little boat in both hands and watched her walk away. After that, a long time passed \226\128\148 and I never saw Daphne again.\nOne day, when an Academy staffer came to deliver medicine to Riverside Hospital, I gathered my courage and asked where she'd gone \226\128\148 why she never came anymore.\nHe told me she'd gone to the battlefield. A place where those who go may never return. Perhaps she would never come back.\nThe box of strawberry sweets slipped from my hand and fell to the floor.\n\n\226\128\148 From the diary of Tiori Stone",
+          ContentEN = "After I filled up the notepad Daphne had given me, I finally saw her again at Riverside Hospital.\nI'd known she'd come back.\nThe last time we met, I'd begged her to help me find someone \226\128\148 a man named Gary Stone. I told her, tears in my eyes, that Gary was my brother \226\128\148 my only family in the world. I said I hadn't heard from him in ages, and that the last I knew, he'd gone to the Alchemy Academy.\nJust as I'd hoped, Daphne agreed without hesitation.\nMost of what I told her was true. But in one thing, I lied:\nI didn't miss Gary Stone at all. He was my brother, yes \226\128\148 but not all siblings are born to love each other. When I was still no taller than his thigh, Gary would grab me by the neck and squeeze until I couldn't breathe \226\128\148 all because I'd dared to steal a scrap of \"his\" food.\nI couldn't care less where Gary had gone. What I wanted was simply to see Daphne again. I thought she must've grown up in a loving family \226\128\148 because the moment she heard Gary was my brother, she assumed he must be someone dear to me.\n \nDaphne came back, bringing news about Gary Stone.\nBut this time, she looked exhausted. The dark circles under her eyes were plain to see, and it looked like she'd been crying \226\128\148 faint streaks still marked her cheeks.\nI saw her pacing at the far end of the corridor for ages before she finally walked over. I figured she must've brought bad news. Was she hesitating? Unsure whether to tell me? Or just trying to find the right way to say it?\n\"Tiori,\" she said, kneeling and gripping my shoulders, \"I found out what happened to your brother. Please... promise me you'll stay strong, no matter what. Will you?\"\nAh \226\128\148 so she was going to tell me everything after all. Maybe she wasn't any good at lying. Or maybe she just believed that even a child had the right to know the truth.\n\"Gary Stone won't be coming back,\" Daphne said, her voice hoarse. \"He was caught in an alchemical accident.\"\nI didn't feel a thing. But I still had questions. I didn't care about Gary \226\128\148 what I wanted to know was: What kinds of endings waited for people like us \226\128\148 the ones they treated like rubbish?\n\"...An accident? Did someone die?\"\n\"Yes.\"\n\"Did the alchemist kill them?\"\n\"No.\"\n\"Did Gary kill them?\"\n\"...No.\"\n\"Then who was the killer?\"\n\"It was a ghost no one could see,\" she said. \"Or perhaps... it was all of us.\"\nI shook my head. I didn't understand.\n\"Then... Miss Theodore,\" I asked, \"will I die like Gary someday too?\"\n\"If I learn enough words \226\128\148 enough to understand all the books you gave me, enough to master alchemy \226\128\148 will that keep me from ending up like my brother?\"\n\"I wish I could tell you yes. I used to believe it. I knew people like you \226\128\148 who rose from nothing, and climbed to the top through what they'd learned.\" Daphne said softly, brushing her hand over the horn on my head. \"But now... I've seen far more fall before they ever reached the peak \226\128\148 shattered to pieces on the way up. There are more of them than the ones who made it.\"\n\"There's one thing you must remember, Tiori,\" she said, enunciating every word. \"Stay away from the Academy. Even if you come to love alchemy \226\128\148 never go near that place.\"\nI nodded, slowly and with all the seriousness I could muster.\nDaphne rose and took out the notepad she always carried. She tore out a blank page.\nI thought she was going to write something \226\128\148 but instead, she folded the paper into a tiny boat.\n\"I've heard that among the Charon people, every soul is bound to the water. Tell this boat what you want to say, then set it adrift on the Whisper River. It will carry your thoughts to your brother.\"\nI held the little boat in both hands and watched her walk away. After that, a long time passed \226\128\148 and I never saw Daphne again.\nOne day, when an Academy staffer came to deliver medicine to Riverside Hospital, I gathered my courage and asked where she'd gone \226\128\148 why she never came anymore.\nHe told me she'd gone to the battlefield. A place where those who go may never return. Perhaps she would never come back.\nThe box of strawberry sweets slipped from my hand and fell to the floor.\n \n\226\128\148 From the diary of Tiori Stone",
           TextMapId = "UI_CHAR_DATA_TEXT_54010204"
         },
         UI_CHAR_DATA_TEXT_54010205 = {
-          ContentEN = "By the time I'd learned to read the simpler newspapers, Daphne came back.\nShe still held a bouquet of flowers \226\128\148 but this time, she looked gaunt, hollowed out. As if the lightest breeze could blow her straight into the Whisper River.\nAs she walked down the corridor, all talk ceased. Every gaze turned to her \226\128\148 full of hatred, disgust, envy, and fear. Then someone sneered, spitting out the word \"traitor.\" Others followed, repeating it.\nSo that was it. I'd overheard the nurses' gossip a few days ago \226\128\148 that Daphne Theodore was suspected of betraying her country in the war.\n\226\128\148But so what?\nIf a country could drive someone like Daphne Theodore to betrayal, then surely the fault lies with the country... not with her.\n\nDaphne gave no reply to the slurs. She didn't even glance at them \226\128\148 only kept her thin back straight as she walked on towards the wards.\n\"How is Mr Gaston?\" she asked the nurse on duty.\n\"If you mean Roger Gaston \226\128\148 he's already dead,\" the nurse replied. \"Not long ago, after another bout of pain, he smashed a glass when no one was watching and slit his wrist.\"\n\"But I had the medicine sent \226\128\148 the one that could cure him!\" It was the first time I'd ever seen Daphne lose control. Her voice cracked with despair. \"Did AG-1899 not work?\"\n\"You were a little too late, Miss. He killed himself the night before it arrived.\" The nurse's voice was cool, with a mocking curl at her lips. \"And anyway... Mr Gaston was a decorated veteran. Even if he'd survived the night, once he heard of your 'heroics' at Lonza Fortress... he wouldn't have dared take your medicine.\"\nDaphne's face went even paler. The nail of her thumb dug deep into the flesh of her index finger.\n\"No! I didn't\226\128\148\"\nShe looked ready to defend herself \226\128\148 but in the end, she said nothing.\nI reached out and took her hand, gently prising her fingers apart. Her skin was ice-cold \226\128\148 like a corpse in the morgue.\n\"Miss Theodore... no, Daphne.\"\nIt was the first time I'd ever called her that. I almost dragged her down to the bench below \226\128\148 the one where she once taught me to write.\nCopying her, I snapped off a twig and scratched two clumsy words into the dirt:\n\"Cheer up.\"\nThen I took her hand and placed something in it \226\128\148 a paper boat I had folded.\n\"Tell this boat what you want to say, then set it adrift on the Whisper River. It'll carry your thoughts to your father \226\128\148 let him know how much you miss him.\"\nAt the mention of her father, Daphne looked astonished. But then the shock softened in her green eyes... and became a faint smile.\n\"Thank you, Tiori,\" she said. \"I'll do that.\"\nSuddenly, as if remembering something, she rummaged through her backpack and pulled out a few books. She pressed them into my arms \226\128\148 she hadn't forgotten that I once told her I wanted to read more. We sat on the bench together for a while. Then she rose, and walked away into the crimson sunset.\n\nWhen I could read every section of the newspaper, Daphne Theodore still hadn't come back.\nWhen the design on the candy box she gave me had worn away, Daphne Theodore still hadn't come back.\nWhen I'd grown tall enough that the underpads I carried no longer hid my face, Daphne Theodore still hadn't come back.\nWhen I could read even the most complex alchemical texts, Daphne Theodore still hadn't come back.\nWhen I learned how to extract potion from Dewiolet blossoms, Daphne Theodore still hadn't come back.\nWhen I'd saved enough to leave Hyperborea and study in Aethyrie, Daphne Theodore still hadn't come back.\nWell... the family she came to visit was gone. She had no reason to return.\n\nAt dusk, I stood in the corridor, bidding farewell to the hospital where I had lived and worked for nearly twenty years. The dusk that day was a vivid crimson \226\128\148 just like the last time I saw Daphne.\nThen I saw a figure approaching from the far end of the corridor. She looked like a young, slender girl with blonde hair. My suitcase slipped from my hand. But when I bent to pick it up and looked again... there was no one there.\n\"Did you see a girl just now?\" I asked Nurse Madeleine. \"Tall, thin \226\128\148 blonde hair...\"\n\"What blonde girl?\" she muttered. \"And here I thought it was us old ladies who needed glasses.\"\n\"Oh. I must've been mistaken.\"\nI walked downstairs with my suitcase, and never looked back.\n\n\226\128\148 From the diary of Tiori Stone",
+          ContentEN = "By the time I'd learned to read the simpler newspapers, Daphne came back.\nShe still held a bouquet of flowers \226\128\148 but this time, she looked gaunt, hollowed out. As if the lightest breeze could blow her straight into the Whisper River.\nAs she walked down the corridor, all talk ceased. Every gaze turned to her \226\128\148 full of hatred, disgust, envy, and fear. Then someone sneered, spitting out the word \"traitor.\" Others followed, repeating it.\nSo that was it. I'd overheard the nurses' gossip a few days ago \226\128\148 that Daphne Theodore was suspected of betraying her country in the war.\n\226\128\148But so what?\nIf a country could drive someone like Daphne Theodore to betrayal, then surely the fault lies with the country... not with her.\n \nDaphne gave no reply to the slurs. She didn't even glance at them \226\128\148 only kept her thin back straight as she walked on towards the wards.\n\"How is Mr Gaston?\" she asked the nurse on duty.\n\"If you mean Roger Gaston \226\128\148 he's already dead,\" the nurse replied. \"Not long ago, after another bout of pain, he smashed a glass when no one was watching and slit his wrist.\"\n\"But I had the medicine sent \226\128\148 the one that could cure him!\" It was the first time I'd ever seen Daphne lose control. Her voice cracked with despair. \"Did AG-1899 not work?\"\n\"You were a little too late, Miss. He killed himself the night before it arrived.\" The nurse's voice was cool, with a mocking curl at her lips. \"And anyway... Mr Gaston was a decorated veteran. Even if he'd survived the night, once he heard of your 'heroics' at Lonza Fortress... he wouldn't have dared take your medicine.\"\nDaphne's face went even paler. The nail of her thumb dug deep into the flesh of her index finger.\n\"No! I didn't\226\128\148\"\nShe looked ready to defend herself \226\128\148 but in the end, she said nothing.\nI reached out and took her hand, gently prising her fingers apart. Her skin was ice-cold \226\128\148 like a corpse in the morgue.\n\"Miss Theodore... no, Daphne.\"\nIt was the first time I'd ever called her that. I almost dragged her down to the bench below \226\128\148 the one where she once taught me to write.\nCopying her, I snapped off a twig and scratched two clumsy words into the dirt:\n\"Cheer up.\"\nThen I took her hand and placed something in it \226\128\148 a paper boat I had folded.\n\"Tell this boat what you want to say, then set it adrift on the Whisper River. It'll carry your thoughts to your father \226\128\148 let him know how much you miss him.\"\nAt the mention of her father, Daphne looked astonished. But then the shock softened in her green eyes... and became a faint smile.\n\"Thank you, Tiori,\" she said. \"I'll do that.\"\nSuddenly, as if remembering something, she rummaged through her backpack and pulled out a few books. She pressed them into my arms \226\128\148 she hadn't forgotten that I once told her I wanted to read more. We sat on the bench together for a while. Then she rose, and walked away into the crimson sunset.\n \nWhen I could read every section of the newspaper, Daphne Theodore still hadn't come back.\nWhen the design on the candy box she gave me had worn away, Daphne Theodore still hadn't come back.\nWhen I'd grown tall enough that the underpads I carried no longer hid my face, Daphne Theodore still hadn't come back.\nWhen I could read even the most complex alchemical texts, Daphne Theodore still hadn't come back.\nWhen I learned how to extract potion from Dewiolet blossoms, Daphne Theodore still hadn't come back.\nWhen I'd saved enough to leave Hyperborea and study in Aethyrie, Daphne Theodore still hadn't come back.\nWell... the family she came to visit was gone. She had no reason to return.\n \nAt dusk, I stood in the corridor, bidding farewell to the hospital where I had lived and worked for nearly twenty years. The dusk that day was a vivid crimson \226\128\148 just like the last time I saw Daphne.\nThen I saw a figure approaching from the far end of the corridor. She looked like a young, slender girl with blonde hair. My suitcase slipped from my hand. But when I bent to pick it up and looked again... there was no one there.\n\"Did you see a girl just now?\" I asked Nurse Madeleine. \"Tall, thin \226\128\148 blonde hair...\"\n\"What blonde girl?\" she muttered. \"And here I thought it was us old ladies who needed glasses.\"\n\"Oh. I must've been mistaken.\"\nI walked downstairs with my suitcase, and never looked back.\n \n\226\128\148 From the diary of Tiori Stone",
           TextMapId = "UI_CHAR_DATA_TEXT_54010205"
         },
         UI_CHAR_DATA_TEXT_54010301 = {
-          ContentEN = "You once watched Daphne lay out the contents of her emergency kit. Its compartments held no secrets from your eyes.\n\nIn the upper tier, she kept disinfectant, gauze, and bandages; in the middle, needles and thread, anaesthetic, painkillers, and a set of simple surgical tools. She had reworked the case's structure with care, so it could hold as many supplies as possible \226\128\148 yet it was never enough. Against wounds and deaths that multiplied with every passing moment, what could a single medic \226\128\148 with a single box \226\128\148 truly fix?\n\nThe lowest tier carried more personal things: a handkerchief, a comb, and a sidearm. Once, she asked you in quiet dismay \226\128\148 if the worst came to pass, should the final bullet be spared for the enemy... or for herself?",
+          ContentEN = "You once watched Daphne lay out the contents of her emergency kit. Its compartments held no secrets from your eyes.\n \nIn the upper tier, she kept disinfectant, gauze, and bandages; in the middle, needles and thread, anaesthetic, painkillers, and a set of simple surgical tools. She had reworked the case's structure with care, so it could hold as many supplies as possible \226\128\148 yet it was never enough. Against wounds and deaths that multiplied with every passing moment, what could a single medic \226\128\148 with a single box \226\128\148 truly fix?\n \nThe lowest tier carried more personal things: a handkerchief, a comb, and a sidearm. Once, she asked you in quiet dismay \226\128\148 if the worst came to pass, should the final bullet be spared for the enemy... or for herself?",
           TextMapId = "UI_CHAR_DATA_TEXT_54010301"
         },
         UI_CHAR_DATA_TEXT_54010302 = {
@@ -52538,35 +52805,35 @@ Instead, she rejoiced in having met you and in having lived a life that was trul
           TextMapId = "UI_CHAR_DATA_TEXT_54010302"
         },
         UI_CHAR_DATA_TEXT_54010303 = {
-          ContentEN = "On humanitarian grounds, Daphne Theodore refused to participate in the Spathatoi's Intensification Project \226\128\148 a programme designed to forcibly unlock the magical potential of the Charon. For this, she openly defied the Spathatoi's dean not once, but twice.\n\nYet as the final disciple of Madame Flamel \226\128\148 the Spathatoi's revered founder \226\128\148 and a fellow pupil of Chief Sibylle, Daphne was spared formal reprimand. By now, the matter has become an open secret within the Spathatoi's halls.",
+          ContentEN = "On humanitarian grounds, Daphne Theodore refused to participate in the Spathatoi's Intensification Project \226\128\148 a programme designed to forcibly unlock the magical potential of the Charon. For this, she openly defied the Spathatoi's dean not once, but twice.\n \nYet as the final disciple of Madame Flamel \226\128\148 the Spathatoi's revered founder \226\128\148 and a fellow pupil of Chief Sibylle, Daphne was spared formal reprimand. By now, the matter has become an open secret within the Spathatoi's halls.",
           TextMapId = "UI_CHAR_DATA_TEXT_54010303"
         },
         UI_CHAR_DATA_TEXT_54010304 = {
-          ContentEN = "Back in her Academy days, Daphne displayed an unusual sensitivity to the wars. Whenever a battle broke out, she would find a way to obtain the list of the fallen.\n\nEach time, she scanned it in anxious silence for one particular name \226\128\148 and each time, let out the faintest sigh of relief when it was not there.\n\nBut now... she no longer needs to look.",
+          ContentEN = "Back in her Academy days, Daphne displayed an unusual sensitivity to the wars. Whenever a battle broke out, she would find a way to obtain the list of the fallen.\n \nEach time, she scanned it in anxious silence for one particular name \226\128\148 and each time, let out the faintest sigh of relief when it was not there.\n \nBut now... she no longer needs to look.",
           TextMapId = "UI_CHAR_DATA_TEXT_54010304"
         },
         UI_CHAR_DATA_TEXT_54010305 = {
-          ContentEN = "Daphne's world was once a simple one \226\128\148 everything she could observe obeyed logic and cause. Step by step, through analysis, deduction, and experiment, even the most intricate of problems would come undone, like a cat teasing apart a ball of yarn. For a time, she believed there was nothing beyond human reach.\n\nBut later, she came to understand: even a mind vast enough to chart the laws of stars could be ended in an instant \226\128\148 by a stray bullet, a common stone, or an ordinary brick.\n\nDaphne Theodore stays true to her ideals. But the road that once led to that great tower... she can no longer find.",
+          ContentEN = "Daphne's world was once a simple one \226\128\148 everything she could observe obeyed logic and cause. Step by step, through analysis, deduction, and experiment, even the most intricate of problems would come undone, like a cat teasing apart a ball of yarn. For a time, she believed there was nothing beyond human reach.\n \nBut later, she came to understand: even a mind vast enough to chart the laws of stars could be ended in an instant \226\128\148 by a stray bullet, a common stone, or an ordinary brick.\n \nDaphne Theodore stays true to her ideals. But the road that once led to that great tower... she can no longer find.",
           TextMapId = "UI_CHAR_DATA_TEXT_54010305"
         },
         UI_CHAR_DATA_TEXT_54010401 = {
-          ContentEN = "Dismania's Rain beat against the windows of the pallid hospital ward, where a four-year-old girl lay dying.\nThe cloth on her brow had been changed countless times. Medicines dripped through rubber tubes into her veins \226\128\148 yet the fever would not break.\n\nOn the first day, her father clasped her frail, small hand in his own broad palm and pressed it to his tear-soaked stubble. She did not wake.\nOn the second, her mother brought the finest physician in Dismania \226\128\148 a man who had once served the Emperor himself. Yet for all the gold he was paid, he merely shook his head and murmured there was only one chance in ten. She did not wake.\nOn the third, the young nurse tending her lit a candle, folded her hands to her chest, and prayed in a low voice. She did not wake.\nOn the fourth, a funeral director barged in with a sycophant's smile, speaking to the parents of splendid hearses and grand processions. The girl's enraged father seized a chair and drove him out. She did not wake.\nOn the fifth day, the girl's ageing grandmother arrived from her country estate. She looked down at the child, still unconscious, and drew a worn book from her purse. Settling beside the bed, she began to read in a gentle murmur.\n\"Long, long ago, mankind dreamed of transmuting base metals into gold as if by magic. They mixed sulphur, salt, and mercury... and many years later, we gained Phoxene.\"\n\"Long, long ago, mankind dreamed of soaring through the skies like birds. They strove to lift balloons with fire... and many years later, we gained the airship.\"\n\"Why are you telling these stories now?\" the girl's mother protested, eyes red with grief. \"She's still unconscious \226\128\148 she can't hear you! I... I only asked you here to see her one last time, Mother.\"\n\"No, Claudia.' The old woman smiled faintly. \"Daphne always loved to hear these tales. She will wake.\"\n\"Long, long ago, mankind dreamed of driving out sickness like the gods themselves. They ground every herb and root they could find... and many years later, we gained the draughts and tonics we call medicine. These are our alchemy \226\128\148 what is called gezhi in Huaxu, and science in Aethyrie.\"\nShe kissed the girl's pallid cheek. \"Believe in the power of great alchemy, Daphne. You will wake. For alchemy is\226\128\148\"\n\"...an art that brings... happiness... to humankind.\"\nIn the ward, eyes first widened in shock, then filled with tears of joy, as the girl's pale lips stirred with the secret phrase she shared with her grandmother.\nThe needle of fate spun \226\128\148 and came to rest on its slender tenth. Four-year-old Daphne Theodore awoke.\n\nThough she has long known it was no more than coincidence, Daphne often jokes that it was her grandmother's stories of alchemy that granted her a second life. It was also that brush with death that set her resolve: to take up the family calling, to become an alchemist worthy of her mother and the grandparents. Like the generations of alchemists who came before her, she would use this discipline to bring happiness to others \226\128\148 just as the frail, pale child she once was had been drawn back from death, drop by drop, by its medicines.\n\nOnce, she believed this with all her heart.",
+          ContentEN = "Dismania's Rain beat against the windows of the pallid hospital ward, where a four-year-old girl lay dying.\nThe cloth on her brow had been changed countless times. Medicines dripped through rubber tubes into her veins \226\128\148 yet the fever would not break.\n \nOn the first day, her father clasped her frail, small hand in his own broad palm and pressed it to his tear-soaked stubble. She did not wake.\nOn the second, her mother brought the finest physician in Dismania \226\128\148 a man who had once served the Emperor himself. Yet for all the gold he was paid, he merely shook his head and murmured there was only one chance in ten. She did not wake.\nOn the third, the young nurse tending her lit a candle, folded her hands to her chest, and prayed in a low voice. She did not wake.\nOn the fourth, a funeral director barged in with a sycophant's smile, speaking to the parents of splendid hearses and grand processions. The girl's enraged father seized a chair and drove him out. She did not wake.\nOn the fifth day, the girl's ageing grandmother arrived from her country estate. She looked down at the child, still unconscious, and drew a worn book from her purse. Settling beside the bed, she began to read in a gentle murmur.\n\"Long, long ago, mankind dreamed of transmuting base metals into gold as if by magic. They mixed sulphur, salt, and mercury... and many years later, we gained Phoxene.\"\n\"Long, long ago, mankind dreamed of soaring through the skies like birds. They strove to lift balloons with fire... and many years later, we gained the airship.\"\n\"Why are you telling these stories now?\" the girl's mother protested, eyes red with grief. \"She's still unconscious \226\128\148 she can't hear you! I... I only asked you here to see her one last time, Mother.\"\n\"No, Claudia.' The old woman smiled faintly. \"Daphne always loved to hear these tales. She will wake.\"\n\"Long, long ago, mankind dreamed of driving out sickness like the gods themselves. They ground every herb and root they could find... and many years later, we gained the draughts and tonics we call medicine. These are our alchemy \226\128\148 what is called gezhi in Huaxu, and science in Aethyrie.\"\nShe kissed the girl's pallid cheek. \"Believe in the power of great alchemy, Daphne. You will wake. For alchemy is\226\128\148\"\n\"...an art that brings... happiness... to humankind.\"\nIn the ward, eyes first widened in shock, then filled with tears of joy, as the girl's pale lips stirred with the secret phrase she shared with her grandmother.\nThe needle of fate spun \226\128\148 and came to rest on its slender tenth. Four-year-old Daphne Theodore awoke.\n \nThough she has long known it was no more than coincidence, Daphne often jokes that it was her grandmother's stories of alchemy that granted her a second life. It was also that brush with death that set her resolve: to take up the family calling, to become an alchemist worthy of her mother and the grandparents. Like the generations of alchemists who came before her, she would use this discipline to bring happiness to others \226\128\148 just as the frail, pale child she once was had been drawn back from death, drop by drop, by its medicines.\n \nOnce, she believed this with all her heart.",
           TextMapId = "UI_CHAR_DATA_TEXT_54010401"
         },
         UI_CHAR_DATA_TEXT_54010402 = {
-          ContentEN = "The Royal Alchemy Academy stood atop the highest of Dismania's seven hills. From the tower at its summit, the Whisper River stretched out below like a drawn horizon, dividing the city in two \226\128\148 the old town of white brick on one side, the new town of black iron on the other. And the people looked so small, like ants scurrying with grains of rice. This was the daily view of the Academy's alchemists \226\128\148 and for many, it became their view of the world: that great alchemists were the architects of a prosperous nation, and thus its rightful overseers.\n\nMeanwhile, in the grand hall of the Spathatoi, Sibylle Mason looked down on the assembled alchemists. It was the entrance ceremony of Azoth College \226\128\148 the Academy's subordinate school \226\128\148 and time for the customary speeches from the new intake. Sibylle stifled a yawn. To her, the hall was no different from a ballroom, and these speeches \226\128\148 whether stiff or flamboyant \226\128\148 were just another kind of social currency. She didn't need to listen to know what they'd say. The safest speech was a pledge of loyalty to Hyperborea: a vow to sacrifice all for the Emperor's glory. The fashionable choice was to pose as an eccentric researcher, rhapsodising about their love for the \"mysteries of life\" \226\128\148 usually Filthoids, Charons, and other magical beings. The more outlandish the tone, the more peculiar the manner, the better. The more they resembled lunatics, the louder the applause.\n\nThe final student's florid speech came to an end, and the hall broke into applause. Sibylle caught only part of the next name \226\128\148 some Daphne Theo-something \226\128\148 before a thin girl stepped onto the stage. Among students dressed to make themselves look as bizarre as possible, the girl in a plain white blouse and black skirt was almost invisible.\nShe began to speak. Her voice sounded younger than the others'. And suddenly, Sibylle remembered where she'd heard the name before \226\128\148 from Madame Flamel, who was her mentor. She had once pointed to an essay and said to Sibylle: This girl, Daphne Theodore, is bright \226\128\148 as clever as you were once. Only fifteen, but certain to become a fine alchemist one day.\n\nBut what use was brilliance? Hyperborea's Alchemy Academy had never lacked for geniuses. Still bored, Sibylle turned another page of her book. The new student speeches were drawing to a close. The girl was already delivering her final words:\n\n\"So, let me end with my true ideal: Alchemy is the study that brings happiness to humankind. That is why I stand here today.\"\n\nA smattering of applause followed \226\128\148 laced with soft laughter and scattered jeers. Sibylle closed her book. She understood the age they lived in \226\128\148 one growing steadily more vulgar, where people had learned to sneer at ideals and dreams. And here, in a hall where madness and cold-bloodedness were the fashion, Daphne's words were nothing short of a declaration: That she was a relic of the past. Or a naive child, blind to how the world truly worked.\n\nThe freshmen laughed \226\128\148 but their smiles soon froze. From the dais came the sharp sound of applause. It was Sibylle Mason, senior officer of the Legion and honorary dean of the Academy. The Laurelled Charon they scorned for her blood, yet still bowed to in fear. And so, begrudgingly, they followed her lead and clapped along.\n\nOn the stage, Daphne turned her face toward Sibylle. A shaft of light caught her \226\128\148 and for a moment, Sibylle could see only a silhouette, haloed in brightness. What expression lay behind it? A smile? Bewilderment? Gratitude? Or the same calm resolve she had shown in her words?\n\nAt the time, Sibylle paid it no mind. What stirred in her was only a trace of cruel amusement. It had been a long time since the Spathatoi had seen one who still carried such outdated, guileless ideals. And all Sibylle wished to know was this: Once the Academy's gilding was stripped away \226\128\148 when all that remained was bare flesh and bone \226\128\148 how long would the \"ideal\" of this girl, Daphne Theodore, endure?",
+          ContentEN = "The Royal Alchemy Academy stood atop the highest of Dismania's seven hills. From the tower at its summit, the Whisper River stretched out below like a drawn horizon, dividing the city in two \226\128\148 the old town of white brick on one side, the new town of black iron on the other. And the people looked so small, like ants scurrying with grains of rice. This was the daily view of the Academy's alchemists \226\128\148 and for many, it became their view of the world: that great alchemists were the architects of a prosperous nation, and thus its rightful overseers.\n \nMeanwhile, in the grand hall of the Spathatoi, Sibylle Mason looked down on the assembled alchemists. It was the entrance ceremony of Azoth College \226\128\148 the Academy's subordinate school \226\128\148 and time for the customary speeches from the new intake. Sibylle stifled a yawn. To her, the hall was no different from a ballroom, and these speeches \226\128\148 whether stiff or flamboyant \226\128\148 were just another kind of social currency. She didn't need to listen to know what they'd say. The safest speech was a pledge of loyalty to Hyperborea: a vow to sacrifice all for the Emperor's glory. The fashionable choice was to pose as an eccentric researcher, rhapsodising about their love for the \"mysteries of life\" \226\128\148 usually Filthoids, Charons, and other magical beings. The more outlandish the tone, the more peculiar the manner, the better. The more they resembled lunatics, the louder the applause.\n \nThe final student's florid speech came to an end, and the hall broke into applause. Sibylle caught only part of the next name \226\128\148 some Daphne Theo-something \226\128\148 before a thin girl stepped onto the stage. Among students dressed to make themselves look as bizarre as possible, the girl in a plain white blouse and black skirt was almost invisible.\n She began to speak. Her voice sounded younger than the others'. And suddenly, Sibylle remembered where she'd heard the name before \226\128\148 from Madame Flamel, who was her mentor. She had once pointed to an essay and said to Sibylle: This girl, Daphne Theodore, is bright \226\128\148 as clever as you were once. Only fifteen, but certain to become a fine alchemist one day.\n \nBut what use was brilliance? Hyperborea's Alchemy Academy had never lacked for geniuses. Still bored, Sibylle turned another page of her book. The new student speeches were drawing to a close. The girl was already delivering her final words:\n \n\"So, let me end with my true ideal: Alchemy is the study that brings happiness to humankind. That is why I stand here today.\"\n \nA smattering of applause followed \226\128\148 laced with soft laughter and scattered jeers. Sibylle closed her book. She understood the age they lived in \226\128\148 one growing steadily more vulgar, where people had learned to sneer at ideals and dreams. And here, in a hall where madness and cold-bloodedness were the fashion, Daphne's words were nothing short of a declaration: That she was a relic of the past. Or a naive child, blind to how the world truly worked.\n \nThe freshmen laughed \226\128\148 but their smiles soon froze. From the dais came the sharp sound of applause. It was Sibylle Mason, senior officer of the Legion and honorary dean of the Academy. The Laurelled Charon they scorned for her blood, yet still bowed to in fear. And so, begrudgingly, they followed her lead and clapped along.\n \nOn the stage, Daphne turned her face toward Sibylle. A shaft of light caught her \226\128\148 and for a moment, Sibylle could see only a silhouette, haloed in brightness. What expression lay behind it? A smile? Bewilderment? Gratitude? Or the same calm resolve she had shown in her words?\n \nAt the time, Sibylle paid it no mind. What stirred in her was only a trace of cruel amusement. It had been a long time since the Spathatoi had seen one who still carried such outdated, guileless ideals. And all Sibylle wished to know was this: Once the Academy's gilding was stripped away \226\128\148 when all that remained was bare flesh and bone \226\128\148 how long would the \"ideal\" of this girl, Daphne Theodore, endure?",
           TextMapId = "UI_CHAR_DATA_TEXT_54010402"
         },
         UI_CHAR_DATA_TEXT_54010403 = {
-          ContentEN = "Daphne handed over her rucksack without a word, submitted to the soldier's search, and passed through two heavy doors. It was said the doors were forged with powerful magnets, designed to expose any concealed blade or firearm \226\128\148 a safeguard against assassination for the Legion's high command. Yet upon crossing the final threshold, Daphne found herself faintly taken aback: beyond all that elaborate security, Sibylle Mason's private residence was stark to the point of austerity. The walls were coarse and grey, stripped of paintings or adornment. A broad dining table and a scattering of hard-backed chairs were all that furnished the space \226\128\148 angular, unembellished, as bare and functional as barrack stock, crafted for nothing but to bear the weight of a body.\n\n\"You've come, Daphne.\" Sibylle's voice reached her, muffled through the corridor. \"I'm in the kitchen. Come in.\"\n\nDaphne responded softly and made her way towards the sound. Her steps were cautious \226\128\148 she had no idea why a senior Legion officer, who had once studied above her at the Alchemy Academy, had summoned her to a private home.\n\nThe kitchen, like the parlour, was framed in bare grey walls. The only trace of colour lay in the vivid red of a pomegranate resting in the violet-haired woman's palm. The tip of her knife traced the fruit's smooth, taut skin.\n\n\"You're fifteen minutes early. I wasn't yet prepared to receive you.\" Sibylle's blade slipped through the rind, revealing the glistening cluster of translucent seeds. \"I dislike hiring servants. Everything here is done by my own hand.\"\n\n\"I'm sorry to trouble you.\" Daphne clasped her hands, uneasy. \"Perhaps... perhaps you'd like me to hel\226\128\148\"\n\nRing\226\128\148ring.\nThe telephone rang, abruptly cutting her short.\n\n\"Daphne.\" Sibylle began dropping the seeds into a white porcelain dish. \"Pick it up. Hold the receiver for me.\" She showed no sign of concern over her guest's presence.\n\nDaphne complied, gently raising the earpiece to Sibylle's ear. A young man's voice came through \226\128\148 clear enough for them both to hear.\n\n\"Chief Sibylle, it's about the two Forsakens spies. They've been under torture for four days now, but still refuse to name their accomplices. I believe they're reaching their limit.\"\n\n\"For many, the body's pain means little. You are still green. Do not strike what is hardest in them \226\128\148 strike what is softest.\"\n\nThe pomegranate seeds landed in the dish with soft, brittle clinks. Sibylle didn't lift her gaze. \"As I recall, those two are brothers.\"\n\n\"We've already threatened them with each other's lives, but neither gave in. It appears they made a pact \226\128\148 resolved to die from the start.\"\n\n\"No. You still haven't grasped what I meant by 'the softest part.'\"\n\nShe tipped the pale seeds into a fine copper sieve resting over a glass jug. With a steady, unrelenting grip, she began to press \226\128\148 knuckles whitening as juice seeped crimson through the mesh in a slow, thin stream.\n\n\"Do not threaten them with death. Tempt them with hope. Say this: the one who speaks will die \226\128\148 but his brother will live.\"\n\nA crisp \"Yes, ma'am\" crackled down the line, and the call ended. In the sieve, the seeds had turned pale and shrivelled. Sibylle poured the half-jug of juice into two glasses. Daphne's hand, still holding the receiver, remained suspended mid-air. A fine film of sweat gathered on her brow. Without a glance back, Sibylle turned and walked ahead. Daphne followed in silence, a few steps behind.\n\n\"Daphne. You wish to know the brothers' fate, do you not?\" Sibylle held out a glass of pomegranate juice. \"Then stay \226\128\148 and witness their end.\"\n\nDaphne faltered, then gave a small nod, biting her lower lip. She feigned calm as she swirled the glass, eyes fixed on the red within. Pomegranates had once been dear to her; as a child, she would walk the orchards hand in hand with her parents. But now, in that same familiar crimson, she felt only a creeping dread.\n\nThe minute hand had turned a full circuit and a half when the telephone rang again. It was the same young man's voice. \"The elder brother has confessed his contact. We're already moving to make the arrest. As promised, we released the younger \226\128\148 even returned his sidearm.\"\n\nDaphne exhaled in quiet relief, only for her smile to falter at the next words. \"The younger couldn't bear the thought that his brother had traded such precious secrets for his life. Once free, he raised the pistol to his own head and pulled the trigger.\"\n\n\"Ah, such a pity... a will of iron, in one so young.\" The words were spoken \226\128\148 but not a trace of pity coloured her voice. Her gaze lingered on Daphne, lips curved in a subtle, unreadable smile.\n\n\"You knew this would happen. That's why you're not surprised. You brought me here today so I'd hear it with my own ears.\" Daphne's lips were dry; her voice wavered despite her effort to steady it. \"It was... Dean Silas who asked you to persuade me \226\128\148 to tell me how I should serve the Empire. Wasn't it?\"\n\n\"Silas's grievances don't concern me,\" Sibylle said flatly. \"Daphne, I brought you here for one reason: to show you what it takes to survive \226\128\148 whether in the Legion or the Academy. Empathy must be kept in measure. Sharp enough to sense weakness... never so unchecked that it renders you useless.\"\n\n\"Excess empathy won't just make you useless, Daphne \226\128\148 it will drag you into your own misfortune.\"\n\nDaphne could scarcely recall how she had managed to feign thanks for Sibylle's lesson, nor how she had all but fled that stark house of grey and white. What lingered was the memory of two glasses of pomegranate juice: Sibylle's, drained in a single draught, and her own, left untouched. Sometimes, she dreamt of that glass \226\128\148 of the liquid within it: the colour of the pomegranate, the colour of life itself. In her dreams, it spilled over the rim, more and more, until it rose into a crimson river that closed over her... and swallowed her whole.",
+          ContentEN = "Daphne handed over her rucksack without a word, submitted to the soldier's search, and passed through two heavy doors. It was said the doors were forged with powerful magnets, designed to expose any concealed blade or firearm \226\128\148 a safeguard against assassination for the Legion's high command. Yet upon crossing the final threshold, Daphne found herself faintly taken aback: beyond all that elaborate security, Sibylle Mason's private residence was stark to the point of austerity. The walls were coarse and grey, stripped of paintings or adornment. A broad dining table and a scattering of hard-backed chairs were all that furnished the space \226\128\148 angular, unembellished, as bare and functional as barrack stock, crafted for nothing but to bear the weight of a body.\n \n\"You've come, Daphne.\" Sibylle's voice reached her, muffled through the corridor. \"I'm in the kitchen. Come in.\"\n \nDaphne responded softly and made her way towards the sound. Her steps were cautious \226\128\148 she had no idea why a senior Legion officer, who had once studied above her at the Alchemy Academy, had summoned her to a private home.\n \nThe kitchen, like the parlour, was framed in bare grey walls. The only trace of colour lay in the vivid red of a pomegranate resting in the violet-haired woman's palm. The tip of her knife traced the fruit's smooth, taut skin.\n \n\"You're fifteen minutes early. I wasn't yet prepared to receive you.\" Sibylle's blade slipped through the rind, revealing the glistening cluster of translucent seeds. \"I dislike hiring servants. Everything here is done by my own hand.\"\n \n\"I'm sorry to trouble you.\" Daphne clasped her hands, uneasy. \"Perhaps... perhaps you'd like me to hel\226\128\148\"\n \nRing\226\128\148ring.\nThe telephone rang, abruptly cutting her short.\n \n\"Daphne.\" Sibylle began dropping the seeds into a white porcelain dish. \"Pick it up. Hold the receiver for me.\" She showed no sign of concern over her guest's presence.\n \nDaphne complied, gently raising the earpiece to Sibylle's ear. A young man's voice came through \226\128\148 clear enough for them both to hear.\n \n\"Chief Sibylle, it's about the two Forsakens spies. They've been under torture for four days now, but still refuse to name their accomplices. I believe they're reaching their limit.\"\n \n\"For many, the body's pain means little. You are still green. Do not strike what is hardest in them \226\128\148 strike what is softest.\"\n \nThe pomegranate seeds landed in the dish with soft, brittle clinks. Sibylle didn't lift her gaze. \"As I recall, those two are brothers.\"\n \n\"We've already threatened them with each other's lives, but neither gave in. It appears they made a pact \226\128\148 resolved to die from the start.\"\n \n\"No. You still haven't grasped what I meant by 'the softest part.'\"\n \nShe tipped the pale seeds into a fine copper sieve resting over a glass jug. With a steady, unrelenting grip, she began to press \226\128\148 knuckles whitening as juice seeped crimson through the mesh in a slow, thin stream.\n \n\"Do not threaten them with death. Tempt them with hope. Say this: the one who speaks will die \226\128\148 but his brother will live.\"\n \nA crisp \"Yes, ma'am\" crackled down the line, and the call ended. In the sieve, the seeds had turned pale and shrivelled. Sibylle poured the half-jug of juice into two glasses. Daphne's hand, still holding the receiver, remained suspended mid-air. A fine film of sweat gathered on her brow. Without a glance back, Sibylle turned and walked ahead. Daphne followed in silence, a few steps behind.\n \n\"Daphne. You wish to know the brothers' fate, do you not?\" Sibylle held out a glass of pomegranate juice. \"Then stay \226\128\148 and witness their end.\"\n \nDaphne faltered, then gave a small nod, biting her lower lip. She feigned calm as she swirled the glass, eyes fixed on the red within. Pomegranates had once been dear to her; as a child, she would walk the orchards hand in hand with her parents. But now, in that same familiar crimson, she felt only a creeping dread.\n \nThe minute hand had turned a full circuit and a half when the telephone rang again. It was the same young man's voice. \"The elder brother has confessed his contact. We're already moving to make the arrest. As promised, we released the younger \226\128\148 even returned his sidearm.\"\n \nDaphne exhaled in quiet relief, only for her smile to falter at the next words. \"The younger couldn't bear the thought that his brother had traded such precious secrets for his life. Once free, he raised the pistol to his own head and pulled the trigger.\"\n \n\"Ah, such a pity... a will of iron, in one so young.\" The words were spoken \226\128\148 but not a trace of pity coloured her voice. Her gaze lingered on Daphne, lips curved in a subtle, unreadable smile.\n \n\"You knew this would happen. That's why you're not surprised. You brought me here today so I'd hear it with my own ears.\" Daphne's lips were dry; her voice wavered despite her effort to steady it. \"It was... Dean Silas who asked you to persuade me \226\128\148 to tell me how I should serve the Empire. Wasn't it?\"\n \n\"Silas's grievances don't concern me,\" Sibylle said flatly. \"Daphne, I brought you here for one reason: to show you what it takes to survive \226\128\148 whether in the Legion or the Academy. Empathy must be kept in measure. Sharp enough to sense weakness... never so unchecked that it renders you useless.\"\n \n\"Excess empathy won't just make you useless, Daphne \226\128\148 it will drag you into your own misfortune.\"\n \nDaphne could scarcely recall how she had managed to feign thanks for Sibylle's lesson, nor how she had all but fled that stark house of grey and white. What lingered was the memory of two glasses of pomegranate juice: Sibylle's, drained in a single draught, and her own, left untouched. Sometimes, she dreamt of that glass \226\128\148 of the liquid within it: the colour of the pomegranate, the colour of life itself. In her dreams, it spilled over the rim, more and more, until it rose into a crimson river that closed over her... and swallowed her whole.",
           TextMapId = "UI_CHAR_DATA_TEXT_54010403"
         },
         UI_CHAR_DATA_TEXT_54010404 = {
-          ContentEN = "It was still raining in Dismania.\nThudding knocks and angry shouts echoed through the rain-streaked glass. Someone was calling Daphne's name at the top of their lungs.\n\nShe sat curled in a velvet chair by the window. Four days had passed since her release from the Royal Military Prison \226\128\148 and for four days straight, the rain had not let up. A sudden creak from the door made her jolt like a startled kitten, the book slipping from her hands to the floor.\n\n\"Forgive me \226\128\148 did I startle you?\" The maid stammered. \"I only came to bring your supper. You... you haven't eaten all day again, Miss Daphne.\"\n\n\"I'm fine.\" Daphne's gaze remained fixed on the rain-smeared window. Beyond the glass, shadowy figures gathered at the estate gates, umbrellas tilted against the downpour. \"More rabble. Is it the same lot as yesterday?\"\n\n\"They look different \226\128\148 younger, maybe.\" The maid frowned, trying to recall. \"Ah \226\128\148 the one leading them... I think he was one of your classmates from the Alchemic Academy.\"\nDaphne rose, bracing herself against the armrest. \"I'll go and see.\"\n\n\"No, Miss Daphne...\" The maid seized her hand in fright. \"You know they've come for you.\"\n\nDaphne sighed. \"Then what other choice do I have? Shall I let them wake my mother again \226\128\148 and watch her faint a second time?\"\n\nShe remembered, two nights ago, standing at this very window as her mother stepped out to face the crowd. She had worn a corset \226\128\148 long out of fashion, but lending her frail frame a touch of dignity. The rain had drowned her words, yet Daphne had seen her curtsey again and again. Always proud, never had she bowed so low. At last, to the maid's cry of alarm, her mother collapsed \226\128\148 and only then did the crowd disperse. She had fallen hard on the courtyard stones, her face smeared with mud. Pride and grief had pulled her down, and not even the whalebone corset could keep her upright. Daphne had cradled her where she lay, her own tears vanishing soundlessly into the rain.\n\nNow, the scene beyond the window remained unchanged. And Daphne knew she could not bear to lose another of her kin.\n\nShe pulled her arm free from the maid's grasp, went downstairs, and stepped outside without an umbrella. The uproar beyond the gate faltered \226\128\148 the crowd stunned that she had truly come out.\n\n\"What is it you want to say?\" Daphne unlatched the gate and stepped into the street. The walls of the Theodore estate were smeared with graffiti \226\128\148 \"traitor,\" \"demon-spawn,\" scrawled in harsh, uneven strokes. She forced her eyes away. \"Do not wake my mother. We'll talk elsewhere.\"\n\n\"You betrayed Hyperborea \226\128\148 just like you betrayed the Alchemy Academy!\"\n\"Because of you, our brothers and sisters died young!\"\n\"How can you still wear that calm face? Why haven't you knelt and repented?\"\n\"Always the same pious mask. Now we see your true face!\"\n\nHer former classmates drove her back into a corner of the street. She tried to speak, but her voice was lost in the downpour \226\128\148 and in their fury. Someone gave a sharp whistle. Hands seized her shoulders. Overhead, thunder rumbled, low and heavy.\n\nWhy do people cling so stubbornly to the \"truth\" they choose to believe?\nHer spine slammed against a metal bin with a hollow clang. A fist struck her in the gut. The world spun; she curled in on herself like a shrimp. A boot came down on the hand she had braced against the ground \226\128\148 pain shuddered through her knuckles, as if they might snap beneath the weight.\n\nWhy does it take only a single excuse for people to bare their fangs at their own kind?\nShe thought of the corpses at Lonza Fortress \226\128\148 some comrades, some foes. Some still faintly warm, others already cold. Yes... for a single reason, they had slaughtered one another.\n\nWhy do people shut their eyes to the suffering of others?\nShe thought of the white rabbits she once kept. Pinned to the pristine-white lab bench, they struggled helplessly. Until at last, the syringe in her hand delivered its contents \226\128\148 and the small bodies stilled. She thought of Emilia, her friend from years past. The girl lay sprawled on a snow-white floor, blood blooming from her chest \226\128\148 like a pomegranate burst across a clean white cloth.\n\n\"What's the point in talking to her? She's nothing but demon-spawn \226\128\148 like her traitor father, Avar!\"\nThat familiar name wrenched her back to the rain-drenched streets of Dismania.\n\"Exactly. Even if you crown them in laurels and keep them on a tight leash, these mongrels still\226\128\148\"\n\nThe ringleader never finished. His smug grin froze. A moment later, he clutched his ear with a cry. The crowd reeled back as lightning split the sky \226\128\148 casting Daphne's face in stark, searing relief. She stood with pistol raised, fury blazing in her eyes \226\128\148 a fire no rain could quench.\n\n\"Insult my father again, and the next shot won't just graze your ear.\" She forced each word through clenched teeth. \"Now get lost.\"\n\nStudents of the Academy weren't allowed to carry firearms in the capital. Though their mouths still spat curses, their feet carried them away at a full run. Daphne leaned against the wall, using the bin at her back to push herself upright. Behind her lay the street leading home, where the maids had likely prepared some fresh dessert to cheer her. But she would not return. Not like this. She couldn't bear for the maids to worry \226\128\148 nor let them see her in such disgrace.\nBut then... where else could she go?\n\nShe wandered aimlessly through the rain. Night had fully fallen, and she had no idea how long she'd walked before a bridge loomed ahead \226\128\148 vaguely familiar. She strained to recall. Yes \226\128\148 Sibylle lived near this bridge. They had once spoken in her house... a meeting that ended bitterly.\n\nNow the woman in violet stood on the bridge, a long-handled umbrella in hand. She's here to see me at my lowest, Daphne thought. No doubt she'll sneer and ask what she asked before \226\128\148 Do you still stay true to your ideals? But she had no answer. The unrelenting rain had rusted her thoughts.\n\nYet Sibylle's face held no scorn, no anger. It was as calm as the Whisper River when no wind stirred its surface. She handed Daphne an umbrella, almost casually.\n\n\"Go home. Take a hot bath. Change your clothes.\"",
+          ContentEN = "It was still raining in Dismania.\nThudding knocks and angry shouts echoed through the rain-streaked glass. Someone was calling Daphne's name at the top of their lungs.\n \nShe sat curled in a velvet chair by the window. Four days had passed since her release from the Royal Military Prison \226\128\148 and for four days straight, the rain had not let up. A sudden creak from the door made her jolt like a startled kitten, the book slipping from her hands to the floor.\n \n\"Forgive me \226\128\148 did I startle you?\" The maid stammered. \"I only came to bring your supper. You... you haven't eaten all day again, Miss Daphne.\"\n \n\"I'm fine.\" Daphne's gaze remained fixed on the rain-smeared window. Beyond the glass, shadowy figures gathered at the estate gates, umbrellas tilted against the downpour. \"More rabble. Is it the same lot as yesterday?\"\n \n\"They look different \226\128\148 younger, maybe.\" The maid frowned, trying to recall. \"Ah \226\128\148 the one leading them... I think he was one of your classmates from the Alchemic Academy.\"\n Daphne rose, bracing herself against the armrest. \"I'll go and see.\"\n \n\"No, Miss Daphne...\" The maid seized her hand in fright. \"You know they've come for you.\"\n \nDaphne sighed. \"Then what other choice do I have? Shall I let them wake my mother again \226\128\148 and watch her faint a second time?\"\n \nShe remembered, two nights ago, standing at this very window as her mother stepped out to face the crowd. She had worn a corset \226\128\148 long out of fashion, but lending her frail frame a touch of dignity. The rain had drowned her words, yet Daphne had seen her curtsey again and again. Always proud, never had she bowed so low. At last, to the maid's cry of alarm, her mother collapsed \226\128\148 and only then did the crowd disperse. She had fallen hard on the courtyard stones, her face smeared with mud. Pride and grief had pulled her down, and not even the whalebone corset could keep her upright. Daphne had cradled her where she lay, her own tears vanishing soundlessly into the rain.\n \nNow, the scene beyond the window remained unchanged. And Daphne knew she could not bear to lose another of her kin.\n \nShe pulled her arm free from the maid's grasp, went downstairs, and stepped outside without an umbrella. The uproar beyond the gate faltered \226\128\148 the crowd stunned that she had truly come out.\n \n\"What is it you want to say?\" Daphne unlatched the gate and stepped into the street. The walls of the Theodore estate were smeared with graffiti \226\128\148 \"traitor,\" \"demon-spawn,\" scrawled in harsh, uneven strokes. She forced her eyes away. \"Do not wake my mother. We'll talk elsewhere.\"\n \n\"You betrayed Hyperborea \226\128\148 just like you betrayed the Alchemy Academy!\"\n\"Because of you, our brothers and sisters died young!\"\n\"How can you still wear that calm face? Why haven't you knelt and repented?\"\n\"Always the same pious mask. Now we see your true face!\"\n \nHer former classmates drove her back into a corner of the street. She tried to speak, but her voice was lost in the downpour \226\128\148 and in their fury. Someone gave a sharp whistle. Hands seized her shoulders. Overhead, thunder rumbled, low and heavy.\n \nWhy do people cling so stubbornly to the \"truth\" they choose to believe?\nHer spine slammed against a metal bin with a hollow clang. A fist struck her in the gut. The world spun; she curled in on herself like a shrimp. A boot came down on the hand she had braced against the ground \226\128\148 pain shuddered through her knuckles, as if they might snap beneath the weight.\n \nWhy does it take only a single excuse for people to bare their fangs at their own kind?\nShe thought of the corpses at Lonza Fortress \226\128\148 some comrades, some foes. Some still faintly warm, others already cold. Yes... for a single reason, they had slaughtered one another.\n \nWhy do people shut their eyes to the suffering of others?\nShe thought of the white rabbits she once kept. Pinned to the pristine-white lab bench, they struggled helplessly. Until at last, the syringe in her hand delivered its contents \226\128\148 and the small bodies stilled. She thought of Emilia, her friend from years past. The girl lay sprawled on a snow-white floor, blood blooming from her chest \226\128\148 like a pomegranate burst across a clean white cloth.\n \n\"What's the point in talking to her? She's nothing but demon-spawn \226\128\148 like her traitor father, Avar!\"\nThat familiar name wrenched her back to the rain-drenched streets of Dismania.\n\"Exactly. Even if you crown them in laurels and keep them on a tight leash, these mongrels still\226\128\148\"\n \nThe ringleader never finished. His smug grin froze. A moment later, he clutched his ear with a cry. The crowd reeled back as lightning split the sky \226\128\148 casting Daphne's face in stark, searing relief. She stood with pistol raised, fury blazing in her eyes \226\128\148 a fire no rain could quench.\n \n\"Insult my father again, and the next shot won't just graze your ear.\" She forced each word through clenched teeth. \"Now get lost.\"\n \nStudents of the Academy weren't allowed to carry firearms in the capital. Though their mouths still spat curses, their feet carried them away at a full run. Daphne leaned against the wall, using the bin at her back to push herself upright. Behind her lay the street leading home, where the maids had likely prepared some fresh dessert to cheer her. But she would not return. Not like this. She couldn't bear for the maids to worry \226\128\148 nor let them see her in such disgrace.\n But then... where else could she go?\n \nShe wandered aimlessly through the rain. Night had fully fallen, and she had no idea how long she'd walked before a bridge loomed ahead \226\128\148 vaguely familiar. She strained to recall. Yes \226\128\148 Sibylle lived near this bridge. They had once spoken in her house... a meeting that ended bitterly.\n \nNow the woman in violet stood on the bridge, a long-handled umbrella in hand. She's here to see me at my lowest, Daphne thought. No doubt she'll sneer and ask what she asked before \226\128\148 Do you still stay true to your ideals? But she had no answer. The unrelenting rain had rusted her thoughts.\n \nYet Sibylle's face held no scorn, no anger. It was as calm as the Whisper River when no wind stirred its surface. She handed Daphne an umbrella, almost casually.\n \n\"Go home. Take a hot bath. Change your clothes.\"",
           TextMapId = "UI_CHAR_DATA_TEXT_54010404"
         },
         UI_CHAR_DATA_TEXT_54010405 = {
-          ContentEN = "Daphne dreamed a long dream \226\128\148 one that seemed to have no end.\nShe wandered the streets of Dismania, where the air clung heavy with damp. Rain slid from the mouths of stone gargoyles, leaving dark brown trails along the walls.\nFamiliar figures lined both sides of the street, each standing beneath a long-handled umbrella.\n\n\"Alchemy is a science meant to bring happiness to the people,\" said an elderly woman.\n\"Daphne, you will be my pride,\" said a bright-eyed woman.\n\"All I ever wanted was for you to be happy,\" said a man with a gentle smile.\nShe tried to draw closer, to see if they truly bore the faces she remembered \226\128\148 but their features had blurred, as if the rain had soaked right through their skin.\n\n\"Those who suffer in pain \226\128\148 will we ever truly find relief for them?\" asked a young researcher.\n\"If I learn enough words... if I master alchemy one day \226\128\148 will that keep me from ending up like my brother?\" asked a little girl in a hospital orderly's uniform.\n\"Dismania's too far... The rain's pouring. The roads are all mud. Will we ever make it back...?\" asked a dying soldier.\nDaphne opened her lips to answer \226\128\148 to shape a single \"yes.\" But her throat closed. It was as though her voice had been torn away. No sound came.\n\n\"Do you still stay true to your ideals?\" The Legion Chief's gaze bore down from above.\nThe stare seared her eyes. She wanted to flee \226\128\148 but as she turned, a vast chasm yawned before her, bottomless and black.\n\"We need to focus on this battle \226\128\148 and on surviving.\" Her silver-haired, red-eyed comrade laid a steady hand on her shoulder. \"Remember what you once said.\"\nYes... that we might all live on. That was all she'd wanted then.\n\n\"Daphne, do you still remember the dream you had as a child?\" A little girl stepped from the corner of the street. Her voice was soft, her brows and eyes uncannily familiar \226\128\148 yes, it was herself, long ago.\n\"To bring happiness to people, through alchemy,\" she replied. \"I've never forgotten.\"\n\"But every dream comes at a price,\" said another voice behind her. It was her own \226\128\148 but cold, in a way she had never heard before. \"To gain something, you must give something up. Daphne, ideals are also a luxury for the strong.\"\n\"Then what am I supposed to do?\" Daphne asked.\n\"Abandon your hollow principles and your useless empathy. Go among them. Become one of them,\" said the cold voice.\n\"No! Befriend beasts \226\128\148 and how can you be sure you won't become one yourself?\" the child's voice cried.\n\"Only from a great enough height can you wield the power to change anything,\" said the cold voice.\n\"But once you take that step, there's no turning back!\" the child's voice protested.\n\nTheir voices tangled in endless argument. Daphne's head throbbed as though it might split \226\128\148 she felt herself about to be torn in two. She sank to her knees, clutching her head. Slowly, the voices faded, and the last light drained from Dismania's sky.\n\nDaphne Theodore awoke in her bedchamber. The rain had stopped; sunlight gleamed on the ivy leaves outside her window.\n\"Miss Daphne, someone from the Legion has come to see you.\" A maid knocked gently at the door. \"She... doesn't seem to mean any harm.\"\n\nDaphne rose, put on her coat, and stepped into the courtyard. A young man in a Legion officer's uniform stood waiting. Daphne recognised him at once \226\128\148 Sibylle Mason's adjutant.\n\n\"Miss Theodore,\" the man said, \"Chief Sibylle has asked me to invite you to join a project \226\128\148 if you're willing.\"\n\"It's called the Second Scion Program.\"",
+          ContentEN = "Daphne dreamed a long dream \226\128\148 one that seemed to have no end.\nShe wandered the streets of Dismania, where the air clung heavy with damp. Rain slid from the mouths of stone gargoyles, leaving dark brown trails along the walls.\nFamiliar figures lined both sides of the street, each standing beneath a long-handled umbrella.\n \n\"Alchemy is a science meant to bring happiness to the people,\" said an elderly woman.\n\"Daphne, you will be my pride,\" said a bright-eyed woman.\n\"All I ever wanted was for you to be happy,\" said a man with a gentle smile.\nShe tried to draw closer, to see if they truly bore the faces she remembered \226\128\148 but their features had blurred, as if the rain had soaked right through their skin.\n\n\"Those who suffer in pain \226\128\148 will we ever truly find relief for them?\" asked a young researcher.\n\"If I learn enough words... if I master alchemy one day \226\128\148 will that keep me from ending up like my brother?\" asked a little girl in a hospital orderly's uniform.\n\"Dismania's too far... The rain's pouring. The roads are all mud. Will we ever make it back...?\" asked a dying soldier.\nDaphne opened her lips to answer \226\128\148 to shape a single \"yes.\" But her throat closed. It was as though her voice had been torn away. No sound came.\n \n\"Do you still stay true to your ideals?\" The Legion Chief's gaze bore down from above.\n The stare seared her eyes. She wanted to flee \226\128\148 but as she turned, a vast chasm yawned before her, bottomless and black.\n\"We need to focus on this battle \226\128\148 and on surviving.\" Her silver-haired, red-eyed comrade laid a steady hand on her shoulder. \"Remember what you once said.\"\nYes... that we might all live on. That was all she'd wanted then.\n \n\"Daphne, do you still remember the dream you had as a child?\" A little girl stepped from the corner of the street. Her voice was soft, her brows and eyes uncannily familiar \226\128\148 yes, it was herself, long ago.\n\"To bring happiness to people, through alchemy,\" she replied. \"I've never forgotten.\"\n\"But every dream comes at a price,\" said another voice behind her. It was her own \226\128\148 but cold, in a way she had never heard before. \"To gain something, you must give something up. Daphne, ideals are also a luxury for the strong.\"\n\"Then what am I supposed to do?\" Daphne asked.\n\"Abandon your hollow principles and your useless empathy. Go among them. Become one of them,\" said the cold voice.\n\"No! Befriend beasts \226\128\148 and how can you be sure you won't become one yourself?\" the child's voice cried.\n\"Only from a great enough height can you wield the power to change anything,\" said the cold voice.\n\"But once you take that step, there's no turning back!\" the child's voice protested.\n \nTheir voices tangled in endless argument. Daphne's head throbbed as though it might split \226\128\148 she felt herself about to be torn in two. She sank to her knees, clutching her head. Slowly, the voices faded, and the last light drained from Dismania's sky.\n \nDaphne Theodore awoke in her bedchamber. The rain had stopped; sunlight gleamed on the ivy leaves outside her window.\n \"Miss Daphne, someone from the Legion has come to see you.\" A maid knocked gently at the door. \"She... doesn't seem to mean any harm.\"\n \nDaphne rose, put on her coat, and stepped into the courtyard. A young man in a Legion officer's uniform stood waiting. Daphne recognised him at once \226\128\148 Sibylle Mason's adjutant.\n \n\"Miss Theodore,\" the man said, \"Chief Sibylle has asked me to invite you to join a project \226\128\148 if you're willing.\"\n \"It's called the Second Scion Program.\"",
           TextMapId = "UI_CHAR_DATA_TEXT_54010405"
         },
         UI_CHAR_FORCE_1101 = {
@@ -52684,15 +52951,7 @@ Instead, she rejoiced in having met you and in having lived a life that was trul
         UI_CHAR_NAME_1104 = {
           ContentEN = "Mr Qiu",
           TextMapId = "UI_CHAR_NAME_1104"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "UI_CHAR_NAME_1501",
-    MaxKey = "UI_CMNpc_Name_Yinyoushiren2",
-    Loader = function()
-      return {
+        },
         UI_CHAR_NAME_1501 = {
           ContentEN = "Lisbell",
           TextMapId = "UI_CHAR_NAME_1501"
@@ -52814,7 +53073,7 @@ Instead, she rejoiced in having met you and in having lived a life that was trul
           TextMapId = "UI_CHAR_SUBTITLE_1103"
         },
         UI_CHAR_SUBTITLE_1501 = {
-          ContentEN = "Patience \194\183 Petulance",
+          ContentEN = "Patience\194\183Petulance",
           TextMapId = "UI_CHAR_SUBTITLE_1501"
         },
         UI_CHAR_SUBTITLE_1502 = {
@@ -53240,7 +53499,15 @@ Instead, she rejoiced in having met you and in having lived a life that was trul
         UI_CMNpc_Name_JuYuan1 = {
           ContentEN = "Friendly Troupe Member",
           TextMapId = "UI_CMNpc_Name_JuYuan1"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "UI_CMNpc_Name_Kelao",
+    MaxKey = "UI_COMMONPOP_TITLE_100055",
+    Loader = function()
+      return {
         UI_CMNpc_Name_Kelao = {
           ContentEN = "Claudia",
           TextMapId = "UI_CMNpc_Name_Kelao"
@@ -53492,15 +53759,7 @@ Instead, she rejoiced in having met you and in having lived a life that was trul
         UI_CMNpc_Name_Yinyoushiren2 = {
           ContentEN = "Earnest Bard",
           TextMapId = "UI_CMNpc_Name_Yinyoushiren2"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "UI_CMNpc_Name_YoungGirl",
-    MaxKey = "UI_CTL_Choose_ReplaceItem",
-    Loader = function()
-      return {
+        },
         UI_CMNpc_Name_YoungGirl = {
           ContentEN = "Young Woman",
           TextMapId = "UI_CMNpc_Name_YoungGirl"
@@ -54054,7 +54313,15 @@ Do you want to start a <H>%s Check</> attempt to acquire this item?
         UI_COMMONPOP_TITLE_100055 = {
           ContentEN = "Edit Signature",
           TextMapId = "UI_COMMONPOP_TITLE_100055"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "UI_COMMONPOP_TITLE_100056",
+    MaxKey = "UI_Char_Data_Step_4",
+    Loader = function()
+      return {
         UI_COMMONPOP_TITLE_100056 = {
           ContentEN = "Edit Birthday",
           TextMapId = "UI_COMMONPOP_TITLE_100056"
@@ -54224,7 +54491,7 @@ Do you want to start a <H>%s Check</> attempt to acquire this item?
           TextMapId = "UI_CONFIRM_SELECTION"
         },
         UI_CONFIRM_SHOPTALK = {
-          ContentEN = "Talk",
+          ContentEN = "Chitchat",
           TextMapId = "UI_CONFIRM_SHOPTALK"
         },
         UI_CONFIRM_SITDOWN = {
@@ -54303,15 +54570,7 @@ Do you want to start a <H>%s Check</> attempt to acquire this item?
         UI_CTL_Choose_ReplaceItem = {
           ContentEN = "Select item to replace",
           TextMapId = "UI_CTL_Choose_ReplaceItem"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "UI_CTL_Claim",
-    MaxKey = "UI_Chat_Imagine22",
-    Loader = function()
-      return {
+        },
         UI_CTL_Claim = {
           ContentEN = "Claim Reward",
           TextMapId = "UI_CTL_Claim"
@@ -54856,7 +55115,15 @@ Do you want to start a <H>%s Check</> attempt to acquire this item?
         UI_Char_Data_Step_4 = {
           ContentEN = "Stage \226\133\163",
           TextMapId = "UI_Char_Data_Step_4"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "UI_Char_Data_Step_5",
+    MaxKey = "UI_DROP_LIST",
+    Loader = function()
+      return {
         UI_Char_Data_Step_5 = {
           ContentEN = "Stage \226\133\164",
           TextMapId = "UI_Char_Data_Step_5"
@@ -54966,7 +55233,7 @@ Do you want to start a <H>%s Check</> attempt to acquire this item?
           TextMapId = "UI_Chardata_Rumor"
         },
         UI_Chardata_Secret = {
-          ContentEN = "Witness:{\231\169\186\230\160\188}",
+          ContentEN = "Secret:{\231\169\186\230\160\188}",
           TextMapId = "UI_Chardata_Secret"
         },
         UI_Chardata_Witness = {
@@ -55108,15 +55375,7 @@ Do you want to start a <H>%s Check</> attempt to acquire this item?
         UI_Chat_Imagine22 = {
           ContentEN = "Sneaky",
           TextMapId = "UI_Chat_Imagine22"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "UI_Chat_Imagine23",
-    MaxKey = "UI_DUNGEON_DES_TRAINING_29",
-    Loader = function()
-      return {
+        },
         UI_Chat_Imagine23 = {
           ContentEN = "Sweatin'",
           TextMapId = "UI_Chat_Imagine23"
@@ -55264,6 +55523,10 @@ Do you want to start a <H>%s Check</> attempt to acquire this item?
         UI_Chat_Imagine9 = {
           ContentEN = "Yay!",
           TextMapId = "UI_Chat_Imagine9"
+        },
+        UI_Chat_ImagineGroup1 = {
+          ContentEN = "Lunarian",
+          TextMapId = "UI_Chat_ImagineGroup1"
         },
         UI_Chat_ImagineGroup2 = {
           ContentEN = "Luno Emotes (\226\133\161)",
@@ -55657,7 +55920,15 @@ Do you want to start a <H>%s Check</> attempt to acquire this item?
         UI_DROP_LIST = {
           ContentEN = "Specific Items",
           TextMapId = "UI_DROP_LIST"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "UI_DUNGEON_BACKROOM",
+    MaxKey = "UI_DispatchTag_Des_Battle",
+    Loader = function()
+      return {
         UI_DUNGEON_BACKROOM = {
           ContentEN = "Cell",
           TextMapId = "UI_DUNGEON_BACKROOM"
@@ -55913,15 +56184,7 @@ Do you want to start a <H>%s Check</> attempt to acquire this item?
         UI_DUNGEON_DES_TRAINING_29 = {
           ContentEN = "On",
           TextMapId = "UI_DUNGEON_DES_TRAINING_29"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "UI_DUNGEON_DES_TRAINING_3",
-    MaxKey = "UI_Disptach_Goto",
-    Loader = function()
-      return {
+        },
         UI_DUNGEON_DES_TRAINING_3 = {
           ContentEN = "Defeat All Enemies",
           TextMapId = "UI_DUNGEON_DES_TRAINING_3"
@@ -56051,7 +56314,7 @@ Do you want to start a <H>%s Check</> attempt to acquire this item?
           TextMapId = "UI_DUNGEON_GUIDE_EXIT"
         },
         UI_DUNGEON_GUIDE_MECHANISM = {
-          ContentEN = "Operating Device",
+          ContentEN = "Operate the Device",
           TextMapId = "UI_DUNGEON_GUIDE_MECHANISM"
         },
         UI_DUNGEON_HOSTAGE = {
@@ -56322,6 +56585,10 @@ Do you want to start a <H>%s Check</> attempt to acquire this item?
           ContentEN = "Memo temporarily unavailable",
           TextMapId = "UI_Disabled_Des_DailyGoal"
         },
+        UI_Disabled_Des_Dispatch = {
+          ContentEN = "Expedition temporarily unavailable",
+          TextMapId = "UI_Disabled_Des_Dispatch"
+        },
         UI_Disabled_Des_Entertainment = {
           ContentEN = "Ripples of Talk temporarily unavailable",
           TextMapId = "UI_Disabled_Des_Entertainment"
@@ -56355,7 +56622,7 @@ Do you want to start a <H>%s Check</> attempt to acquire this item?
           TextMapId = "UI_Disabled_Des_HardBoss"
         },
         UI_Disabled_Des_Invite = {
-          ContentEN = "Sojourns temporarily unavailable",
+          ContentEN = "Ripples of Talk temporarily unavailable",
           TextMapId = "UI_Disabled_Des_Invite"
         },
         UI_Disabled_Des_Mail = {
@@ -56461,7 +56728,15 @@ Do you want to start a <H>%s Check</> attempt to acquire this item?
         UI_DispatchTag_Des_Battle = {
           ContentEN = "Skilled in combat",
           TextMapId = "UI_DispatchTag_Des_Battle"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "UI_DispatchTag_Des_Benefit",
+    MaxKey = "UI_Entrance_RangedArchive",
+    Loader = function()
+      return {
         UI_DispatchTag_Des_Benefit = {
           ContentEN = "Prioritises gains and trade-offs.",
           TextMapId = "UI_DispatchTag_Des_Benefit"
@@ -56721,15 +56996,7 @@ Do you want to start a <H>%s Check</> attempt to acquire this item?
         UI_Disptach_Goto = {
           ContentEN = "Go",
           TextMapId = "UI_Disptach_Goto"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "UI_Disptach_GotoConfirm",
-    MaxKey = "UI_Event_Trial_Confirm",
-    Loader = function()
-      return {
+        },
         UI_Disptach_GotoConfirm = {
           ContentEN = "Teleport to the <Highlight>Dynamic Quest</> location?",
           TextMapId = "UI_Disptach_GotoConfirm"
@@ -57187,7 +57454,7 @@ Do you want to start a <H>%s Check</> attempt to acquire this item?
           TextMapId = "UI_ElementDes_Fire"
         },
         UI_ElementDes_General = {
-          ContentEN = "Damage from advantaged elements is increased by <H>400%</>, while damage from <H>disadvantaged</> elements is reduced by <H>50%</>.",
+          ContentEN = "Damage from advantaged elements is increased by <H>400%</>, while damage from <H>non-advantaged</> elements is reduced by <H>50%</>.",
           TextMapId = "UI_ElementDes_General"
         },
         UI_ElementDes_Light = {
@@ -57269,7 +57536,15 @@ Do you want to start a <H>%s Check</> attempt to acquire this item?
         UI_Entrance_RangedArchive = {
           ContentEN = "Ranged Weapons",
           TextMapId = "UI_Entrance_RangedArchive"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "UI_Entrust_Complete",
+    MaxKey = "UI_Friend_State_Offline",
+    Loader = function()
+      return {
         UI_Entrust_Complete = {
           ContentEN = "Completed",
           TextMapId = "UI_Entrust_Complete"
@@ -57537,15 +57812,7 @@ Do you want to start a <H>%s Check</> attempt to acquire this item?
         UI_Event_Trial_Confirm = {
           ContentEN = "Enter Trial?",
           TextMapId = "UI_Event_Trial_Confirm"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "UI_Exchange_Incorrect",
-    MaxKey = "UI_HardBoss_Des_2",
-    Loader = function()
-      return {
+        },
         UI_Exchange_Incorrect = {
           ContentEN = "Please enter a valid redemption code",
           TextMapId = "UI_Exchange_Incorrect"
@@ -57691,7 +57958,7 @@ Do you want to start a <H>%s Check</> attempt to acquire this item?
           TextMapId = "UI_FORGING_CURRENT"
         },
         UI_FORGING_EMPTY = {
-          ContentEN = "No Blueprint",
+          ContentEN = "No Blueprints Available",
           TextMapId = "UI_FORGING_EMPTY"
         },
         UI_FORGING_FORBIDDEN = {
@@ -57866,7 +58133,7 @@ Do you want to start a <H>%s Check</> attempt to acquire this item?
           TextMapId = "UI_Fishing_SmallToBig"
         },
         UI_Fishing_SmallToBigChance = {
-          ContentEN = "A chance to teach a man to fish!",
+          ContentEN = "A chance for a bigger fish!",
           TextMapId = "UI_Fishing_SmallToBigChance"
         },
         UI_Fishing_StartFishing = {
@@ -58084,7 +58351,15 @@ Do you want to start a <H>%s Check</> attempt to acquire this item?
         UI_Friend_State_Offline = {
           ContentEN = "Offline",
           TextMapId = "UI_Friend_State_Offline"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "UI_GACHA_AGAIN",
+    MaxKey = "UI_JumpCommunity",
+    Loader = function()
+      return {
         UI_GACHA_AGAIN = {
           ContentEN = "Retrace Again",
           TextMapId = "UI_GACHA_AGAIN"
@@ -58344,15 +58619,7 @@ Do you want to start a <H>%s Check</> attempt to acquire this item?
         UI_HardBoss_Des_2 = {
           ContentEN = "The Grim Reaper of Glevum. A massive Filthoid in the depths of Glevum Pit, mechanically repeating the behaviour of tunnelling and devouring any glowing objects.",
           TextMapId = "UI_HardBoss_Des_2"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "UI_HardBoss_Des_3",
-    MaxKey = "UI_Lack_of_Resources",
-    Loader = function()
-      return {
+        },
         UI_HardBoss_Des_3 = {
           ContentEN = "The seed in the frozen soil that has forfeited the opportunity for a gentle descent into the night.",
           TextMapId = "UI_HardBoss_Des_3"
@@ -58892,7 +59159,15 @@ Do you want to start a <H>%s Check</> attempt to acquire this item?
         UI_JumpCommunity = {
           ContentEN = "Open",
           TextMapId = "UI_JumpCommunity"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "UI_Keyboard_DownSelect",
+    MaxKey = "UI_MECHANISM_10448",
+    Loader = function()
+      return {
         UI_Keyboard_DownSelect = {
           ContentEN = "Next Item",
           TextMapId = "UI_Keyboard_DownSelect"
@@ -59149,15 +59424,7 @@ Do you want to start a <H>%s Check</> attempt to acquire this item?
         UI_Lack_of_Resources = {
           ContentEN = "Insufficient Soulprints",
           TextMapId = "UI_Lack_of_Resources"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "UI_Language_Switch_Success",
-    MaxKey = "UI_MISSION_COMPLETE",
-    Loader = function()
-      return {
+        },
         UI_Language_Switch_Success = {
           ContentEN = "Language Switch Successful",
           TextMapId = "UI_Language_Switch_Success"
@@ -59371,6 +59638,10 @@ If you or your family have a history of epilepsy or have experienced similar sym
         UI_Locked_Des_DailyGoal = {
           ContentEN = "Memo not unlocked",
           TextMapId = "UI_Locked_Des_DailyGoal"
+        },
+        UI_Locked_Des_Dispatch = {
+          ContentEN = "Expedition not unlocked",
+          TextMapId = "UI_Locked_Des_Dispatch"
         },
         UI_Locked_Des_Entertainment = {
           ContentEN = "Ripples of Talk not yet available",
@@ -59695,7 +59966,15 @@ If you or your family have a history of epilepsy or have experienced similar sym
         UI_MECHANISM_10448 = {
           ContentEN = "Fermented Beverage",
           TextMapId = "UI_MECHANISM_10448"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "UI_MECHANISM_10449",
+    MaxKey = "UI_Mod_Not_Get",
+    Loader = function()
+      return {
         UI_MECHANISM_10449 = {
           ContentEN = "Gear Decor",
           TextMapId = "UI_MECHANISM_10449"
@@ -59959,15 +60238,7 @@ If you or your family have a history of epilepsy or have experienced similar sym
         UI_MISSION_COMPLETE = {
           ContentEN = "Commission Completed",
           TextMapId = "UI_MISSION_COMPLETE"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "UI_MISSION_FAIL",
-    MaxKey = "UI_Name_Walnut_151324",
-    Loader = function()
-      return {
+        },
         UI_MISSION_FAIL = {
           ContentEN = "Try Again!",
           TextMapId = "UI_MISSION_FAIL"
@@ -60503,7 +60774,15 @@ If you or your family have a history of epilepsy or have experienced similar sym
         UI_Mod_Not_Get = {
           ContentEN = "Not Owned",
           TextMapId = "UI_Mod_Not_Get"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "UI_Mod_Polarity_Btn",
+    MaxKey = "UI_Npc_All",
+    Loader = function()
+      return {
         UI_Mod_Polarity_Btn = {
           ContentEN = "Adjust Slot Track",
           TextMapId = "UI_Mod_Polarity_Btn"
@@ -60577,7 +60856,7 @@ If you or your family have a history of epilepsy or have experienced similar sym
           TextMapId = "UI_Mod_Warning_Import"
         },
         UI_MoneyConvertCharPiece = {
-          ContentEN = "Not enough Thoughts. Spend Phoxene Plumule \195\151<H>%s</> to purchase <H>%s</> <H>%s</>?",
+          ContentEN = "Not enough Thoughts. Spend Phoxene Plumule \195\151<H>%s</> to purchase <H>%s</> <H>%s</>(s)?",
           TextMapId = "UI_MoneyConvertCharPiece"
         },
         UI_Monster_Tutorial = {
@@ -60761,15 +61040,7 @@ If you or your family have a history of epilepsy or have experienced similar sym
         UI_Name_Walnut_151324 = {
           ContentEN = "Secret Letter: Griffin's Thunder \226\128\147 Wildfire",
           TextMapId = "UI_Name_Walnut_151324"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "UI_Name_Walnut_151325",
-    MaxKey = "UI_Npc_Name_Dafu",
-    Loader = function()
-      return {
+        },
         UI_Name_Walnut_151325 = {
           ContentEN = "Secret Letter: Griffin's Squall \226\128\147 Wildfire",
           TextMapId = "UI_Name_Walnut_151325"
@@ -61274,6 +61545,10 @@ If you or your family have a history of epilepsy or have experienced similar sym
           ContentEN = "Unlock the previous node to proceed",
           TextMapId = "UI_Need_Preceding_Node"
         },
+        UI_NewWalnut_Unlock = {
+          ContentEN = "New Secret Letter",
+          TextMapId = "UI_NewWalnut_Unlock"
+        },
         UI_New_Content = {
           ContentEN = "New",
           TextMapId = "UI_New_Content"
@@ -61298,7 +61573,15 @@ If you or your family have a history of epilepsy or have experienced similar sym
           ContentEN = "No notices",
           TextMapId = "UI_Notice_None"
         },
-        UI_Npc_All = {ContentEN = "All", TextMapId = "UI_Npc_All"},
+        UI_Npc_All = {ContentEN = "All", TextMapId = "UI_Npc_All"}
+      }
+    end
+  },
+  {
+    MinKey = "UI_Npc_Aside",
+    MaxKey = "UI_Npc_Name_Qiaomen",
+    Loader = function()
+      return {
         UI_Npc_Aside = {
           ContentEN = "\227\133\164",
           TextMapId = "UI_Npc_Aside"
@@ -61566,15 +61849,7 @@ If you or your family have a history of epilepsy or have experienced similar sym
         UI_Npc_Name_Dafu = {
           ContentEN = "Daphne",
           TextMapId = "UI_Npc_Name_Dafu"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "UI_Npc_Name_Diaoxiang",
-    MaxKey = "UI_Npc_Name_Won1",
-    Loader = function()
-      return {
+        },
         UI_Npc_Name_Diaoxiang = {
           ContentEN = "Statue",
           TextMapId = "UI_Npc_Name_Diaoxiang"
@@ -62106,7 +62381,15 @@ If you or your family have a history of epilepsy or have experienced similar sym
         UI_Npc_Name_Qiaomen = {
           ContentEN = "Knock again",
           TextMapId = "UI_Npc_Name_Qiaomen"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "UI_Npc_Name_Qingliyuan",
+    MaxKey = "UI_OPTION_Language_Unload_Fail",
+    Loader = function()
+      return {
         UI_Npc_Name_Qingliyuan = {
           ContentEN = "Diligent Worker",
           TextMapId = "UI_Npc_Name_Qingliyuan"
@@ -62374,15 +62657,7 @@ If you or your family have a history of epilepsy or have experienced similar sym
         UI_Npc_Name_Won1 = {
           ContentEN = "Dust-Covered Cradle",
           TextMapId = "UI_Npc_Name_Won1"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "UI_Npc_Name_Won2",
-    MaxKey = "UI_Observe_Storm",
-    Loader = function()
-      return {
+        },
         UI_Npc_Name_Won2 = {
           ContentEN = "Toppled Blocks",
           TextMapId = "UI_Npc_Name_Won2"
@@ -62914,7 +63189,15 @@ If you or your family have a history of epilepsy or have experienced similar sym
         UI_OPTION_Language_Unload_Fail = {
           ContentEN = "Uninstall Failed",
           TextMapId = "UI_OPTION_Language_Unload_Fail"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "UI_OPTION_Language_Unload_Success",
+    MaxKey = "UI_PersonalPage_Recount_Create",
+    Loader = function()
+      return {
         UI_OPTION_Language_Unload_Success = {
           ContentEN = "Uninstall Successful",
           TextMapId = "UI_OPTION_Language_Unload_Success"
@@ -63182,15 +63465,7 @@ If you or your family have a history of epilepsy or have experienced similar sym
         UI_Observe_Storm = {
           ContentEN = "Observe the storm",
           TextMapId = "UI_Observe_Storm"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "UI_OnlineRegion_Enter",
-    MaxKey = "UI_PlayerHead_Des_10022",
-    Loader = function()
-      return {
+        },
         UI_OnlineRegion_Enter = {
           ContentEN = "You're in a co-op area",
           TextMapId = "UI_OnlineRegion_Enter"
@@ -63447,9 +63722,25 @@ If you or your family have a history of epilepsy or have experienced similar sym
           ContentEN = "Not Downloaded",
           TextMapId = "UI_Option_Language_Unload"
         },
+        UI_PARTY_70101 = {
+          ContentEN = "Reach the Evacuation Point within the time limit",
+          TextMapId = "UI_PARTY_70101"
+        },
+        UI_PARTY_DES_70101 = {
+          ContentEN = "Observe the movement patterns of the devices and proceed accordingly. Touching certain block grants special effect.",
+          TextMapId = "UI_PARTY_DES_70101"
+        },
         UI_PARTY_PARKOUR_ENDPOINT = {
           ContentEN = "Another player has reached the destination. Proceed quickly!",
           TextMapId = "UI_PARTY_PARKOUR_ENDPOINT"
+        },
+        UI_PARTY_PARKOUR_ENDPOINTREACH = {
+          ContentEN = "Endpoint reached",
+          TextMapId = "UI_PARTY_PARKOUR_ENDPOINTREACH"
+        },
+        UI_PARTY_PARKOUR_ENDPOINTWAIT = {
+          ContentEN = "Wait for other players \239\188\136%d/%d\239\188\137",
+          TextMapId = "UI_PARTY_PARKOUR_ENDPOINTWAIT"
         },
         UI_PARTY_PARKOUR_PRESTART = {
           ContentEN = "Waiting for other players to load...",
@@ -63458,6 +63749,10 @@ If you or your family have a history of epilepsy or have experienced similar sym
         UI_PARTY_PARKOUR_TEAMWAIT = {
           ContentEN = "Waiting for other players\226\128\166",
           TextMapId = "UI_PARTY_PARKOUR_TEAMWAIT"
+        },
+        UI_PARTY_PARKOUR_UNFINISH = {
+          ContentEN = "Incomplete",
+          TextMapId = "UI_PARTY_PARKOUR_UNFINISH"
         },
         UI_PATCH_CANCEL = {
           ContentEN = "Cancel",
@@ -63534,6 +63829,10 @@ If you or your family have a history of epilepsy or have experienced similar sym
         UI_Panel_Experience = {
           ContentEN = "EXP",
           TextMapId = "UI_Panel_Experience"
+        },
+        UI_Panel_LevelName = {
+          ContentEN = "Lv.",
+          TextMapId = "UI_Panel_LevelName"
         },
         UI_Party_Lockedcondition = {
           ContentEN = "Unlocked when <Highlight>%s</> is complete",
@@ -63700,7 +63999,15 @@ Completing the trial in Co-Op Mode allows you to claim repeat-clear rewards. The
         UI_PersonalPage_Recount_Create = {
           ContentEN = "Account created on %s",
           TextMapId = "UI_PersonalPage_Recount_Create"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "UI_PersonalPage_Recount_Hidden",
+    MaxKey = "UI_REGISTER_WHOLE",
+    Loader = function()
+      return {
         UI_PersonalPage_Recount_Hidden = {
           ContentEN = "Hidden by the Player",
           TextMapId = "UI_PersonalPage_Recount_Hidden"
@@ -63992,15 +64299,7 @@ Completing the trial in Co-Op Mode allows you to claim repeat-clear rewards. The
         UI_PlayerHead_Des_10022 = {
           ContentEN = "Unlocks Flora as your avatar icon.",
           TextMapId = "UI_PlayerHead_Des_10022"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "UI_PlayerHead_Des_10023",
-    MaxKey = "UI_Rou_Toast_27005",
-    Loader = function()
-      return {
+        },
         UI_PlayerHead_Des_10023 = {
           ContentEN = "Unlocks Camilla as your avatar icon.",
           TextMapId = "UI_PlayerHead_Des_10023"
@@ -64508,7 +64807,15 @@ Completing the trial in Co-Op Mode allows you to claim repeat-clear rewards. The
         UI_REGISTER_WHOLE = {
           ContentEN = "Figure",
           TextMapId = "UI_REGISTER_WHOLE"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "UI_RLArchiveTitle_Blessing",
+    MaxKey = "UI_SHOP_REMAINTIME_SECOND",
+    Loader = function()
+      return {
         UI_RLArchiveTitle_Blessing = {
           ContentEN = "Lampwicks",
           TextMapId = "UI_RLArchiveTitle_Blessing"
@@ -64794,15 +65101,7 @@ Completing the trial in Co-Op Mode allows you to claim repeat-clear rewards. The
         UI_Rou_Toast_27005 = {
           ContentEN = "Mystic Maze not unlocked",
           TextMapId = "UI_Rou_Toast_27005"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "UI_Rou_Toast_27006",
-    MaxKey = "UI_STAT_Online_Kill_3P",
-    Loader = function()
-      return {
+        },
         UI_Rou_Toast_27006 = {
           ContentEN = "Insufficient Embers",
           TextMapId = "UI_Rou_Toast_27006"
@@ -64888,11 +65187,11 @@ Completing the trial in Co-Op Mode allows you to claim repeat-clear rewards. The
           TextMapId = "UI_RougeLike_End_Event"
         },
         UI_RougeLike_End_Fail01 = {
-          ContentEN = "Exploration Failure",
+          ContentEN = "Exploration Failed",
           TextMapId = "UI_RougeLike_End_Fail01"
         },
         UI_RougeLike_End_Fail02 = {
-          ContentEN = "Exploration Failure",
+          ContentEN = "Exploration Failed",
           TextMapId = "UI_RougeLike_End_Fail02"
         },
         UI_RougeLike_End_NoMod = {
@@ -64900,11 +65199,11 @@ Completing the trial in Co-Op Mode allows you to claim repeat-clear rewards. The
           TextMapId = "UI_RougeLike_End_NoMod"
         },
         UI_RougeLike_End_Success01 = {
-          ContentEN = "Exploration Success",
+          ContentEN = "Exploration Complete",
           TextMapId = "UI_RougeLike_End_Success01"
         },
         UI_RougeLike_End_Success02 = {
-          ContentEN = "Exploration Success",
+          ContentEN = "Exploration Complete",
           TextMapId = "UI_RougeLike_End_Success02"
         },
         UI_RougeLike_End_TalentPoints = {
@@ -65163,7 +65462,7 @@ Completing the trial in Co-Op Mode allows you to claim repeat-clear rewards. The
           TextMapId = "UI_SHOP_ExploreBadge"
         },
         UI_SHOP_Fishing = {
-          ContentEN = "Angler's Shop",
+          ContentEN = "Icelake Fisheries",
           TextMapId = "UI_SHOP_Fishing"
         },
         UI_SHOP_ITEMOWNED = {
@@ -65313,13 +65612,21 @@ Completing the trial in Co-Op Mode allows you to claim repeat-clear rewards. The
         UI_SHOP_REMAINTIME_SECOND = {
           ContentEN = "%ss",
           TextMapId = "UI_SHOP_REMAINTIME_SECOND"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "UI_SHOP_ROGUE_ITEM",
+    MaxKey = "UI_SkinGacha_Gold",
+    Loader = function()
+      return {
         UI_SHOP_ROGUE_ITEM = {
           ContentEN = "Fortune\226\128\152s Favour",
           TextMapId = "UI_SHOP_ROGUE_ITEM"
         },
         UI_SHOP_SHOPITEMLIMIT = {
-          ContentEN = "Limited Stock",
+          ContentEN = "Limited Stock{\231\169\186\230\160\188}",
           TextMapId = "UI_SHOP_SHOPITEMLIMIT"
         },
         UI_SHOP_SOLDOUT = {
@@ -65605,15 +65912,7 @@ Completing the trial in Co-Op Mode allows you to claim repeat-clear rewards. The
         UI_STAT_Online_Kill_3P = {
           ContentEN = "3P Defeats",
           TextMapId = "UI_STAT_Online_Kill_3P"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "UI_STAT_Online_Kill_4P",
-    MaxKey = "UI_Skin_Gotodye",
-    Loader = function()
-      return {
+        },
         UI_STAT_Online_Kill_4P = {
           ContentEN = "4P Defeats",
           TextMapId = "UI_STAT_Online_Kill_4P"
@@ -65967,6 +66266,10 @@ Completing the trial in Co-Op Mode allows you to claim repeat-clear rewards. The
           ContentEN = "Insufficient Sanergy for more challenge",
           TextMapId = "UI_Settlement_Repeat_Notenough"
         },
+        UI_Setup_Panel_Exp = {
+          ContentEN = "Exp",
+          TextMapId = "UI_Setup_Panel_Exp"
+        },
         UI_Shadow_Carrying = {
           ContentEN = "Equipped with",
           TextMapId = "UI_Shadow_Carrying"
@@ -66114,7 +66417,15 @@ Completing the trial in Co-Op Mode allows you to claim repeat-clear rewards. The
         UI_SkinGacha_Gold = {
           ContentEN = "Golden-tier Drop Rate: <highlight>%s%%</>",
           TextMapId = "UI_SkinGacha_Gold"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "UI_SkinGacha_Guarantee_Normal",
+    MaxKey = "UI_TELEPORTPOINT_NAME_104101_10",
+    Loader = function()
+      return {
         UI_SkinGacha_Guarantee_Normal = {
           ContentEN = "A Golden-tier item is guaranteed within <highlight>%d</> Weaves",
           TextMapId = "UI_SkinGacha_Guarantee_Normal"
@@ -66295,6 +66606,10 @@ Completing the trial in Co-Op Mode allows you to claim repeat-clear rewards. The
           ContentEN = "<H>%s</> not yet obtained. Confirm to claim <H>%s</> \195\1511?",
           TextMapId = "UI_Skin_CharHasnotGottenReminder"
         },
+        UI_Skin_Des_0010 = {
+          ContentEN = "The bell chimes on the year's shortest day, and wishes are entrusted to the night, to be carried on starlight toward tomorrow.",
+          TextMapId = "UI_Skin_Des_0010"
+        },
         UI_Skin_Des_1101 = {
           ContentEN = "Black is the colour of night \226\128\148 a calm, watchful veil drawn over the world. Black is the colour of shadow \226\128\148 a cloak that lets one remain ever near to those they hold dear. Berenica favours it.",
           TextMapId = "UI_Skin_Des_1101"
@@ -66410,15 +66725,7 @@ Completing the trial in Co-Op Mode allows you to claim repeat-clear rewards. The
         UI_Skin_Gotodye = {
           ContentEN = "Colouring",
           TextMapId = "UI_Skin_Gotodye"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "UI_Skin_HasSkin_Short",
-    MaxKey = "UI_TEMPLE_FAILURE_QUIT",
-    Loader = function()
-      return {
+        },
         UI_Skin_HasSkin_Short = {
           ContentEN = "Owned",
           TextMapId = "UI_Skin_HasSkin_Short"
@@ -66427,21 +66734,117 @@ Completing the trial in Co-Op Mode allows you to claim repeat-clear rewards. The
           ContentEN = "Outfit",
           TextMapId = "UI_Skin_Name"
         },
+        UI_Skin_Name_0010 = {
+          ContentEN = "Starry Hopes",
+          TextMapId = "UI_Skin_Name_0010"
+        },
+        UI_Skin_Name_1101 = {
+          ContentEN = "Berenica's Accessory",
+          TextMapId = "UI_Skin_Name_1101"
+        },
+        UI_Skin_Name_1103 = {
+          ContentEN = "Phantasio's Accessory",
+          TextMapId = "UI_Skin_Name_1103"
+        },
+        UI_Skin_Name_1104 = {
+          ContentEN = "Mr Qiu's Accessory",
+          TextMapId = "UI_Skin_Name_1104"
+        },
+        UI_Skin_Name_1501 = {
+          ContentEN = "Lisbell's Accessory",
+          TextMapId = "UI_Skin_Name_1501"
+        },
+        UI_Skin_Name_1502 = {
+          ContentEN = "Lady Nifle's Accessory",
+          TextMapId = "UI_Skin_Name_1502"
+        },
+        UI_Skin_Name_1503 = {
+          ContentEN = "Kezhou's Accessory",
+          TextMapId = "UI_Skin_Name_1503"
+        },
         UI_Skin_Name_1601 = {
           ContentEN = "{nickname}'s Accessory",
           TextMapId = "UI_Skin_Name_1601"
+        },
+        UI_Skin_Name_1801 = {
+          ContentEN = "Fina's Accessory",
+          TextMapId = "UI_Skin_Name_1801"
+        },
+        UI_Skin_Name_2101 = {
+          ContentEN = "Rebecca's Accessory",
+          TextMapId = "UI_Skin_Name_2101"
         },
         UI_Skin_Name_210102 = {
           ContentEN = "Veils and Whispers",
           TextMapId = "UI_Skin_Name_210102"
         },
+        UI_Skin_Name_2301 = {
+          ContentEN = "Tabethe's Accessory",
+          TextMapId = "UI_Skin_Name_2301"
+        },
+        UI_Skin_Name_2401 = {
+          ContentEN = "Fushu's Accessory",
+          TextMapId = "UI_Skin_Name_2401"
+        },
+        UI_Skin_Name_3101 = {
+          ContentEN = "Lynn's Accessory",
+          TextMapId = "UI_Skin_Name_3101"
+        },
+        UI_Skin_Name_3103 = {
+          ContentEN = "Yale and Oliver's Accessory",
+          TextMapId = "UI_Skin_Name_3103"
+        },
+        UI_Skin_Name_3201 = {
+          ContentEN = "Hellfire's Accessory",
+          TextMapId = "UI_Skin_Name_3201"
+        },
+        UI_Skin_Name_3301 = {
+          ContentEN = "Margie's Accessory",
+          TextMapId = "UI_Skin_Name_3301"
+        },
+        UI_Skin_Name_4101 = {
+          ContentEN = "Rhythm's Accessory",
+          TextMapId = "UI_Skin_Name_4101"
+        },
+        UI_Skin_Name_4102 = {
+          ContentEN = "Zhiliu's Accessory",
+          TextMapId = "UI_Skin_Name_4102"
+        },
+        UI_Skin_Name_4201 = {
+          ContentEN = "Yuming's Accessory",
+          TextMapId = "UI_Skin_Name_4201"
+        },
+        UI_Skin_Name_4202 = {
+          ContentEN = "Randy's Accessory",
+          TextMapId = "UI_Skin_Name_4202"
+        },
+        UI_Skin_Name_4301 = {
+          ContentEN = "Sibylle's Accessory",
+          TextMapId = "UI_Skin_Name_4301"
+        },
+        UI_Skin_Name_5101 = {
+          ContentEN = "Truffle and Filbert's Accessory",
+          TextMapId = "UI_Skin_Name_5101"
+        },
         UI_Skin_Name_510101 = {
           ContentEN = "Sunlit Gristmill",
           TextMapId = "UI_Skin_Name_510101"
         },
+        UI_Skin_Name_5102 = {
+          ContentEN = "Outsider's Accessory",
+          TextMapId = "UI_Skin_Name_5102"
+        },
+        UI_Skin_Name_5301 = {
+          ContentEN = "Psyche's Accessory",
+          TextMapId = "UI_Skin_Name_5301"
+        },
         UI_Skin_Name_530101 = {
           ContentEN = "Minuet Reverie",
           TextMapId = "UI_Skin_Name_530101"
+        },
+        UI_Skin_Name_5401 = {
+          ContentEN = "Daphne's Accessory",
+          TextMapId = "UI_Skin_Name_5401"
         },
         UI_Skin_Not_Have_Char = {
           ContentEN = "Character not Unlocked",
@@ -66819,7 +67222,15 @@ Completing the trial in Co-Op Mode allows you to claim repeat-clear rewards. The
         UI_TELEPORTPOINT_NAME_104101_10 = {
           ContentEN = "Ancient Battlefield",
           TextMapId = "UI_TELEPORTPOINT_NAME_104101_10"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "UI_TELEPORTPOINT_NAME_104101_11",
+    MaxKey = "UI_Time_Day_NotHighlight",
+    Loader = function()
+      return {
         UI_TELEPORTPOINT_NAME_104101_11 = {
           ContentEN = "Clinic",
           TextMapId = "UI_TELEPORTPOINT_NAME_104101_11"
@@ -67234,15 +67645,7 @@ within the time limit]],
         UI_TEMPLE_FAILURE_QUIT = {
           ContentEN = "Quit the Trial",
           TextMapId = "UI_TEMPLE_FAILURE_QUIT"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "UI_TEMPLE_FAILURE_REASON",
-    MaxKey = "UI_WEAPON_DESC_10101",
-    Loader = function()
-      return {
+        },
         UI_TEMPLE_FAILURE_REASON = {
           ContentEN = "Reason for Failure",
           TextMapId = "UI_TEMPLE_FAILURE_REASON"
@@ -67646,7 +68049,15 @@ within the time limit]],
         UI_Time_Day_NotHighlight = {
           ContentEN = "%sd",
           TextMapId = "UI_Time_Day_NotHighlight"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "UI_Time_Hour",
+    MaxKey = "UI_WEAPON_NAME_10302",
+    Loader = function()
+      return {
         UI_Time_Hour = {
           ContentEN = "<highlight> %s</> hour(s)",
           TextMapId = "UI_Time_Hour"
@@ -68050,15 +68461,7 @@ About Zones
         UI_WEAPON_DESC_10101 = {
           ContentEN = "The weapon that Berenica carries. A blade adorned with golden decorations. The blade is made from a black metal that is not commonly found. Clearly, this is not a weapon that the villagers of Purgatorio Island would normally possess.",
           TextMapId = "UI_WEAPON_DESC_10101"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "UI_WEAPON_DESC_10102",
-    MaxKey = "UI_Walnut_Selecting",
-    Loader = function()
-      return {
+        },
         UI_WEAPON_DESC_10102 = {
           ContentEN = "May reckless revelries compensate for your loneliness.",
           TextMapId = "UI_WEAPON_DESC_10102"
@@ -68462,7 +68865,15 @@ About Zones
         UI_WEAPON_NAME_10302 = {
           ContentEN = "Ironforger",
           TextMapId = "UI_WEAPON_NAME_10302"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "UI_WEAPON_NAME_10303",
+    MaxKey = "UI_Wiki_RelatedEntry",
+    Loader = function()
+      return {
         UI_WEAPON_NAME_10303 = {
           ContentEN = "Pyrothirst",
           TextMapId = "UI_WEAPON_NAME_10303"
@@ -68860,15 +69271,7 @@ Completing Covert Commissions grants a <highlight>10%</> chance of a Golden-tier
         UI_Walnut_Selecting = {
           ContentEN = "Selecting",
           TextMapId = "UI_Walnut_Selecting"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "UI_Walnut_Type_Des_1",
-    MaxKey = "VoiceDes096",
-    Loader = function()
-      return {
+        },
         UI_Walnut_Type_Des_1 = {
           ContentEN = "Secret Letter: Character",
           TextMapId = "UI_Walnut_Type_Des_1"
@@ -69215,8 +69618,12 @@ Gaming services will only be available to minors for 1 hour between 20:00 and 21
           ContentEN = "Weapon Equipped",
           TextMapId = "UI_Weapons_Carried"
         },
+        UI_WeeklyDungeon_ChancesRemain = {
+          ContentEN = "Weekly Demon Wedge Blueprint Obtains: ",
+          TextMapId = "UI_WeeklyDungeon_ChancesRemain"
+        },
         UI_WeeklyDungeon_NoChanceConfirm = {
-          ContentEN = "No more Weekly Bounty rewards available. Proceed anyway?",
+          ContentEN = "No more Weekly Bounty reward - Demon Wedge Blueprint available. Proceed anyway?",
           TextMapId = "UI_WeeklyDungeon_NoChanceConfirm"
         },
         UI_Wiki_DefaultSearch = {
@@ -69274,7 +69681,15 @@ Gaming services will only be available to minors for 1 hour between 20:00 and 21
         UI_Wiki_RelatedEntry = {
           ContentEN = "Associated entry",
           TextMapId = "UI_Wiki_RelatedEntry"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "UI_Wiki_Reward_Title",
+    MaxKey = "WikiText_20100801",
+    Loader = function()
+      return {
         UI_Wiki_Reward_Title = {
           ContentEN = "Collection Rewards",
           TextMapId = "UI_Wiki_Reward_Title"
@@ -69671,15 +70086,7 @@ Gaming services will only be available to minors for 1 hour between 20:00 and 21
         VoiceDes096 = {
           ContentEN = "About Stuttering",
           TextMapId = "VoiceDes096"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "VoiceDes097",
-    MaxKey = "WikiText_40800101",
-    Loader = function()
-      return {
+        },
         VoiceDes097 = {
           ContentEN = "About Childhood",
           TextMapId = "VoiceDes097"
@@ -69896,6 +70303,22 @@ Gaming services will only be available to minors for 1 hour between 20:00 and 21
           ContentEN = "Ultimate Skill: \226\133\163",
           TextMapId = "VoiceDes150"
         },
+        VoiceDes151 = {
+          ContentEN = "About Samael",
+          TextMapId = "VoiceDes151"
+        },
+        VoiceDes152 = {
+          ContentEN = "About the Elysian Church",
+          TextMapId = "VoiceDes152"
+        },
+        VoiceDes153 = {
+          ContentEN = "About Patience",
+          TextMapId = "VoiceDes153"
+        },
+        VoiceDes154 = {
+          ContentEN = "About the Seven Virtues",
+          TextMapId = "VoiceDes154"
+        },
         VoiceLocked_Dialogue = {
           ContentEN = "Unlock after small talks in Sanctuary",
           TextMapId = "VoiceLocked_Dialogue"
@@ -70066,7 +70489,15 @@ The faith promotes ideals of fairness and shared joy, fostering millennia of pea
         WikiText_20100801 = {
           ContentEN = "A bright and spirited scavenger girl from Icelake. Kind-hearted and full of warmth, she always shares her finds with those in need around her. The people of the slums fondly call her \"Princess Rubbish Bin.\"\n\n{nickname}'s journey as a Phoxhunter began with her \226\128\148 a task to recover her stolen purse.",
           TextMapId = "WikiText_20100801"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "WikiText_20100901",
+    MaxKey = "voice_ch_char_Baiheng_vo_topic_03_2",
+    Loader = function()
+      return {
         WikiText_20100901 = {
           ContentEN = "A nimble Phoxhunter based in Icelake, free-spirited and quick-witted, with a tendency to run his mouth. He first crossed paths with {nickname} while pursuing a commission involving the rare mineral Crystallo of Stella.",
           TextMapId = "WikiText_20100901"
@@ -70515,15 +70946,7 @@ It remains the only venue in the outer city where nobles and aristocrats are sti
         WikiText_40800101 = {
           ContentEN = "A secluded island adrift in international waters, lying between Hyperborea and Elysium. It was once home to {nickname} and Berenica, who lived there far removed from the world.\n\nLong ago, the Elysians built a grand temple on the island, dedicated to the Goddess of the Full Moon and Fate. The structure was partially destroyed during the Great Migration nearly a millennium ago, after which the island faded into obscurity.\n\nA century ago, a group of Imperial fishermen \226\128\148 fleeing heavy taxation \226\128\148 arrived in secret. They chose to stay, eventually settling and founding the quiet village that still exists today.",
           TextMapId = "WikiText_40800101"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "WikiText_40800201",
-    MaxKey = "voice_ch_char_Haier_vo_die_r01",
-    Loader = function()
-      return {
+        },
         WikiText_40800201 = {
           ContentEN = "One of the Hyperborean Empire's provinces, located at the northernmost edge of the Empire's territory. Approximately half its landmass is occupied by the Vidofnir Mountains.",
           TextMapId = "WikiText_40800201"
@@ -70820,9 +71243,7 @@ The inner city, also known as the Old Quarter, houses the Council Hall, the Alch
           TextMapId = "voice_ch_char_Baiheng_vo_companio_01"
         },
         voice_ch_char_Baiheng_vo_companio_02 = {
-          ContentEN = [[
-While a healer may ease affliction, defying fate is beyond us. I can offer a remedy to cool the heart's heat, yet the root of your troubles lies beyond my grasp. It is best to accept and adapt to the flow of time to find your own path to solace...
- ]],
+          ContentEN = "While a healer may ease affliction, defying fate is beyond us. I can offer a remedy to cool the heart's heat, yet the root of your troubles lies beyond my grasp. It is best to accept and adapt to the flow of time to find your own path to solace...\n",
           TextMapId = "voice_ch_char_Baiheng_vo_companio_02"
         },
         voice_ch_char_Baiheng_vo_companio_03 = {
@@ -70912,7 +71333,15 @@ While a healer may ease affliction, defying fate is beyond us. I can offer a rem
         voice_ch_char_Baiheng_vo_topic_03_2 = {
           ContentEN = "The Hall's mission is singular \226\128\148 to heal, and to heal alone. If one were to speak of other aspects... every healer who trained within its walls planted an apricot tree on the first day of their practice. Yet, as time passed, storms and decay claimed many. Now, fewer than half remain.",
           TextMapId = "voice_ch_char_Baiheng_vo_topic_03_2"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "voice_ch_char_Baiheng_vo_topic_03_3",
+    MaxKey = "voice_ch_char_Heitao_vo_topic_05_1",
+    Loader = function()
+      return {
         voice_ch_char_Baiheng_vo_topic_03_3 = {
           ContentEN = "Waking up from a long slumber, I sought the apricot tree I once planted in my youth. Sadly, the tree had withered to barren wood, and not even this warm spring could coax new buds from its branches.",
           TextMapId = "voice_ch_char_Baiheng_vo_topic_03_3"
@@ -70940,6 +71369,154 @@ While a healer may ease affliction, defying fate is beyond us. I can offer a rem
         voice_ch_char_Baiheng_vo_welcome = {
           ContentEN = "One's surroundings shape the spirit, and mindful care strengthens the body. Perhaps a walk beneath these kindly skies would do wonders for your health.",
           TextMapId = "voice_ch_char_Baiheng_vo_welcome"
+        },
+        voice_ch_char_Baonu_vo_appear = {
+          ContentEN = "Samael, here we go!",
+          TextMapId = "voice_ch_char_Baonu_vo_appear"
+        },
+        voice_ch_char_Baonu_vo_battleidle = {
+          ContentEN = "Come out and accept your thrashing!",
+          TextMapId = "voice_ch_char_Baonu_vo_battleidle"
+        },
+        voice_ch_char_Baonu_vo_battlestart = {
+          ContentEN = "Absolution is God's domain, not mine!",
+          TextMapId = "voice_ch_char_Baonu_vo_battlestart"
+        },
+        voice_ch_char_Baonu_vo_be_hit_heavy_r01 = {
+          ContentEN = "Cowardly wretch!",
+          TextMapId = "voice_ch_char_Baonu_vo_be_hit_heavy_r01"
+        },
+        voice_ch_char_Baonu_vo_be_hit_heavy_r02 = {
+          ContentEN = "Samael!",
+          TextMapId = "voice_ch_char_Baonu_vo_be_hit_heavy_r02"
+        },
+        voice_ch_char_Baonu_vo_birthday = {
+          ContentEN = "Ahem... I chanced upon this cake shop after completing a mission, and they happened to be giving out free birthday cakes, and then I stumbled into you, the little troublemaker that always needs my protection. So, erm, you... Help me finish this leftover raspberry cake. Don't leave a single crumb!",
+          TextMapId = "voice_ch_char_Baonu_vo_birthday"
+        },
+        voice_ch_char_Baonu_vo_companio_01 = {
+          ContentEN = "Samael? Oh, it's alright. It wakes me up every morning, cheers me on during combat, and even has a dozen bedtime stories lined up for me! So, there's nothing to worry about.",
+          TextMapId = "voice_ch_char_Baonu_vo_companio_01"
+        },
+        voice_ch_char_Baonu_vo_companio_02 = {
+          ContentEN = [[
+"Patience is one of the Seven Virtues. Those gifted with patience can discover hidden secrets and accomplish extraordinary... feats..."
+I can't take it anymore! Don't imitate me dwarf in the name of the Nine Gods I'll cut you in half with Samel if you do that one more time!]],
+          TextMapId = "voice_ch_char_Baonu_vo_companio_02"
+        },
+        voice_ch_char_Baonu_vo_companio_03 = {
+          ContentEN = "Cream? What's wrong? That's how we Elysians take care of our weapons. You got a problem with that?",
+          TextMapId = "voice_ch_char_Baonu_vo_companio_03"
+        },
+        voice_ch_char_Baonu_vo_companio_04 = {
+          ContentEN = [[
+How strange. I've never seen you vent your anger before...
+Well... I, a candidate of the Seven Virtues, order you to show me your anger! No more preaching those silly virtues, doctrines, and scriptures. Let's see some real emotion for once!]],
+          TextMapId = "voice_ch_char_Baonu_vo_companio_04"
+        },
+        voice_ch_char_Baonu_vo_die_r01 = {
+          ContentEN = "I can't... befoul... Samael's name...",
+          TextMapId = "voice_ch_char_Baonu_vo_die_r01"
+        },
+        voice_ch_char_Baonu_vo_die_r02 = {
+          ContentEN = "I don't want to meet the Gods alone...",
+          TextMapId = "voice_ch_char_Baonu_vo_die_r02"
+        },
+        voice_ch_char_Baonu_vo_fail = {
+          ContentEN = "No, no, no... I'm not gonna let this get to me...",
+          TextMapId = "voice_ch_char_Baonu_vo_fail"
+        },
+        voice_ch_char_Baonu_vo_gain = {
+          ContentEN = "Behold, I am the great Miss Lisbell, candidate for the Patience of the Seven Virtues of the Elysian Church. In the name of the almighty Tower, the divine nine Gods of Elysian, the... what was it...? Ahem, forget it. Anyway, I command you to address me as \"Mistress Patience\". Do you understand?",
+          TextMapId = "voice_ch_char_Baonu_vo_gain"
+        },
+        voice_ch_char_Baonu_vo_idle = {
+          ContentEN = "Samael, it's a beautiful day outside! Isn't this the perfect weather to eat something cool? I've heard the Holy City has an amazing dessert called ice cream. It's a commoner's food, but I bet it's way tastier than anything those old farts are handing out. I'll secretly grab you some!",
+          TextMapId = "voice_ch_char_Baonu_vo_idle"
+        },
+        voice_ch_char_Baonu_vo_lvup = {
+          ContentEN = "Samael, I've become even stronger! Let's protect these weirdos together!",
+          TextMapId = "voice_ch_char_Baonu_vo_lvup"
+        },
+        voice_ch_char_Baonu_vo_revive = {
+          ContentEN = "Even Mistress Patience has her limits!",
+          TextMapId = "voice_ch_char_Baonu_vo_revive"
+        },
+        voice_ch_char_Baonu_vo_skill01_r01 = {
+          ContentEN = "Holiness!",
+          TextMapId = "voice_ch_char_Baonu_vo_skill01_r01"
+        },
+        voice_ch_char_Baonu_vo_skill01_r02 = {
+          ContentEN = "In the name of Patience!",
+          TextMapId = "voice_ch_char_Baonu_vo_skill01_r02"
+        },
+        voice_ch_char_Baonu_vo_skill02_r01 = {
+          ContentEN = "I can't take this... anymore!",
+          TextMapId = "voice_ch_char_Baonu_vo_skill02_r01"
+        },
+        voice_ch_char_Baonu_vo_skill02_r02 = {
+          ContentEN = "Samael, answer my call!",
+          TextMapId = "voice_ch_char_Baonu_vo_skill02_r02"
+        },
+        voice_ch_char_Baonu_vo_skill02_r03 = {
+          ContentEN = "Samael, grant me your \"wrath\"!",
+          TextMapId = "voice_ch_char_Baonu_vo_skill02_r03"
+        },
+        voice_ch_char_Baonu_vo_topic_01_1 = {
+          ContentEN = "Samael's not just a weapon \226\128\148 it's my best friend!",
+          TextMapId = "voice_ch_char_Baonu_vo_topic_01_1"
+        },
+        voice_ch_char_Baonu_vo_topic_01_2 = {
+          ContentEN = "In the Church, only those chosen by one of the Seven Relics can become one of the \"Seven Virtues.\" There were loads of strong warriors that day, but I was the only one who could pull Samael free. It chose me, so of course I've got to treat it right!",
+          TextMapId = "voice_ch_char_Baonu_vo_topic_01_2"
+        },
+        voice_ch_char_Baonu_vo_topic_01_3 = {
+          ContentEN = "...Only thing is, ever since then, it hasn't responded to me. Not once... W\226\128\148Wait \226\128\148 that's top secret! You can't tell anyone, got it!?",
+          TextMapId = "voice_ch_char_Baonu_vo_topic_01_3"
+        },
+        voice_ch_char_Baonu_vo_topic_01_4 = {
+          ContentEN = "Huh!? It doesn't like ice cream!? Then... what about mashed potatoes? Or salad dressing!?",
+          TextMapId = "voice_ch_char_Baonu_vo_topic_01_4"
+        },
+        voice_ch_char_Baonu_vo_topic_02_1 = {
+          ContentEN = "Ugh\226\128\148! Shut up! I don't want to talk about those old stick-in-the-muds! Ughhh, you've ruined my day\226\128\148 ...No, no, I can't get angry. Stay calm, Lisbell...",
+          TextMapId = "voice_ch_char_Baonu_vo_topic_02_1"
+        },
+        voice_ch_char_Baonu_vo_topic_02_2 = {
+          ContentEN = "Ahem! Not at all! They are absolutely wonderful. So kind and understanding. When you mess up a hymn, you just have to copy it thirty times. And if they catch you feeding cream to Samael, it's only two days locked up for solitary reflection. Really, they're the best. Absolutely lovely...",
+          TextMapId = "voice_ch_char_Baonu_vo_topic_02_2"
+        },
+        voice_ch_char_Baonu_vo_topic_03_1 = {
+          ContentEN = "Just what it says. Being patient means staying strong and stoic \226\128\148 putting up with anything and never, ever blowing up!",
+          TextMapId = "voice_ch_char_Baonu_vo_topic_03_1"
+        },
+        voice_ch_char_Baonu_vo_topic_03_2 = {
+          ContentEN = "Right!? But because of this title, they're always telling me to \"swallow my anger with patience.\" But it's like... like being forced to stop mid-yawn or raising your sword for a perfect strike, only to be told, \"Hey! That's not an enemy, it's a friend!\" It just makes you even more\226\128\148",
+          TextMapId = "voice_ch_char_Baonu_vo_topic_03_2"
+        },
+        voice_ch_char_Baonu_vo_topic_03_3 = {
+          ContentEN = "Argh, they say anger is a grave sin. I mustn't get angry. I mustn't...",
+          TextMapId = "voice_ch_char_Baonu_vo_topic_03_3"
+        },
+        voice_ch_char_Baonu_vo_topic_03_4 = {
+          ContentEN = "Well... it comes with the job! I am Lord Patience, after all! Hehe!",
+          TextMapId = "voice_ch_char_Baonu_vo_topic_03_4"
+        },
+        voice_ch_char_Baonu_vo_topic_04_1 = {
+          ContentEN = "The \"Seven Virtues\" are the most noble, most powerful, and most drop-dead dazzling champions in all of Elysium! Naturally, they're also the most virtuous \226\128\148 it's in the name!",
+          TextMapId = "voice_ch_char_Baonu_vo_topic_04_1"
+        },
+        voice_ch_char_Baonu_vo_topic_04_2 = {
+          ContentEN = "What's with that look...? How dare you doubt me! I hereby sentence you to copy the Codex thirty \226\128\148 no, a hundred times!",
+          TextMapId = "voice_ch_char_Baonu_vo_topic_04_2"
+        },
+        voice_ch_char_Baonu_vo_victory = {
+          ContentEN = "That was all thanks to me, Mistress Patience!",
+          TextMapId = "voice_ch_char_Baonu_vo_victory"
+        },
+        voice_ch_char_Baonu_vo_welcome = {
+          ContentEN = "Hey! I'm taking Samael out for some fresh air \226\128\148 soaking up the sunlight, getting a feel for this place together. Wanna say hi? It'll be thrilled! ...Well, probably! Hehe~",
+          TextMapId = "voice_ch_char_Baonu_vo_welcome"
         },
         voice_ch_char_Dafu_vo_appear = {
           ContentEN = "Emergency supplies are packed. Ready to deploy at any time.",
@@ -71330,15 +71907,7 @@ Hah, does receiving blessings make you happy, you simple creature? Tsk, well, ha
         voice_ch_char_Haier_vo_die_r01 = {
           ContentEN = "For the order of the Empire...",
           TextMapId = "voice_ch_char_Haier_vo_die_r01"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "voice_ch_char_Haier_vo_die_r02",
-    MaxKey = "voice_ch_char_Lise_vo_topic_03_1",
-    Loader = function()
-      return {
+        },
         voice_ch_char_Haier_vo_die_r02 = {
           ContentEN = "I'm not afraid of... hell...",
           TextMapId = "voice_ch_char_Haier_vo_die_r02"
@@ -71580,7 +72149,15 @@ I am Hellfire, and I'll show you what hell is truly like!]],
         voice_ch_char_Heitao_vo_topic_05_1 = {
           ContentEN = "It's somewhat noisy, but I don't hate it. You've made many new friends here, which is a good thing \226\128\148 I'm really happy for you.",
           TextMapId = "voice_ch_char_Heitao_vo_topic_05_1"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "voice_ch_char_Heitao_vo_topic_05_2",
+    MaxKey = "voice_ch_char_NanzhuLight_vo_battleidle",
+    Loader = function()
+      return {
         voice_ch_char_Heitao_vo_topic_05_2 = {
           ContentEN = "This way, you'll never feel lonely, even when I'm not around.",
           TextMapId = "voice_ch_char_Heitao_vo_topic_05_2"
@@ -72142,15 +72719,7 @@ so I suppose I could lend a hand. In my own personal capacity, of course.]],
         voice_ch_char_Lise_vo_topic_03_1 = {
           ContentEN = "I wouldn't call it responsibility. I'm simply following the Escort's regulations to the letter.",
           TextMapId = "voice_ch_char_Lise_vo_topic_03_1"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "voice_ch_char_Lise_vo_topic_03_2",
-    MaxKey = "voice_ch_char_Shuimu_vo_victory",
-    Loader = function()
-      return {
+        },
         voice_ch_char_Lise_vo_topic_03_2 = {
           ContentEN = "The Escort's regulations forbid any legionary from commenting on the conduct of their fellow legionaries.",
           TextMapId = "voice_ch_char_Lise_vo_topic_03_2"
@@ -72390,7 +72959,15 @@ so I suppose I could lend a hand. In my own personal capacity, of course.]],
         voice_ch_char_NanzhuLight_vo_battleidle = {
           ContentEN = "Where's next? Let me check the map... Ugh... I know maps don't like me.",
           TextMapId = "voice_ch_char_NanzhuLight_vo_battleidle"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "voice_ch_char_NanzhuLight_vo_battlestart",
+    MaxKey = "voice_ch_char_Tuosi_vo_fail",
+    Loader = function()
+      return {
         voice_ch_char_NanzhuLight_vo_battlestart = {
           ContentEN = "This sword still fulfils its duty.",
           TextMapId = "voice_ch_char_NanzhuLight_vo_battlestart"
@@ -72868,7 +73445,7 @@ After all, even if I gave you a thousand chances, I would still escape from your
           TextMapId = "voice_ch_char_Shuimu_vo_gain"
         },
         voice_ch_char_Shuimu_vo_idle = {
-          ContentEN = "Are you staying here to spend some lovely time with me? *giggle* I'm already looking forward to it.",
+          ContentEN = "Are you staying here to spend some lovely time with me? I'm already looking forward to it.",
           TextMapId = "voice_ch_char_Shuimu_vo_idle"
         },
         voice_ch_char_Shuimu_vo_lvup = {
@@ -72912,7 +73489,7 @@ After all, even if I gave you a thousand chances, I would still escape from your
           TextMapId = "voice_ch_char_Shuimu_vo_topic_01_3"
         },
         voice_ch_char_Shuimu_vo_topic_02_1 = {
-          ContentEN = "Ah, you're initiating a conversation about love with me \226\128\148 how unexpected.",
+          ContentEN = "Ah, you're initiating a conversation about love with me \226\128\148 how unexpected.\n",
           TextMapId = "voice_ch_char_Shuimu_vo_topic_02_1"
         },
         voice_ch_char_Shuimu_vo_topic_02_2 = {
@@ -72958,21 +73535,13 @@ After all, even if I gave you a thousand chances, I would still escape from your
         voice_ch_char_Shuimu_vo_victory = {
           ContentEN = "I will punish those who aren't faithful to love in the God of Love's name.",
           TextMapId = "voice_ch_char_Shuimu_vo_victory"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "voice_ch_char_Shuimu_vo_welcome",
-    MaxKey = "voice_ch_char_Yeer_vo_topic_02_1",
-    Loader = function()
-      return {
+        },
         voice_ch_char_Shuimu_vo_welcome = {
           ContentEN = "I've been waiting here ever since I woke up. My venom has almost run dry... So, it's a good thing you came. I can feel it bubbling through my veins again. Can you come a little closer...?",
           TextMapId = "voice_ch_char_Shuimu_vo_welcome"
         },
         voice_ch_char_Songlu_vo_appear = {
-          ContentEN = "Filbert, wakey-wakey! It's time to leave! ",
+          ContentEN = "Filbert, wakey-wakey! It's time to leave!",
           TextMapId = "voice_ch_char_Songlu_vo_appear"
         },
         voice_ch_char_Songlu_vo_battleidle = {
@@ -73210,7 +73779,15 @@ Ah, an original composition of yours... Such an enviable gift. Might I have the 
         voice_ch_char_Tuosi_vo_fail = {
           ContentEN = "Tragedy is the ordeal of the brave.",
           TextMapId = "voice_ch_char_Tuosi_vo_fail"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "voice_ch_char_Tuosi_vo_gain",
+    MaxKey = "voice_ch_char_Zhangyu_vo_revive",
+    Loader = function()
+      return {
         voice_ch_char_Tuosi_vo_gain = {
           ContentEN = "May we meet in the blackest hour of night, where shadows veil my face, sparing you the terror of beholding my true form.",
           TextMapId = "voice_ch_char_Tuosi_vo_gain"
@@ -73732,8 +74309,8 @@ Oliver: Ugh, great, no improvement at all.]],
         voice_ch_char_Yeer_vo_idle = {
           ContentEN = [[
 Yale: Peter Piker p-picked a peck of p-p-peckled peppers...
- Oliver: It's "Peter Piper picked a peck of pickled peppers!" Come on, Yale, keep up!
- Yale: O-Okay! P-Peter Piker p-picked...]],
+Oliver: It's "Peter Piper picked a peck of pickled peppers!" Come on, Yale, keep up!
+Yale: O-Okay! P-Peter Piker p-picked...]],
           TextMapId = "voice_ch_char_Yeer_vo_idle"
         },
         voice_ch_char_Yeer_vo_lvup = {
@@ -73783,15 +74360,7 @@ Yale: Peter Piker p-picked a peck of p-p-peckled peppers...
         voice_ch_char_Yeer_vo_topic_02_1 = {
           ContentEN = "Yale: I... I might not be much help. The only thing I'm good at... is probably making Tot Poppers...",
           TextMapId = "voice_ch_char_Yeer_vo_topic_02_1"
-        }
-      }
-    end
-  },
-  {
-    MinKey = "voice_ch_char_Yeer_vo_topic_02_2",
-    MaxKey = "voice_ch_char_Zhiliu_vo_welcome",
-    Loader = function()
-      return {
+        },
         voice_ch_char_Yeer_vo_topic_02_2 = {
           ContentEN = "Yale: They're the most popular items at our \"Snap 'n' Spark\" toy store... They take a lot of time to make.",
           TextMapId = "voice_ch_char_Yeer_vo_topic_02_2"
@@ -74033,7 +74602,15 @@ Hey, what's up with you, getting all riled up? Haha, you're a proper laugh!]],
         voice_ch_char_Zhangyu_vo_revive = {
           ContentEN = "That wasn't the end for me. I knew it!",
           TextMapId = "voice_ch_char_Zhangyu_vo_revive"
-        },
+        }
+      }
+    end
+  },
+  {
+    MinKey = "voice_ch_char_Zhangyu_vo_skill01_r01",
+    MaxKey = "voice_ch_char_Zhiliu_vo_welcome",
+    Loader = function()
+      return {
         voice_ch_char_Zhangyu_vo_skill01_r01 = {
           ContentEN = "This is so fun!",
           TextMapId = "voice_ch_char_Zhangyu_vo_skill01_r01"

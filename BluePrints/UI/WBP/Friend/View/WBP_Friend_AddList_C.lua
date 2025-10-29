@@ -47,6 +47,11 @@ function M:Construct()
   self.Button_Refresh:SetGamePadImg("Right")
   self.Text_Title:SetText(GText("UI_Friend_Interested"))
   self.bSearchState = false
+  if FriendController.RefreshRecommandTimer then
+    DebugPrint("Yklua RefreshRecommandTimer is running No Freshing")
+  else
+    FriendController:SendGetRecommandList()
+  end
   FriendController:RegisterEvent(self, function(self, Reason, ...)
     if Reason == FriendCommon.EventId.Search then
       local Res = (...)

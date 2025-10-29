@@ -80,6 +80,11 @@ function M:LoadHtmlContent(Conf, Callback, ContentSize)
 end
 
 function M:LoadResource(bForceLoad, Cb)
+  local CachedVer = EMCache:Get("AnnounceVersion")
+  if CachedVer ~= AnnounceCommon.Version then
+    UBlueprintFileUtilsBPLibrary.DeleteDirectory(AnnounceCommon.AnnounceWeb, true, true)
+    EMCache:Set("AnnounceVersion", AnnounceCommon.Version)
+  end
   if M.bFontLoading then
     UIManager(GWorld.GameInstance):ShowUITip(UIConst.Tip_CommonToast, GText("UI_Toast_NetDelay"))
     return
@@ -133,8 +138,11 @@ function M:LoadResource(bForceLoad, Cb)
       end
     }
     UE.URuntimeCommonFunctionLibrary.HttpGetAndSave(FontUrl, FontPath, ContentType, Delegate, bForceLoad)
-  elseif Cb then
-    Cb()
+  else
+    M.bFontLoading = false
+    if Cb then
+      Cb()
+    end
   end
 end
 
@@ -832,6 +840,8 @@ function M:FilterConfForUI(TabTag, ShowTag)
   return RetConfs
 end
 
+M.AnnounceMainUI = nil
+
 function M:OpenAnnouncementMain(ShowTag, bNeedRequest, HostId, ParentWidget, Coroutine)
   if M.bFontLoading then
     UIManager(GWorld.GameInstance):ShowUITip(UIConst.Tip_CommonToast, GText("UI_Toast_NetDelay"))
@@ -869,7 +879,18 @@ function M:OpenAnnouncementMain(ShowTag, bNeedRequest, HostId, ParentWidget, Cor
       ChildWidgetBPPath = "WidgetBlueprint'/Game/UI/WBP/Announcement/Widget/WBP_Announcement_TabItem.WBP_Announcement_TabItem'"
     }
   }
-  UIManager(GWorld.GameInstance):ShowCommonPopupUI(100134, Params, ParentWidget, Coroutine)
+  M.AnnounceMainUI = UIManager(GWorld.GameInstance):ShowCommonPopupUI(100134, Params, ParentWidget, Coroutine)
+end
+
+function M:TryCloseAnnounceMainUI()
+  if IsValid(M.AnnounceMainUI) then
+    M.AnnounceMainUI:Close()
+    self:ClearAnnounceMainUI()
+  end
+end
+
+function M:ClearAnnounceMainUI()
+  M.AnnounceMainUI = nil
 end
 
 function M:UrlDecode(s)

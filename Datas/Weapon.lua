@@ -30,7 +30,8 @@ T.RT_10 = {202}
 T.RT_11 = {203}
 T.RT_12 = {204}
 T.RT_13 = {205}
-T.RT_14 = {206}
+T.RT_14 = {207}
+T.RT_15 = {206}
 local ReadOnly = (DataMgr or {}).ReadOnly or function(n, x)
   return x
 end
@@ -1027,7 +1028,7 @@ return ReadOnly("Weapon", {
     Icon = "/Game/UI/Texture/Dynamic/Image/Head/Weapon/T_Head_Bow_Huguang",
     ModSlot = T.RT_1,
     ModSlotUnlock = T.RT_2,
-    SkinApplicationType = T.RT_14,
+    SkinApplicationType = T.RT_15,
     SortPriority = 5107,
     Sound = "SOUND_ITEM_WEAPON",
     WeaponDescribe = "UI_WEAPON_DESC_20602",
@@ -1069,7 +1070,7 @@ return ReadOnly("Weapon", {
     Icon = "/Game/UI/Texture/Dynamic/Image/Head/Weapon/T_Head_Bow_Chixing",
     ModSlot = T.RT_1,
     ModSlotUnlock = T.RT_2,
-    SkinApplicationType = {207},
+    SkinApplicationType = T.RT_15,
     SortPriority = 5108,
     Sound = "SOUND_ITEM_WEAPON",
     WeaponDescribe = "UI_WEAPON_DESC_20604",

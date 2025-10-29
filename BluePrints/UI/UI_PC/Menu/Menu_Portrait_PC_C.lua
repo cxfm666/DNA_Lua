@@ -136,10 +136,9 @@ function Menu_Portrait_PC_C:OnBtnReleased()
     return
   end
   self:StopAllAnimations()
+  self:PlayAnimation(self.Normal)
   if self.IsHover then
-    self:PlayAnimation(self.Hover)
-  else
-    self:PlayAnimation(self.Normal)
+    self:PlayAnimation(self.Click)
   end
 end
 

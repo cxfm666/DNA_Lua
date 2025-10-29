@@ -410,9 +410,9 @@ end
 
 function M:UpdateTabs(Tabs)
   local function SortFunc(ComPareA, ComPareB)
-    local IsALocked = ComPareA.IsLocked
+    local IsALocked = ComPareA.IsLocked or false
     
-    local IsBLocked = ComPareB.IsLocked
+    local IsBLocked = ComPareB.IsLocked or false
     if IsALocked == IsBLocked then
       local SortA = ComPareA.SortId
       local SortB = ComPareB.SortId

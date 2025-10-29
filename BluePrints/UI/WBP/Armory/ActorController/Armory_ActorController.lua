@@ -235,6 +235,7 @@ function M:CalcArmoryCameraTag(Type, Tag, Behavior, ExtraTag)
         CameraTag2 = Behavior
       else
         CameraTag2 = Tag
+        CameraTag3 = ExtraTag or ""
       end
     elseif Behavior == CommonConst.ArmoryTag.Files then
       CameraTag2 = Behavior

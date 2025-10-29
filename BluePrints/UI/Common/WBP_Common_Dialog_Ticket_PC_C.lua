@@ -17,6 +17,8 @@ function M:InitContent(Params, PopupData, Owner)
   self:InitItemList(self.DungeonId)
   local Avatar = GWorld:GetAvatar()
   assert(Avatar, "NO AVATAR")
+  self.Text_Choose:SetText(GText("UI_Ticket_Choose"))
+  DebugPrint("gmy@WBP_Common_Dialog_Ticket_PC_C M:InitContent", Avatar:IsInMultiSettlement(), Avatar:IsInTeam())
   self.bIsInTeam = Avatar:IsInMultiSettlement() or Avatar:IsInTeam()
   self.bIsInMultiDungeon = Avatar:IsInMultiDungeon()
   if self.bIsInTeam then
@@ -165,7 +167,8 @@ function M:OnTeamMatchStartMatching()
   local Avatar = GWorld:GetAvatar()
   assert(Avatar, "Avatar is nil")
   local bIsInTeam = Avatar:IsInTeam()
-  if bIsInTeam then
+  DebugPrint("gmy@WBP_Common_Dialog_Ticket_PC_C M:OnTeamMatchStartMatching", bIsInTeam, Avatar:IsInMultiSettlement())
+  if bIsInTeam or Avatar:IsInMultiSettlement() then
     UIManager(self):LoadUINew("DungeonMatchTimingBar", self.DungeonId, Const.DUNGEON_MATCH_BAR_STATE.WAITING_MATCHING, true)
   end
   self.Owner:OnClose()

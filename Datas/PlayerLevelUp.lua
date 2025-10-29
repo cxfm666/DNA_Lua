@@ -27,6 +27,16 @@ T.RT_8 = {
   [1] = "Text",
   [2] = "Text"
 }
+T.RT_9 = {
+  [1] = "UI_NewWalnut_Unlock",
+  [2] = "PlayerLevel_Growth_Unlock",
+  [3] = "PlayerLevel_HardBoss_Unlock"
+}
+T.RT_10 = {
+  [1] = "Walnut",
+  [2] = "Text",
+  [3] = "Text"
+}
 local ReadOnly = (DataMgr or {}).ReadOnly or function(n, x)
   return x
 end
@@ -470,16 +480,8 @@ return ReadOnly("PlayerLevelUp", {
         Text = "PlayerLevel_HardBoss_Unlock_Content4"
       }
     },
-    NodeTitle = {
-      [1] = "UI_NewWalnut_Unlock",
-      [2] = "PlayerLevel_Growth_Unlock",
-      [3] = "PlayerLevel_HardBoss_Unlock"
-    },
-    NodeType = {
-      [1] = "Walnut",
-      [2] = "Text",
-      [3] = "Text"
-    },
+    NodeTitle = T.RT_9,
+    NodeType = T.RT_10,
     PlayerBuffId = 804,
     PlayerBuffLevel = 1,
     PlayerLevel = 45,
@@ -534,6 +536,9 @@ return ReadOnly("PlayerLevelUp", {
   },
   [51] = {
     ModExtractMax = 3500,
+    NodeContent = T.RT_3,
+    NodeTitle = T.RT_4,
+    NodeType = T.RT_5,
     PlayerBuffId = 804,
     PlayerBuffLevel = 6,
     PlayerLevel = 51,
@@ -542,6 +547,9 @@ return ReadOnly("PlayerLevelUp", {
   },
   [52] = {
     ModExtractMax = 3500,
+    NodeContent = T.RT_3,
+    NodeTitle = T.RT_4,
+    NodeType = T.RT_5,
     PlayerBuffId = 804,
     PlayerBuffLevel = 6,
     PlayerLevel = 52,
@@ -550,6 +558,9 @@ return ReadOnly("PlayerLevelUp", {
   },
   [53] = {
     ModExtractMax = 3500,
+    NodeContent = T.RT_3,
+    NodeTitle = T.RT_4,
+    NodeType = T.RT_5,
     PlayerBuffId = 804,
     PlayerBuffLevel = 6,
     PlayerLevel = 53,
@@ -558,6 +569,9 @@ return ReadOnly("PlayerLevelUp", {
   },
   [54] = {
     ModExtractMax = 3500,
+    NodeContent = T.RT_3,
+    NodeTitle = T.RT_4,
+    NodeType = T.RT_5,
     PlayerBuffId = 804,
     PlayerBuffLevel = 6,
     PlayerLevel = 54,
@@ -582,6 +596,9 @@ return ReadOnly("PlayerLevelUp", {
   },
   [56] = {
     ModExtractMax = 4000,
+    NodeContent = T.RT_3,
+    NodeTitle = T.RT_4,
+    NodeType = T.RT_5,
     PlayerBuffId = 804,
     PlayerBuffLevel = 11,
     PlayerLevel = 56,
@@ -590,6 +607,9 @@ return ReadOnly("PlayerLevelUp", {
   },
   [57] = {
     ModExtractMax = 4000,
+    NodeContent = T.RT_3,
+    NodeTitle = T.RT_4,
+    NodeType = T.RT_5,
     PlayerBuffId = 804,
     PlayerBuffLevel = 11,
     PlayerLevel = 57,
@@ -598,6 +618,9 @@ return ReadOnly("PlayerLevelUp", {
   },
   [58] = {
     ModExtractMax = 4000,
+    NodeContent = T.RT_3,
+    NodeTitle = T.RT_4,
+    NodeType = T.RT_5,
     PlayerBuffId = 804,
     PlayerBuffLevel = 11,
     PlayerLevel = 58,
@@ -606,6 +629,9 @@ return ReadOnly("PlayerLevelUp", {
   },
   [59] = {
     ModExtractMax = 4000,
+    NodeContent = T.RT_3,
+    NodeTitle = T.RT_4,
+    NodeType = T.RT_5,
     PlayerBuffId = 804,
     PlayerBuffLevel = 11,
     PlayerLevel = 59,
@@ -615,13 +641,14 @@ return ReadOnly("PlayerLevelUp", {
   [60] = {
     ModExtractMax = 5000,
     NodeContent = {
-      [1] = T.RT_6,
-      [2] = {
+      [1] = T.RT_2,
+      [2] = T.RT_6,
+      [3] = {
         Text = "PlayerLevel_HardBoss_Unlock_Content6"
       }
     },
-    NodeTitle = T.RT_7,
-    NodeType = T.RT_8,
+    NodeTitle = T.RT_9,
+    NodeType = T.RT_10,
     PlayerBuffId = 804,
     PlayerBuffLevel = 12,
     PlayerLevel = 60,
@@ -638,6 +665,9 @@ return ReadOnly("PlayerLevelUp", {
   },
   [62] = {
     ModExtractMax = 5000,
+    NodeContent = T.RT_3,
+    NodeTitle = T.RT_4,
+    NodeType = T.RT_5,
     PlayerBuffId = 804,
     PlayerBuffLevel = 13,
     PlayerLevel = 62,
