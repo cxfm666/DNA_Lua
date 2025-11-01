@@ -559,7 +559,7 @@ return ReadOnly("SpecialQuestConfig", {
     QuestChainId = 200212,
     QuestFailTalkTriggerId = 1002,
     SpecialConfigId = 1047,
-    StoryPath = "SpecialQuest\\Side\\200212_LaLiBattleSide.story",
+    StoryPath = "SpecialQuest\\Side\È212_LaLiBattleSide.story",
     TalkTriggerId = 1001,
     TriggerBoxStaticCreatorId = 1191274,
     UniversalConfigId = 1047
@@ -579,7 +579,7 @@ return ReadOnly("SpecialQuestConfig", {
     QuestChainId = 200230,
     QuestFailTalkTriggerId = 1002,
     SpecialConfigId = 1049,
-    StoryPath = "SpecialQuest\\Side\\200230_Huozai01BattleSide.story",
+    StoryPath = "SpecialQuest\\Side\È230_Huozai01BattleSide.story",
     TalkTriggerId = 1001,
     TriggerBoxStaticCreatorId = 1191515,
     UniversalConfigId = 1049
@@ -589,7 +589,7 @@ return ReadOnly("SpecialQuestConfig", {
     QuestChainId = 200231,
     QuestFailTalkTriggerId = 1002,
     SpecialConfigId = 1050,
-    StoryPath = "SpecialQuest\\Side\\200231_Huozai02Battle1.story",
+    StoryPath = "SpecialQuest\\Side\È231_Huozai02Battle1.story",
     TalkTriggerId = 1001,
     TriggerBoxStaticCreatorId = 1240888,
     UniversalConfigId = 1050
@@ -599,7 +599,7 @@ return ReadOnly("SpecialQuestConfig", {
     QuestChainId = 200231,
     QuestFailTalkTriggerId = 1002,
     SpecialConfigId = 1051,
-    StoryPath = "SpecialQuest\\Side\\200231_Huozai02Battle2.story",
+    StoryPath = "SpecialQuest\\Side\È231_Huozai02Battle2.story",
     SubRegionIds = {101301},
     TalkTriggerId = 1001,
     UniversalConfigId = 1051
@@ -609,7 +609,7 @@ return ReadOnly("SpecialQuestConfig", {
     QuestChainId = 200233,
     QuestFailTalkTriggerId = 1002,
     SpecialConfigId = 1052,
-    StoryPath = "SpecialQuest\\Side\\200233_Huozai04Battle.story",
+    StoryPath = "SpecialQuest\\Side\È233_Huozai04Battle.story",
     TalkTriggerId = 1001,
     TriggerBoxStaticCreatorId = 1240954,
     UniversalConfigId = 1052
@@ -630,7 +630,7 @@ return ReadOnly("SpecialQuestConfig", {
     QuestChainId = 200103,
     QuestFailTalkTriggerId = 1002,
     SpecialConfigId = 1054,
-    StoryPath = "SpecialQuest\\Side\\200103_Pet01Battle01.story",
+    StoryPath = "SpecialQuest\\Side\È103_Pet01Battle01.story",
     SubRegionIds = T.RT_9,
     TalkTriggerId = 1001,
     UniversalConfigId = 1054
@@ -640,7 +640,7 @@ return ReadOnly("SpecialQuestConfig", {
     QuestChainId = 200232,
     QuestFailTalkTriggerId = 1002,
     SpecialConfigId = 1055,
-    StoryPath = "SpecialQuest\\Side\\200232_Huozai03Battle.story",
+    StoryPath = "SpecialQuest\\Side\È232_Huozai03Battle.story",
     TalkTriggerId = 1001,
     TriggerBoxStaticCreatorId = 1240987,
     UniversalConfigId = 1055
@@ -650,7 +650,7 @@ return ReadOnly("SpecialQuestConfig", {
     QuestChainId = 200104,
     QuestFailTalkTriggerId = 1002,
     SpecialConfigId = 1056,
-    StoryPath = "SpecialQuest\\Side\\200104_Pet01Battle02.story",
+    StoryPath = "SpecialQuest\\Side\È104_Pet01Battle02.story",
     TalkTriggerId = 1001,
     TriggerBoxStaticCreatorId = 1730261,
     UniversalConfigId = 1056
@@ -990,7 +990,7 @@ return ReadOnly("SpecialQuestConfig", {
     QuestChainId = 200209,
     QuestFailTalkTriggerId = 1002,
     SpecialConfigId = 20020901,
-    StoryPath = "SpecialQuest\\Side\\200209_LunaBattle.story",
+    StoryPath = "SpecialQuest\\Side\È209_LunaBattle.story",
     TalkTriggerId = 1001,
     TriggerBoxStaticCreatorId = 1191807,
     UniversalConfigId = 20020901
