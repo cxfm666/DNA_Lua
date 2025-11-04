@@ -147,7 +147,11 @@ return {
     area = "China",
     hostnum = 10051,
     ip = "10.112.0.53",
-    port = 8000
+    port = {
+      8000,
+      8001,
+      8002
+    }
   },
   [20001] = {
     area = "Asian",

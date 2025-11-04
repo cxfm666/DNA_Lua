@@ -1663,7 +1663,6 @@ function BP_EMGameMode_C:TriggerEnterEndPlayer(AvatarEidStr)
   local DSEntity = GWorld:GetDSEntity()
   assert(DSEntity)
   local LeaveResult = rawget(DSEntity.HasLeaveAvatars, AvatarEidStr)
-  assert(nil ~= LeaveResult)
   self:NotifyClientGameEnd(LeaveResult, {AvatarEidStr})
 end
 

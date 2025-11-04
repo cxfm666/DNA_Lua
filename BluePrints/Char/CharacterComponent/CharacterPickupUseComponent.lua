@@ -97,11 +97,17 @@ end
 
 function Component:PickupTriggerRewardEvent(UnitId, Transform, PickUpEid, bExtra, bNeedCallback)
   local GameMode = UE4.UGameplayStatics.GetGameMode(self)
+  local Pickup = GameMode.EMGameState.CombatItemMap:Find(PickUpEid)
+  if not Pickup then
+    return
+  end
   local ExtraInfo = {
     UniqueSign = PickUpEid,
     DropId = UnitId,
     bExtra = bExtra,
-    SourceEid = self.Eid
+    SourceEid = self.Eid,
+    WorldRegionEid = Pickup.WorldRegionEid,
+    RegionDataType = Pickup.RegionDataType
   }
   local Callback = bNeedCallback and function()
     self:TriggerPickupSuccessCallback(UnitId)
